@@ -193,35 +193,104 @@ import { useShoppingList } from '@/hooks/useShoppingList';
       ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
       : 0;
 
+  // Servings scaling state & helpers
+  const [servings, setServings] = useState<number>(recipe.servings || 1);
+
+  const parseLeadingAmount = (amount: string): { value: number; rest: string } | null => {
+    if (!amount || typeof amount !== 'string') return null;
+    const trimmed = amount.trim();
+    // match '1 1/2', '1/2', '2.5', '2'
+    const match = trimmed.match(/^([0-9]+\s+[0-9]+\/[0-9]+|[0-9]+\/[0-9]+|[0-9]+(?:\.[0-9]+)?)(.*)$/);
+    if (!match) return null;
+    const numStr = match[1].trim();
+    const rest = match[2] ? match[2].trim() : '';
+
+    let value = 0;
+    if (numStr.includes(' ')) {
+      const parts = numStr.split(' ');
+      const whole = parseInt(parts[0], 10);
+      const frac = parts[1].split('/');
+      value = whole + parseInt(frac[0], 10) / parseInt(frac[1], 10);
+    } else if (numStr.includes('/')) {
+      const frac = numStr.split('/');
+      value = parseInt(frac[0], 10) / parseInt(frac[1], 10);
+    } else {
+      value = parseFloat(numStr);
+    }
+
+    if (Number.isNaN(value)) return null;
+    return { value, rest };
+  };
+
+  const formatAmount = (value: number, rest: string) => {
+    // Try to present as mixed fraction up to denominator 8
+    const denom = 8;
+    const sign = value < 0 ? -1 : 1;
+    value = Math.abs(value);
+    const whole = Math.floor(value);
+    let frac = value - whole;
+    const rounded = Math.round(frac * denom) / denom;
+    if (rounded === 1) {
+      return `${sign * (whole + 1)}${rest ? ' ' + rest : ''}`;
+    }
+    const fracNumer = Math.round(rounded * denom);
+    if (fracNumer === 0) {
+      return `${sign * whole}${rest ? ' ' + rest : ''}`;
+    }
+    // simplify fraction
+    const gcd = (a: number, b: number): number => (b === 0 ? a : gcd(b, a % b));
+    const g = gcd(fracNumer, denom);
+    const num = fracNumer / g;
+    const den = denom / g;
+    if (whole === 0) {
+      return `${sign * 1 === -1 ? '-' : ''}${num}/${den}${rest ? ' ' + rest : ''}`;
+    }
+    return `${sign * whole} ${num}/${den}${rest ? ' ' + rest : ''}`;
+  };
+
+  const scaleIngredientAmount = (amount: string, factor: number) => {
+    const parsed = parseLeadingAmount(amount);
+    if (!parsed) return amount; // fallback
+    const scaled = parsed.value * factor;
+    return formatAmount(scaled, parsed.rest);
+  };
+
   const renderIngredients = () => (
     <ScrollView className="px-5 py-4" showsVerticalScrollIndicator={false}>
-      {recipe.ingredients.map((ingredient, index) => (
-        <Animated.View
-          key={index}
-          className="flex-row items-center bg-white rounded-xl p-4 mb-3"
-          style={{
-            opacity: fadeAnim,
-            transform: [
-              {
-                translateY: fadeAnim.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [20, 0],
-                }),
-              },
-            ],
-          }}
-        >
-          <View className="w-8 h-8 rounded-full bg-primary/10 items-center justify-center mr-3">
-            <Text className="text-primary font-bold">{index + 1}</Text>
-          </View>
-          <Text className="flex-1 text-base text-text">
-            {ingredient.amount}
-          </Text>
-          <Text className="flex-2 text-base font-medium text-text">
-            {ingredient.name}
-          </Text>
-        </Animated.View>
-      ))}
+      {recipe.ingredients.map((ingredient, index) => {
+        const scaledAmount = scaleIngredientAmount(
+          ingredient.amount,
+          servings / (recipe.servings || 1)
+        );
+
+        return (
+          <Animated.View
+            key={index}
+            className="flex-row items-center bg-white rounded-xl p-4 mb-3"
+            style={{
+              opacity: fadeAnim,
+              transform: [
+                {
+                  translateY: fadeAnim.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [20, 0],
+                  }),
+                },
+              ],
+            }}
+          >
+            <View className="w-8 h-8 rounded-full bg-primary/10 items-center justify-center mr-3">
+              <Text className="text-primary font-bold">{index + 1}</Text>
+            </View>
+            <Text className="flex-1 text-base text-text">
+              {scaledAmount}
+            </Text>
+            <Text className="flex-2 text-base font-medium text-text">
+              {ingredient.name}
+            </Text>
+          </Animated.View>
+        );
+      })}
     </ScrollView>
   );
 
@@ -513,9 +582,25 @@ import { useShoppingList } from '@/hooks/useShoppingList';
                 <Ionicons name="people-outline" size={20} color="#10B981" />
               </View>
               <Text className="text-xs text-gray-500">Servings</Text>
-              <Text className="text-sm font-semibold text-text">
-                {recipe.servings}
-              </Text>
+              <View className="flex-row items-center mt-1">
+                <TouchableOpacity
+                  onPress={() => setServings((s) => Math.max(1, s - 1))}
+                  className="w-8 h-8 rounded-full items-center justify-center"
+                  style={{ backgroundColor: Colors.background }}
+                >
+                  <Text className="text-lg text-text">-</Text>
+                </TouchableOpacity>
+                <Text className="text-sm font-semibold text-text mx-3">
+                  {servings}
+                </Text>
+                <TouchableOpacity
+                  onPress={() => setServings((s) => s + 1)}
+                  className="w-8 h-8 rounded-full items-center justify-center"
+                  style={{ backgroundColor: Colors.background }}
+                >
+                  <Text className="text-lg text-text">+</Text>
+                </TouchableOpacity>
+              </View>
             </View>
 
             <View className="items-center flex-1">
@@ -542,6 +627,14 @@ import { useShoppingList } from '@/hooks/useShoppingList';
             <Text className="text-base text-text opacity-80 mb-6 leading-6">
               {recipe.description}
             </Text>
+          )}
+
+          {servings !== recipe.servings && (
+            <View className="mb-6 px-3 py-2 bg-yellow-50 rounded-xl">
+              <Text className="text-sm text-yellow-800">
+                Ingredient quantities updated for {servings} serving{servings > 1 ? 's' : ''}.
+              </Text>
+            </View>
           )}
         </View>
 
