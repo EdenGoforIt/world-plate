@@ -31,7 +31,7 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
   onRefresh,
   countryName,
 }) => {
-  const { toggleFavorite, isFavorite } = useFavorites();
+  const { toggleFavorite, isFavorite, allFavorites } = useFavorites();
 
   const [matchesPantry, setMatchesPantry] = React.useState(false);
 
@@ -55,6 +55,24 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
 
     return () => { mounted = false; };
   }, [recipe]);
+
+  // Simple personalized scoring:
+  // +2 if recipe is favorited (for this country)
+  // +1.5 if it matches the pantry
+  // +1 if the recipe cuisine appears in user's favorite cuisines
+  // + (rating / 5) normalized contribution
+  const recommendedScore = React.useMemo(() => {
+    if (!recipe) return 0;
+    let s = 0;
+    if (countryName && isFavorite(recipe.id, countryName)) s += 2;
+    if (matchesPantry) s += 1.5;
+    const favoriteCuisineSet = new Set(allFavorites.map(r => r.cuisine?.toLowerCase()));
+    if (favoriteCuisineSet.has(recipe.cuisine?.toLowerCase())) s += 1;
+    s += (recipe.rating || 0) / 5;
+    return s;
+  }, [recipe, matchesPantry, allFavorites, countryName, isFavorite]);
+
+  const recommended = recommendedScore >= 2;
 
   const handleFavoritePress = useCallback(async () => {
     if (recipe && countryName) {
@@ -156,7 +174,7 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
               >
                 {mealType.toUpperCase()}
               </Text>
-              {(recipe && countryName && isFavorite(recipe.id, countryName)) || matchesPantry ? (
+              {recommended ? (
                 <Text className="text-xs font-medium ml-2" style={{ color: Colors.primary }}>
                   Recommended
                 </Text>
