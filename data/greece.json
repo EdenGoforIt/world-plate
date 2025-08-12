@@ -1,0 +1,46 @@
+{
+  "country": "Greece",
+  "flag": "🇬🇷",
+  "recipes": [
+    {
+      "id": "greece-001",
+      "name": "Greek Salad",
+      "cuisine": "Greek",
+      "mealType": ["lunch"],
+      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 0,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Cucumber", "amount": "2 large", "category": "vegetable" },
+        { "name": "Tomatoes", "amount": "3 medium", "category": "vegetable" },
+        { "name": "Red onion", "amount": "1/2", "category": "vegetable" },
+        { "name": "Feta cheese", "amount": "4 oz", "category": "dairy" },
+        { "name": "Kalamata olives", "amount": "1/2 cup", "category": "other" },
+        { "name": "Olive oil", "amount": "3 tbsp", "category": "other" },
+        { "name": "Oregano", "amount": "1 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Chop cucumbers, tomatoes, and red onion",
+        "Combine vegetables in a large bowl",
+        "Add crumbled feta cheese and olives",
+        "Drizzle with olive oil and lemon juice",
+        "Season with oregano, salt, and pepper",
+        "Toss gently and serve immediately"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 8,
+        "carbs": 12,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 8,
+        "sodium": 640
+      },
+      "tags": ["vegetarian", "healthy", "mediterranean", "no-cook"],
+      "rating": 4.3,
+      "reviews": 98
+    }
+  ]
+}

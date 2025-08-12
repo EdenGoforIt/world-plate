@@ -1,0 +1,45 @@
+{
+  "country": "Peru",
+  "flag": "🇵🇪",
+  "recipes": [
+    {
+      "id": "peru-001",
+      "name": "Ceviche",
+      "cuisine": "Peruvian",
+      "mealType": ["lunch", "appetizer"],
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Fresh white fish", "amount": "1 lb", "category": "protein" },
+        { "name": "Lime juice", "amount": "1/2 cup", "category": "other" },
+        { "name": "Red onion", "amount": "1 small", "category": "vegetable" },
+        { "name": "Aji peppers", "amount": "2", "category": "spice" },
+        { "name": "Cilantro", "amount": "1/4 cup", "category": "other" },
+        { "name": "Sweet potato", "amount": "2", "category": "vegetable" }
+      ],
+      "instructions": [
+        "Dice fish into 1/2-inch cubes",
+        "Thinly slice red onion",
+        "Combine fish with lime juice",
+        "Let fish 'cook' in lime for 15 minutes",
+        "Add onion, peppers, and cilantro",
+        "Serve with boiled sweet potato"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 26,
+        "carbs": 18,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 8,
+        "sodium": 320
+      },
+      "tags": ["peruvian", "seafood", "no-cook", "healthy"],
+      "rating": 4.6,
+      "reviews": 167
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Classic Margherita Pizza",
+      "cuisine": "Italian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 12,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Pizza dough", "amount": "1 lb", "category": "grain" },
+        { "name": "Tomato sauce", "amount": "1/2 cup", "category": "vegetable" },
+        { "name": "Fresh mozzarella", "amount": "8 oz", "category": "dairy" },
+        { "name": "Fresh basil", "amount": "10 leaves", "category": "other" },
+        { "name": "Olive oil", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Preheat oven to 475°F (245°C)",
+        "Roll out pizza dough on floured surface",
+        "Spread tomato sauce evenly over dough",
+        "Add torn mozzarella pieces",
+        "Drizzle with olive oil",
+        "Bake for 10-12 minutes until golden",
+        "Add fresh basil leaves and serve"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 15,
+        "carbs": 42,
+        "fat": 12,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 580
+      },
+      "tags": ["vegetarian", "classic", "italian"],
+      "rating": 4.7,
+      "reviews": 156
+    },
+    {
+      "id": "2",
+      "name": "Chicken Teriyaki Bowl",
+      "cuisine": "Japanese",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Chicken breast", "amount": "2 pieces", "category": "protein" },
+        { "name": "Jasmine rice", "amount": "1 cup", "category": "grain" },
+        { "name": "Broccoli", "amount": "1 cup", "category": "vegetable" },
+        { "name": "Teriyaki sauce", "amount": "1/4 cup", "category": "other" },
+        { "name": "Sesame seeds", "amount": "1 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Cook rice according to package directions",
+        "Season and cook chicken in a pan until golden",
+        "Steam broccoli until tender",
+        "Slice chicken and arrange over rice",
+        "Add broccoli and drizzle with teriyaki sauce",
+        "Sprinkle with sesame seeds"
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 35,
+        "carbs": 48,
+        "fat": 8,
+        "fiber": 4,
+        "sugar": 12,
+        "sodium": 920
+      },
+      "tags": ["healthy", "protein-rich", "gluten-free"],
+      "rating": 4.5,
+      "reviews": 89
+    },
+    {
+      "id": "3",
+      "name": "Avocado Toast with Poached Egg",
+      "cuisine": "American",
+      "mealType": ["breakfast"],
+      "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 5,
+      "servings": 1,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Sourdough bread", "amount": "2 slices", "category": "grain" },
+        { "name": "Avocado", "amount": "1 large", "category": "other" },
+        { "name": "Egg", "amount": "1 large", "category": "protein" },
+        { "name": "Lime", "amount": "1/2", "category": "other" },
+        { "name": "Salt and pepper", "amount": "to taste", "category": "spice" }
+      ],
+      "instructions": [
+        "Toast bread until golden brown",
+        "Mash avocado with lime juice, salt, and pepper",
+        "Poach egg in simmering water for 3-4 minutes",
+        "Spread avocado mixture on toast",
+        "Top with poached egg",
+        "Season with additional salt and pepper"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 12,
+        "carbs": 24,
+        "fat": 16,
+        "fiber": 8,
+        "sugar": 2,
+        "sodium": 380
+      },
+      "tags": ["healthy", "quick", "vegetarian"],
+      "rating": 4.6,
+      "reviews": 243
+    },
+    {
+      "id": "4",
+      "name": "Beef Tacos",
+      "cuisine": "Mexican",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 10,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
+        { "name": "Corn tortillas", "amount": "8", "category": "grain" },
+        { "name": "Onion", "amount": "1 medium", "category": "vegetable" },
+        { "name": "Cheddar cheese", "amount": "1 cup", "category": "dairy" },
+        { "name": "Lettuce", "amount": "2 cups", "category": "vegetable" },
+        { "name": "Taco seasoning", "amount": "1 packet", "category": "spice" }
+      ],
+      "instructions": [
+        "Brown ground beef in a large skillet",
+        "Add diced onion and cook until soft",
+        "Stir in taco seasoning and water",
+        "Warm tortillas in microwave or dry pan",
+        "Fill tortillas with beef mixture",
+        "Top with cheese, lettuce, and other desired toppings"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 25,
+        "carbs": 28,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 3,
+        "sodium": 750
+      },
+      "tags": ["quick", "family-friendly", "mexican"],
+      "rating": 4.4,
+      "reviews": 127
+    },
+    {
+      "id": "5",
+      "name": "Greek Salad",
+      "cuisine": "Greek",
+      "mealType": ["lunch"],
+      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 0,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Cucumber", "amount": "2 large", "category": "vegetable" },
+        { "name": "Tomatoes", "amount": "3 medium", "category": "vegetable" },
+        { "name": "Red onion", "amount": "1/2", "category": "vegetable" },
+        { "name": "Feta cheese", "amount": "4 oz", "category": "dairy" },
+        { "name": "Kalamata olives", "amount": "1/2 cup", "category": "other" },
+        { "name": "Olive oil", "amount": "3 tbsp", "category": "other" },
+        { "name": "Oregano", "amount": "1 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Chop cucumbers, tomatoes, and red onion",
+        "Combine vegetables in a large bowl",
+        "Add crumbled feta cheese and olives",
+        "Drizzle with olive oil and lemon juice",
+        "Season with oregano, salt, and pepper",
+        "Toss gently and serve immediately"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 8,
+        "carbs": 12,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 8,
+        "sodium": 640
+      },
+      "tags": ["vegetarian", "healthy", "mediterranean", "no-cook"],
+      "rating": 4.3,
+      "reviews": 98
+    }
+  ],
+  "categories": [
+    {
+      "id": "italian",
+      "name": "Italian",
+      "icon": "restaurant",
+      "recipeCount": 12
+    },
+    {
+      "id": "japanese",
+      "name": "Japanese",
+      "icon": "fish",
+      "recipeCount": 8
+    },
+    {
+      "id": "mexican",
+      "name": "Mexican",
+      "icon": "local-fire-department",
+      "recipeCount": 15
+    },
+    {
+      "id": "american",
+      "name": "American",
+      "icon": "home",
+      "recipeCount": 10
+    },
+    {
+      "id": "greek",
+      "name": "Greek",
+      "icon": "spa",
+      "recipeCount": 6
+    },
+    {
+      "id": "indian",
+      "name": "Indian",
+      "icon": "local-dining",
+      "recipeCount": 18
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "country": "Ethiopia",
+  "flag": "🇪🇹",
+  "recipes": [
+    {
+      "id": "ethiopia-001",
+      "name": "Doro Wat",
+      "cuisine": "Ethiopian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Chicken thighs", "amount": "2 lbs", "category": "protein" },
+        { "name": "Berbere spice", "amount": "3 tbsp", "category": "spice" },
+        { "name": "Red onions", "amount": "3 large", "category": "vegetable" },
+        { "name": "Hard-boiled eggs", "amount": "6", "category": "protein" },
+        { "name": "Tomato paste", "amount": "2 tbsp", "category": "vegetable" },
+        { "name": "Injera bread", "amount": "6 pieces", "category": "grain" }
+      ],
+      "instructions": [
+        "Caramelize onions until golden brown",
+        "Add berbere spice and tomato paste",
+        "Brown chicken pieces in spice mixture",
+        "Add water and simmer 45 minutes",
+        "Add hard-boiled eggs in last 10 minutes",
+        "Serve with injera bread"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 36,
+        "carbs": 25,
+        "fat": 26,
+        "fiber": 4,
+        "sugar": 8,
+        "sodium": 720
+      },
+      "tags": ["ethiopian", "spicy", "traditional"],
+      "rating": 4.4,
+      "reviews": 128
+    }
+  ]
+}

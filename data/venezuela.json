@@ -1,0 +1,45 @@
+{
+  "country": "Venezuela",
+  "flag": "🇻🇪",
+  "recipes": [
+    {
+      "id": "venezuela-001",
+      "name": "Arepas",
+      "cuisine": "Venezuelan",
+      "mealType": ["breakfast", "lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Pre-cooked white corn flour", "amount": "2 cups", "category": "grain" },
+        { "name": "Warm water", "amount": "2.5 cups", "category": "other" },
+        { "name": "Salt", "amount": "1 tsp", "category": "spice" },
+        { "name": "Black beans", "amount": "1 cup", "category": "other" },
+        { "name": "White cheese", "amount": "4 oz", "category": "dairy" },
+        { "name": "Avocado", "amount": "1", "category": "other" }
+      ],
+      "instructions": [
+        "Mix corn flour with warm water and salt",
+        "Knead until smooth dough forms",
+        "Shape into thick discs",
+        "Cook on griddle until golden",
+        "Split open and fill with beans, cheese, avocado",
+        "Serve immediately while warm"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 12,
+        "carbs": 48,
+        "fat": 10,
+        "fiber": 8,
+        "sugar": 2,
+        "sodium": 520
+      },
+      "tags": ["venezuelan", "corn-bread", "gluten-free"],
+      "rating": 4.4,
+      "reviews": 189
+    }
+  ]
+}

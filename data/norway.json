@@ -1,0 +1,45 @@
+{
+  "country": "Norway",
+  "flag": "🇳🇴",
+  "recipes": [
+    {
+      "id": "norway-001",
+      "name": "Salmon with Dill",
+      "cuisine": "Norwegian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Salmon fillets", "amount": "2 lbs", "category": "protein" },
+        { "name": "Fresh dill", "amount": "1/4 cup", "category": "other" },
+        { "name": "Lemon", "amount": "2", "category": "other" },
+        { "name": "Butter", "amount": "4 tbsp", "category": "dairy" },
+        { "name": "New potatoes", "amount": "2 lbs", "category": "vegetable" },
+        { "name": "Capers", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Season salmon with salt and pepper",
+        "Pan-fry salmon skin-side down",
+        "Flip and cook until flaky",
+        "Boil new potatoes until tender",
+        "Make lemon-dill butter sauce",
+        "Serve salmon with potatoes and sauce"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 46,
+        "carbs": 28,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": ["norwegian", "seafood", "healthy"],
+      "rating": 4.6,
+      "reviews": 189
+    }
+  ]
+}

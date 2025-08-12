@@ -1,0 +1,45 @@
+{
+  "country": "Austria",
+  "flag": "🇦🇹",
+  "recipes": [
+    {
+      "id": "austria-001",
+      "name": "Wiener Schnitzel",
+      "cuisine": "Austrian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 10,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Veal cutlets", "amount": "4 pieces", "category": "protein" },
+        { "name": "Breadcrumbs", "amount": "2 cups", "category": "grain" },
+        { "name": "Eggs", "amount": "2", "category": "protein" },
+        { "name": "All-purpose flour", "amount": "1 cup", "category": "grain" },
+        { "name": "Butter", "amount": "1/2 cup", "category": "dairy" },
+        { "name": "Lemon", "amount": "2", "category": "other" }
+      ],
+      "instructions": [
+        "Pound veal cutlets thin",
+        "Dredge in flour, egg, then breadcrumbs",
+        "Fry in butter until golden brown",
+        "Drain on paper towels",
+        "Serve immediately with lemon wedges",
+        "Accompany with parsley potatoes"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 35,
+        "carbs": 28,
+        "fat": 26,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 520
+      },
+      "tags": ["austrian", "fried", "classic"],
+      "rating": 4.7,
+      "reviews": 203
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "country": "Spain",
+  "flag": "🇪🇸",
+  "recipes": [
+    {
+      "id": "spain-001",
+      "name": "Paella Valenciana",
+      "cuisine": "Spanish",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Arborio rice", "amount": "2 cups", "category": "grain" },
+        { "name": "Chicken thighs", "amount": "1 lb", "category": "protein" },
+        { "name": "Shrimp", "amount": "1 lb", "category": "protein" },
+        { "name": "Saffron", "amount": "1 pinch", "category": "spice" },
+        { "name": "Green beans", "amount": "1 cup", "category": "vegetable" },
+        { "name": "Chicken stock", "amount": "4 cups", "category": "other" }
+      ],
+      "instructions": [
+        "Heat olive oil in paella pan",
+        "Brown chicken pieces and set aside",
+        "Sauté vegetables until tender",
+        "Add rice and toast for 2 minutes",
+        "Add saffron stock and chicken",
+        "Simmer 20 minutes, add shrimp last 5 minutes"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 32,
+        "carbs": 52,
+        "fat": 16,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 890
+      },
+      "tags": ["spanish", "seafood", "rice"],
+      "rating": 4.5,
+      "reviews": 164
+    }
+  ]
+}

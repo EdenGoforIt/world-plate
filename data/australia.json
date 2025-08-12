@@ -1,0 +1,45 @@
+{
+  "country": "Australia",
+  "flag": "🇦🇺",
+  "recipes": [
+    {
+      "id": "australia-001",
+      "name": "Meat Pie",
+      "cuisine": "Australian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 45,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
+        { "name": "Puff pastry", "amount": "2 sheets", "category": "grain" },
+        { "name": "Onion", "amount": "1 large", "category": "vegetable" },
+        { "name": "Beef stock", "amount": "1 cup", "category": "other" },
+        { "name": "Worcestershire sauce", "amount": "2 tbsp", "category": "other" },
+        { "name": "Egg", "amount": "1", "category": "protein" }
+      ],
+      "instructions": [
+        "Cook beef and onion until browned",
+        "Add stock and simmer until thick",
+        "Line pie dishes with pastry",
+        "Fill with beef mixture",
+        "Cover with pastry and seal edges",
+        "Bake at 400°F for 25-30 minutes"
+      ],
+      "nutrition": {
+        "calories": 520,
+        "protein": 24,
+        "carbs": 38,
+        "fat": 32,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 780
+      },
+      "tags": ["australian", "savory-pie", "comfort-food"],
+      "rating": 4.3,
+      "reviews": 142
+    }
+  ]
+}

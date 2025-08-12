@@ -1,0 +1,45 @@
+{
+  "country": "Romania",
+  "flag": "🇷🇴",
+  "recipes": [
+    {
+      "id": "romania-001",
+      "name": "Sarmale",
+      "cuisine": "Romanian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      "prepTime": 60,
+      "cookTime": 120,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        { "name": "Cabbage leaves", "amount": "12 large", "category": "vegetable" },
+        { "name": "Ground pork", "amount": "1 lb", "category": "protein" },
+        { "name": "Rice", "amount": "1/2 cup", "category": "grain" },
+        { "name": "Onions", "amount": "2 medium", "category": "vegetable" },
+        { "name": "Tomato sauce", "amount": "2 cups", "category": "vegetable" },
+        { "name": "Sour cream", "amount": "1 cup", "category": "dairy" }
+      ],
+      "instructions": [
+        "Blanch cabbage leaves until soft",
+        "Mix pork with rice and onions",
+        "Wrap filling in cabbage leaves",
+        "Layer in pot with tomato sauce",
+        "Simmer covered for 2 hours",
+        "Serve with sour cream"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 24,
+        "carbs": 28,
+        "fat": 20,
+        "fiber": 4,
+        "sugar": 8,
+        "sodium": 720
+      },
+      "tags": ["romanian", "cabbage-rolls", "comfort-food"],
+      "rating": 4.4,
+      "reviews": 156
+    }
+  ]
+}

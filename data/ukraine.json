@@ -1,0 +1,45 @@
+{
+  "country": "Ukraine",
+  "flag": "🇺🇦",
+  "recipes": [
+    {
+      "id": "ukraine-001",
+      "name": "Borscht",
+      "cuisine": "Ukrainian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Fresh beets", "amount": "4 large", "category": "vegetable" },
+        { "name": "Beef broth", "amount": "6 cups", "category": "other" },
+        { "name": "Cabbage", "amount": "2 cups", "category": "vegetable" },
+        { "name": "Carrots", "amount": "2", "category": "vegetable" },
+        { "name": "Onion", "amount": "1 large", "category": "vegetable" },
+        { "name": "Sour cream", "amount": "1/2 cup", "category": "dairy" }
+      ],
+      "instructions": [
+        "Roast beets until tender",
+        "Peel and grate beets",
+        "Sauté onions and carrots",
+        "Add cabbage and broth",
+        "Add grated beets and simmer 30 minutes",
+        "Serve with sour cream and dill"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 6,
+        "carbs": 24,
+        "fat": 8,
+        "fiber": 6,
+        "sugar": 16,
+        "sodium": 680
+      },
+      "tags": ["ukrainian", "soup", "vegetarian"],
+      "rating": 4.2,
+      "reviews": 145
+    }
+  ]
+}

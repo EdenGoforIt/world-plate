@@ -1,0 +1,45 @@
+{
+  "country": "Malaysia",
+  "flag": "🇲🇾",
+  "recipes": [
+    {
+      "id": "malaysia-001",
+      "name": "Nasi Lemak",
+      "cuisine": "Malaysian",
+      "mealType": ["breakfast", "lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Jasmine rice", "amount": "2 cups", "category": "grain" },
+        { "name": "Coconut milk", "amount": "1 cup", "category": "dairy" },
+        { "name": "Anchovies", "amount": "1/2 cup", "category": "protein" },
+        { "name": "Peanuts", "amount": "1/2 cup", "category": "other" },
+        { "name": "Sambal chili paste", "amount": "3 tbsp", "category": "spice" },
+        { "name": "Hard-boiled eggs", "amount": "4", "category": "protein" }
+      ],
+      "instructions": [
+        "Cook rice with coconut milk and pandan",
+        "Fry anchovies until crispy",
+        "Roast peanuts until golden",
+        "Prepare sambal chili paste",
+        "Slice hard-boiled eggs",
+        "Serve rice with all toppings"
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 18,
+        "carbs": 58,
+        "fat": 18,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 820
+      },
+      "tags": ["malaysian", "coconut-rice", "spicy"],
+      "rating": 4.5,
+      "reviews": 156
+    }
+  ]
+}

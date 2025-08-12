@@ -1,0 +1,45 @@
+{
+  "country": "Argentina",
+  "flag": "🇦🇷",
+  "recipes": [
+    {
+      "id": "argentina-001",
+      "name": "Asado",
+      "cuisine": "Argentinian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 120,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Beef short ribs", "amount": "3 lbs", "category": "protein" },
+        { "name": "Chorizo sausage", "amount": "1 lb", "category": "protein" },
+        { "name": "Chimichurri sauce", "amount": "1 cup", "category": "other" },
+        { "name": "Coarse salt", "amount": "2 tbsp", "category": "spice" },
+        { "name": "Black pepper", "amount": "1 tbsp", "category": "spice" },
+        { "name": "Red wine", "amount": "1 bottle", "category": "other" }
+      ],
+      "instructions": [
+        "Season meat with coarse salt and pepper",
+        "Build a wood or charcoal fire",
+        "Grill meats slowly over medium heat",
+        "Cook for 2 hours, turning occasionally",
+        "Rest meat for 10 minutes before serving",
+        "Serve with chimichurri and red wine"
+      ],
+      "nutrition": {
+        "calories": 580,
+        "protein": 48,
+        "carbs": 2,
+        "fat": 38,
+        "fiber": 0,
+        "sugar": 1,
+        "sodium": 920
+      },
+      "tags": ["argentinian", "grilled", "meat"],
+      "rating": 4.7,
+      "reviews": 203
+    }
+  ]
+}

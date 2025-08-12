@@ -1,0 +1,45 @@
+{
+  "country": "Brazil",
+  "flag": "🇧🇷",
+  "recipes": [
+    {
+      "id": "brazil-001",
+      "name": "Feijoada",
+      "cuisine": "Brazilian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 120,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Black beans", "amount": "2 cups", "category": "other" },
+        { "name": "Pork shoulder", "amount": "1 lb", "category": "protein" },
+        { "name": "Brazilian sausage", "amount": "8 oz", "category": "protein" },
+        { "name": "Bacon", "amount": "4 strips", "category": "protein" },
+        { "name": "Onions", "amount": "2 medium", "category": "vegetable" },
+        { "name": "Bay leaves", "amount": "3", "category": "spice" }
+      ],
+      "instructions": [
+        "Soak black beans overnight",
+        "Brown all meats in large pot",
+        "Add beans, onions, and bay leaves",
+        "Cover with water and simmer 2 hours",
+        "Season with salt and pepper",
+        "Serve with rice and orange slices"
+      ],
+      "nutrition": {
+        "calories": 520,
+        "protein": 35,
+        "carbs": 38,
+        "fat": 22,
+        "fiber": 12,
+        "sugar": 4,
+        "sodium": 920
+      },
+      "tags": ["brazilian", "comfort-food", "beans"],
+      "rating": 4.4,
+      "reviews": 145
+    }
+  ]
+}

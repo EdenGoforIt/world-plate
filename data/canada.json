@@ -1,0 +1,44 @@
+{
+  "country": "Canada",
+  "flag": "🇨🇦",
+  "recipes": [
+    {
+      "id": "canada-001",
+      "name": "Poutine",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner", "snack"],
+      "image": "https://images.unsplash.com/photo-1554681291-c2173cd2c8e3?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "French fries", "amount": "4 cups", "category": "vegetable" },
+        { "name": "Cheese curds", "amount": "2 cups", "category": "dairy" },
+        { "name": "Beef gravy", "amount": "2 cups", "category": "other" },
+        { "name": "Salt", "amount": "to taste", "category": "spice" },
+        { "name": "Black pepper", "amount": "to taste", "category": "spice" }
+      ],
+      "instructions": [
+        "Cook frozen fries according to package directions",
+        "Heat gravy in saucepan",
+        "Place hot fries in serving bowls",
+        "Top with cheese curds",
+        "Pour hot gravy over top",
+        "Serve immediately while hot"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 12,
+        "carbs": 52,
+        "fat": 24,
+        "fiber": 4,
+        "sugar": 3,
+        "sodium": 920
+      },
+      "tags": ["canadian", "comfort-food", "quick"],
+      "rating": 4.2,
+      "reviews": 118
+    }
+  ]
+}

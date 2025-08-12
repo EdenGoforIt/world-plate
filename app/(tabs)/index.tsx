@@ -1,75 +1,135 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import React from 'react';
+import { View, Text, ScrollView, StyleSheet, RefreshControl, StatusBar } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { LinearGradient } from 'expo-linear-gradient';
+import { Ionicons } from '@expo/vector-icons';
 
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { MealRecommendation } from '@/components/MealRecommendation';
+import { Colors } from '@/constants/Colors';
+import { useDailyRecommendations } from '@/hooks/useRecipes';
 
 export default function HomeScreen() {
+  const { recommendations, loading, refreshRecommendations } = useDailyRecommendations();
+
+  const handleRecipePress = (recipeId: string) => {
+    console.log('Recipe pressed:', recipeId);
+  };
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="light-content" />
+      
+      <LinearGradient
+        colors={[Colors.primary, Colors.secondary]}
+        style={styles.header}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+      >
+        <View style={styles.headerContent}>
+          <View>
+            <Text style={styles.greeting}>Good Morning!</Text>
+            <Text style={styles.subtitle}>What would you like to cook today?</Text>
+          </View>
+          <Ionicons name="restaurant" size={32} color="#fff" />
+        </View>
+      </LinearGradient>
+
+      <ScrollView
+        style={styles.content}
+        contentContainerStyle={styles.contentContainer}
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={loading}
+            onRefresh={refreshRecommendations}
+            tintColor={Colors.primary}
+          />
+        }
+      >
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Today's Recommendations</Text>
+          <Text style={styles.sectionSubtitle}>
+            Handpicked recipes for your meals
+          </Text>
+        </View>
+
+        <MealRecommendation
+          mealType="breakfast"
+          recipe={recommendations.breakfast}
+          onPress={() => recommendations.breakfast && handleRecipePress(recommendations.breakfast.id)}
+          onRefresh={() => {
+            refreshRecommendations();
+          }}
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+
+        <MealRecommendation
+          mealType="lunch"
+          recipe={recommendations.lunch}
+          onPress={() => recommendations.lunch && handleRecipePress(recommendations.lunch.id)}
+          onRefresh={() => {
+            refreshRecommendations();
+          }}
+        />
+
+        <MealRecommendation
+          mealType="dinner"
+          recipe={recommendations.dinner}
+          onPress={() => recommendations.dinner && handleRecipePress(recommendations.dinner.id)}
+          onRefresh={() => {
+            refreshRecommendations();
+          }}
+        />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
+  container: {
+    flex: 1,
+    backgroundColor: Colors.background,
+  },
+  header: {
+    paddingHorizontal: 20,
+    paddingVertical: 24,
+    borderBottomLeftRadius: 24,
+    borderBottomRightRadius: 24,
+  },
+  headerContent: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    gap: 8,
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+  greeting: {
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#fff',
+    marginBottom: 4,
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  subtitle: {
+    fontSize: 16,
+    color: '#fff',
+    opacity: 0.9,
+  },
+  content: {
+    flex: 1,
+  },
+  contentContainer: {
+    padding: 20,
+    paddingBottom: 100,
+  },
+  section: {
+    marginBottom: 24,
+  },
+  sectionTitle: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: Colors.text,
+    marginBottom: 4,
+  },
+  sectionSubtitle: {
+    fontSize: 16,
+    color: Colors.text,
+    opacity: 0.7,
   },
 });

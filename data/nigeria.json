@@ -1,0 +1,45 @@
+{
+  "country": "Nigeria",
+  "flag": "🇳🇬",
+  "recipes": [
+    {
+      "id": "nigeria-001",
+      "name": "Jollof Rice",
+      "cuisine": "Nigerian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 45,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Jasmine rice", "amount": "3 cups", "category": "grain" },
+        { "name": "Tomatoes", "amount": "4 large", "category": "vegetable" },
+        { "name": "Bell peppers", "amount": "2", "category": "vegetable" },
+        { "name": "Onion", "amount": "1 large", "category": "vegetable" },
+        { "name": "Chicken stock", "amount": "4 cups", "category": "other" },
+        { "name": "Scotch bonnet pepper", "amount": "1", "category": "spice" }
+      ],
+      "instructions": [
+        "Blend tomatoes, peppers, and onion",
+        "Cook blended mixture until thick",
+        "Add rice and stir to coat",
+        "Pour in hot chicken stock",
+        "Add scotch bonnet pepper",
+        "Simmer covered for 30 minutes"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 8,
+        "carbs": 68,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 680
+      },
+      "tags": ["nigerian", "rice", "spicy"],
+      "rating": 4.5,
+      "reviews": 178
+    }
+  ]
+}

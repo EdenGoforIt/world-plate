@@ -1,0 +1,45 @@
+{
+  "country": "Thailand",
+  "flag": "🇹🇭",
+  "recipes": [
+    {
+      "id": "thailand-001",
+      "name": "Pad Thai",
+      "cuisine": "Thai",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1559314809-0f31657def5e?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 8,
+      "servings": 2,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Rice noodles", "amount": "8 oz", "category": "grain" },
+        { "name": "Shrimp", "amount": "8 oz", "category": "protein" },
+        { "name": "Bean sprouts", "amount": "2 cups", "category": "vegetable" },
+        { "name": "Fish sauce", "amount": "3 tbsp", "category": "other" },
+        { "name": "Lime", "amount": "2", "category": "other" },
+        { "name": "Peanuts", "amount": "1/4 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Soak rice noodles in warm water",
+        "Heat oil in wok over high heat",
+        "Stir-fry shrimp until pink",
+        "Add drained noodles and sauce",
+        "Toss with bean sprouts",
+        "Serve with lime wedges and peanuts"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 24,
+        "carbs": 45,
+        "fat": 12,
+        "fiber": 3,
+        "sugar": 8,
+        "sodium": 980
+      },
+      "tags": ["thai", "noodles", "seafood"],
+      "rating": 4.6,
+      "reviews": 221
+    }
+  ]
+}

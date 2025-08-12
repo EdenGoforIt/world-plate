@@ -1,0 +1,45 @@
+{
+  "country": "Russia",
+  "flag": "🇷🇺",
+  "recipes": [
+    {
+      "id": "russia-001",
+      "name": "Beef Stroganoff",
+      "cuisine": "Russian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Beef tenderloin", "amount": "1 lb", "category": "protein" },
+        { "name": "Mushrooms", "amount": "8 oz", "category": "vegetable" },
+        { "name": "Sour cream", "amount": "1 cup", "category": "dairy" },
+        { "name": "Onion", "amount": "1 medium", "category": "vegetable" },
+        { "name": "Egg noodles", "amount": "12 oz", "category": "grain" },
+        { "name": "Beef broth", "amount": "1 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Slice beef into thin strips",
+        "Sauté mushrooms and onions",
+        "Brown beef in same pan",
+        "Add broth and simmer 10 minutes",
+        "Stir in sour cream off heat",
+        "Serve over cooked egg noodles"
+      ],
+      "nutrition": {
+        "calories": 460,
+        "protein": 32,
+        "carbs": 38,
+        "fat": 20,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 680
+      },
+      "tags": ["russian", "creamy", "comfort-food"],
+      "rating": 4.5,
+      "reviews": 178
+    }
+  ]
+}

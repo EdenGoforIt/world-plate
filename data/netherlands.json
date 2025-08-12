@@ -1,0 +1,45 @@
+{
+  "country": "Netherlands",
+  "flag": "🇳🇱",
+  "recipes": [
+    {
+      "id": "netherlands-001",
+      "name": "Stroopwafel",
+      "cuisine": "Dutch",
+      "mealType": ["dessert", "snack"],
+      "image": "https://images.unsplash.com/photo-1598515213692-d1fce36d4085?w=400&h=300&fit=crop",
+      "prepTime": 45,
+      "cookTime": 30,
+      "servings": 12,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "All-purpose flour", "amount": "2 cups", "category": "grain" },
+        { "name": "Butter", "amount": "1/2 cup", "category": "dairy" },
+        { "name": "Brown sugar", "amount": "1 cup", "category": "other" },
+        { "name": "Corn syrup", "amount": "1/2 cup", "category": "other" },
+        { "name": "Cinnamon", "amount": "1 tsp", "category": "spice" },
+        { "name": "Yeast", "amount": "1 tsp", "category": "other" }
+      ],
+      "instructions": [
+        "Make waffle dough with flour, butter, and yeast",
+        "Cook in waffle iron until golden",
+        "Make caramel syrup with sugar and corn syrup",
+        "Slice waffle in half horizontally",
+        "Spread caramel filling between layers",
+        "Serve warm over coffee cup to soften"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 3,
+        "carbs": 45,
+        "fat": 12,
+        "fiber": 1,
+        "sugar": 28,
+        "sodium": 180
+      },
+      "tags": ["dutch", "dessert", "caramel"],
+      "rating": 4.6,
+      "reviews": 145
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "country": "Colombia",
+  "flag": "🇨🇴",
+  "recipes": [
+    {
+      "id": "colombia-001",
+      "name": "Bandeja Paisa",
+      "cuisine": "Colombian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 45,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
+        { "name": "Red beans", "amount": "2 cups", "category": "other" },
+        { "name": "White rice", "amount": "2 cups", "category": "grain" },
+        { "name": "Fried plantains", "amount": "2", "category": "vegetable" },
+        { "name": "Chorizo sausage", "amount": "4 pieces", "category": "protein" },
+        { "name": "Fried eggs", "amount": "4", "category": "protein" }
+      ],
+      "instructions": [
+        "Cook beans with spices until tender",
+        "Brown ground beef with onions",
+        "Cook rice separately",
+        "Fry plantains until golden",
+        "Grill chorizo sausage",
+        "Arrange all components on large platter"
+      ],
+      "nutrition": {
+        "calories": 820,
+        "protein": 42,
+        "carbs": 78,
+        "fat": 32,
+        "fiber": 12,
+        "sugar": 18,
+        "sodium": 980
+      },
+      "tags": ["colombian", "hearty", "traditional"],
+      "rating": 4.6,
+      "reviews": 234
+    }
+  ]
+}

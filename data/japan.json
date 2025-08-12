@@ -1,0 +1,44 @@
+{
+  "country": "Japan",
+  "flag": "🇯🇵",
+  "recipes": [
+    {
+      "id": "japan-001",
+      "name": "Chicken Teriyaki Bowl",
+      "cuisine": "Japanese",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Chicken breast", "amount": "2 pieces", "category": "protein" },
+        { "name": "Jasmine rice", "amount": "1 cup", "category": "grain" },
+        { "name": "Broccoli", "amount": "1 cup", "category": "vegetable" },
+        { "name": "Teriyaki sauce", "amount": "1/4 cup", "category": "other" },
+        { "name": "Sesame seeds", "amount": "1 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Cook rice according to package directions",
+        "Season and cook chicken in a pan until golden",
+        "Steam broccoli until tender",
+        "Slice chicken and arrange over rice",
+        "Add broccoli and drizzle with teriyaki sauce",
+        "Sprinkle with sesame seeds"
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 35,
+        "carbs": 48,
+        "fat": 8,
+        "fiber": 4,
+        "sugar": 12,
+        "sodium": 920
+      },
+      "tags": ["healthy", "protein-rich", "gluten-free"],
+      "rating": 4.5,
+      "reviews": 89
+    }
+  ]
+}

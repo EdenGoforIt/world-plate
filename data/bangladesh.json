@@ -1,0 +1,45 @@
+{
+  "country": "Bangladesh",
+  "flag": "🇧🇩",
+  "recipes": [
+    {
+      "id": "bangladesh-001",
+      "name": "Biryani",
+      "cuisine": "Bangladeshi",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        { "name": "Basmati rice", "amount": "3 cups", "category": "grain" },
+        { "name": "Mutton or beef", "amount": "2 lbs", "category": "protein" },
+        { "name": "Yogurt", "amount": "1 cup", "category": "dairy" },
+        { "name": "Fried onions", "amount": "1 cup", "category": "vegetable" },
+        { "name": "Saffron", "amount": "1 pinch", "category": "spice" },
+        { "name": "Ghee", "amount": "4 tbsp", "category": "dairy" }
+      ],
+      "instructions": [
+        "Marinate meat with yogurt and spices",
+        "Cook rice with whole spices until 70% done",
+        "Layer rice and meat alternately",
+        "Top with fried onions and saffron",
+        "Cook on dum (sealed pot) for 45 minutes",
+        "Serve with boiled eggs and salad"
+      ],
+      "nutrition": {
+        "calories": 620,
+        "protein": 38,
+        "carbs": 58,
+        "fat": 24,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 820
+      },
+      "tags": ["bangladeshi", "biryani", "festive"],
+      "rating": 4.7,
+      "reviews": 267
+    }
+  ]
+}

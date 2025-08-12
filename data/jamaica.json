@@ -1,0 +1,45 @@
+{
+  "country": "Jamaica",
+  "flag": "🇯🇲",
+  "recipes": [
+    {
+      "id": "jamaica-001",
+      "name": "Jerk Chicken",
+      "cuisine": "Jamaican",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1598515213692-d1fce36d4085?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Chicken pieces", "amount": "3 lbs", "category": "protein" },
+        { "name": "Scotch bonnet peppers", "amount": "2", "category": "spice" },
+        { "name": "Allspice berries", "amount": "2 tbsp", "category": "spice" },
+        { "name": "Thyme", "amount": "2 tbsp", "category": "spice" },
+        { "name": "Lime juice", "amount": "1/4 cup", "category": "other" },
+        { "name": "Brown sugar", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Blend peppers, allspice, thyme, lime, and sugar",
+        "Marinate chicken in jerk paste for 4 hours",
+        "Grill over medium-high heat",
+        "Turn frequently for even cooking",
+        "Cook 25-30 minutes until done",
+        "Serve with rice and peas"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 42,
+        "carbs": 8,
+        "fat": 18,
+        "fiber": 1,
+        "sugar": 6,
+        "sodium": 520
+      },
+      "tags": ["jamaican", "spicy", "grilled"],
+      "rating": 4.7,
+      "reviews": 195
+    }
+  ]
+}

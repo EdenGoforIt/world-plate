@@ -1,0 +1,45 @@
+{
+  "country": "Belgium",
+  "flag": "🇧🇪",
+  "recipes": [
+    {
+      "id": "belgium-001",
+      "name": "Moules Frites",
+      "cuisine": "Belgian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Mussels", "amount": "4 lbs", "category": "protein" },
+        { "name": "French fries", "amount": "4 cups", "category": "vegetable" },
+        { "name": "White wine", "amount": "1 cup", "category": "other" },
+        { "name": "Shallots", "amount": "3", "category": "vegetable" },
+        { "name": "Butter", "amount": "4 tbsp", "category": "dairy" },
+        { "name": "Parsley", "amount": "1/4 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Clean and debeard mussels",
+        "Sauté shallots in butter",
+        "Add mussels and white wine",
+        "Steam covered for 5-7 minutes",
+        "Fry potatoes until golden",
+        "Serve mussels with frites and parsley"
+      ],
+      "nutrition": {
+        "calories": 520,
+        "protein": 42,
+        "carbs": 48,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 3,
+        "sodium": 890
+      },
+      "tags": ["belgian", "seafood", "classic"],
+      "rating": 4.7,
+      "reviews": 198
+    }
+  ]
+}

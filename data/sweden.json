@@ -1,0 +1,45 @@
+{
+  "country": "Sweden",
+  "flag": "🇸🇪",
+  "recipes": [
+    {
+      "id": "sweden-001",
+      "name": "Swedish Meatballs",
+      "cuisine": "Swedish",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Ground beef", "amount": "1/2 lb", "category": "protein" },
+        { "name": "Ground pork", "amount": "1/2 lb", "category": "protein" },
+        { "name": "Breadcrumbs", "amount": "1/2 cup", "category": "grain" },
+        { "name": "Heavy cream", "amount": "1 cup", "category": "dairy" },
+        { "name": "Beef broth", "amount": "2 cups", "category": "other" },
+        { "name": "Lingonberry jam", "amount": "1/4 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Mix ground meats with breadcrumbs and egg",
+        "Form into small meatballs",
+        "Brown meatballs in butter",
+        "Make cream sauce with broth",
+        "Simmer meatballs in sauce 15 minutes",
+        "Serve with lingonberry jam and potatoes"
+      ],
+      "nutrition": {
+        "calories": 520,
+        "protein": 32,
+        "carbs": 18,
+        "fat": 36,
+        "fiber": 1,
+        "sugar": 8,
+        "sodium": 780
+      },
+      "tags": ["swedish", "meatballs", "creamy"],
+      "rating": 4.7,
+      "reviews": 234
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "country": "Vietnam",
+  "flag": "🇻🇳",
+  "recipes": [
+    {
+      "id": "vietnam-001",
+      "name": "Pho",
+      "cuisine": "Vietnamese",
+      "mealType": ["breakfast", "lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Rice noodles", "amount": "1 lb", "category": "grain" },
+        { "name": "Beef broth", "amount": "8 cups", "category": "other" },
+        { "name": "Beef sirloin", "amount": "8 oz", "category": "protein" },
+        { "name": "Bean sprouts", "amount": "2 cups", "category": "vegetable" },
+        { "name": "Thai basil", "amount": "1 bunch", "category": "other" },
+        { "name": "Lime", "amount": "2", "category": "other" }
+      ],
+      "instructions": [
+        "Soak rice noodles in warm water",
+        "Heat beef broth with spices",
+        "Slice beef paper-thin",
+        "Divide noodles among bowls",
+        "Pour hot broth over noodles and beef",
+        "Serve with herbs and lime wedges"
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 22,
+        "carbs": 45,
+        "fat": 8,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 980
+      },
+      "tags": ["vietnamese", "soup", "noodles"],
+      "rating": 4.8,
+      "reviews": 287
+    }
+  ]
+}

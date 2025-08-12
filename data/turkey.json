@@ -1,0 +1,45 @@
+{
+  "country": "Turkey",
+  "flag": "🇹🇷",
+  "recipes": [
+    {
+      "id": "turkey-001",
+      "name": "Kebab",
+      "cuisine": "Turkish",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Ground lamb", "amount": "1 lb", "category": "protein" },
+        { "name": "Onion", "amount": "1 medium", "category": "vegetable" },
+        { "name": "Parsley", "amount": "1/4 cup", "category": "other" },
+        { "name": "Cumin", "amount": "1 tsp", "category": "spice" },
+        { "name": "Paprika", "amount": "1 tsp", "category": "spice" },
+        { "name": "Pita bread", "amount": "4", "category": "grain" }
+      ],
+      "instructions": [
+        "Mix lamb with minced onion and spices",
+        "Form into sausage shapes around skewers",
+        "Grill over medium-high heat for 12-15 minutes",
+        "Turn frequently for even cooking",
+        "Warm pita bread on grill",
+        "Serve with yogurt sauce and vegetables"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 28,
+        "carbs": 32,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 580
+      },
+      "tags": ["turkish", "grilled", "middle-eastern"],
+      "rating": 4.5,
+      "reviews": 176
+    }
+  ]
+}

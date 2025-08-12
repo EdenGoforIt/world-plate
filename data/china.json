@@ -1,0 +1,45 @@
+{
+  "country": "China",
+  "flag": "🇨🇳",
+  "recipes": [
+    {
+      "id": "china-001",
+      "name": "Kung Pao Chicken",
+      "cuisine": "Chinese",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 10,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Chicken breast", "amount": "1 lb", "category": "protein" },
+        { "name": "Peanuts", "amount": "1/2 cup", "category": "other" },
+        { "name": "Dried chilies", "amount": "8", "category": "spice" },
+        { "name": "Soy sauce", "amount": "3 tbsp", "category": "other" },
+        { "name": "Rice vinegar", "amount": "2 tbsp", "category": "other" },
+        { "name": "Green onions", "amount": "3", "category": "vegetable" }
+      ],
+      "instructions": [
+        "Dice chicken into small cubes",
+        "Marinate with soy sauce and cornstarch",
+        "Heat oil and fry peanuts until golden",
+        "Stir-fry chicken until cooked through",
+        "Add chilies and sauce mixture",
+        "Garnish with green onions"
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 12,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 890
+      },
+      "tags": ["spicy", "chinese", "stir-fry"],
+      "rating": 4.6,
+      "reviews": 187
+    }
+  ]
+}

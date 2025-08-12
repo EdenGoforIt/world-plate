@@ -1,0 +1,45 @@
+{
+  "country": "India",
+  "flag": "🇮🇳",
+  "recipes": [
+    {
+      "id": "india-001",
+      "name": "Chicken Tikka Masala",
+      "cuisine": "Indian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Chicken breast", "amount": "2 lbs", "category": "protein" },
+        { "name": "Yogurt", "amount": "1 cup", "category": "dairy" },
+        { "name": "Tomato sauce", "amount": "2 cups", "category": "vegetable" },
+        { "name": "Heavy cream", "amount": "1/2 cup", "category": "dairy" },
+        { "name": "Garam masala", "amount": "2 tsp", "category": "spice" },
+        { "name": "Ginger", "amount": "1 inch", "category": "other" }
+      ],
+      "instructions": [
+        "Marinate chicken in yogurt and spices for 2 hours",
+        "Grill chicken until charred and cooked",
+        "Make sauce with tomatoes, cream, and spices",
+        "Add grilled chicken to sauce",
+        "Simmer for 10 minutes",
+        "Serve with basmati rice and naan"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 38,
+        "carbs": 15,
+        "fat": 24,
+        "fiber": 3,
+        "sugar": 10,
+        "sodium": 720
+      },
+      "tags": ["spicy", "indian", "curry"],
+      "rating": 4.7,
+      "reviews": 298
+    }
+  ]
+}

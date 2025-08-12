@@ -1,0 +1,44 @@
+{
+  "country": "United States",
+  "flag": "🇺🇸",
+  "recipes": [
+    {
+      "id": "usa-001",
+      "name": "Avocado Toast with Poached Egg",
+      "cuisine": "American",
+      "mealType": ["breakfast"],
+      "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 5,
+      "servings": 1,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Sourdough bread", "amount": "2 slices", "category": "grain" },
+        { "name": "Avocado", "amount": "1 large", "category": "other" },
+        { "name": "Egg", "amount": "1 large", "category": "protein" },
+        { "name": "Lime", "amount": "1/2", "category": "other" },
+        { "name": "Salt and pepper", "amount": "to taste", "category": "spice" }
+      ],
+      "instructions": [
+        "Toast bread until golden brown",
+        "Mash avocado with lime juice, salt, and pepper",
+        "Poach egg in simmering water for 3-4 minutes",
+        "Spread avocado mixture on toast",
+        "Top with poached egg",
+        "Season with additional salt and pepper"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 12,
+        "carbs": 24,
+        "fat": 16,
+        "fiber": 8,
+        "sugar": 2,
+        "sodium": 380
+      },
+      "tags": ["healthy", "quick", "vegetarian"],
+      "rating": 4.6,
+      "reviews": 243
+    }
+  ]
+}

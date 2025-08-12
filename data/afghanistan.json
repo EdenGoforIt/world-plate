@@ -1,0 +1,45 @@
+{
+  "country": "Afghanistan",
+  "flag": "🇦🇫",
+  "recipes": [
+    {
+      "id": "afghanistan-001",
+      "name": "Kabuli Pulao",
+      "cuisine": "Afghan",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Basmati rice", "amount": "3 cups", "category": "grain" },
+        { "name": "Lamb shoulder", "amount": "2 lbs", "category": "protein" },
+        { "name": "Carrots", "amount": "4 large", "category": "vegetable" },
+        { "name": "Raisins", "amount": "1/2 cup", "category": "other" },
+        { "name": "Almonds", "amount": "1/2 cup", "category": "other" },
+        { "name": "Cardamom", "amount": "6 pods", "category": "spice" }
+      ],
+      "instructions": [
+        "Brown lamb pieces with spices",
+        "Add water and simmer 45 minutes",
+        "Cook rice separately with cardamom",
+        "Fry carrots until caramelized",
+        "Layer rice with meat and carrots",
+        "Garnish with almonds and raisins"
+      ],
+      "nutrition": {
+        "calories": 580,
+        "protein": 35,
+        "carbs": 62,
+        "fat": 20,
+        "fiber": 4,
+        "sugar": 12,
+        "sodium": 720
+      },
+      "tags": ["afghan", "rice-pilaf", "festive"],
+      "rating": 4.4,
+      "reviews": 156
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "country": "Germany",
+  "flag": "🇩🇪",
+  "recipes": [
+    {
+      "id": "germany-001",
+      "name": "Sauerbraten",
+      "cuisine": "German",
+      "mealType": ["dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 180,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        { "name": "Beef roast", "amount": "3 lbs", "category": "protein" },
+        { "name": "Red wine vinegar", "amount": "2 cups", "category": "other" },
+        { "name": "Red wine", "amount": "1 cup", "category": "other" },
+        { "name": "Onions", "amount": "2 large", "category": "vegetable" },
+        { "name": "Gingersnaps", "amount": "6", "category": "other" },
+        { "name": "Bay leaves", "amount": "4", "category": "spice" }
+      ],
+      "instructions": [
+        "Marinate beef in vinegar mixture for 3 days",
+        "Remove beef and strain marinade",
+        "Brown beef on all sides",
+        "Add marinade and simmer 3 hours",
+        "Thicken gravy with crushed gingersnaps",
+        "Serve with red cabbage and dumplings"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 42,
+        "carbs": 12,
+        "fat": 28,
+        "fiber": 1,
+        "sugar": 8,
+        "sodium": 650
+      },
+      "tags": ["german", "traditional", "braised"],
+      "rating": 4.3,
+      "reviews": 112
+    }
+  ]
+}
