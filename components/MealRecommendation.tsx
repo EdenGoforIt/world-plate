@@ -4,12 +4,14 @@ import { Ionicons } from '@expo/vector-icons';
 import { Recipe } from '../types/Recipe';
 import { Colors } from '../constants/Colors';
 import { formatCookTime } from '../utils/recipeUtils';
+import { useFavorites } from '../hooks/useFavorites';
 
 interface MealRecommendationProps {
   mealType: 'breakfast' | 'lunch' | 'dinner';
   recipe: Recipe | null;
   onPress: () => void;
   onRefresh: () => void;
+  countryName?: string; // For favorites functionality
 }
 
 const { width } = Dimensions.get('window');
@@ -19,7 +21,16 @@ export const MealRecommendation: React.FC<MealRecommendationProps> = ({
   recipe,
   onPress,
   onRefresh,
+  countryName,
 }) => {
+  const { toggleFavorite, isFavorite } = useFavorites();
+  
+  const handleFavoritePress = async () => {
+    if (recipe && countryName) {
+      await toggleFavorite(recipe.id, countryName);
+    }
+  };
+  
   const getMealIcon = () => {
     switch (mealType) {
       case 'breakfast': return 'cafe-outline';
@@ -68,9 +79,20 @@ export const MealRecommendation: React.FC<MealRecommendationProps> = ({
             <Text style={styles.mealTime}>{getMealTime()}</Text>
           </View>
         </View>
-        <TouchableOpacity onPress={onRefresh} style={styles.refreshButton}>
-          <Ionicons name="refresh-outline" size={20} color={Colors.primary} />
-        </TouchableOpacity>
+        <View style={styles.headerButtons}>
+          {recipe && countryName && (
+            <TouchableOpacity onPress={handleFavoritePress} style={styles.favoriteButton}>
+              <Ionicons
+                name={isFavorite(recipe.id, countryName) ? 'heart' : 'heart-outline'}
+                size={20}
+                color={isFavorite(recipe.id, countryName) ? Colors.primary : Colors.text}
+              />
+            </TouchableOpacity>
+          )}
+          <TouchableOpacity onPress={onRefresh} style={styles.refreshButton}>
+            <Ionicons name="refresh-outline" size={20} color={Colors.primary} />
+          </TouchableOpacity>
+        </View>
       </View>
       
       <View style={styles.recipeContent}>
@@ -140,6 +162,18 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: Colors.text,
     opacity: 0.7,
+  },
+  headerButtons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  favoriteButton: {
+    padding: 8,
+    backgroundColor: Colors.background,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: Colors.primary,
+    marginRight: 8,
   },
   refreshButton: {
     padding: 8,

@@ -8,8 +8,8 @@ import { formatCookTime, getDifficultyColor } from '../utils/recipeUtils';
 interface RecipeCardProps {
   recipe: Recipe;
   onPress: () => void;
-  onFavoritePress?: () => void;
-  isFavorite?: boolean;
+  onFavoritePress: () => void;
+  isFavorite: boolean;
   size?: 'small' | 'medium' | 'large';
 }
 
@@ -19,7 +19,7 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
   recipe,
   onPress,
   onFavoritePress,
-  isFavorite = false,
+  isFavorite,
   size = 'medium',
 }) => {
   const cardWidth = size === 'small' ? width * 0.4 : size === 'large' ? width * 0.9 : width * 0.7;
@@ -28,15 +28,13 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
     <TouchableOpacity style={[styles.container, { width: cardWidth }]} onPress={onPress}>
       <View style={styles.imageContainer}>
         <Image source={{ uri: recipe.image }} style={styles.image} />
-        {onFavoritePress && (
-          <TouchableOpacity style={styles.favoriteButton} onPress={onFavoritePress}>
-            <Ionicons
-              name={isFavorite ? 'heart' : 'heart-outline'}
-              size={24}
-              color={isFavorite ? Colors.primary : '#fff'}
-            />
-          </TouchableOpacity>
-        )}
+        <TouchableOpacity style={styles.favoriteButton} onPress={onFavoritePress}>
+          <Ionicons
+            name={isFavorite ? 'heart' : 'heart-outline'}
+            size={24}
+            color={isFavorite ? '#FF6B6B' : '#fff'}
+          />
+        </TouchableOpacity>
         <View style={styles.overlay}>
           <View style={styles.ratingContainer}>
             <Ionicons name="star" size={16} color={Colors.accent} />
