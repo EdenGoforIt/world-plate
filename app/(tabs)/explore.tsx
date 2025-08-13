@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   View, 
   Text, 
@@ -11,25 +11,91 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 
 import { RecipeCard } from '@/components/RecipeCard';
 import { Colors } from '@/constants/Colors';
-import { searchRecipes, getRecipesByCuisine } from '@/utils/recipeUtils';
+import { getCountries, getCountryData, getRecipeByIdFromCountry } from '@/utils/recipeUtils';
 import { Recipe } from '@/types/Recipe';
-import recipeData from '@/data/recipes.json';
+import { useFavorites } from '@/hooks/useFavorites';
 
 export default function ExploreScreen() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [recipes, setRecipes] = useState<Recipe[]>(recipeData.recipes);
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
+  const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const { toggleFavorite, isFavorite } = useFavorites();
+  
+  // Load all recipes from all countries on component mount
+  useEffect(() => {
+    const loadAllRecipes = () => {
+      const countries = getCountries();
+      const allCountryRecipes: Recipe[] = [];
+      
+      countries.forEach(countryInfo => {
+        const countryData = getCountryData(countryInfo.file);
+        if (countryData && countryData.recipes) {
+          allCountryRecipes.push(...countryData.recipes);
+        }
+      });
+      
+      setAllRecipes(allCountryRecipes);
+      setRecipes(allCountryRecipes);
+    };
+    
+    loadAllRecipes();
+  }, []);
+
+  // Generate categories from all loaded recipes
+  const getUniqueCategories = () => {
+    const cuisineMap = new Map();
+    
+    allRecipes.forEach(recipe => {
+      const cuisine = recipe.cuisine;
+      if (cuisineMap.has(cuisine)) {
+        cuisineMap.set(cuisine, cuisineMap.get(cuisine) + 1);
+      } else {
+        cuisineMap.set(cuisine, 1);
+      }
+    });
+
+    return Array.from(cuisineMap.entries()).map(([cuisine, count], index) => ({
+      id: `cuisine-${index}`,
+      name: cuisine,
+      recipeCount: count,
+      icon: getCuisineIcon(cuisine)
+    }));
+  };
+
+  // Get icon for cuisine type
+  const getCuisineIcon = (cuisine: string): string => {
+    const iconMap: { [key: string]: string } = {
+      'Italian': 'pizza-outline',
+      'Chinese': 'restaurant-outline',
+      'Mexican': 'fast-food-outline',
+      'Indian': 'flame-outline',
+      'French': 'wine-outline',
+      'Japanese': 'fish-outline',
+      'Thai': 'leaf-outline',
+      'Greek': 'sunny-outline',
+      'American': 'fast-food-outline',
+      'Korean': 'bowl-outline',
+    };
+    return iconMap[cuisine] || 'restaurant-outline';
+  };
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
     if (query.trim()) {
-      const results = searchRecipes(query);
+      const lowerQuery = query.toLowerCase();
+      const results = allRecipes.filter(recipe => 
+        recipe.name.toLowerCase().includes(lowerQuery) ||
+        recipe.cuisine.toLowerCase().includes(lowerQuery) ||
+        recipe.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
+      );
       setRecipes(results);
     } else {
-      setRecipes(recipeData.recipes);
+      setRecipes(allRecipes);
     }
     setSelectedCategory(null);
   };
@@ -37,17 +103,19 @@ export default function ExploreScreen() {
   const handleCategoryPress = (categoryName: string) => {
     if (selectedCategory === categoryName) {
       setSelectedCategory(null);
-      setRecipes(recipeData.recipes);
+      setRecipes(allRecipes);
     } else {
       setSelectedCategory(categoryName);
-      const categoryRecipes = getRecipesByCuisine(categoryName);
+      const categoryRecipes = allRecipes.filter(recipe => 
+        recipe.cuisine.toLowerCase() === categoryName.toLowerCase()
+      );
       setRecipes(categoryRecipes);
     }
     setSearchQuery('');
   };
 
   const handleRecipePress = (recipeId: string) => {
-    console.log('Recipe pressed:', recipeId);
+    router.push(`/recipe/${recipeId}`);
   };
 
   const renderCategoryItem = ({ item }: { item: any }) => (
@@ -82,15 +150,22 @@ export default function ExploreScreen() {
     </TouchableOpacity>
   );
 
-  const renderRecipeItem = ({ item }: { item: Recipe }) => (
-    <View style={styles.recipeItem}>
-      <RecipeCard
-        recipe={item}
-        onPress={() => handleRecipePress(item.id)}
-        size="large"
-      />
-    </View>
-  );
+  const renderRecipeItem = ({ item }: { item: Recipe }) => {
+    const recipeData = getRecipeByIdFromCountry(item.id);
+    const countryName = recipeData?.country || '';
+    
+    return (
+      <View style={styles.recipeItem}>
+        <RecipeCard
+          recipe={item}
+          onPress={() => handleRecipePress(item.id)}
+          onFavoritePress={() => toggleFavorite(item.id, countryName)}
+          isFavorite={isFavorite(item.id, countryName)}
+          size="large"
+        />
+      </View>
+    );
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -119,7 +194,7 @@ export default function ExploreScreen() {
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Categories</Text>
           <FlatList
-            data={recipeData.categories}
+            data={getUniqueCategories()}
             renderItem={renderCategoryItem}
             keyExtractor={(item) => item.id}
             horizontal

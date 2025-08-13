@@ -1,24 +1,34 @@
-import React from 'react';
-import { View, Text, ScrollView, StyleSheet, RefreshControl, StatusBar } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { LinearGradient } from 'expo-linear-gradient';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
+import React from "react";
+import {
+  RefreshControl,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-import { MealRecommendation } from '@/components/MealRecommendation';
-import { Colors } from '@/constants/Colors';
-import { useDailyRecommendations } from '@/hooks/useRecipes';
+import { MealRecommendation } from "@/components/MealRecommendation";
+import { Colors } from "@/constants/Colors";
+import { useDailyRecommendations } from "@/hooks/useRecipes";
+import { getRecipeByIdFromCountry } from "@/utils/recipeUtils";
 
 export default function HomeScreen() {
-  const { recommendations, loading, refreshRecommendations } = useDailyRecommendations();
+  const { recommendations, loading, refreshRecommendations } =
+    useDailyRecommendations();
 
   const handleRecipePress = (recipeId: string) => {
-    console.log('Recipe pressed:', recipeId);
+    router.push(`/recipe/${recipeId}`);
   };
 
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
-      
+
       <LinearGradient
         colors={[Colors.primary, Colors.secondary]}
         style={styles.header}
@@ -28,7 +38,9 @@ export default function HomeScreen() {
         <View style={styles.headerContent}>
           <View>
             <Text style={styles.greeting}>Good Morning!</Text>
-            <Text style={styles.subtitle}>What would you like to cook today?</Text>
+            <Text style={styles.subtitle}>
+              What would you like to cook today?
+            </Text>
           </View>
           <Ionicons name="restaurant" size={32} color="#fff" />
         </View>
@@ -56,28 +68,51 @@ export default function HomeScreen() {
         <MealRecommendation
           mealType="breakfast"
           recipe={recommendations.breakfast}
-          onPress={() => recommendations.breakfast && handleRecipePress(recommendations.breakfast.id)}
+          onPress={() =>
+            recommendations.breakfast &&
+            handleRecipePress(recommendations.breakfast.id)
+          }
           onRefresh={() => {
             refreshRecommendations();
           }}
+          countryName={
+            recommendations.breakfast
+              ? getRecipeByIdFromCountry(recommendations.breakfast.id)?.country
+              : undefined
+          }
         />
 
         <MealRecommendation
           mealType="lunch"
           recipe={recommendations.lunch}
-          onPress={() => recommendations.lunch && handleRecipePress(recommendations.lunch.id)}
+          onPress={() =>
+            recommendations.lunch && handleRecipePress(recommendations.lunch.id)
+          }
           onRefresh={() => {
             refreshRecommendations();
           }}
+          countryName={
+            recommendations.lunch
+              ? getRecipeByIdFromCountry(recommendations.lunch.id)?.country
+              : undefined
+          }
         />
 
         <MealRecommendation
           mealType="dinner"
           recipe={recommendations.dinner}
-          onPress={() => recommendations.dinner && handleRecipePress(recommendations.dinner.id)}
+          onPress={() =>
+            recommendations.dinner &&
+            handleRecipePress(recommendations.dinner.id)
+          }
           onRefresh={() => {
             refreshRecommendations();
           }}
+          countryName={
+            recommendations.dinner
+              ? getRecipeByIdFromCountry(recommendations.dinner.id)?.country
+              : undefined
+          }
         />
       </ScrollView>
     </SafeAreaView>
@@ -96,19 +131,19 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 24,
   },
   headerContent: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   greeting: {
     fontSize: 28,
-    fontWeight: '700',
-    color: '#fff',
+    fontWeight: "700",
+    color: "#fff",
     marginBottom: 4,
   },
   subtitle: {
     fontSize: 16,
-    color: '#fff',
+    color: "#fff",
     opacity: 0.9,
   },
   content: {
@@ -123,7 +158,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 22,
-    fontWeight: '700',
+    fontWeight: "700",
     color: Colors.text,
     marginBottom: 4,
   },
