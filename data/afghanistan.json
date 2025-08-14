@@ -6,19 +6,46 @@
       "id": "afghanistan-001",
       "name": "Kabuli Pulao",
       "cuisine": "Afghan",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 60,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Basmati rice", "amount": "3 cups", "category": "grain" },
-        { "name": "Lamb shoulder", "amount": "2 lbs", "category": "protein" },
-        { "name": "Carrots", "amount": "4 large", "category": "vegetable" },
-        { "name": "Raisins", "amount": "1/2 cup", "category": "other" },
-        { "name": "Almonds", "amount": "1/2 cup", "category": "other" },
-        { "name": "Cardamom", "amount": "6 pods", "category": "spice" }
+        {
+          "name": "Basmati rice",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Lamb shoulder",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Carrots",
+          "amount": "4 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Raisins",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "6 pods",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Brown lamb pieces with spices",
@@ -37,9 +64,4751 @@
         "sugar": 12,
         "sodium": 720
       },
-      "tags": ["afghan", "rice-pilaf", "festive"],
+      "tags": [
+        "afghan",
+        "rice-pilaf",
+        "festive"
+      ],
       "rating": 4.4,
       "reviews": 156
+    },
+    {
+      "id": "afghanistan-002",
+      "name": "Mantu (Afghan Dumplings)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 45,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Wonton wrappers",
+          "amount": "36",
+          "category": "grain"
+        },
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix beef, onion, garlic, coriander, and salt",
+        "Fill wonton wrappers, fold and seal",
+        "Steam dumplings 30 minutes",
+        "Serve with tomato sauce and yogurt sauce"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 22,
+        "carbs": 48,
+        "fat": 14,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 620
+      },
+      "tags": [
+        "afghan",
+        "dumplings",
+        "beef"
+      ],
+      "rating": 4.6,
+      "reviews": 98
+    },
+    {
+      "id": "afghanistan-003",
+      "name": "Bolani (Stuffed Flatbread)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "snack",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Potato",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green onion",
+          "amount": "1 bunch",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Make dough, roll out flatbreads",
+        "Boil and mash potatoes, mix with onion, cilantro, salt",
+        "Fill dough, seal, and fry until golden"
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 7,
+        "carbs": 62,
+        "fat": 8,
+        "fiber": 4,
+        "sugar": 2,
+        "sodium": 480
+      },
+      "tags": [
+        "afghan",
+        "flatbread",
+        "vegetarian"
+      ],
+      "rating": 4.5,
+      "reviews": 77
+    },
+    {
+      "id": "afghanistan-004",
+      "name": "Aushak (Leek Dumplings)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 50,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Wonton wrappers",
+          "amount": "36",
+          "category": "grain"
+        },
+        {
+          "name": "Leeks",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ground beef",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Mint",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Fill wrappers with leeks, steam 30 minutes",
+        "Top with beef sauce, yogurt, and mint"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 14,
+        "carbs": 52,
+        "fat": 12,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "dumplings",
+        "leek"
+      ],
+      "rating": 4.5,
+      "reviews": 61
+    },
+    {
+      "id": "afghanistan-005",
+      "name": "Shorwa (Afghan Soup)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Lamb shank",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Potato",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb, add vegetables and chickpeas",
+        "Add water, simmer 90 minutes, season to taste"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 38,
+        "fat": 10,
+        "fiber": 6,
+        "sugar": 7,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "soup",
+        "lamb"
+      ],
+      "rating": 4.4,
+      "reviews": 44
+    },
+    {
+      "id": "afghanistan-006",
+      "name": "Qabili Palau (Afghan Pilaf)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 70,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Lamb",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Carrots",
+          "amount": "4 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Raisins",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "6 pods",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with spices, simmer until tender",
+        "Cook rice, layer with meat, carrots, raisins, and almonds"
+      ],
+      "nutrition": {
+        "calories": 590,
+        "protein": 36,
+        "carbs": 64,
+        "fat": 21,
+        "fiber": 4,
+        "sugar": 13,
+        "sodium": 730
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "festive"
+      ],
+      "rating": 4.5,
+      "reviews": 102
+    },
+    {
+      "id": "afghanistan-007",
+      "name": "Korma (Afghan Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef stew meat",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown beef with onion and garlic",
+        "Add tomato and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 32,
+        "carbs": 10,
+        "fat": 28,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 600
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "beef"
+      ],
+      "rating": 4.4,
+      "reviews": 38
+    },
+    {
+      "id": "afghanistan-008",
+      "name": "Sabzi (Spinach Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 45,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spinach",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Lamb",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with onion and garlic",
+        "Add spinach and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 22,
+        "carbs": 8,
+        "fat": 20,
+        "fiber": 4,
+        "sugar": 3,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "lamb"
+      ],
+      "rating": 4.5,
+      "reviews": 29
+    },
+    {
+      "id": "afghanistan-009",
+      "name": "Sheer Korma (Milk Dessert)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Vermicelli",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Raisins",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/4 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Toast vermicelli in butter",
+        "Add milk, sugar, cardamom, simmer until thickened",
+        "Stir in raisins and almonds"
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 6,
+        "carbs": 38,
+        "fat": 9,
+        "fiber": 1,
+        "sugar": 22,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "dessert",
+        "milk"
+      ],
+      "rating": 4.7,
+      "reviews": 54
+    },
+    {
+      "id": "afghanistan-010",
+      "name": "Firnee (Afghan Pudding)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": "3 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cornstarch",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Pistachios",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix milk, sugar, cornstarch, and cardamom, cook until thickened",
+        "Pour into bowls, chill, garnish with pistachios"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 32,
+        "fat": 4,
+        "fiber": 0,
+        "sugar": 20,
+        "sodium": 60
+      },
+      "tags": [
+        "afghan",
+        "dessert",
+        "pudding"
+      ],
+      "rating": 4.6,
+      "reviews": 41
+    },
+    {
+      "id": "afghanistan-011",
+      "name": "Naan-e-Afghani (Afghan Bread)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "side",
+        "breakfast"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "4 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Yeast",
+          "amount": "2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Water",
+          "amount": "1 1/2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Sesame seeds",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix flour, yeast, salt, and water, knead dough",
+        "Let rise, shape into loaves, sprinkle with sesame, bake"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 6,
+        "carbs": 42,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 1,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "bread",
+        "side"
+      ],
+      "rating": 4.5,
+      "reviews": 67
+    },
+    {
+      "id": "afghanistan-012",
+      "name": "Kofta (Meatballs)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients, form meatballs",
+        "Brown in pan, simmer in tomato sauce"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 8,
+        "fat": 24,
+        "fiber": 1,
+        "sugar": 3,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "meatballs",
+        "beef"
+      ],
+      "rating": 4.4,
+      "reviews": 38
+    },
+    {
+      "id": "afghanistan-013",
+      "name": "Banjaan Borani (Eggplant with Yogurt)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "side",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 35,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Mint",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Fry eggplant slices, layer with tomato and onion sauce",
+        "Top with yogurt and mint"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 18,
+        "fat": 10,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "eggplant",
+        "vegetarian"
+      ],
+      "rating": 4.6,
+      "reviews": 41
+    },
+    {
+      "id": "afghanistan-014",
+      "name": "Shir Berinj (Rice Pudding)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Rose water",
+          "amount": "1 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cook rice in milk with sugar and cardamom",
+        "Add rose water, chill before serving"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 4,
+        "fiber": 0,
+        "sugar": 20,
+        "sodium": 60
+      },
+      "tags": [
+        "afghan",
+        "dessert",
+        "rice"
+      ],
+      "rating": 4.5,
+      "reviews": 33
+    },
+    {
+      "id": "afghanistan-015",
+      "name": "Lawang (Yogurt Lamb Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Lamb",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with onion and garlic",
+        "Add yogurt and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 28,
+        "carbs": 8,
+        "fat": 26,
+        "fiber": 1,
+        "sugar": 5,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "lamb"
+      ],
+      "rating": 4.5,
+      "reviews": 29
+    },
+    {
+      "id": "afghanistan-016",
+      "name": "Aush (Noodle Soup)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Egg noodles",
+          "amount": "8 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Ground beef",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Mint",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Brown beef with onion and garlic",
+        "Add tomato, chickpeas, simmer, add noodles",
+        "Top with yogurt and mint"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 14,
+        "carbs": 42,
+        "fat": 10,
+        "fiber": 5,
+        "sugar": 7,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "soup",
+        "noodle"
+      ],
+      "rating": 4.4,
+      "reviews": 38
+    },
+    {
+      "id": "afghanistan-017",
+      "name": "Kichiri Qoroot (Rice and Yogurt)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Qoroot (dried yogurt)",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice, top with qoroot sauce and fried onions"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 6,
+        "carbs": 54,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 22
+    },
+    {
+      "id": "afghanistan-018",
+      "name": "Mastawa (Rice Soup)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Lamb",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with onion, add carrot, chickpeas, rice, and water",
+        "Simmer until rice is tender"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 14,
+        "carbs": 42,
+        "fat": 10,
+        "fiber": 5,
+        "sugar": 7,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "soup",
+        "rice"
+      ],
+      "rating": 4.4,
+      "reviews": 38
+    },
+    {
+      "id": "afghanistan-019",
+      "name": "Kadu Borani (Braised Pumpkin)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "side",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pumpkin",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Mint",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Sauté pumpkin with onion, garlic, and tomato",
+        "Top with yogurt and mint"
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 24,
+        "fat": 2,
+        "fiber": 4,
+        "sugar": 8,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "pumpkin",
+        "vegetarian"
+      ],
+      "rating": 4.5,
+      "reviews": 27
+    },
+    {
+      "id": "afghanistan-020",
+      "name": "Shola (Rice and Mung Bean Porridge)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Mung beans",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice and mung beans with onion, garlic, and spices until creamy"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 7,
+        "carbs": 44,
+        "fat": 2,
+        "fiber": 6,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "porridge",
+        "vegetarian"
+      ],
+      "rating": 4.4,
+      "reviews": 19
+    },
+    {
+      "id": "afghanistan-021",
+      "name": "Dopiaza (Onion Lamb Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Lamb",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "3 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with onion and garlic",
+        "Add spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 32,
+        "carbs": 10,
+        "fat": 28,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 600
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "lamb"
+      ],
+      "rating": 4.4,
+      "reviews": 38
+    },
+    {
+      "id": "afghanistan-022",
+      "name": "Qorma-e-Sabzi (Spinach and Lamb Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Lamb",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Spinach",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with onion and garlic",
+        "Add spinach and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 24,
+        "carbs": 8,
+        "fat": 22,
+        "fiber": 4,
+        "sugar": 3,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "lamb"
+      ],
+      "rating": 4.5,
+      "reviews": 27
+    },
+    {
+      "id": "afghanistan-023",
+      "name": "Qorma-e-Alu Bukhara (Beef and Prune Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 80,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef stew meat",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Prunes",
+          "amount": "1 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown beef with onion and garlic",
+        "Add prunes and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 370,
+        "protein": 26,
+        "carbs": 18,
+        "fat": 20,
+        "fiber": 3,
+        "sugar": 12,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "beef"
+      ],
+      "rating": 4.4,
+      "reviews": 19
+    },
+    {
+      "id": "afghanistan-024",
+      "name": "Qorma-e-Bamia (Okra Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Okra",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Lamb",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with onion and garlic",
+        "Add okra, tomato, and salt, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 14,
+        "carbs": 12,
+        "fat": 12,
+        "fiber": 4,
+        "sugar": 5,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "okra"
+      ],
+      "rating": 4.3,
+      "reviews": 17
+    },
+    {
+      "id": "afghanistan-025",
+      "name": "Qorma-e-Kachaloo (Potato Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add potato, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 38,
+        "fat": 2,
+        "fiber": 5,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "potato"
+      ],
+      "rating": 4.2,
+      "reviews": 13
+    },
+    {
+      "id": "afghanistan-026",
+      "name": "Qorma-e-Baingan (Eggplant Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add eggplant, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 18,
+        "fat": 4,
+        "fiber": 5,
+        "sugar": 6,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "eggplant"
+      ],
+      "rating": 4.3,
+      "reviews": 15
+    },
+    {
+      "id": "afghanistan-027",
+      "name": "Qorma-e-Tarkari (Vegetable Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add vegetables and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 3,
+        "carbs": 22,
+        "fat": 1,
+        "fiber": 5,
+        "sugar": 6,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 12
+    },
+    {
+      "id": "afghanistan-028",
+      "name": "Qorma-e-Gosht (Beef Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 70,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef stew meat",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown beef with onion and garlic, add spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 6,
+        "fat": 22,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "beef"
+      ],
+      "rating": 4.3,
+      "reviews": 18
+    },
+    {
+      "id": "afghanistan-029",
+      "name": "Qorma-e-Kadu (Pumpkin Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pumpkin",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add pumpkin, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 2,
+        "carbs": 20,
+        "fat": 0,
+        "fiber": 4,
+        "sugar": 8,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "pumpkin"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-030",
+      "name": "Qorma-e-Murgh (Chicken Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken thighs",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown chicken with onion and garlic, add spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 26,
+        "carbs": 4,
+        "fat": 20,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "chicken"
+      ],
+      "rating": 4.4,
+      "reviews": 16
+    },
+    {
+      "id": "afghanistan-031",
+      "name": "Qorma-e-Badenjan (Eggplant and Tomato Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add eggplant, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 2,
+        "carbs": 18,
+        "fat": 3,
+        "fiber": 5,
+        "sugar": 7,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "eggplant"
+      ],
+      "rating": 4.3,
+      "reviews": 13
+    },
+    {
+      "id": "afghanistan-032",
+      "name": "Qorma-e-Gulpea (Cauliflower Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Cauliflower",
+          "amount": "1 head",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add cauliflower, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 3,
+        "carbs": 16,
+        "fat": 1,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "cauliflower"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "afghanistan-033",
+      "name": "Qorma-e-Lobia (Bean Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Red kidney beans",
+          "amount": "2 cups",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add beans, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 7,
+        "carbs": 30,
+        "fat": 1,
+        "fiber": 8,
+        "sugar": 4,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "beans"
+      ],
+      "rating": 4.3,
+      "reviews": 14
+    },
+    {
+      "id": "afghanistan-034",
+      "name": "Qorma-e-Mash (Mung Bean Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Mung beans",
+          "amount": "2 cups",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add mung beans, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 140,
+        "protein": 8,
+        "carbs": 26,
+        "fat": 1,
+        "fiber": 7,
+        "sugar": 3,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "mung beans"
+      ],
+      "rating": 4.2,
+      "reviews": 13
+    },
+    {
+      "id": "afghanistan-035",
+      "name": "Qorma-e-Shalgham (Turnip Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Turnip",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add turnip, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 70,
+        "protein": 2,
+        "carbs": 16,
+        "fat": 0,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "turnip"
+      ],
+      "rating": 4.1,
+      "reviews": 9
+    },
+    {
+      "id": "afghanistan-036",
+      "name": "Qorma-e-Torai (Zucchini Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Zucchini",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add zucchini, tomato, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 60,
+        "protein": 2,
+        "carbs": 12,
+        "fat": 0,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "zucchini"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-037",
+      "name": "Qorma-e-Palak (Spinach Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spinach",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add spinach and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 50,
+        "protein": 2,
+        "carbs": 8,
+        "fat": 0,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "spinach"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "afghanistan-038",
+      "name": "Qorma-e-Kadu Palak (Pumpkin and Spinach Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pumpkin",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spinach",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add pumpkin, spinach, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 70,
+        "protein": 2,
+        "carbs": 14,
+        "fat": 0,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-039",
+      "name": "Qorma-e-Tarkari Palak (Vegetable and Spinach Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spinach",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add vegetables, spinach, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 2,
+        "carbs": 16,
+        "fat": 0,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-040",
+      "name": "Qorma-e-Tarkari Kadu (Vegetable and Pumpkin Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pumpkin",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add vegetables, pumpkin, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 2,
+        "carbs": 16,
+        "fat": 0,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-041",
+      "name": "Qorma-e-Tarkari Lobia (Vegetable and Bean Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red kidney beans",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add vegetables, beans, and spices, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 100,
+        "protein": 3,
+        "carbs": 20,
+        "fat": 0,
+        "fiber": 5,
+        "sugar": 4,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-042",
+      "name": "Sheer Korma (Afghan Vermicelli Pudding)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Vermicelli",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Raisins",
+          "amount": "1/4 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/4 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Pistachios",
+          "amount": "1/4 cup",
+          "category": "nut"
+        }
+      ],
+      "instructions": [
+        "Fry vermicelli in a little oil, add milk and sugar, simmer, add cardamom, raisins, and nuts, cook until thickened."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 7,
+        "carbs": 38,
+        "fat": 9,
+        "fiber": 2,
+        "sugar": 22,
+        "sodium": 90
+      },
+      "tags": [
+        "afghan",
+        "dessert",
+        "pudding"
+      ],
+      "rating": 4.7,
+      "reviews": 28
+    },
+    {
+      "id": "afghanistan-043",
+      "name": "Shorwa (Afghan Soup)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 90,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Lamb shank",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Salt",
+          "amount": "1.5 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Simmer lamb with vegetables, chickpeas, and spices until meat is tender and soup is flavorful."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 13,
+        "carbs": 22,
+        "fat": 7,
+        "fiber": 5,
+        "sugar": 5,
+        "sodium": 420
+      },
+      "tags": [
+        "afghan",
+        "soup",
+        "lamb"
+      ],
+      "rating": 4.5,
+      "reviews": 19
+    },
+    {
+      "id": "afghanistan-044",
+      "name": "Kichiri Qoroot (Rice and Yogurt Curd)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Qoroot (dried yogurt curd)",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Lentils",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice and lentils, mix with qoroot and sautéed onion, season with salt."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 10,
+        "carbs": 62,
+        "fat": 3,
+        "fiber": 7,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 12
+    },
+    {
+      "id": "afghanistan-045",
+      "name": "Aushak (Leek Dumplings)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 45,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Leeks",
+          "amount": "2 cups chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "dairy"
+        },
+        {
+          "name": "Ground beef",
+          "amount": "1/2 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mint",
+          "amount": "1 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Prepare dough, fill with leeks, boil dumplings, top with meat sauce, yogurt, and mint."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 15,
+        "carbs": 48,
+        "fat": 9,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "dumpling",
+        "leek"
+      ],
+      "rating": 4.8,
+      "reviews": 34
+    },
+    {
+      "id": "afghanistan-046",
+      "name": "Sabzi (Afghan Spinach)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "side",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spinach",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add spinach and spices, cook until wilted."
+      ],
+      "nutrition": {
+        "calories": 60,
+        "protein": 3,
+        "carbs": 10,
+        "fat": 1,
+        "fiber": 4,
+        "sugar": 2,
+        "sodium": 120
+      },
+      "tags": [
+        "afghan",
+        "side",
+        "spinach"
+      ],
+      "rating": 4.4,
+      "reviews": 15
+    },
+    {
+      "id": "afghanistan-047",
+      "name": "Kabab-e-Murgh (Chicken Kebab)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken breast",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "fruit"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate chicken, skewer, grill until cooked through."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 28,
+        "carbs": 4,
+        "fat": 9,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "kebab",
+        "chicken"
+      ],
+      "rating": 4.6,
+      "reviews": 22
+    },
+    {
+      "id": "afghanistan-048",
+      "name": "Kabab-e-Gosfand (Lamb Kebab)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Lamb leg",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "fruit"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate lamb, skewer, grill until cooked through."
+      ],
+      "nutrition": {
+        "calories": 250,
+        "protein": 27,
+        "carbs": 4,
+        "fat": 14,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "kebab",
+        "lamb"
+      ],
+      "rating": 4.7,
+      "reviews": 25
+    },
+    {
+      "id": "afghanistan-049",
+      "name": "Kabab-e-Chopan (Shepherd's Kebab)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Lamb ribs",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Salt",
+          "amount": "1.5 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Rub lamb ribs with spices, skewer, grill over open flame until charred and cooked."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 22,
+        "carbs": 2,
+        "fat": 25,
+        "fiber": 0,
+        "sugar": 1,
+        "sodium": 420
+      },
+      "tags": [
+        "afghan",
+        "kebab",
+        "lamb"
+      ],
+      "rating": 4.8,
+      "reviews": 29
+    },
+    {
+      "id": "afghanistan-050",
+      "name": "Kabab-e-Degi (Pot Kebab)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef",
+          "amount": "1.5 lbs",
+          "category": "meat"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1.5 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1.5 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Layer beef and vegetables in a pot with spices, cook slowly until tender."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 7,
+        "fat": 22,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 520
+      },
+      "tags": [
+        "afghan",
+        "kebab",
+        "beef"
+      ],
+      "rating": 4.5,
+      "reviews": 17
+    },
+    {
+      "id": "afghanistan-051",
+      "name": "Kabab-e-Farshi (Pan Kebab)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix beef with spices and vegetables, form into patties, pan-fry until cooked through."
+      ],
+      "nutrition": {
+        "calories": 290,
+        "protein": 22,
+        "carbs": 4,
+        "fat": 20,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "kebab",
+        "beef"
+      ],
+      "rating": 4.4,
+      "reviews": 14
+    },
+    {
+      "id": "afghanistan-052",
+      "name": "Kofta Challow (Afghan Meatballs with Rice)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "amount": "1.5 lbs",
+          "category": "meat"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Basmati rice",
+          "amount": "2 cups",
+          "category": "grain"
+        }
+      ],
+      "instructions": [
+        "Mix beef, onion, garlic, coriander, egg, salt, and pepper. Form meatballs, brown in pan, simmer in tomato sauce. Serve with cooked basmati rice."
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 22,
+        "carbs": 48,
+        "fat": 14,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 620
+      },
+      "tags": [
+        "afghan",
+        "meatballs",
+        "rice"
+      ],
+      "rating": 4.5,
+      "reviews": 21
+    },
+    {
+      "id": "afghanistan-053",
+      "name": "Mastawa-e-Bamia (Okra Rice Soup)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Okra",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Lamb",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown lamb with onion, add tomato, okra, rice, and water. Simmer until rice and okra are tender."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 14,
+        "carbs": 42,
+        "fat": 10,
+        "fiber": 5,
+        "sugar": 7,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "soup",
+        "okra"
+      ],
+      "rating": 4.3,
+      "reviews": 13
+    },
+    {
+      "id": "afghanistan-054",
+      "name": "Narenj Palaw (Orange Rice)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Orange peel",
+          "amount": "1/4 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tbsp",
+          "category": "sweetener"
+        },
+        {
+          "name": "Lamb",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/4 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Pistachios",
+          "amount": "1/4 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice with orange peel, sugar, and cardamom. Layer with cooked lamb, almonds, and pistachios."
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 18,
+        "carbs": 68,
+        "fat": 14,
+        "fiber": 4,
+        "sugar": 12,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "orange"
+      ],
+      "rating": 4.6,
+      "reviews": 18
+    },
+    {
+      "id": "afghanistan-055",
+      "name": "Shola-e-Ghorbandi (Herbed Rice and Beans)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Mung beans",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Dill",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Green onion",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice and mung beans with herbs and green onion until creamy."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 7,
+        "carbs": 44,
+        "fat": 2,
+        "fiber": 6,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "herb",
+        "vegetarian"
+      ],
+      "rating": 4.4,
+      "reviews": 15
+    },
+    {
+      "id": "afghanistan-056",
+      "name": "Badenjan-e-Borani (Eggplant Yogurt Dip)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "side",
+        "appetizer"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mint",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Roast or fry eggplant, mash and mix with yogurt, garlic, mint, and salt."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 18,
+        "fat": 4,
+        "fiber": 5,
+        "sugar": 6,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "eggplant",
+        "yogurt",
+        "vegetarian"
+      ],
+      "rating": 4.5,
+      "reviews": 17
+    },
+    {
+      "id": "afghanistan-057",
+      "name": "Kichiri Shola (Rice and Lentil Porridge)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Lentils",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice and lentils with onion, garlic, and spices until creamy."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 7,
+        "carbs": 44,
+        "fat": 1,
+        "fiber": 6,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "afghan",
+        "porridge",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 12
+    },
+    {
+      "id": "afghanistan-058",
+      "name": "Kadu Chalaw (Pumpkin Rice)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Pumpkin",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice, sauté pumpkin with onion, garlic, and spices, mix together."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 4,
+        "carbs": 44,
+        "fat": 1,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "pumpkin",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "afghanistan-059",
+      "name": "Nakhod-e-Garm (Afghan Spiced Chickpeas)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "snack",
+        "side"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Chickpeas",
+          "amount": "2 cups cooked",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1/2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "1 clove",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "1 tbsp",
+          "category": "fruit"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add chickpeas and spices, finish with lemon juice."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 7,
+        "carbs": 30,
+        "fat": 3,
+        "fiber": 8,
+        "sugar": 4,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "chickpeas",
+        "snack",
+        "vegetarian"
+      ],
+      "rating": 4.4,
+      "reviews": 16
+    },
+    {
+      "id": "afghanistan-060",
+      "name": "Shor Nakhod (Chickpea Salad)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "snack",
+        "side"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Chickpeas",
+          "amount": "2 cups cooked",
+          "category": "legume"
+        },
+        {
+          "name": "Red onion",
+          "amount": "1/2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "fruit"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients together and serve chilled."
+      ],
+      "nutrition": {
+        "calories": 170,
+        "protein": 7,
+        "carbs": 28,
+        "fat": 2,
+        "fiber": 7,
+        "sugar": 4,
+        "sodium": 180
+      },
+      "tags": [
+        "afghan",
+        "chickpeas",
+        "salad",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 13
+    },
+    {
+      "id": "afghanistan-061",
+      "name": "Boulanee Kachaloo (Potato Turnover)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "snack",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Potato",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green onion",
+          "amount": "1 bunch",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Make dough, roll out, fill with potato mixture, seal, and fry until golden."
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 7,
+        "carbs": 62,
+        "fat": 8,
+        "fiber": 4,
+        "sugar": 2,
+        "sodium": 480
+      },
+      "tags": [
+        "afghan",
+        "turnover",
+        "potato",
+        "vegetarian"
+      ],
+      "rating": 4.5,
+      "reviews": 18
+    },
+    {
+      "id": "afghanistan-062",
+      "name": "Shola-e-Tarkari (Vegetable Rice Porridge)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 80,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice and vegetables with spices until creamy."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 38,
+        "fat": 1,
+        "fiber": 5,
+        "sugar": 4,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "porridge",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-063",
+      "name": "Kofta Nakhod (Meatballs with Chickpeas)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup cooked",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix beef, onion, garlic, coriander, egg, salt, and pepper. Form meatballs, brown in pan, simmer in tomato sauce with chickpeas."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 18,
+        "carbs": 22,
+        "fat": 18,
+        "fiber": 5,
+        "sugar": 3,
+        "sodium": 420
+      },
+      "tags": [
+        "afghan",
+        "meatballs",
+        "chickpeas"
+      ],
+      "rating": 4.4,
+      "reviews": 14
+    },
+    {
+      "id": "afghanistan-064",
+      "name": "Sabzi Challow (Spinach Rice)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Spinach",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice, sauté spinach with onion, garlic, and spices, mix together."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 5,
+        "carbs": 44,
+        "fat": 1,
+        "fiber": 4,
+        "sugar": 3,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "spinach",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 12
+    },
+    {
+      "id": "afghanistan-065",
+      "name": "Kadu Borani Challow (Pumpkin with Rice)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Pumpkin",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice, sauté pumpkin with onion, garlic, and spices, mix together."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 4,
+        "carbs": 44,
+        "fat": 1,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "pumpkin",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "afghanistan-066",
+      "name": "Narenj Challow (Orange Rice)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Orange peel",
+          "amount": "1/4 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tbsp",
+          "category": "sweetener"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/4 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Pistachios",
+          "amount": "1/4 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rice with orange peel, sugar, and cardamom. Garnish with almonds and pistachios."
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 8,
+        "carbs": 68,
+        "fat": 8,
+        "fiber": 4,
+        "sugar": 12,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "rice",
+        "orange",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-067",
+      "name": "Aush-e-Tarkari (Vegetable Noodle Soup)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Egg noodles",
+          "amount": "8 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook noodles and vegetables with spices until tender."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 6,
+        "carbs": 42,
+        "fat": 2,
+        "fiber": 5,
+        "sugar": 4,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "soup",
+        "noodle",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "afghanistan-068",
+      "name": "Banjan-e-Tarkari (Eggplant Vegetable Stew)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add vegetables and spices, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 22,
+        "fat": 2,
+        "fiber": 6,
+        "sugar": 5,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "stew",
+        "eggplant",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 12
+    },
+    {
+      "id": "afghanistan-069",
+      "name": "Korma-e-Tarkari (Vegetable Korma)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add vegetables and spices, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 3,
+        "carbs": 22,
+        "fat": 1,
+        "fiber": 5,
+        "sugar": 6,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "korma",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "afghanistan-070",
+      "name": "Kofta Sabzi (Herbed Meatballs)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "meat"
+        },
+        {
+          "name": "Dill",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Green onion",
+          "amount": "2 tbsp",
+          "category": "vegetable"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix beef with herbs, green onion, egg, salt, and pepper. Form meatballs, brown in pan, simmer in tomato sauce."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 8,
+        "fat": 24,
+        "fiber": 1,
+        "sugar": 3,
+        "sodium": 540
+      },
+      "tags": [
+        "afghan",
+        "meatballs",
+        "herb"
+      ],
+      "rating": 4.4,
+      "reviews": 13
+    },
+    {
+      "id": "afghanistan-071",
+      "name": "Sabzi Nakhod (Spinach and Chickpeas)",
+      "cuisine": "Afghan",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spinach",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup cooked",
+          "category": "legume"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic, add spinach, chickpeas, and spices, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 5,
+        "carbs": 20,
+        "fat": 2,
+        "fiber": 5,
+        "sugar": 3,
+        "sodium": 220
+      },
+      "tags": [
+        "afghan",
+        "spinach",
+        "chickpeas",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 12
     }
   ]
 }
