@@ -9,6 +9,7 @@ import {
   SectionList,
   Image
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { useFavorites } from '../../hooks/useFavorites';
 import { Recipe } from '../../types/Recipe';
@@ -25,21 +26,21 @@ export default function FavoritesScreen() {
 
   if (loading) {
     return (
-      <View style={styles.loadingContainer}>
+      <SafeAreaView style={styles.loadingContainer}>
         <ActivityIndicator size="large" color="#E74C3C" />
         <Text style={styles.loadingText}>Loading favorites...</Text>
-      </View>
+      </SafeAreaView>
     );
   }
 
   if (allFavorites.length === 0) {
     return (
-      <View style={styles.emptyContainer}>
+      <SafeAreaView style={styles.emptyContainer}>
         <Text style={styles.emptyTitle}>No Favorites Yet</Text>
         <Text style={styles.emptySubtitle}>
           Start exploring recipes and add some to your favorites!
         </Text>
-      </View>
+      </SafeAreaView>
     );
   }
 
@@ -91,7 +92,7 @@ export default function FavoritesScreen() {
   );
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>My Favorites</Text>
         <Text style={styles.totalCount}>
@@ -108,7 +109,7 @@ export default function FavoritesScreen() {
         showsVerticalScrollIndicator={false}
         stickySectionHeadersEnabled={true}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
