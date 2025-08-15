@@ -30,6 +30,7 @@ export interface Recipe {
   tags: string[];
   rating: number;
   reviews: number;
+  description?: string;
 }
 
 export interface Category {
@@ -42,4 +43,10 @@ export interface Category {
 export interface RecipeData {
   recipes: Recipe[];
   categories: Category[];
+}
+
+export interface Country {
+  country: string;
+  flag: string;
+  recipes: Recipe[];
 }
