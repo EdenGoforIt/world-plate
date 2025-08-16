@@ -6,19 +6,46 @@
       "id": "bangladesh-001",
       "name": "Biryani",
       "cuisine": "Bangladeshi",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 60,
       "servings": 6,
       "difficulty": "hard",
       "ingredients": [
-        { "name": "Basmati rice", "amount": "3 cups", "category": "grain" },
-        { "name": "Mutton or beef", "amount": "2 lbs", "category": "protein" },
-        { "name": "Yogurt", "amount": "1 cup", "category": "dairy" },
-        { "name": "Fried onions", "amount": "1 cup", "category": "vegetable" },
-        { "name": "Saffron", "amount": "1 pinch", "category": "spice" },
-        { "name": "Ghee", "amount": "4 tbsp", "category": "dairy" }
+        {
+          "name": "Basmati rice",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Mutton or beef",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Fried onions",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Saffron",
+          "amount": "1 pinch",
+          "category": "spice"
+        },
+        {
+          "name": "Ghee",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        }
       ],
       "instructions": [
         "Marinate meat with yogurt and spices",
@@ -37,9 +64,3051 @@
         "sugar": 6,
         "sodium": 820
       },
-      "tags": ["bangladeshi", "biryani", "festive"],
+      "tags": [
+        "bangladeshi",
+        "biryani",
+        "festive"
+      ],
       "rating": 4.7,
       "reviews": 267
+    },
+    {
+      "id": "bangladesh-002",
+      "name": "Bhuna Khichuri",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Moong dal",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Peas",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ghee",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Roast dal, sauté vegetables, add rice and dal, cook with spices until done."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 10,
+        "carbs": 60,
+        "fat": 6,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "bangladeshi",
+        "rice",
+        "vegetarian"
+      ],
+      "rating": 4.5,
+      "reviews": 88
+    },
+    {
+      "id": "bangladesh-003",
+      "name": "Morog Polao",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Basmati rice",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ghee",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate chicken, cook with rice and spices, finish with ghee and fried onions."
+      ],
+      "nutrition": {
+        "calories": 540,
+        "protein": 32,
+        "carbs": 58,
+        "fat": 18,
+        "fiber": 2,
+        "sugar": 5,
+        "sodium": 720
+      },
+      "tags": [
+        "bangladeshi",
+        "chicken",
+        "rice"
+      ],
+      "rating": 4.6,
+      "reviews": 120
+    },
+    {
+      "id": "bangladesh-004",
+      "name": "Shorshe Ilish",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Hilsa fish",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mustard paste",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate fish, cook in mustard paste and spices, finish with mustard oil."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 18,
+        "carbs": 2,
+        "fat": 20,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 180
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "mustard"
+      ],
+      "rating": 4.8,
+      "reviews": 97
+    },
+    {
+      "id": "bangladesh-005",
+      "name": "Panta Ilish",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Cooked rice (soaked)",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Hilsa fish",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Soak rice overnight, fry fish, serve with rice, chili, and mustard oil."
+      ],
+      "nutrition": {
+        "calories": 310,
+        "protein": 14,
+        "carbs": 38,
+        "fat": 10,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "rice"
+      ],
+      "rating": 4.4,
+      "reviews": 54
+    },
+    {
+      "id": "bangladesh-006",
+      "name": "Chingri Malai Curry",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Prawns",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Coconut milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ginger paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Garlic paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté prawns, cook with coconut milk and spices until thickened."
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 20,
+        "carbs": 6,
+        "fat": 18,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 210
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "curry"
+      ],
+      "rating": 4.7,
+      "reviews": 61
+    },
+    {
+      "id": "bangladesh-007",
+      "name": "Bhapa Pitha",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "breakfast",
+        "snack",
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rice flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Coconut",
+          "amount": "1 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Jaggery",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fill rice flour with coconut and jaggery, steam until set."
+      ],
+      "nutrition": {
+        "calories": 140,
+        "protein": 2,
+        "carbs": 30,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 10,
+        "sodium": 40
+      },
+      "tags": [
+        "bangladeshi",
+        "pitha",
+        "dessert"
+      ],
+      "rating": 4.5,
+      "reviews": 33
+    },
+    {
+      "id": "bangladesh-008",
+      "name": "Fuchka (Puchka)",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "snack",
+        "street food"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 10,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Semolina",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Flour",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Tamarind",
+          "amount": "2 tbsp",
+          "category": "fruit"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Make puris, fill with potato-chickpea mix, top with tamarind water and spices."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 5,
+        "carbs": 36,
+        "fat": 2,
+        "fiber": 4,
+        "sugar": 2,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "street food",
+        "snack"
+      ],
+      "rating": 4.6,
+      "reviews": 45
+    },
+    {
+      "id": "bangladesh-009",
+      "name": "Patishapta",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rice flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Coconut",
+          "amount": "1 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Jaggery",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Make thin crepes, fill with coconut-jaggery mix, roll up and serve."
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 3,
+        "carbs": 32,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 12,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "dessert",
+        "pitha"
+      ],
+      "rating": 4.4,
+      "reviews": 29
+    },
+    {
+      "id": "bangladesh-010",
+      "name": "Shemai",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Vermicelli",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Ghee",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Roast vermicelli in ghee, cook with milk, sugar, and cardamom until thickened."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 6,
+        "fiber": 1,
+        "sugar": 18,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "dessert",
+        "vermicelli"
+      ],
+      "rating": 4.5,
+      "reviews": 38
+    },
+    {
+      "id": "bangladesh-011",
+      "name": "Kacchi Biryani",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 90,
+      "servings": 8,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Basmati rice",
+          "amount": "4 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Mutton",
+          "amount": "2.5 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1.5 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Potatoes",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Fried onions",
+          "amount": "1.5 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ghee",
+          "amount": "5 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate mutton, layer with rice, potatoes, and fried onions, cook on dum until tender."
+      ],
+      "nutrition": {
+        "calories": 720,
+        "protein": 40,
+        "carbs": 68,
+        "fat": 28,
+        "fiber": 3,
+        "sugar": 7,
+        "sodium": 900
+      },
+      "tags": [
+        "bangladeshi",
+        "biryani",
+        "mutton"
+      ],
+      "rating": 4.8,
+      "reviews": 180
+    },
+    {
+      "id": "bangladesh-012",
+      "name": "Doi Begun",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Mustard seeds",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry eggplant, mix with yogurt and spices, garnish with green chili."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 4,
+        "carbs": 14,
+        "fat": 6,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "eggplant",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 32
+    },
+    {
+      "id": "bangladesh-013",
+      "name": "Shutki Bhorta",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Dried fish",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry dried fish, mash with onion, chili, and mustard oil."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 12,
+        "carbs": 4,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 180
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "bhorta"
+      ],
+      "rating": 4.1,
+      "reviews": 19
+    },
+    {
+      "id": "bangladesh-014",
+      "name": "Lau Chingri",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Bottle gourd",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Prawns",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook gourd and prawns with onion, chili, and spices until tender."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 8,
+        "carbs": 8,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 100
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "gourd"
+      ],
+      "rating": 4.2,
+      "reviews": 22
+    },
+    {
+      "id": "bangladesh-015",
+      "name": "Chingri Bhorta",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Prawns",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry prawns, mash with onion, chili, and mustard oil."
+      ],
+      "nutrition": {
+        "calories": 100,
+        "protein": 10,
+        "carbs": 3,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "bhorta"
+      ],
+      "rating": 4.2,
+      "reviews": 17
+    },
+    {
+      "id": "bangladesh-016",
+      "name": "Dhokar Dalna",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chana dal",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Make dal cakes, fry, cook in tomato-spice gravy with potatoes."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 8,
+        "carbs": 32,
+        "fat": 6,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 140
+      },
+      "tags": [
+        "bangladeshi",
+        "dal",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 21
+    },
+    {
+      "id": "bangladesh-017",
+      "name": "Begun Bhorta",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Roast eggplant, mash with onion, chili, and mustard oil."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 2,
+        "carbs": 10,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "eggplant",
+        "bhorta"
+      ],
+      "rating": 4.2,
+      "reviews": 15
+    },
+    {
+      "id": "bangladesh-018",
+      "name": "Murgir Jhol",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "3 tbsp",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Cook chicken and vegetables with spices until tender."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 24,
+        "carbs": 16,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 220
+      },
+      "tags": [
+        "bangladeshi",
+        "chicken",
+        "curry"
+      ],
+      "rating": 4.4,
+      "reviews": 28
+    },
+    {
+      "id": "bangladesh-019",
+      "name": "Bhindi Bhaji",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Okra",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Sauté okra and onion with chili and spices until cooked."
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 2,
+        "carbs": 10,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 3,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "okra",
+        "vegetarian"
+      ],
+      "rating": 4.1,
+      "reviews": 13
+    },
+    {
+      "id": "bangladesh-020",
+      "name": "Payesh",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Rice",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Bay leaf",
+          "amount": "1",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Simmer rice in milk with sugar, cardamom, and bay leaf until thick and creamy."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 32,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 18,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "dessert",
+        "rice"
+      ],
+      "rating": 4.6,
+      "reviews": 25
+    },
+    {
+      "id": "bangladesh-021",
+      "name": "Shorshe Bata Maach",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Fish fillets",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mustard paste",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate fish, cook in mustard paste and spices, finish with mustard oil."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 18,
+        "carbs": 2,
+        "fat": 16,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "mustard"
+      ],
+      "rating": 4.4,
+      "reviews": 18
+    },
+    {
+      "id": "bangladesh-022",
+      "name": "Chingri Bhuna",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Prawns",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ginger paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Garlic paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté prawns with onion, tomato, and spices until cooked and thickened."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 16,
+        "carbs": 6,
+        "fat": 8,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "bhuna"
+      ],
+      "rating": 4.3,
+      "reviews": 15
+    },
+    {
+      "id": "bangladesh-023",
+      "name": "Aloo Bhorta",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 10,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Boil potatoes, mash with onion, chili, mustard oil, and salt."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 22,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "potato",
+        "bhorta"
+      ],
+      "rating": 4.2,
+      "reviews": 14
+    },
+    {
+      "id": "bangladesh-024",
+      "name": "Dimer Dalna",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Fry eggs and potatoes, cook in onion-tomato gravy with spices."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 8,
+        "carbs": 16,
+        "fat": 8,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "egg",
+        "curry"
+      ],
+      "rating": 4.3,
+      "reviews": 16
+    },
+    {
+      "id": "bangladesh-025",
+      "name": "Kumro Bhorta",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pumpkin",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Boil pumpkin, mash with onion, chili, mustard oil, and salt."
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 2,
+        "carbs": 16,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "pumpkin",
+        "bhorta"
+      ],
+      "rating": 4.1,
+      "reviews": 12
+    },
+    {
+      "id": "bangladesh-026",
+      "name": "Murgir Roast",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ghee",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate chicken, roast with onions, yogurt, and spices until tender."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 8,
+        "fat": 20,
+        "fiber": 1,
+        "sugar": 4,
+        "sodium": 180
+      },
+      "tags": [
+        "bangladeshi",
+        "chicken",
+        "roast"
+      ],
+      "rating": 4.5,
+      "reviews": 19
+    },
+    {
+      "id": "bangladesh-027",
+      "name": "Shami Kabab",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "snack",
+        "appetizer"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 40,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef or mutton",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Chana dal",
+          "amount": "1/2 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Cook meat and dal, grind, shape into patties, fry until golden."
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 10,
+        "carbs": 8,
+        "fat": 8,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "kabab",
+        "snack"
+      ],
+      "rating": 4.4,
+      "reviews": 21
+    },
+    {
+      "id": "bangladesh-028",
+      "name": "Bhapa Doi",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Yogurt",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Condensed milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients, steam until set, chill before serving."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 6,
+        "carbs": 32,
+        "fat": 4,
+        "fiber": 0,
+        "sugar": 24,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "dessert",
+        "yogurt"
+      ],
+      "rating": 4.5,
+      "reviews": 18
+    },
+    {
+      "id": "bangladesh-029",
+      "name": "Murgir Rezala",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ghee",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate chicken, cook with yogurt, onions, ghee, and spices until tender."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 8,
+        "fat": 20,
+        "fiber": 1,
+        "sugar": 4,
+        "sodium": 180
+      },
+      "tags": [
+        "bangladeshi",
+        "chicken",
+        "rezala"
+      ],
+      "rating": 4.6,
+      "reviews": 20
+    },
+    {
+      "id": "bangladesh-030",
+      "name": "Panta Bhath",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Cooked rice (soaked)",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Soak rice overnight, serve with salt, chili, and onion."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 26,
+        "fat": 0,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "rice",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "bangladesh-031",
+      "name": "Chitol Macher Muitha",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Chitol fish",
+          "amount": "1.5 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Make fish dumplings, fry, cook in spicy gravy with potatoes and onions."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 22,
+        "carbs": 10,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "muitha"
+      ],
+      "rating": 4.4,
+      "reviews": 13
+    },
+    {
+      "id": "bangladesh-032",
+      "name": "Pui Shak Chingri",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Malabar spinach (Pui shak)",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Prawns",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook spinach and prawns with onion, chili, and spices until tender."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 8,
+        "carbs": 8,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "greens"
+      ],
+      "rating": 4.2,
+      "reviews": 10
+    },
+    {
+      "id": "bangladesh-033",
+      "name": "Bhapa Ilish",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Hilsa fish",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mustard paste",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Coat fish with mustard paste and spices, steam until cooked through."
+      ],
+      "nutrition": {
+        "calories": 240,
+        "protein": 18,
+        "carbs": 2,
+        "fat": 16,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "steamed"
+      ],
+      "rating": 4.5,
+      "reviews": 14
+    },
+    {
+      "id": "bangladesh-034",
+      "name": "Kolar Bora",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "snack",
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Ripe bananas",
+          "amount": "2",
+          "category": "fruit"
+        },
+        {
+          "name": "Rice flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/4 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cardamom",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Mash bananas, mix with flour, sugar, and cardamom, fry spoonfuls until golden."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 2,
+        "carbs": 24,
+        "fat": 2,
+        "fiber": 1,
+        "sugar": 10,
+        "sodium": 20
+      },
+      "tags": [
+        "bangladeshi",
+        "banana",
+        "fritter"
+      ],
+      "rating": 4.1,
+      "reviews": 9
+    },
+    {
+      "id": "bangladesh-035",
+      "name": "Shorshe Pabda",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pabda fish",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mustard paste",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook fish in mustard paste, chili, turmeric, and salt until tender."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 17,
+        "carbs": 2,
+        "fat": 14,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 110
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "mustard"
+      ],
+      "rating": 4.3,
+      "reviews": 11
+    },
+    {
+      "id": "bangladesh-036",
+      "name": "Daler Bora",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "snack",
+        "appetizer",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Lentils (masoor dal)",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Grind soaked lentils, mix with onion, chili, and spices, fry spoonfuls until crisp."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 5,
+        "carbs": 14,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 1,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "lentil",
+        "fritter"
+      ],
+      "rating": 4.2,
+      "reviews": 12
+    },
+    {
+      "id": "bangladesh-037",
+      "name": "Kacha Aamer Chutney",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "side",
+        "condiment",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Raw mango",
+          "amount": "2",
+          "category": "fruit"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Mustard seeds",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook mango with sugar, mustard seeds, and salt until thick and jammy."
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 1,
+        "carbs": 20,
+        "fat": 0,
+        "fiber": 1,
+        "sugar": 16,
+        "sodium": 20
+      },
+      "tags": [
+        "bangladeshi",
+        "mango",
+        "chutney"
+      ],
+      "rating": 4.3,
+      "reviews": 10
+    },
+    {
+      "id": "bangladesh-038",
+      "name": "Shutki Bhorta (Dried Fish Mash)",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Dried fish",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry dried fish, mash with onion, chili, and mustard oil."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 12,
+        "carbs": 4,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 180
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "bhorta"
+      ],
+      "rating": 4.1,
+      "reviews": 8
+    },
+    {
+      "id": "bangladesh-039",
+      "name": "Chingri Bhorta (Prawn Mash)",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Prawns",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry prawns, mash with onion, chili, and mustard oil."
+      ],
+      "nutrition": {
+        "calories": 100,
+        "protein": 10,
+        "carbs": 3,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "bhorta"
+      ],
+      "rating": 4.2,
+      "reviews": 7
+    },
+    {
+      "id": "bangladesh-040",
+      "name": "Doi Chingri",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Prawns",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ginger paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Garlic paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Marinate prawns in yogurt and spices, cook with onion, ginger, and garlic until thickened."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 16,
+        "carbs": 6,
+        "fat": 8,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "yogurt"
+      ],
+      "rating": 4.4,
+      "reviews": 11
+    },
+    {
+      "id": "bangladesh-041",
+      "name": "Shorshe Rui",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rohu fish",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mustard paste",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook rohu fish in mustard paste, chili, turmeric, and salt until tender."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 18,
+        "carbs": 2,
+        "fat": 14,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 110
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "mustard"
+      ],
+      "rating": 4.3,
+      "reviews": 12
+    },
+    {
+      "id": "bangladesh-042",
+      "name": "Bhapa Chingri",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Prawns",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mustard paste",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Coconut",
+          "amount": "1/2 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix prawns with mustard paste, coconut, chili, and salt, steam until cooked."
+      ],
+      "nutrition": {
+        "calories": 170,
+        "protein": 16,
+        "carbs": 4,
+        "fat": 10,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 100
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "steamed"
+      ],
+      "rating": 4.4,
+      "reviews": 10
+    },
+    {
+      "id": "bangladesh-043",
+      "name": "Kumro Chingri",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pumpkin",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Prawns",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pumpkin and prawns with onion, chili, and spices until tender."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 8,
+        "carbs": 8,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "pumpkin"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "bangladesh-044",
+      "name": "Doi Potol",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pointed gourd (potol)",
+          "amount": "6",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Mustard seeds",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry potol, cook in yogurt and spices until tender."
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 3,
+        "carbs": 10,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "gourd",
+        "vegetarian"
+      ],
+      "rating": 4.1,
+      "reviews": 9
+    },
+    {
+      "id": "bangladesh-045",
+      "name": "Shorshe Begun",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard paste",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry eggplant, cook in mustard paste, chili, and spices until soft."
+      ],
+      "nutrition": {
+        "calories": 70,
+        "protein": 2,
+        "carbs": 10,
+        "fat": 2,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 60
+      },
+      "tags": [
+        "bangladeshi",
+        "eggplant",
+        "mustard"
+      ],
+      "rating": 4.0,
+      "reviews": 8
+    },
+    {
+      "id": "bangladesh-046",
+      "name": "Murgir Jhal Fry",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 35,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "1.5 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ginger paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Garlic paste",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "3 tbsp",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Fry chicken with onion, ginger, garlic, chili, and spices until crisp and spicy."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 22,
+        "carbs": 6,
+        "fat": 16,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "chicken",
+        "spicy"
+      ],
+      "rating": 4.3,
+      "reviews": 13
+    },
+    {
+      "id": "bangladesh-047",
+      "name": "Daler Puri",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "snack",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Lentils (masoor dal)",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Spices",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Make dough with dal, flour, and spices, roll out, fry until golden."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 4,
+        "carbs": 20,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 1,
+        "sodium": 70
+      },
+      "tags": [
+        "bangladeshi",
+        "lentil",
+        "snack"
+      ],
+      "rating": 4.1,
+      "reviews": 10
+    },
+    {
+      "id": "bangladesh-048",
+      "name": "Panta Ilish Bhorta",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Cooked rice (soaked)",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Hilsa fish",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        }
+      ],
+      "instructions": [
+        "Soak rice overnight, fry fish, mash with chili, mustard oil, and salt, serve with rice."
+      ],
+      "nutrition": {
+        "calories": 310,
+        "protein": 14,
+        "carbs": 38,
+        "fat": 10,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "fish",
+        "rice"
+      ],
+      "rating": 4.4,
+      "reviews": 12
+    },
+    {
+      "id": "bangladesh-049",
+      "name": "Chingri Bhorta Special",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Prawns",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green chili",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry prawns, mash with onion, chili, and mustard oil. Add extra green chili for heat."
+      ],
+      "nutrition": {
+        "calories": 100,
+        "protein": 10,
+        "carbs": 3,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "bangladeshi",
+        "prawn",
+        "bhorta"
+      ],
+      "rating": 4.3,
+      "reviews": 9
+    },
+    {
+      "id": "bangladesh-050",
+      "name": "Mishti Doi",
+      "cuisine": "Bangladeshi",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 360,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Yogurt",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Boil milk, add sugar, cool, mix in yogurt, set overnight until thick and sweet."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 6,
+        "carbs": 32,
+        "fat": 4,
+        "fiber": 0,
+        "sugar": 24,
+        "sodium": 80
+      },
+      "tags": [
+        "bangladeshi",
+        "dessert",
+        "yogurt"
+      ],
+      "rating": 4.7,
+      "reviews": 15
     }
   ]
 }
