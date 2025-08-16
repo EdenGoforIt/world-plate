@@ -6,19 +6,46 @@
       "id": "australia-001",
       "name": "Meat Pie",
       "cuisine": "Australian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 45,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
-        { "name": "Puff pastry", "amount": "2 sheets", "category": "grain" },
-        { "name": "Onion", "amount": "1 large", "category": "vegetable" },
-        { "name": "Beef stock", "amount": "1 cup", "category": "other" },
-        { "name": "Worcestershire sauce", "amount": "2 tbsp", "category": "other" },
-        { "name": "Egg", "amount": "1", "category": "protein" }
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Puff pastry",
+          "amount": "2 sheets",
+          "category": "grain"
+        },
+        {
+          "name": "Onion",
+          "amount": "1 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Beef stock",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Worcestershire sauce",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "protein"
+        }
       ],
       "instructions": [
         "Cook beef and onion until browned",
@@ -37,9 +64,558 @@
         "sugar": 4,
         "sodium": 780
       },
-      "tags": ["australian", "savory-pie", "comfort-food"],
+      "tags": [
+        "australian",
+        "savory-pie",
+        "comfort-food"
+      ],
       "rating": 4.3,
       "reviews": 142
+    },
+    {
+      "id": "australia-002",
+      "name": "Lamingtons",
+      "cuisine": "Australian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 12,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Butter cake",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Chocolate icing",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Desiccated coconut",
+          "amount": "1 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cut cake into squares, dip in chocolate icing, roll in coconut."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 2,
+        "carbs": 32,
+        "fat": 9,
+        "fiber": 2,
+        "sugar": 18,
+        "sodium": 90
+      },
+      "tags": [
+        "australian",
+        "dessert",
+        "cake"
+      ],
+      "rating": 4.6,
+      "reviews": 67
+    },
+    {
+      "id": "australia-003",
+      "name": "Pavlova",
+      "cuisine": "Australian",
+      "mealType": [
+        "dessert",
+        "holiday"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 90,
+      "servings": 8,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Egg whites",
+          "amount": "4",
+          "category": "other"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cornstarch",
+          "amount": "2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Vinegar",
+          "amount": "1 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Whipped cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Fresh fruit",
+          "amount": "2 cups",
+          "category": "fruit"
+        }
+      ],
+      "instructions": [
+        "Beat egg whites, gradually add sugar, fold in cornstarch and vinegar, bake low and slow, top with cream and fruit."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 3,
+        "carbs": 36,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 30,
+        "sodium": 40
+      },
+      "tags": [
+        "australian",
+        "dessert",
+        "meringue"
+      ],
+      "rating": 4.8,
+      "reviews": 54
+    },
+    {
+      "id": "australia-004",
+      "name": "Damper",
+      "cuisine": "Australian",
+      "mealType": [
+        "side",
+        "bread"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Self-raising flour",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, form dough, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 150,
+        "protein": 4,
+        "carbs": 28,
+        "fat": 3,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "australian",
+        "bread",
+        "bushfood"
+      ],
+      "rating": 4.2,
+      "reviews": 29
+    },
+    {
+      "id": "australia-005",
+      "name": "Barramundi with Lemon Myrtle",
+      "cuisine": "Australian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Barramundi fillets",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Lemon myrtle",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Lemon",
+          "amount": "1",
+          "category": "fruit"
+        }
+      ],
+      "instructions": [
+        "Season fish, pan-fry in oil, finish with lemon juice and lemon myrtle."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 28,
+        "carbs": 2,
+        "fat": 10,
+        "fiber": 0,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "australian",
+        "fish",
+        "native"
+      ],
+      "rating": 4.5,
+      "reviews": 18
+    },
+    {
+      "id": "australia-006",
+      "name": "Pumpkin Scones",
+      "cuisine": "Australian",
+      "mealType": [
+        "breakfast",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 12,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Self-raising flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Mashed pumpkin",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/4 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "other"
+        },
+        {
+          "name": "Milk",
+          "amount": "1/4 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, form dough, cut rounds, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 3,
+        "carbs": 20,
+        "fat": 3,
+        "fiber": 1,
+        "sugar": 5,
+        "sodium": 120
+      },
+      "tags": [
+        "australian",
+        "scone",
+        "pumpkin"
+      ],
+      "rating": 4.4,
+      "reviews": 22
+    },
+    {
+      "id": "australia-007",
+      "name": "Chicken Parmigiana",
+      "cuisine": "Australian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken breast",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "other"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ham",
+          "amount": "4 slices",
+          "category": "protein"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Crumb chicken, fry, top with ham, sauce, and cheese, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 32,
+        "carbs": 18,
+        "fat": 24,
+        "fiber": 1,
+        "sugar": 4,
+        "sodium": 680
+      },
+      "tags": [
+        "australian",
+        "chicken",
+        "pub-food"
+      ],
+      "rating": 4.5,
+      "reviews": 37
+    },
+    {
+      "id": "australia-008",
+      "name": "Anzac Biscuits",
+      "cuisine": "Australian",
+      "mealType": [
+        "snack",
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 24,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Rolled oats",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Sugar",
+          "amount": "3/4 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Desiccated coconut",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Golden syrup",
+          "amount": "2 tbsp",
+          "category": "sweetener"
+        },
+        {
+          "name": "Baking soda",
+          "amount": "1 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix dry ingredients, melt butter and syrup, combine, form balls, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 1,
+        "carbs": 14,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 6,
+        "sodium": 40
+      },
+      "tags": [
+        "australian",
+        "biscuit",
+        "anzac"
+      ],
+      "rating": 4.7,
+      "reviews": 44
+    },
+    {
+      "id": "australia-009",
+      "name": "Kangaroo Steak",
+      "cuisine": "Australian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 10,
+      "servings": 2,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Kangaroo fillets",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "1 tbsp",
+          "category": "oil"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Season fillets, sear in hot pan, rest before serving."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 32,
+        "carbs": 0,
+        "fat": 6,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 120
+      },
+      "tags": [
+        "australian",
+        "kangaroo",
+        "grilled"
+      ],
+      "rating": 4.1,
+      "reviews": 12
+    },
+    {
+      "id": "australia-010",
+      "name": "Witchetty Grub",
+      "cuisine": "Australian",
+      "mealType": [
+        "snack",
+        "bushfood"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 5,
+      "servings": 4,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Witchetty grubs",
+          "amount": "8",
+          "category": "protein"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Skewer and roast grubs over fire until golden."
+      ],
+      "nutrition": {
+        "calories": 70,
+        "protein": 6,
+        "carbs": 0,
+        "fat": 5,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 60
+      },
+      "tags": [
+        "australian",
+        "bushfood",
+        "native"
+      ],
+      "rating": 3.8,
+      "reviews": 5
     }
   ]
 }
