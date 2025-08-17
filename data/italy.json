@@ -466,23 +466,65 @@
       "id": "italy-008",
       "name": "Osso Buco alla Milanese",
       "cuisine": "Italian",
-      "mealType": ["dinner"],
+      "mealType": [
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 120,
       "servings": 4,
       "difficulty": "hard",
       "ingredients": [
-        {"name": "Veal shanks", "amount": "4", "category": "protein"},
-        {"name": "Onion", "amount": "1", "category": "vegetable"},
-        {"name": "Carrot", "amount": "1", "category": "vegetable"},
-        {"name": "Celery", "amount": "1 stalk", "category": "vegetable"},
-        {"name": "White wine", "amount": "1 cup", "category": "other"},
-        {"name": "Beef broth", "amount": "2 cups", "category": "protein"},
-        {"name": "Tomato paste", "amount": "2 tbsp", "category": "vegetable"},
-        {"name": "Flour", "amount": "1/4 cup", "category": "grain"},
-        {"name": "Olive oil", "amount": "2 tbsp", "category": "other"},
-        {"name": "Butter", "amount": "2 tbsp", "category": "dairy"}
+        {
+          "name": "Veal shanks",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        },
+        {
+          "name": "White wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Beef broth",
+          "amount": "2 cups",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato paste",
+          "amount": "2 tbsp",
+          "category": "vegetable"
+        },
+        {
+          "name": "Flour",
+          "amount": "1/4 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
       ],
       "instructions": [
         "Dredge veal shanks in flour and brown in oil and butter",
@@ -491,8 +533,20 @@
         "Simmer covered for 2 hours until tender",
         "Serve with gremolata and risotto"
       ],
-      "nutrition": {"calories": 650, "protein": 38, "carbs": 18, "fat": 45, "fiber": 2, "sugar": 5, "sodium": 780},
-      "tags": ["classic", "milanese", "italian"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 38,
+        "carbs": 18,
+        "fat": 45,
+        "fiber": 2,
+        "sugar": 5,
+        "sodium": 780
+      },
+      "tags": [
+        "classic",
+        "milanese",
+        "italian"
+      ],
       "rating": 4.8,
       "reviews": 87
     },
@@ -500,27 +554,66 @@
       "id": "italy-009",
       "name": "Polenta e Funghi",
       "cuisine": "Italian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
       "prepTime": 10,
       "cookTime": 40,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Polenta", "amount": "1 cup", "category": "grain"},
-        {"name": "Mixed mushrooms", "amount": "12 oz", "category": "vegetable"},
-        {"name": "Garlic", "amount": "2 cloves", "category": "vegetable"},
-        {"name": "Parsley", "amount": "2 tbsp", "category": "herb"},
-        {"name": "Olive oil", "amount": "2 tbsp", "category": "other"},
-        {"name": "Vegetable broth", "amount": "3 cups", "category": "vegetable"}
+        {
+          "name": "Polenta",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Mixed mushrooms",
+          "amount": "12 oz",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Vegetable broth",
+          "amount": "3 cups",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Cook polenta in broth until thick and creamy",
         "Sauté mushrooms and garlic in olive oil",
         "Serve mushrooms over polenta, garnish with parsley"
       ],
-      "nutrition": {"calories": 280, "protein": 7, "carbs": 48, "fat": 7, "fiber": 4, "sugar": 3, "sodium": 420},
-      "tags": ["vegetarian", "northern", "italian"],
+      "nutrition": {
+        "calories": 280,
+        "protein": 7,
+        "carbs": 48,
+        "fat": 7,
+        "fiber": 4,
+        "sugar": 3,
+        "sodium": 420
+      },
+      "tags": [
+        "vegetarian",
+        "northern",
+        "italian"
+      ],
       "rating": 4.5,
       "reviews": 54
     },
@@ -528,19 +621,45 @@
       "id": "italy-010",
       "name": "Saltimbocca alla Romana",
       "cuisine": "Italian",
-      "mealType": ["dinner"],
+      "mealType": [
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 15,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Veal cutlets", "amount": "8", "category": "protein"},
-        {"name": "Prosciutto", "amount": "8 slices", "category": "protein"},
-        {"name": "Sage leaves", "amount": "8", "category": "herb"},
-        {"name": "White wine", "amount": "1/2 cup", "category": "other"},
-        {"name": "Butter", "amount": "2 tbsp", "category": "dairy"},
-        {"name": "Olive oil", "amount": "1 tbsp", "category": "other"}
+        {
+          "name": "Veal cutlets",
+          "amount": "8",
+          "category": "protein"
+        },
+        {
+          "name": "Prosciutto",
+          "amount": "8 slices",
+          "category": "protein"
+        },
+        {
+          "name": "Sage leaves",
+          "amount": "8",
+          "category": "herb"
+        },
+        {
+          "name": "White wine",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "1 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Top each veal cutlet with prosciutto and sage, secure with toothpick",
@@ -548,8 +667,20 @@
         "Add wine and simmer until reduced",
         "Serve hot"
       ],
-      "nutrition": {"calories": 340, "protein": 32, "carbs": 2, "fat": 22, "fiber": 0, "sugar": 0, "sodium": 900},
-      "tags": ["roman", "classic", "italian"],
+      "nutrition": {
+        "calories": 340,
+        "protein": 32,
+        "carbs": 2,
+        "fat": 22,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 900
+      },
+      "tags": [
+        "roman",
+        "classic",
+        "italian"
+      ],
       "rating": 4.7,
       "reviews": 61
     },
@@ -557,21 +688,56 @@
       "id": "italy-011",
       "name": "Pasta e Fagioli",
       "cuisine": "Italian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 40,
       "servings": 6,
       "difficulty": "easy",
       "ingredients": [
-        {"name": "Ditalini pasta", "amount": "1 cup", "category": "grain"},
-        {"name": "Cannellini beans", "amount": "2 cups", "category": "protein"},
-        {"name": "Carrot", "amount": "1", "category": "vegetable"},
-        {"name": "Celery", "amount": "1 stalk", "category": "vegetable"},
-        {"name": "Onion", "amount": "1", "category": "vegetable"},
-        {"name": "Tomato", "amount": "1", "category": "vegetable"},
-        {"name": "Olive oil", "amount": "2 tbsp", "category": "other"},
-        {"name": "Vegetable broth", "amount": "4 cups", "category": "vegetable"}
+        {
+          "name": "Ditalini pasta",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Cannellini beans",
+          "amount": "2 cups",
+          "category": "protein"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Vegetable broth",
+          "amount": "4 cups",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Sauté onion, carrot, and celery in olive oil",
@@ -579,8 +745,20 @@
         "Add pasta and cook until tender",
         "Season and serve"
       ],
-      "nutrition": {"calories": 320, "protein": 12, "carbs": 56, "fat": 6, "fiber": 8, "sugar": 5, "sodium": 540},
-      "tags": ["soup", "comfort", "italian"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 12,
+        "carbs": 56,
+        "fat": 6,
+        "fiber": 8,
+        "sugar": 5,
+        "sodium": 540
+      },
+      "tags": [
+        "soup",
+        "comfort",
+        "italian"
+      ],
       "rating": 4.6,
       "reviews": 73
     },
@@ -588,20 +766,51 @@
       "id": "italy-012",
       "name": "Arancini di Riso",
       "cuisine": "Italian",
-      "mealType": ["lunch", "snack"],
+      "mealType": [
+        "lunch",
+        "snack"
+      ],
       "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 30,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Cooked risotto", "amount": "3 cups", "category": "grain"},
-        {"name": "Mozzarella", "amount": "4 oz", "category": "dairy"},
-        {"name": "Ham", "amount": "2 oz", "category": "protein"},
-        {"name": "Eggs", "amount": "2", "category": "protein"},
-        {"name": "Breadcrumbs", "amount": "1 cup", "category": "grain"},
-        {"name": "Flour", "amount": "1/2 cup", "category": "grain"},
-        {"name": "Vegetable oil", "amount": "2 cups", "category": "other"}
+        {
+          "name": "Cooked risotto",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "4 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Ham",
+          "amount": "2 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Flour",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Vegetable oil",
+          "amount": "2 cups",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Form risotto into balls, stuff with mozzarella and ham",
@@ -609,8 +818,20 @@
         "Deep fry until golden brown",
         "Drain and serve hot"
       ],
-      "nutrition": {"calories": 410, "protein": 13, "carbs": 54, "fat": 16, "fiber": 2, "sugar": 2, "sodium": 480},
-      "tags": ["sicilian", "snack", "italian"],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 54,
+        "fat": 16,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 480
+      },
+      "tags": [
+        "sicilian",
+        "snack",
+        "italian"
+      ],
       "rating": 4.7,
       "reviews": 65
     },
@@ -618,22 +839,61 @@
       "id": "italy-013",
       "name": "Caponata Siciliana",
       "cuisine": "Italian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 40,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Eggplant", "amount": "2", "category": "vegetable"},
-        {"name": "Tomato", "amount": "2", "category": "vegetable"},
-        {"name": "Celery", "amount": "2 stalks", "category": "vegetable"},
-        {"name": "Onion", "amount": "1", "category": "vegetable"},
-        {"name": "Green olives", "amount": "1/2 cup", "category": "other"},
-        {"name": "Capers", "amount": "2 tbsp", "category": "other"},
-        {"name": "Vinegar", "amount": "1/4 cup", "category": "other"},
-        {"name": "Sugar", "amount": "2 tbsp", "category": "other"},
-        {"name": "Olive oil", "amount": "3 tbsp", "category": "other"}
+        {
+          "name": "Eggplant",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "2 stalks",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green olives",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Capers",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Vinegar",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Cube and fry eggplant, set aside",
@@ -642,8 +902,20 @@
         "Return eggplant, simmer 10 minutes",
         "Serve warm or cold"
       ],
-      "nutrition": {"calories": 210, "protein": 3, "carbs": 28, "fat": 10, "fiber": 7, "sugar": 12, "sodium": 420},
-      "tags": ["sicilian", "vegetarian", "italian"],
+      "nutrition": {
+        "calories": 210,
+        "protein": 3,
+        "carbs": 28,
+        "fat": 10,
+        "fiber": 7,
+        "sugar": 12,
+        "sodium": 420
+      },
+      "tags": [
+        "sicilian",
+        "vegetarian",
+        "italian"
+      ],
       "rating": 4.5,
       "reviews": 49
     },
@@ -651,20 +923,51 @@
       "id": "italy-014",
       "name": "Panzanella Toscana",
       "cuisine": "Italian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 0,
       "servings": 4,
       "difficulty": "easy",
       "ingredients": [
-        {"name": "Stale bread", "amount": "4 cups", "category": "grain"},
-        {"name": "Tomato", "amount": "3", "category": "vegetable"},
-        {"name": "Cucumber", "amount": "1", "category": "vegetable"},
-        {"name": "Red onion", "amount": "1/2", "category": "vegetable"},
-        {"name": "Basil", "amount": "1/4 cup", "category": "herb"},
-        {"name": "Olive oil", "amount": "3 tbsp", "category": "other"},
-        {"name": "Red wine vinegar", "amount": "2 tbsp", "category": "other"}
+        {
+          "name": "Stale bread",
+          "amount": "4 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Tomato",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cucumber",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red onion",
+          "amount": "1/2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Basil",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Red wine vinegar",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Soak bread in water, squeeze dry",
@@ -672,8 +975,20 @@
         "Dress with oil and vinegar, toss with basil",
         "Chill before serving"
       ],
-      "nutrition": {"calories": 180, "protein": 5, "carbs": 32, "fat": 5, "fiber": 3, "sugar": 6, "sodium": 340},
-      "tags": ["tuscan", "salad", "italian"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 5,
+        "carbs": 32,
+        "fat": 5,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 340
+      },
+      "tags": [
+        "tuscan",
+        "salad",
+        "italian"
+      ],
       "rating": 4.4,
       "reviews": 38
     },
@@ -681,19 +996,45 @@
       "id": "italy-015",
       "name": "Tiramisu",
       "cuisine": "Italian",
-      "mealType": ["dessert"],
+      "mealType": [
+        "dessert"
+      ],
       "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 0,
       "servings": 8,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Ladyfingers", "amount": "24", "category": "grain"},
-        {"name": "Mascarpone", "amount": "1 cup", "category": "dairy"},
-        {"name": "Eggs", "amount": "3", "category": "protein"},
-        {"name": "Sugar", "amount": "1/2 cup", "category": "other"},
-        {"name": "Espresso", "amount": "1 cup", "category": "other"},
-        {"name": "Cocoa powder", "amount": "2 tbsp", "category": "other"}
+        {
+          "name": "Ladyfingers",
+          "amount": "24",
+          "category": "grain"
+        },
+        {
+          "name": "Mascarpone",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Espresso",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cocoa powder",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Whisk egg yolks and sugar, fold in mascarpone",
@@ -701,11 +1042,5438 @@
         "Repeat layers, dust with cocoa powder",
         "Chill for 4 hours before serving"
       ],
-      "nutrition": {"calories": 340, "protein": 7, "carbs": 38, "fat": 18, "fiber": 1, "sugar": 22, "sodium": 120},
-      "tags": ["dessert", "classic", "italian"],
+      "nutrition": {
+        "calories": 340,
+        "protein": 7,
+        "carbs": 38,
+        "fat": 18,
+        "fiber": 1,
+        "sugar": 22,
+        "sodium": 120
+      },
+      "tags": [
+        "dessert",
+        "classic",
+        "italian"
+      ],
       "rating": 4.9,
       "reviews": 210
+    },
+    {
+      "id": "italy-016",
+      "name": "Bruschetta al Pomodoro",
+      "cuisine": "Italian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 5,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Baguette",
+          "amount": "1 loaf",
+          "category": "grain"
+        },
+        {
+          "name": "Tomatoes",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Basil",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Toast baguette slices",
+        "Rub with garlic",
+        "Top with diced tomatoes, basil, oil, salt, and pepper",
+        "Serve immediately"
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 20,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 180
+      },
+      "tags": [
+        "appetizer",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 95
+    },
+    {
+      "id": "italy-017",
+      "name": "Parmigiana di Melanzane",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 45,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Eggplant",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "8 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Basil",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Slice and salt eggplant, let drain 30 min",
+        "Fry eggplant in olive oil",
+        "Layer eggplant, tomato sauce, mozzarella, and Parmesan",
+        "Repeat layers, top with basil",
+        "Bake at 375°F (190°C) for 30 min"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 13,
+        "carbs": 22,
+        "fat": 20,
+        "fiber": 6,
+        "sugar": 10,
+        "sodium": 600
+      },
+      "tags": [
+        "vegetarian",
+        "baked",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 120
+    },
+    {
+      "id": "italy-018",
+      "name": "Pasta alla Norma",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Eggplant",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ricotta salata",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Basil",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Fry eggplant cubes in olive oil",
+        "Cook pasta, toss with tomato sauce and garlic",
+        "Add eggplant, top with ricotta salata and basil"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 6,
+        "sugar": 8,
+        "sodium": 480
+      },
+      "tags": [
+        "sicilian",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 88
+    },
+    {
+      "id": "italy-019",
+      "name": "Vitello Tonnato",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Veal roast",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Tuna in oil",
+          "amount": "1 can",
+          "category": "protein"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Capers",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Anchovy fillets",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "White wine",
+          "amount": "1 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Roast veal with wine, cool and slice thin",
+        "Blend tuna, mayo, capers, anchovy, lemon juice",
+        "Spread sauce over veal slices, chill before serving"
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 28,
+        "carbs": 3,
+        "fat": 24,
+        "fiber": 0,
+        "sugar": 1,
+        "sodium": 540
+      },
+      "tags": [
+        "piedmont",
+        "cold",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 67
+    },
+    {
+      "id": "italy-020",
+      "name": "Cacciucco (Tuscan Fish Stew)",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Mixed fish",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Squid",
+          "amount": "8 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Chili flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic and chili in oil",
+        "Add tomato and wine, simmer",
+        "Add fish and squid, cook until tender",
+        "Serve with toasted bread"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 34,
+        "carbs": 8,
+        "fat": 12,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 520
+      },
+      "tags": [
+        "seafood",
+        "tuscan",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 59
+    },
+    {
+      "id": "italy-021",
+      "name": "Pasta al Pesto Genovese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Basil pesto",
+          "amount": "1/2 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Potato",
+          "amount": "1 small",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/4 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Boil pasta, potato, and green beans together",
+        "Drain and toss with pesto and Parmesan"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 12,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 4,
+        "sodium": 420
+      },
+      "tags": [
+        "ligurian",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 110
+    },
+    {
+      "id": "italy-022",
+      "name": "Supplì al Telefono",
+      "cuisine": "Italian",
+      "mealType": [
+        "snack",
+        "appetizer"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Cooked risotto",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "4 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Vegetable oil",
+          "amount": "2 cups",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Form risotto into balls, stuff with mozzarella",
+        "Dip in egg, coat with breadcrumbs",
+        "Deep fry until golden brown"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 10,
+        "carbs": 54,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 420
+      },
+      "tags": [
+        "roman",
+        "snack",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 72
+    },
+    {
+      "id": "italy-023",
+      "name": "Crostini Toscani",
+      "cuisine": "Italian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken livers",
+          "amount": "8 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Capers",
+          "amount": "1 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Anchovy fillets",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Baguette",
+          "amount": "1 loaf",
+          "category": "grain"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and livers in butter",
+        "Add capers and anchovy, blend to a paste",
+        "Spread on toasted baguette slices"
+      ],
+      "nutrition": {
+        "calories": 140,
+        "protein": 6,
+        "carbs": 18,
+        "fat": 5,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 210
+      },
+      "tags": [
+        "tuscan",
+        "appetizer",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 44
+    },
+    {
+      "id": "italy-024",
+      "name": "Pasta e Ceci",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Ditalini pasta",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "2 cups",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Rosemary",
+          "amount": "1 sprig",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic and rosemary in oil",
+        "Add chickpeas and tomato, simmer",
+        "Add pasta and cook until tender"
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 12,
+        "carbs": 56,
+        "fat": 7,
+        "fiber": 8,
+        "sugar": 5,
+        "sodium": 380
+      },
+      "tags": [
+        "roman",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 61
+    },
+    {
+      "id": "italy-025",
+      "name": "Frittata di Zucchine",
+      "cuisine": "Italian",
+      "mealType": [
+        "breakfast",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "amount": "6",
+          "category": "protein"
+        },
+        {
+          "name": "Zucchini",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/4 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Slice zucchini and sauté in oil",
+        "Beat eggs with Parmesan, salt, and pepper",
+        "Add zucchini, cook until set"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 12,
+        "carbs": 5,
+        "fat": 15,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "breakfast",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 53
+    },
+    {
+      "id": "italy-026",
+      "name": "Pasta con le Sarde",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Bucatini pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Sardines",
+          "amount": "8 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Fennel",
+          "amount": "1 bulb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pine nuts",
+          "amount": "2 tbsp",
+          "category": "nut"
+        },
+        {
+          "name": "Raisins",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté fennel in oil, add sardines, pine nuts, and raisins",
+        "Cook pasta, toss with sauce, top with breadcrumbs"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 18,
+        "carbs": 60,
+        "fat": 13,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 410
+      },
+      "tags": [
+        "sicilian",
+        "seafood",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 48
+    },
+    {
+      "id": "italy-027",
+      "name": "Pollo alla Cacciatora",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken pieces",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Brown chicken in oil, remove",
+        "Sauté vegetables, add wine and tomato",
+        "Return chicken, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 32,
+        "carbs": 10,
+        "fat": 22,
+        "fiber": 2,
+        "sugar": 5,
+        "sodium": 520
+      },
+      "tags": [
+        "hunter",
+        "classic",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 77
+    },
+    {
+      "id": "italy-028",
+      "name": "Panzarotti Pugliesi",
+      "cuisine": "Italian",
+      "mealType": [
+        "snack",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pizza dough",
+          "amount": "1 lb",
+          "category": "grain"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "4 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Ham",
+          "amount": "2 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Vegetable oil",
+          "amount": "2 cups",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Roll dough, fill with sauce, mozzarella, and ham",
+        "Fold and seal, deep fry until golden"
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 8,
+        "carbs": 34,
+        "fat": 10,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 320
+      },
+      "tags": [
+        "puglia",
+        "fried",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 39
+    },
+    {
+      "id": "italy-029",
+      "name": "Ribollita Toscana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Stale bread",
+          "amount": "4 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Cannellini beans",
+          "amount": "2 cups",
+          "category": "protein"
+        },
+        {
+          "name": "Cabbage",
+          "amount": "1/2 head",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "2 stalks",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cook beans and vegetables in water",
+        "Add bread, simmer until thick",
+        "Drizzle with olive oil before serving"
+      ],
+      "nutrition": {
+        "calories": 230,
+        "protein": 9,
+        "carbs": 40,
+        "fat": 4,
+        "fiber": 8,
+        "sugar": 7,
+        "sodium": 340
+      },
+      "tags": [
+        "tuscan",
+        "soup",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 56
+    },
+    {
+      "id": "italy-030",
+      "name": "Torta della Nonna",
+      "cuisine": "Italian",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 50,
+      "servings": 8,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Eggs",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Lemon zest",
+          "amount": "1 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Pine nuts",
+          "amount": "1/4 cup",
+          "category": "nut"
+        }
+      ],
+      "instructions": [
+        "Make pastry dough, chill",
+        "Prepare custard with milk, eggs, sugar, and zest",
+        "Fill pastry, top with pine nuts, bake until golden"
+      ],
+      "nutrition": {
+        "calories": 370,
+        "protein": 7,
+        "carbs": 54,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 28,
+        "sodium": 120
+      },
+      "tags": [
+        "dessert",
+        "tuscan",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 92
+    },
+    {
+      "id": "italy-031",
+      "name": "Crespelle alla Fiorentina",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Spinach",
+          "amount": "10 oz",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ricotta",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Make crepes with flour, eggs, and milk",
+        "Fill with spinach and ricotta, roll up",
+        "Top with tomato sauce and Parmesan, bake"
+      ],
+      "nutrition": {
+        "calories": 290,
+        "protein": 13,
+        "carbs": 32,
+        "fat": 12,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 340
+      },
+      "tags": [
+        "tuscan",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 63
+    },
+    {
+      "id": "italy-032",
+      "name": "Baccalà alla Vicentina",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 180,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Salt cod",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Anchovy fillets",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Flour",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Soak cod, dredge in flour, brown in oil",
+        "Layer with onion and anchovy, cover with milk",
+        "Simmer gently for 3 hours, garnish with parsley"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 32,
+        "carbs": 18,
+        "fat": 22,
+        "fiber": 2,
+        "sugar": 5,
+        "sodium": 900
+      },
+      "tags": [
+        "veneto",
+        "seafood",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 41
+    },
+    {
+      "id": "italy-033",
+      "name": "Pasta alla Gricia",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Rigatoni",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Guanciale",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook guanciale until crisp",
+        "Cook pasta, toss with guanciale and fat",
+        "Add cheese and pepper, toss well"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 15,
+        "carbs": 52,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 620
+      },
+      "tags": [
+        "roman",
+        "classic",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 74
+    },
+    {
+      "id": "italy-034",
+      "name": "Torta Caprese",
+      "cuisine": "Italian",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Almond flour",
+          "amount": "2 cups",
+          "category": "nut"
+        },
+        {
+          "name": "Dark chocolate",
+          "amount": "8 oz",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Eggs",
+          "amount": "4",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Melt chocolate and butter, mix with sugar and eggs",
+        "Fold in almond flour, bake at 350°F (175°C) for 40 min"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 8,
+        "carbs": 38,
+        "fat": 24,
+        "fiber": 4,
+        "sugar": 28,
+        "sodium": 80
+      },
+      "tags": [
+        "dessert",
+        "gluten-free",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 101
+    },
+    {
+      "id": "italy-035",
+      "name": "Insalata di Mare",
+      "cuisine": "Italian",
+      "mealType": [
+        "appetizer",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 15,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Mixed seafood",
+          "amount": "1.5 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Boil seafood, drain and cool",
+        "Toss with lemon, oil, parsley, and celery",
+        "Chill before serving"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 22,
+        "carbs": 2,
+        "fat": 9,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 420
+      },
+      "tags": [
+        "seafood",
+        "salad",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 58
+    },
+    {
+      "id": "italy-036",
+      "name": "Pasta al Forno",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 45,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rigatoni",
+          "amount": "1 lb",
+          "category": "grain"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "8 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Ground beef",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, mix with sauce, beef, and eggs",
+        "Layer with mozzarella and Parmesan, bake at 375°F (190°C) for 30 min"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 22,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "baked",
+        "comfort",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 89
+    },
+    {
+      "id": "italy-037",
+      "name": "Pasta alla Puttanesca",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Tomato",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Anchovy fillets",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Black olives",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Capers",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic and anchovy in oil",
+        "Add tomato, olives, and capers, simmer",
+        "Toss with cooked spaghetti"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 480
+      },
+      "tags": [
+        "classic",
+        "quick",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 102
+    },
+    {
+      "id": "italy-038",
+      "name": "Gamberi alla Busara",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Shrimp",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "White wine",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic in oil, add shrimp",
+        "Add tomato and wine, simmer until shrimp are cooked",
+        "Garnish with parsley"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 24,
+        "carbs": 6,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 420
+      },
+      "tags": [
+        "seafood",
+        "veneto",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 54
+    },
+    {
+      "id": "italy-039",
+      "name": "Cozze alla Tarantina",
+      "cuisine": "Italian",
+      "mealType": [
+        "appetizer",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Mussels",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Chili flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic and chili in oil",
+        "Add tomato, cook until soft",
+        "Add mussels, cover and steam until open",
+        "Garnish with parsley"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 20,
+        "carbs": 7,
+        "fat": 7,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 520
+      },
+      "tags": [
+        "seafood",
+        "puglia",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 41
+    },
+    {
+      "id": "italy-040",
+      "name": "Pasta al Limone",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Lemon zest",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Heavy cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, reserve some water",
+        "Melt butter, add cream, lemon zest, and cheese",
+        "Toss with pasta and pepper"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 13,
+        "carbs": 58,
+        "fat": 15,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 420
+      },
+      "tags": [
+        "lemon",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 66
+    },
+    {
+      "id": "italy-041",
+      "name": "Focaccia Genovese",
+      "cuisine": "Italian",
+      "mealType": [
+        "snack",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Water",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Yeast",
+          "amount": "2 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix flour, water, yeast, and salt, knead dough",
+        "Let rise, spread in pan, dimple surface",
+        "Drizzle with oil, bake at 425°F (220°C) for 25 min"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 5,
+        "fiber": 2,
+        "sugar": 1,
+        "sodium": 320
+      },
+      "tags": [
+        "bread",
+        "ligurian",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 112
+    },
+    {
+      "id": "italy-042",
+      "name": "Pasta e Patate",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Ditalini pasta",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/4 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté vegetables in oil, add water and potatoes",
+        "Add pasta, cook until tender, top with Parmesan"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 9,
+        "carbs": 58,
+        "fat": 7,
+        "fiber": 5,
+        "sugar": 6,
+        "sodium": 340
+      },
+      "tags": [
+        "comfort",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 52
+    },
+    {
+      "id": "italy-043",
+      "name": "Sgombro alla Griglia",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Mackerel",
+          "amount": "4 fillets",
+          "category": "protein"
+        },
+        {
+          "name": "Lemon",
+          "amount": "1",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brush mackerel with oil, season with salt and pepper",
+        "Grill until cooked, serve with lemon and parsley"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 22,
+        "carbs": 1,
+        "fat": 13,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 180
+      },
+      "tags": [
+        "grilled",
+        "seafood",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 38
+    },
+    {
+      "id": "italy-044",
+      "name": "Pasta con i Broccoli",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Orecchiette pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Broccoli",
+          "amount": "1 head",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Red chili flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Boil pasta and broccoli together",
+        "Sauté garlic and chili in oil, toss with pasta and broccoli"
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 11,
+        "carbs": 62,
+        "fat": 7,
+        "fiber": 6,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "vegetarian",
+        "puglia",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 49
+    },
+    {
+      "id": "italy-045",
+      "name": "Polpette al Sugo",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix beef, breadcrumbs, eggs, cheese, and parsley",
+        "Form balls, brown in oil, simmer in tomato sauce"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 18,
+        "fat": 18,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 540
+      },
+      "tags": [
+        "meatballs",
+        "comfort",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 81
+    },
+    {
+      "id": "italy-046",
+      "name": "Risotto ai Frutti di Mare",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 35,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Arborio rice",
+          "amount": "1.5 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Mixed seafood",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Fish stock",
+          "amount": "4 cups",
+          "category": "protein"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic in oil, add rice, toast",
+        "Add stock gradually, stir in seafood and tomato",
+        "Cook until creamy, garnish with parsley"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 18,
+        "carbs": 54,
+        "fat": 10,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 520
+      },
+      "tags": [
+        "seafood",
+        "risotto",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 97
+    },
+    {
+      "id": "italy-047",
+      "name": "Cacciatore di Coniglio",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Rabbit",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Brown rabbit in oil, remove",
+        "Sauté vegetables, add wine and tomato",
+        "Return rabbit, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 28,
+        "carbs": 8,
+        "fat": 16,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 420
+      },
+      "tags": [
+        "hunter",
+        "classic",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 44
+    },
+    {
+      "id": "italy-048",
+      "name": "Pasta alla Zozzona",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rigatoni",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Sausage",
+          "amount": "6 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Pancetta",
+          "amount": "2 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown sausage and pancetta, add tomato sauce",
+        "Cook pasta, toss with sauce, stir in eggs and cheese"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "roman",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 62
+    },
+    {
+      "id": "italy-049",
+      "name": "Torta Pasqualina",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Puff pastry",
+          "amount": "2 sheets",
+          "category": "grain"
+        },
+        {
+          "name": "Spinach",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ricotta",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "6",
+          "category": "protein"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Line pan with pastry, fill with spinach, ricotta, and eggs",
+        "Top with more pastry, bake at 375°F (190°C) for 45 min"
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 12,
+        "carbs": 32,
+        "fat": 18,
+        "fiber": 3,
+        "sugar": 3,
+        "sodium": 420
+      },
+      "tags": [
+        "easter",
+        "ligurian",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 77
+    },
+    {
+      "id": "italy-050",
+      "name": "Pasta alla Nerano",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Zucchini",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Provolone cheese",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/4 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Basil",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Fry zucchini in oil, set aside",
+        "Cook pasta, toss with zucchini, cheese, and basil"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 480
+      },
+      "tags": [
+        "campania",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 68
+    },
+    {
+      "id": "italy-051",
+      "name": "Cacciucco Livornese",
+      "cuisine": "Italian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Mixed fish",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Squid",
+          "amount": "8 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Chili flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic and chili in oil",
+        "Add tomato and wine, simmer",
+        "Add fish and squid, cook until tender",
+        "Serve with toasted bread"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 34,
+        "carbs": 8,
+        "fat": 12,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 520
+      },
+      "tags": [
+        "seafood",
+        "tuscan",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 59
+    },
+    {
+      "id": "italy-052",
+      "name": "Pasta con le Vongole",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Clams",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "White wine",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic in oil, add clams and wine",
+        "Cover and steam until clams open",
+        "Toss with cooked spaghetti and parsley"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 16,
+        "carbs": 58,
+        "fat": 8,
+        "fiber": 3,
+        "sugar": 3,
+        "sodium": 480
+      },
+      "tags": [
+        "seafood",
+        "campania",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 91
+    },
+    {
+      "id": "italy-053",
+      "name": "Frittelle di Zucchine",
+      "cuisine": "Italian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Zucchini",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/4 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Grate zucchini, mix with flour, eggs, cheese, and salt",
+        "Fry spoonfuls in oil until golden"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 6,
+        "carbs": 22,
+        "fat": 7,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 220
+      },
+      "tags": [
+        "fritters",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 37
+    },
+    {
+      "id": "italy-054",
+      "name": "Pasta alla Boscaiola",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Penne pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Mushrooms",
+          "amount": "8 oz",
+          "category": "vegetable"
+        },
+        {
+          "name": "Sausage",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Brown sausage and mushrooms, add tomato sauce and cream",
+        "Cook pasta, toss with sauce, garnish with parsley"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 16,
+        "carbs": 58,
+        "fat": 13,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 480
+      },
+      "tags": [
+        "woodland",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 64
+    },
+    {
+      "id": "italy-055",
+      "name": "Caponata di Carciofi",
+      "cuisine": "Italian",
+      "mealType": [
+        "appetizer",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Artichokes",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green olives",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Capers",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Vinegar",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Clean and slice artichokes, sauté with onion",
+        "Add tomato, olives, capers, vinegar, and sugar",
+        "Simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 4,
+        "carbs": 22,
+        "fat": 7,
+        "fiber": 6,
+        "sugar": 8,
+        "sodium": 320
+      },
+      "tags": [
+        "sicilian",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 42
+    },
+    {
+      "id": "italy-056",
+      "name": "Pasta alla Sorrentina",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Gnocchi",
+          "amount": "1 lb",
+          "category": "grain"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "8 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Basil",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Boil gnocchi, drain",
+        "Mix with tomato sauce, mozzarella, and basil",
+        "Bake until cheese is melted, top with Parmesan"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 480
+      },
+      "tags": [
+        "campania",
+        "baked",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 73
+    },
+    {
+      "id": "italy-057",
+      "name": "Pasta alla Carrettiera",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Red chili flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1/2 cup",
+          "category": "grain"
+        }
+      ],
+      "instructions": [
+        "Cook spaghetti, toss with garlic, parsley, chili, and oil",
+        "Top with toasted breadcrumbs"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 11,
+        "carbs": 62,
+        "fat": 10,
+        "fiber": 4,
+        "sugar": 5,
+        "sodium": 320
+      },
+      "tags": [
+        "sicilian",
+        "vegan",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 38
+    },
+    {
+      "id": "italy-058",
+      "name": "Pasta alla Trapanese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Bucatini pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/2 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Tomato",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Basil",
+          "amount": "1/4 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Blend almonds, tomato, basil, garlic, and oil to make pesto",
+        "Toss with cooked pasta"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 13,
+        "fiber": 5,
+        "sugar": 7,
+        "sodium": 320
+      },
+      "tags": [
+        "sicilian",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 44
+    },
+    {
+      "id": "italy-059",
+      "name": "Pasta alla Grattata",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Tagliatelle",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Egg yolks",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with butter, yolks, cheese, and pepper"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 14,
+        "carbs": 58,
+        "fat": 13,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 420
+      },
+      "tags": [
+        "egg",
+        "comfort",
+        "italian"
+      ],
+      "rating": 4.5,
+      "reviews": 29
+    },
+    {
+      "id": "italy-060",
+      "name": "Pasta con i Piselli",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Ditalini pasta",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Peas",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/4 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté onion in oil, add peas, cook until soft",
+        "Add pasta, cook until tender, top with Parmesan"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 10,
+        "carbs": 56,
+        "fat": 7,
+        "fiber": 6,
+        "sugar": 5,
+        "sodium": 320
+      },
+      "tags": [
+        "vegetarian",
+        "spring",
+        "italian"
+      ],
+      "rating": 4.4,
+      "reviews": 33
+    },
+    {
+      "id": "italy-061",
+      "name": "Pasta alla Genovese (Neapolitan)",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 120,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Ziti pasta",
+          "amount": "1 lb",
+          "category": "grain"
+        },
+        {
+          "name": "Beef chuck",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "White wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown beef, add vegetables and wine, simmer 2 hours",
+        "Cook pasta, toss with sauce and Parmesan"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 22,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "neapolitan",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 51
+    },
+    {
+      "id": "italy-062",
+      "name": "Pasta con le Sarde e Finocchietto",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Bucatini pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Sardines",
+          "amount": "8 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Wild fennel",
+          "amount": "1 bunch",
+          "category": "herb"
+        },
+        {
+          "name": "Pine nuts",
+          "amount": "2 tbsp",
+          "category": "nut"
+        },
+        {
+          "name": "Raisins",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté fennel in oil, add sardines, pine nuts, and raisins",
+        "Cook pasta, toss with sauce, top with breadcrumbs"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 18,
+        "carbs": 60,
+        "fat": 13,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 410
+      },
+      "tags": [
+        "sicilian",
+        "seafood",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 48
+    },
+    {
+      "id": "italy-063",
+      "name": "Pasta alla Papalina",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Tagliatelle",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Ham",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Peas",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with ham, peas, eggs, cheese, and butter"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 16,
+        "carbs": 58,
+        "fat": 13,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 480
+      },
+      "tags": [
+        "roman",
+        "creamy",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 44
+    },
+    {
+      "id": "italy-064",
+      "name": "Pasta alla Norcina",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Penne pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Sausage",
+          "amount": "6 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Brown sausage, add cream, toss with pasta and cheese"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "umbria",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 62
+    },
+    {
+      "id": "italy-065",
+      "name": "Pasta alla Lucana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Fusilli pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Sausage",
+          "amount": "6 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Red pepper",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown sausage and pepper, add tomato sauce",
+        "Cook pasta, toss with sauce and cheese"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "basilicata",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 41
+    },
+    {
+      "id": "italy-066",
+      "name": "Pasta alla Campidanese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Malloreddus pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Sausage",
+          "amount": "6 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Saffron",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown sausage, add tomato sauce and saffron",
+        "Cook pasta, toss with sauce and cheese"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "sardinia",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 38
+    },
+    {
+      "id": "italy-067",
+      "name": "Pasta alla Calabrese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Penne pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Nduja",
+          "amount": "2 tbsp",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Sauté onion, add nduja and tomato sauce",
+        "Cook pasta, toss with sauce and cheese"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "calabria",
+        "spicy",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 36
+    },
+    {
+      "id": "italy-068",
+      "name": "Pasta alla Siciliana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Penne pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Eggplant",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ricotta salata",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Basil",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Fry eggplant, add tomato sauce, toss with pasta",
+        "Top with ricotta salata and basil"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 6,
+        "sugar": 8,
+        "sodium": 480
+      },
+      "tags": [
+        "sicilian",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 44
+    },
+    {
+      "id": "italy-069",
+      "name": "Pasta alla Romana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rigatoni",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Pancetta",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pancetta, toss with pasta, eggs, cheese, and pepper"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 15,
+        "carbs": 52,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 620
+      },
+      "tags": [
+        "roman",
+        "classic",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 41
+    },
+    {
+      "id": "italy-070",
+      "name": "Pasta alla Barese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Orecchiette pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Broccoli rabe",
+          "amount": "1 bunch",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Red chili flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Boil pasta and broccoli rabe together",
+        "Sauté garlic and chili in oil, toss with pasta and broccoli rabe"
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 11,
+        "carbs": 62,
+        "fat": 7,
+        "fiber": 6,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "puglia",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 39
+    },
+    {
+      "id": "italy-071",
+      "name": "Pasta alla Napoletana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Basil",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic in oil, add tomato sauce, simmer",
+        "Toss with pasta and basil"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 480
+      },
+      "tags": [
+        "neapolitan",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 44
+    },
+    {
+      "id": "italy-072",
+      "name": "Pasta alla Pugliese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Orecchiette pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Turnip greens",
+          "amount": "1 bunch",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Red chili flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Boil pasta and turnip greens together",
+        "Sauté garlic and chili in oil, toss with pasta and greens"
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 11,
+        "carbs": 62,
+        "fat": 7,
+        "fiber": 6,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "puglia",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 39
+    },
+    {
+      "id": "italy-073",
+      "name": "Pasta alla Sarda",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Fregola pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Clams",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic in oil, add clams, cover and steam",
+        "Toss with cooked pasta and parsley"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 16,
+        "carbs": 58,
+        "fat": 8,
+        "fiber": 3,
+        "sugar": 3,
+        "sodium": 480
+      },
+      "tags": [
+        "sardinia",
+        "seafood",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 41
+    },
+    {
+      "id": "italy-074",
+      "name": "Pasta alla Valdostana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Penne pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Fontina cheese",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Ham",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with cheese, ham, cream, and butter"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "aosta",
+        "creamy",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 38
+    },
+    {
+      "id": "italy-075",
+      "name": "Pasta alla Friulana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Tagliatelle",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Speck",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Chives",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with speck, cream, cheese, and chives"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "friuli",
+        "creamy",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 38
+    },
+    {
+      "id": "italy-076",
+      "name": "Pasta alla Veneta",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Bigoli pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Duck ragù",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with duck ragù, cheese, and pepper"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "veneto",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 38
+    },
+    {
+      "id": "italy-077",
+      "name": "Pasta alla Marchigiana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Maccheroncini pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Chicken livers",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with livers, sauce, cheese, and butter"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "marche",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 38
+    },
+    {
+      "id": "italy-078",
+      "name": "Pasta alla Abruzzese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Spaghetti alla chitarra",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Lamb ragù",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with lamb ragù, cheese, and pepper"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "abruzzo",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 38
+    },
+    {
+      "id": "italy-079",
+      "name": "Pasta alla Molise",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Cavatelli pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Pork sausage",
+          "amount": "6 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Broccoli rabe",
+          "amount": "1 bunch",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Brown sausage, add garlic and broccoli rabe",
+        "Cook pasta, toss with sausage and vegetables"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 18,
+        "carbs": 54,
+        "fat": 14,
+        "fiber": 5,
+        "sugar": 6,
+        "sodium": 520
+      },
+      "tags": [
+        "molise",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 32
+    },
+    {
+      "id": "italy-080",
+      "name": "Pasta alla Umbra",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Strangozzi pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Porcini mushrooms",
+          "amount": "8 oz",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté mushrooms and garlic in oil",
+        "Cook pasta, toss with mushrooms and parsley"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 12,
+        "carbs": 62,
+        "fat": 10,
+        "fiber": 5,
+        "sugar": 6,
+        "sodium": 320
+      },
+      "tags": [
+        "umbria",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 29
+    },
+    {
+      "id": "italy-081",
+      "name": "Pasta alla Ferrarese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Cappellacci pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Pumpkin",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Nutmeg",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fill pasta with pumpkin, cook, toss with butter, cheese, and nutmeg"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "emilia-romagna",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-082",
+      "name": "Pasta alla Piacentina",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Tortelli pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Ricotta",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Spinach",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Fill pasta with ricotta and spinach, cook, toss with butter and cheese"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "emilia-romagna",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-083",
+      "name": "Pasta alla Mantovana",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Tortelli pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Pumpkin",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Amaretti cookies",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Fill pasta with pumpkin and amaretti, cook, toss with butter and cheese"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "lombardy",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-084",
+      "name": "Pasta alla Bergamasca",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Casoncelli pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Pancetta",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Fill pasta, cook, toss with pancetta, butter, and cheese"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "lombardy",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-085",
+      "name": "Pasta alla Piemontese",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Tajarin pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "White truffle",
+          "amount": "1 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with butter, truffle, and cheese"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "piedmont",
+        "luxury",
+        "italian"
+      ],
+      "rating": 4.8,
+      "reviews": 34
+    },
+    {
+      "id": "italy-086",
+      "name": "Pasta alla Valdostana (Pizzoccheri)",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pizzoccheri pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Savoy cabbage",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Fontina cheese",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Boil pasta, cabbage, and potato together, toss with cheese and butter"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "lombardy",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-087",
+      "name": "Pasta alla Liguria",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Trofie pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pesto Genovese",
+          "amount": "1/2 cup",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Boil pasta, beans, and potato together, toss with pesto"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "liguria",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-088",
+      "name": "Pasta alla Trentina",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Spätzle pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Speck",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Chives",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with speck, cream, and chives"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "trentino",
+        "creamy",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-089",
+      "name": "Pasta alla Friuli-Venezia Giulia",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Gnocchi di pane",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Smoked ricotta",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Sage",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Cook gnocchi, toss with butter, ricotta, and sage"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "friuli",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-090",
+      "name": "Pasta alla Basilicata",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Strascinati pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Red pepper",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with breadcrumbs, pepper, garlic, and oil"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "basilicata",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-091",
+      "name": "Pasta alla Calabria",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Fileja pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Nduja",
+          "amount": "2 tbsp",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Sauté onion, add nduja and tomato sauce",
+        "Cook pasta, toss with sauce and cheese"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "calabria",
+        "spicy",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 36
+    },
+    {
+      "id": "italy-092",
+      "name": "Pasta alla Sicilia",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Busiate pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Pesto Trapanese",
+          "amount": "1/2 cup",
+          "category": "herb"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/4 cup",
+          "category": "nut"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with pesto, tomato, and almonds"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "sicilian",
+        "vegetarian",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-093",
+      "name": "Pasta alla Sardegna",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Malloreddus pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Sausage",
+          "amount": "6 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Saffron",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown sausage, add tomato sauce and saffron",
+        "Cook pasta, toss with sauce and cheese"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "sardinia",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 38
+    },
+    {
+      "id": "italy-094",
+      "name": "Pasta alla Campania",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Paccheri pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Seafood mix",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "herb"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté garlic in oil, add seafood and tomato, cook",
+        "Toss with pasta and parsley"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 18,
+        "carbs": 54,
+        "fat": 10,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 520
+      },
+      "tags": [
+        "campania",
+        "seafood",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 38
+    },
+    {
+      "id": "italy-095",
+      "name": "Pasta alla Lazio",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Bucatini pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Guanciale",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook guanciale until crisp, toss with pasta, cheese, and pepper"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 15,
+        "carbs": 52,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 620
+      },
+      "tags": [
+        "lazio",
+        "classic",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 41
+    },
+    {
+      "id": "italy-096",
+      "name": "Pasta alla Marche",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Maccheroncini pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Chicken livers",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with livers, sauce, cheese, and butter"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "marche",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 38
+    },
+    {
+      "id": "italy-097",
+      "name": "Pasta alla Abruzzo",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Spaghetti alla chitarra",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Lamb ragù",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with lamb ragù, cheese, and pepper"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "abruzzo",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 38
+    },
+    {
+      "id": "italy-098",
+      "name": "Pasta alla Trentino-Alto Adige",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Spätzle pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Speck",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Chives",
+          "amount": "2 tbsp",
+          "category": "herb"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with speck, cream, and chives"
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 13,
+        "carbs": 62,
+        "fat": 12,
+        "fiber": 5,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "trentino",
+        "creamy",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 34
+    },
+    {
+      "id": "italy-099",
+      "name": "Pasta alla Valle d'Aosta",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Penne pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Fontina cheese",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Ham",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with cheese, ham, cream, and butter"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "aosta",
+        "creamy",
+        "italian"
+      ],
+      "rating": 4.6,
+      "reviews": 38
+    },
+    {
+      "id": "italy-100",
+      "name": "Pasta alla Veneto",
+      "cuisine": "Italian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Bigoli pasta",
+          "amount": "12 oz",
+          "category": "grain"
+        },
+        {
+          "name": "Duck ragù",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Parmesan",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pasta, toss with duck ragù, cheese, and pepper"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 54,
+        "fat": 18,
+        "fiber": 4,
+        "sugar": 7,
+        "sodium": 620
+      },
+      "tags": [
+        "veneto",
+        "hearty",
+        "italian"
+      ],
+      "rating": 4.7,
+      "reviews": 38
     }
-    // ... 86 more recipes would be added here in the same format ...
   ]
 }
