@@ -1,0 +1,45 @@
+{
+  "country": "Indonesia",
+  "flag": "🇮🇩",
+  "recipes": [
+    {
+      "id": "indonesia-001",
+      "name": "Nasi Goreng",
+      "cuisine": "Indonesian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Cooked rice", "amount": "4 cups", "category": "grain" },
+        { "name": "Shrimp", "amount": "8 oz", "category": "protein" },
+        { "name": "Kecap manis", "amount": "3 tbsp", "category": "other" },
+        { "name": "Chili paste", "amount": "2 tbsp", "category": "spice" },
+        { "name": "Fried eggs", "amount": "4", "category": "protein" },
+        { "name": "Cucumber", "amount": "1", "category": "vegetable" }
+      ],
+      "instructions": [
+        "Heat oil in wok over high heat",
+        "Stir-fry shrimp until pink",
+        "Add cold rice and break up clumps",
+        "Stir in kecap manis and chili paste",
+        "Serve topped with fried egg",
+        "Garnish with cucumber slices"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 22,
+        "carbs": 58,
+        "fat": 12,
+        "fiber": 2,
+        "sugar": 8,
+        "sodium": 920
+      },
+      "tags": ["indonesian", "fried-rice", "spicy"],
+      "rating": 4.5,
+      "reviews": 198
+    }
+  ]
+}
