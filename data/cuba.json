@@ -1,0 +1,45 @@
+{
+  "country": "Cuba",
+  "flag": "🇨🇺",
+  "recipes": [
+    {
+      "id": "cuba-001",
+      "name": "Ropa Vieja",
+      "cuisine": "Cuban",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 180,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Flank steak", "amount": "3 lbs", "category": "protein" },
+        { "name": "Bell peppers", "amount": "3", "category": "vegetable" },
+        { "name": "Onions", "amount": "2 large", "category": "vegetable" },
+        { "name": "Tomatoes", "amount": "2 large", "category": "vegetable" },
+        { "name": "Cumin", "amount": "2 tsp", "category": "spice" },
+        { "name": "White rice", "amount": "3 cups", "category": "grain" }
+      ],
+      "instructions": [
+        "Slow cook flank steak until it shreds",
+        "Shred the cooked meat",
+        "Sauté peppers, onions, and tomatoes",
+        "Add shredded meat and spices",
+        "Simmer until flavors meld",
+        "Serve over white rice"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 42,
+        "carbs": 48,
+        "fat": 12,
+        "fiber": 4,
+        "sugar": 8,
+        "sodium": 680
+      },
+      "tags": ["cuban", "shredded-beef", "comfort-food"],
+      "rating": 4.6,
+      "reviews": 189
+    }
+  ]
+}
