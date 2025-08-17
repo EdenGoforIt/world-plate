@@ -6,19 +6,46 @@
       "id": "brazil-001",
       "name": "Feijoada",
       "cuisine": "Brazilian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 120,
       "servings": 8,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Black beans", "amount": "2 cups", "category": "other" },
-        { "name": "Pork shoulder", "amount": "1 lb", "category": "protein" },
-        { "name": "Brazilian sausage", "amount": "8 oz", "category": "protein" },
-        { "name": "Bacon", "amount": "4 strips", "category": "protein" },
-        { "name": "Onions", "amount": "2 medium", "category": "vegetable" },
-        { "name": "Bay leaves", "amount": "3", "category": "spice" }
+        {
+          "name": "Black beans",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Pork shoulder",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Brazilian sausage",
+          "amount": "8 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Bacon",
+          "amount": "4 strips",
+          "category": "protein"
+        },
+        {
+          "name": "Onions",
+          "amount": "2 medium",
+          "category": "vegetable"
+        },
+        {
+          "name": "Bay leaves",
+          "amount": "3",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Soak black beans overnight",
@@ -37,9 +64,1881 @@
         "sugar": 4,
         "sodium": 920
       },
-      "tags": ["brazilian", "comfort-food", "beans"],
+      "tags": [
+        "brazilian",
+        "comfort-food",
+        "beans"
+      ],
       "rating": 4.4,
       "reviews": 145
+    },
+    {
+      "id": "brazil-002",
+      "name": "Moqueca Baiana",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "White fish fillets",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Lime juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "1 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomatoes",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red bell pepper",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coconut milk",
+          "amount": "1 can",
+          "category": "dairy"
+        },
+        {
+          "name": "Palm oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Marinate fish in lime juice and salt",
+        "Layer onions, tomatoes, and peppers in pot",
+        "Add fish, pour over coconut milk and palm oil",
+        "Simmer gently until fish is cooked through",
+        "Garnish with cilantro and serve with rice"
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 10,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 420
+      },
+      "tags": [
+        "brazilian",
+        "fish",
+        "coconut"
+      ],
+      "rating": 4.6,
+      "reviews": 67
+    },
+    {
+      "id": "brazil-003",
+      "name": "Pão de Queijo",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "breakfast",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 20,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Tapioca flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Oil",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Grated Parmesan cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Heat milk and oil, pour over tapioca flour",
+        "Mix in eggs and cheese, form small balls",
+        "Bake at 375°F (190°C) for 20-25 minutes until golden"
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 2,
+        "carbs": 10,
+        "fat": 5,
+        "fiber": 0,
+        "sugar": 1,
+        "sodium": 110
+      },
+      "tags": [
+        "brazilian",
+        "cheese",
+        "bread"
+      ],
+      "rating": 4.8,
+      "reviews": 120
+    },
+    {
+      "id": "brazil-004",
+      "name": "Brigadeiro",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 24,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Sweetened condensed milk",
+          "amount": "1 can",
+          "category": "dairy"
+        },
+        {
+          "name": "Cocoa powder",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Chocolate sprinkles",
+          "amount": "1/2 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Combine condensed milk, cocoa, and butter in saucepan",
+        "Cook over medium heat, stirring, until thickened",
+        "Cool, roll into balls, coat with sprinkles"
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 1,
+        "carbs": 15,
+        "fat": 3,
+        "fiber": 0,
+        "sugar": 13,
+        "sodium": 20
+      },
+      "tags": [
+        "brazilian",
+        "chocolate",
+        "candy"
+      ],
+      "rating": 4.9,
+      "reviews": 210
+    },
+    {
+      "id": "brazil-005",
+      "name": "Vatapá",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Dried shrimp",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Bread",
+          "amount": "4 slices",
+          "category": "grain"
+        },
+        {
+          "name": "Coconut milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Peanuts",
+          "amount": "1/2 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Palm oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Soak bread in coconut milk, blend with peanuts, onion, tomato, and garlic",
+        "Cook mixture with dried shrimp and palm oil until thickened",
+        "Serve hot with rice or acarajé"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 14,
+        "carbs": 28,
+        "fat": 18,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 380
+      },
+      "tags": [
+        "brazilian",
+        "shrimp",
+        "coconut"
+      ],
+      "rating": 4.5,
+      "reviews": 88
+    },
+    {
+      "id": "brazil-006",
+      "name": "Acarajé",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 30,
+      "servings": 10,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Black-eyed peas",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Palm oil",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Dried shrimp",
+          "amount": "1 cup",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Soak and peel black-eyed peas, blend with onion and salt",
+        "Shape into balls, deep-fry in palm oil until golden",
+        "Split and fill with dried shrimp and vatapá if desired"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 7,
+        "carbs": 18,
+        "fat": 13,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "brazilian",
+        "street-food",
+        "shrimp"
+      ],
+      "rating": 4.7,
+      "reviews": 102
+    },
+    {
+      "id": "brazil-007",
+      "name": "Coxinha",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "snack",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 30,
+      "servings": 20,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken breast",
+          "amount": "2 cups, shredded",
+          "category": "protein"
+        },
+        {
+          "name": "Cream cheese",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Chicken broth",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "2 cups",
+          "category": "grain"
+        }
+      ],
+      "instructions": [
+        "Boil chicken in broth, shred and mix with cream cheese",
+        "Make dough with broth, flour, and butter",
+        "Shape dough around filling, dip in egg and breadcrumbs",
+        "Deep-fry until golden"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 7,
+        "carbs": 20,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 220
+      },
+      "tags": [
+        "brazilian",
+        "chicken",
+        "snack"
+      ],
+      "rating": 4.8,
+      "reviews": 180
+    },
+    {
+      "id": "brazil-008",
+      "name": "Farofa",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "side"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Cassava flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Bacon",
+          "amount": "1/2 cup, chopped",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Fry bacon and onion in butter",
+        "Add cassava flour, toast until golden",
+        "Season with salt and serve"
+      ],
+      "nutrition": {
+        "calories": 150,
+        "protein": 2,
+        "carbs": 18,
+        "fat": 8,
+        "fiber": 2,
+        "sugar": 1,
+        "sodium": 180
+      },
+      "tags": [
+        "brazilian",
+        "side",
+        "cassava"
+      ],
+      "rating": 4.6,
+      "reviews": 90
+    },
+    {
+      "id": "brazil-009",
+      "name": "Quindim",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 45,
+      "servings": 12,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Egg yolks",
+          "amount": "10",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Coconut, shredded",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients, pour into molds",
+        "Bake in water bath at 350°F (175°C) for 40-45 minutes",
+        "Cool and unmold"
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 2,
+        "carbs": 20,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 18,
+        "sodium": 30
+      },
+      "tags": [
+        "brazilian",
+        "coconut",
+        "dessert"
+      ],
+      "rating": 4.7,
+      "reviews": 75
+    },
+    {
+      "id": "brazil-010",
+      "name": "Pastel",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "snack",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 20,
+      "servings": 12,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Water",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Ground beef",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1/2, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Make dough with flour, water, and oil",
+        "Roll out, fill with beef and onion, fold and seal",
+        "Fry until golden and crisp"
+      ],
+      "nutrition": {
+        "calories": 170,
+        "protein": 6,
+        "carbs": 18,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 1,
+        "sodium": 120
+      },
+      "tags": [
+        "brazilian",
+        "street-food",
+        "beef"
+      ],
+      "rating": 4.5,
+      "reviews": 110
+    },
+    {
+      "id": "brazil-011",
+      "name": "Bolo de Rolo",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 10,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "6",
+          "category": "protein"
+        },
+        {
+          "name": "Guava paste",
+          "amount": "1 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cream butter and sugar, add eggs, then flour",
+        "Spread thin layers, bake, spread guava paste, roll up",
+        "Repeat for multiple layers"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 3,
+        "carbs": 30,
+        "fat": 10,
+        "fiber": 1,
+        "sugar": 18,
+        "sodium": 60
+      },
+      "tags": [
+        "brazilian",
+        "cake",
+        "guava"
+      ],
+      "rating": 4.8,
+      "reviews": 95
+    },
+    {
+      "id": "brazil-012",
+      "name": "Caldo Verde",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "soup",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": "4, peeled and diced",
+          "category": "vegetable"
+        },
+        {
+          "name": "Kale",
+          "amount": "2 cups, shredded",
+          "category": "vegetable"
+        },
+        {
+          "name": "Chorizo",
+          "amount": "1/2 cup, sliced",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves, minced",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Cook potatoes and onion in water until soft",
+        "Blend, return to pot, add kale and chorizo",
+        "Simmer and drizzle with olive oil"
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 4,
+        "carbs": 22,
+        "fat": 6,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "brazilian",
+        "soup",
+        "kale"
+      ],
+      "rating": 4.6,
+      "reviews": 80
+    },
+    {
+      "id": "brazil-013",
+      "name": "Empadão",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 50,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Chicken breast",
+          "amount": "2 cups, shredded",
+          "category": "protein"
+        },
+        {
+          "name": "Peas",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Corn",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Make dough with flour, butter, and eggs",
+        "Fill with chicken, peas, corn, and tomato sauce",
+        "Bake at 350°F (175°C) for 45-50 minutes"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 10,
+        "carbs": 32,
+        "fat": 16,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 340
+      },
+      "tags": [
+        "brazilian",
+        "pie",
+        "chicken"
+      ],
+      "rating": 4.7,
+      "reviews": 70
+    },
+    {
+      "id": "brazil-014",
+      "name": "Canjica",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "White corn kernels",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sweetened condensed milk",
+          "amount": "1 can",
+          "category": "dairy"
+        },
+        {
+          "name": "Cinnamon stick",
+          "amount": "1",
+          "category": "spice"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cook corn in water until soft",
+        "Add milk, condensed milk, cinnamon, and sugar",
+        "Simmer until thick and creamy"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 5,
+        "fiber": 2,
+        "sugar": 18,
+        "sodium": 80
+      },
+      "tags": [
+        "brazilian",
+        "corn",
+        "dessert"
+      ],
+      "rating": 4.5,
+      "reviews": 60
+    },
+    {
+      "id": "brazil-015",
+      "name": "Escondidinho de Carne Seca",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 40,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Dried beef (carne seca)",
+          "amount": "2 cups, shredded",
+          "category": "protein"
+        },
+        {
+          "name": "Cassava (yuca)",
+          "amount": "2 lbs, peeled and cubed",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cheese",
+          "amount": "1 cup, grated",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Boil cassava, mash with butter and milk",
+        "Sauté onion and carne seca, layer in baking dish",
+        "Top with mashed cassava and cheese, bake until golden"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 12,
+        "carbs": 34,
+        "fat": 14,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 350
+      },
+      "tags": [
+        "brazilian",
+        "beef",
+        "cassava"
+      ],
+      "rating": 4.7,
+      "reviews": 85
+    },
+    {
+      "id": "brazil-016",
+      "name": "Tapioca",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "breakfast",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 5,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Tapioca flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cheese",
+          "amount": "1/2 cup, grated",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Heat nonstick pan, sprinkle tapioca flour to form a disk",
+        "Cook until set, add butter and cheese, fold and serve"
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 2,
+        "carbs": 22,
+        "fat": 3,
+        "fiber": 1,
+        "sugar": 0,
+        "sodium": 60
+      },
+      "tags": [
+        "brazilian",
+        "breakfast",
+        "tapioca"
+      ],
+      "rating": 4.6,
+      "reviews": 55
+    },
+    {
+      "id": "brazil-017",
+      "name": "Arroz Carreteiro",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Dried beef (carne seca)",
+          "amount": "1 cup, shredded",
+          "category": "protein"
+        },
+        {
+          "name": "Sausage",
+          "amount": "1/2 cup, sliced",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Bell pepper",
+          "amount": "1/2, chopped",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Sauté onion, sausage, and beef",
+        "Add tomato and bell pepper, then rice",
+        "Add water, cook until rice is tender"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 10,
+        "carbs": 38,
+        "fat": 9,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "brazilian",
+        "rice",
+        "beef"
+      ],
+      "rating": 4.5,
+      "reviews": 60
+    },
+    {
+      "id": "brazil-018",
+      "name": "Baião de Dois",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Black-eyed peas",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Bacon",
+          "amount": "1/2 cup, chopped",
+          "category": "protein"
+        },
+        {
+          "name": "Sausage",
+          "amount": "1/2 cup, sliced",
+          "category": "protein"
+        },
+        {
+          "name": "Cheese (coalho)",
+          "amount": "1 cup, cubed",
+          "category": "dairy"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Cook beans until tender",
+        "Sauté bacon, sausage, and onion",
+        "Add rice and beans, cook together",
+        "Stir in cheese before serving"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 12,
+        "carbs": 40,
+        "fat": 12,
+        "fiber": 4,
+        "sugar": 2,
+        "sodium": 350
+      },
+      "tags": [
+        "brazilian",
+        "rice",
+        "beans"
+      ],
+      "rating": 4.6,
+      "reviews": 70
+    },
+    {
+      "id": "brazil-019",
+      "name": "Caruru",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Okra",
+          "amount": "2 cups, sliced",
+          "category": "vegetable"
+        },
+        {
+          "name": "Dried shrimp",
+          "amount": "1/2 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Palm oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Peanuts",
+          "amount": "1/4 cup, ground",
+          "category": "nut"
+        },
+        {
+          "name": "Cashews",
+          "amount": "1/4 cup, ground",
+          "category": "nut"
+        }
+      ],
+      "instructions": [
+        "Sauté onion in palm oil",
+        "Add okra, cook until slimy texture reduces",
+        "Add shrimp, peanuts, and cashews, simmer until thick"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 6,
+        "carbs": 14,
+        "fat": 10,
+        "fiber": 3,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "brazilian",
+        "okra",
+        "shrimp"
+      ],
+      "rating": 4.4,
+      "reviews": 50
+    },
+    {
+      "id": "brazil-020",
+      "name": "Picanha na Brasa",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Picanha steak",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Coarse salt",
+          "amount": "2 tbsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Season steak with salt",
+        "Grill over charcoal until desired doneness",
+        "Slice and serve"
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 0,
+        "fat": 24,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 480
+      },
+      "tags": [
+        "brazilian",
+        "beef",
+        "grill"
+      ],
+      "rating": 4.9,
+      "reviews": 120
+    },
+    {
+      "id": "brazil-021",
+      "name": "Doce de Leite",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 90,
+      "servings": 20,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 cups",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Simmer milk and sugar, stirring constantly, until thick and caramel-colored",
+        "Cool and cut into pieces"
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 2,
+        "carbs": 18,
+        "fat": 2,
+        "fiber": 0,
+        "sugar": 16,
+        "sodium": 30
+      },
+      "tags": [
+        "brazilian",
+        "dessert",
+        "milk"
+      ],
+      "rating": 4.8,
+      "reviews": 100
+    },
+    {
+      "id": "brazil-022",
+      "name": "Bolinho de Chuva",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 24,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Baking powder",
+          "amount": "1 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Cinnamon sugar",
+          "amount": "1/2 cup",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Mix flour, sugar, eggs, milk, and baking powder",
+        "Drop spoonfuls into hot oil, fry until golden",
+        "Roll in cinnamon sugar"
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 2,
+        "carbs": 14,
+        "fat": 2,
+        "fiber": 0,
+        "sugar": 6,
+        "sodium": 40
+      },
+      "tags": [
+        "brazilian",
+        "dessert",
+        "fritter"
+      ],
+      "rating": 4.7,
+      "reviews": 90
+    },
+    {
+      "id": "brazil-023",
+      "name": "Manjar Branco",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Coconut milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cornstarch",
+          "amount": "1/2 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients, cook over medium heat until thick",
+        "Pour into mold, chill until set"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 3,
+        "carbs": 36,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 22,
+        "sodium": 40
+      },
+      "tags": [
+        "brazilian",
+        "dessert",
+        "coconut"
+      ],
+      "rating": 4.6,
+      "reviews": 70
+    },
+    {
+      "id": "brazil-024",
+      "name": "Moela ao Molho",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken gizzards",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves, minced",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and garlic in oil",
+        "Add gizzards, brown well",
+        "Add tomatoes and sauce, simmer until tender"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 18,
+        "carbs": 6,
+        "fat": 12,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "brazilian",
+        "chicken",
+        "gizzard"
+      ],
+      "rating": 4.3,
+      "reviews": 40
+    },
+    {
+      "id": "brazil-025",
+      "name": "Cuscuz Paulista",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Cornmeal",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Tuna",
+          "amount": "1 can, drained",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2, boiled and sliced",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Peas",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olives",
+          "amount": "1/4 cup, sliced",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "1/2, chopped",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and tomato, add tuna, peas, and olives",
+        "Add cornmeal and water, cook until thick",
+        "Press into mold with egg slices, cool and unmold"
+      ],
+      "nutrition": {
+        "calories": 190,
+        "protein": 7,
+        "carbs": 28,
+        "fat": 5,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 220
+      },
+      "tags": [
+        "brazilian",
+        "cornmeal",
+        "tuna"
+      ],
+      "rating": 4.5,
+      "reviews": 60
+    },
+    {
+      "id": "brazil-026",
+      "name": "Pudim de Leite Condensado",
+      "cuisine": "Brazilian",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 90,
+      "servings": 10,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Sweetened condensed milk",
+          "amount": "1 can",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup (for caramel)",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Make caramel with sugar, pour into mold",
+        "Blend condensed milk, milk, and eggs, pour over caramel",
+        "Bake in water bath at 350°F (175°C) for 90 minutes, chill before serving"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 6,
+        "fiber": 0,
+        "sugar": 36,
+        "sodium": 80
+      },
+      "tags": [
+        "brazilian",
+        "dessert",
+        "pudding"
+      ],
+      "rating": 4.9,
+      "reviews": 130
+    }
+    ,
+    {
+      "id": "brazil-027",
+      "name": "Moqueca Capixaba",
+      "cuisine": "Brazilian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {"name": "White fish fillets", "amount": "2 lbs", "category": "protein"},
+        {"name": "Lime juice", "amount": "2 tbsp", "category": "other"},
+        {"name": "Onion", "amount": "1 large", "category": "vegetable"},
+        {"name": "Tomatoes", "amount": "2", "category": "vegetable"},
+        {"name": "Green bell pepper", "amount": "1", "category": "vegetable"},
+        {"name": "Olive oil", "amount": "2 tbsp", "category": "other"},
+        {"name": "Cilantro", "amount": "1/4 cup", "category": "other"}
+      ],
+      "instructions": [
+        "Marinate fish in lime juice and salt",
+        "Layer onions, tomatoes, and peppers in clay pot",
+        "Add fish, drizzle with olive oil",
+        "Simmer gently until fish is cooked through",
+        "Garnish with cilantro and serve with rice"
+      ],
+      "nutrition": {"calories": 320, "protein": 28, "carbs": 8, "fat": 18, "fiber": 2, "sugar": 4, "sodium": 410},
+      "tags": ["brazilian", "fish", "capixaba"],
+      "rating": 4.7,
+      "reviews": 60
+    },
+    {
+      "id": "brazil-028",
+      "name": "Bolo de Fubá",
+      "cuisine": "Brazilian",
+      "mealType": ["dessert", "snack"],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 40,
+      "servings": 12,
+      "difficulty": "easy",
+      "ingredients": [
+        {"name": "Cornmeal", "amount": "2 cups", "category": "grain"},
+        {"name": "Flour", "amount": "1 cup", "category": "grain"},
+        {"name": "Sugar", "amount": "1 cup", "category": "other"},
+        {"name": "Eggs", "amount": "3", "category": "protein"},
+        {"name": "Milk", "amount": "1 cup", "category": "dairy"},
+        {"name": "Butter", "amount": "1/2 cup", "category": "dairy"},
+        {"name": "Baking powder", "amount": "1 tbsp", "category": "other"}
+      ],
+      "instructions": [
+        "Mix all ingredients, pour into greased pan",
+        "Bake at 350°F (175°C) for 35-40 minutes",
+        "Cool and slice"
+      ],
+      "nutrition": {"calories": 180, "protein": 3, "carbs": 32, "fat": 5, "fiber": 1, "sugar": 14, "sodium": 90},
+      "tags": ["brazilian", "cake", "cornmeal"],
+      "rating": 4.6,
+      "reviews": 80
+    },
+    {
+      "id": "brazil-029",
+      "name": "Feijão Tropeiro",
+      "cuisine": "Brazilian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {"name": "Beans (pinto or black)", "amount": "2 cups, cooked", "category": "other"},
+        {"name": "Bacon", "amount": "1/2 cup, chopped", "category": "protein"},
+        {"name": "Sausage", "amount": "1/2 cup, sliced", "category": "protein"},
+        {"name": "Eggs", "amount": "3", "category": "protein"},
+        {"name": "Cassava flour", "amount": "1 cup", "category": "grain"},
+        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
+        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"}
+      ],
+      "instructions": [
+        "Fry bacon, sausage, onion, and garlic",
+        "Add beans, stir in eggs, scramble",
+        "Mix in cassava flour, cook until crumbly"
+      ],
+      "nutrition": {"calories": 260, "protein": 10, "carbs": 28, "fat": 10, "fiber": 6, "sugar": 2, "sodium": 320},
+      "tags": ["brazilian", "beans", "cassava"],
+      "rating": 4.7,
+      "reviews": 75
+    },
+    {
+      "id": "brazil-030",
+      "name": "Curau de Milho",
+      "cuisine": "Brazilian",
+      "mealType": ["dessert", "snack"],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {"name": "Corn kernels", "amount": "3 cups, fresh", "category": "grain"},
+        {"name": "Milk", "amount": "2 cups", "category": "dairy"},
+        {"name": "Sugar", "amount": "1 cup", "category": "other"},
+        {"name": "Butter", "amount": "2 tbsp", "category": "dairy"},
+        {"name": "Cinnamon", "amount": "1 tsp", "category": "spice"}
+      ],
+      "instructions": [
+        "Blend corn and milk, strain",
+        "Cook with sugar and butter until thick",
+        "Pour into bowls, sprinkle with cinnamon"
+      ],
+      "nutrition": {"calories": 160, "protein": 3, "carbs": 32, "fat": 3, "fiber": 2, "sugar": 18, "sodium": 40},
+      "tags": ["brazilian", "corn", "dessert"],
+      "rating": 4.5,
+      "reviews": 60
+    },
+    {
+      "id": "brazil-031",
+      "name": "Tutu de Feijão",
+      "cuisine": "Brazilian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {"name": "Beans (black or pinto)", "amount": "2 cups, cooked", "category": "other"},
+        {"name": "Bacon", "amount": "1/2 cup, chopped", "category": "protein"},
+        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
+        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"},
+        {"name": "Cassava flour", "amount": "1 cup", "category": "grain"},
+        {"name": "Salt", "amount": "1/2 tsp", "category": "spice"}
+      ],
+      "instructions": [
+        "Fry bacon, onion, and garlic",
+        "Add beans, mash slightly",
+        "Stir in cassava flour and salt, cook until thick"
+      ],
+      "nutrition": {"calories": 210, "protein": 7, "carbs": 28, "fat": 7, "fiber": 6, "sugar": 2, "sodium": 180},
+      "tags": ["brazilian", "beans", "cassava"],
+      "rating": 4.6,
+      "reviews": 55
+    },
+    {
+      "id": "brazil-032",
+      "name": "Biscoito de Polvilho",
+      "cuisine": "Brazilian",
+      "mealType": ["snack"],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 25,
+      "servings": 30,
+      "difficulty": "easy",
+      "ingredients": [
+        {"name": "Tapioca starch", "amount": "2 cups", "category": "grain"},
+        {"name": "Eggs", "amount": "2", "category": "protein"},
+        {"name": "Oil", "amount": "1/2 cup", "category": "other"},
+        {"name": "Milk", "amount": "1 cup", "category": "dairy"},
+        {"name": "Salt", "amount": "1/2 tsp", "category": "spice"}
+      ],
+      "instructions": [
+        "Mix all ingredients, pipe onto baking sheet",
+        "Bake at 350°F (175°C) for 20-25 minutes until crisp"
+      ],
+      "nutrition": {"calories": 60, "protein": 1, "carbs": 10, "fat": 2, "fiber": 0, "sugar": 0, "sodium": 60},
+      "tags": ["brazilian", "snack", "tapioca"],
+      "rating": 4.5,
+      "reviews": 50
+    },
+    {
+      "id": "brazil-033",
+      "name": "Camarão na Moranga",
+      "cuisine": "Brazilian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "hard",
+      "ingredients": [
+        {"name": "Pumpkin", "amount": "1 large", "category": "vegetable"},
+        {"name": "Shrimp", "amount": "2 lbs, peeled", "category": "protein"},
+        {"name": "Cream cheese", "amount": "1 cup", "category": "dairy"},
+        {"name": "Tomato", "amount": "2, chopped", "category": "vegetable"},
+        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
+        {"name": "Coconut milk", "amount": "1 cup", "category": "dairy"},
+        {"name": "Olive oil", "amount": "2 tbsp", "category": "other"}
+      ],
+      "instructions": [
+        "Bake pumpkin until soft, scoop out some flesh",
+        "Sauté onion and tomato, add shrimp, cook briefly",
+        "Mix with cream cheese and coconut milk, fill pumpkin, bake again"
+      ],
+      "nutrition": {"calories": 260, "protein": 18, "carbs": 18, "fat": 12, "fiber": 3, "sugar": 6, "sodium": 320},
+      "tags": ["brazilian", "shrimp", "pumpkin"],
+      "rating": 4.8,
+      "reviews": 70
+    },
+    {
+      "id": "brazil-034",
+      "name": "Galinhada",
+      "cuisine": "Brazilian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {"name": "Chicken pieces", "amount": "2 lbs", "category": "protein"},
+        {"name": "Rice", "amount": "2 cups", "category": "grain"},
+        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
+        {"name": "Tomato", "amount": "2, chopped", "category": "vegetable"},
+        {"name": "Bell pepper", "amount": "1, chopped", "category": "vegetable"},
+        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"},
+        {"name": "Saffron", "amount": "1/2 tsp", "category": "spice"}
+      ],
+      "instructions": [
+        "Brown chicken, add onion, garlic, tomato, and pepper",
+        "Add rice and saffron, cover with water",
+        "Simmer until rice and chicken are cooked"
+      ],
+      "nutrition": {"calories": 320, "protein": 18, "carbs": 36, "fat": 10, "fiber": 2, "sugar": 3, "sodium": 220},
+      "tags": ["brazilian", "chicken", "rice"],
+      "rating": 4.7,
+      "reviews": 80
+    },
+    {
+      "id": "brazil-035",
+      "name": "Paçoca de Amendoim",
+      "cuisine": "Brazilian",
+      "mealType": ["dessert", "snack"],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 0,
+      "servings": 20,
+      "difficulty": "easy",
+      "ingredients": [
+        {"name": "Roasted peanuts", "amount": "2 cups", "category": "nut"},
+        {"name": "Sugar", "amount": "1 cup", "category": "other"},
+        {"name": "Salt", "amount": "1/4 tsp", "category": "spice"}
+      ],
+      "instructions": [
+        "Grind peanuts, mix with sugar and salt",
+        "Press into molds, serve as candy"
+      ],
+      "nutrition": {"calories": 90, "protein": 3, "carbs": 8, "fat": 6, "fiber": 1, "sugar": 6, "sodium": 30},
+      "tags": ["brazilian", "peanut", "candy"],
+      "rating": 4.6,
+      "reviews": 60
+    },
+    {
+      "id": "brazil-036",
+      "name": "Canjiquinha",
+      "cuisine": "Brazilian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {"name": "Cracked corn", "amount": "2 cups", "category": "grain"},
+        {"name": "Pork ribs", "amount": "1 lb", "category": "protein"},
+        {"name": "Bacon", "amount": "1/2 cup, chopped", "category": "protein"},
+        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
+        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"},
+        {"name": "Bay leaf", "amount": "1", "category": "spice"}
+      ],
+      "instructions": [
+        "Brown pork ribs and bacon, add onion and garlic",
+        "Add cracked corn, bay leaf, and water",
+        "Simmer until corn and meat are tender"
+      ],
+      "nutrition": {"calories": 280, "protein": 10, "carbs": 28, "fat": 14, "fiber": 2, "sugar": 1, "sodium": 180},
+      "tags": ["brazilian", "corn", "pork"],
+      "rating": 4.5,
+      "reviews": 50
     }
   ]
 }
