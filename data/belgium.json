@@ -6,19 +6,46 @@
       "id": "belgium-001",
       "name": "Moules Frites",
       "cuisine": "Belgian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 20,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Mussels", "amount": "4 lbs", "category": "protein" },
-        { "name": "French fries", "amount": "4 cups", "category": "vegetable" },
-        { "name": "White wine", "amount": "1 cup", "category": "other" },
-        { "name": "Shallots", "amount": "3", "category": "vegetable" },
-        { "name": "Butter", "amount": "4 tbsp", "category": "dairy" },
-        { "name": "Parsley", "amount": "1/4 cup", "category": "other" }
+        {
+          "name": "Mussels",
+          "amount": "4 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "French fries",
+          "amount": "4 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "White wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Shallots",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Parsley",
+          "amount": "1/4 cup",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Clean and debeard mussels",
@@ -37,9 +64,4645 @@
         "sugar": 3,
         "sodium": 890
       },
-      "tags": ["belgian", "seafood", "classic"],
+      "tags": [
+        "belgian",
+        "seafood",
+        "classic"
+      ],
       "rating": 4.7,
       "reviews": 198
+    },
+    {
+      "id": "belgium-002",
+      "name": "Stoofvlees (Flemish Beef Stew)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 150,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef chuck",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Brown beer",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Bread",
+          "amount": "2 slices",
+          "category": "grain"
+        },
+        {
+          "name": "Mustard",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown beef, sauté onions, add beer, bread with mustard, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 36,
+        "carbs": 18,
+        "fat": 28,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 620
+      },
+      "tags": [
+        "belgian",
+        "beef",
+        "stew"
+      ],
+      "rating": 4.6,
+      "reviews": 112
+    },
+    {
+      "id": "belgium-003",
+      "name": "Waterzooi",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken or fish",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Leek",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "2 stalks",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Simmer chicken/fish and vegetables, finish with cream."
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 28,
+        "carbs": 18,
+        "fat": 22,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 540
+      },
+      "tags": [
+        "belgian",
+        "stew",
+        "classic"
+      ],
+      "rating": 4.5,
+      "reviews": 87
+    },
+    {
+      "id": "belgium-004",
+      "name": "Belgian Waffles",
+      "cuisine": "Belgian",
+      "mealType": [
+        "breakfast",
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Milk",
+          "amount": "1.5 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/4 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Baking powder",
+          "amount": "2 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, cook in waffle iron until golden."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 7,
+        "carbs": 44,
+        "fat": 13,
+        "fiber": 2,
+        "sugar": 10,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "waffle",
+        "dessert"
+      ],
+      "rating": 4.8,
+      "reviews": 210
+    },
+    {
+      "id": "belgium-005",
+      "name": "Speculoos Cookies",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 24,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Brown sugar",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Butter",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Baking powder",
+          "amount": "1 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, roll out, cut, bake until crisp."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 1,
+        "carbs": 12,
+        "fat": 4,
+        "fiber": 0,
+        "sugar": 6,
+        "sodium": 40
+      },
+      "tags": [
+        "belgian",
+        "cookie",
+        "spice"
+      ],
+      "rating": 4.7,
+      "reviews": 134
+    },
+    {
+      "id": "belgium-006",
+      "name": "Endive Gratin (Chicon au Gratin)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Belgian endive",
+          "amount": "8",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ham",
+          "amount": "8 slices",
+          "category": "protein"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Wrap endive in ham, place in dish, cover with cheese sauce, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 20,
+        "carbs": 10,
+        "fat": 24,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 780
+      },
+      "tags": [
+        "belgian",
+        "endive",
+        "gratin"
+      ],
+      "rating": 4.5,
+      "reviews": 76
+    },
+    {
+      "id": "belgium-007",
+      "name": "Carbonnade Flamande",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 180,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Beef chuck",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Brown beer",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Bread",
+          "amount": "2 slices",
+          "category": "grain"
+        },
+        {
+          "name": "Mustard",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown beef, sauté onions, add beer, bread with mustard, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 490,
+        "protein": 37,
+        "carbs": 19,
+        "fat": 29,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 630
+      },
+      "tags": [
+        "belgian",
+        "beef",
+        "stew"
+      ],
+      "rating": 4.6,
+      "reviews": 98
+    },
+    {
+      "id": "belgium-008",
+      "name": "Grey Shrimp Croquettes",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Grey shrimp",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Make thick béchamel, fold in shrimp, shape, bread, fry until golden."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 8,
+        "carbs": 18,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 220
+      },
+      "tags": [
+        "belgian",
+        "shrimp",
+        "croquette"
+      ],
+      "rating": 4.4,
+      "reviews": 54
+    },
+    {
+      "id": "belgium-009",
+      "name": "Tomate Crevettes",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Tomatoes",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Grey shrimp",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Hollow tomatoes, fill with shrimp-mayo mixture, garnish with parsley."
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 10,
+        "carbs": 8,
+        "fat": 10,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "shrimp",
+        "appetizer"
+      ],
+      "rating": 4.3,
+      "reviews": 41
+    },
+    {
+      "id": "belgium-010",
+      "name": "Rabbit with Prunes",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Rabbit",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Prunes",
+          "amount": "1 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Brown beer",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown rabbit, sauté onions, add beer and prunes, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 370,
+        "protein": 32,
+        "carbs": 18,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 10,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "rabbit",
+        "stew"
+      ],
+      "rating": 4.2,
+      "reviews": 22
+    },
+    {
+      "id": "belgium-011",
+      "name": "Boudin Blanc",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "White sausage (boudin blanc)",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Apple",
+          "amount": "1",
+          "category": "fruit"
+        }
+      ],
+      "instructions": [
+        "Brown sausage, sauté onion and apple in butter, serve together."
+      ],
+      "nutrition": {
+        "calories": 310,
+        "protein": 14,
+        "carbs": 12,
+        "fat": 22,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 540
+      },
+      "tags": [
+        "belgian",
+        "sausage",
+        "classic"
+      ],
+      "rating": 4.3,
+      "reviews": 19
+    },
+    {
+      "id": "belgium-012",
+      "name": "Filet Américain",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "appetizer"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef tenderloin (raw)",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Egg yolk",
+          "amount": "1",
+          "category": "protein"
+        },
+        {
+          "name": "Capers",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mustard",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Worcestershire sauce",
+          "amount": "1 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Finely chop beef, mix with other ingredients, serve raw with toast."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 22,
+        "carbs": 2,
+        "fat": 14,
+        "fiber": 0,
+        "sugar": 1,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "beef",
+        "raw"
+      ],
+      "rating": 4.2,
+      "reviews": 17
+    },
+    {
+      "id": "belgium-013",
+      "name": "Paling in 't Groen (Eel in Green Sauce)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Eel",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Mixed fresh herbs",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cook eel with herbs, onion, and butter, finish with lemon juice."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 18,
+        "carbs": 4,
+        "fat": 18,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "eel",
+        "herbs"
+      ],
+      "rating": 4.1,
+      "reviews": 12
+    },
+    {
+      "id": "belgium-014",
+      "name": "Vol-au-Vent",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken breast",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mushrooms",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Puff pastry shells",
+          "amount": "6",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook chicken and mushrooms, make creamy sauce, fill pastry shells."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 18,
+        "carbs": 24,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "chicken",
+        "pastry"
+      ],
+      "rating": 4.4,
+      "reviews": 23
+    },
+    {
+      "id": "belgium-015",
+      "name": "Dame Blanche",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 5,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Vanilla ice cream",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Chocolate sauce",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Whipped cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Scoop ice cream, top with chocolate sauce and whipped cream."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 16,
+        "fiber": 1,
+        "sugar": 30,
+        "sodium": 90
+      },
+      "tags": [
+        "belgian",
+        "dessert",
+        "ice cream"
+      ],
+      "rating": 4.6,
+      "reviews": 31
+    },
+    {
+      "id": "belgium-016",
+      "name": "Gaufres de Liège (Liège Waffles)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "breakfast",
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Yeast",
+          "amount": "2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Pearl sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Make yeast dough, fold in pearl sugar, cook in waffle iron until golden."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 7,
+        "carbs": 46,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 16,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "waffle",
+        "dessert"
+      ],
+      "rating": 4.7,
+      "reviews": 44
+    },
+    {
+      "id": "belgium-017",
+      "name": "Boulets à la Liégeoise (Liège Meatballs)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef and pork",
+          "amount": "1.5 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "protein"
+        },
+        {
+          "name": "Sirop de Liège",
+          "amount": "2 tbsp",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Mix meat, onion, breadcrumbs, egg, and sirop, form balls, bake in sauce."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 18,
+        "fat": 18,
+        "fiber": 2,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "meatball",
+        "liège"
+      ],
+      "rating": 4.5,
+      "reviews": 27
+    },
+    {
+      "id": "belgium-018",
+      "name": "Asperges à la Flamande (Flemish Asparagus)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "White asparagus",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Boil asparagus, top with chopped eggs, melted butter, and parsley."
+      ],
+      "nutrition": {
+        "calories": 140,
+        "protein": 7,
+        "carbs": 10,
+        "fat": 8,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 80
+      },
+      "tags": [
+        "belgian",
+        "asparagus",
+        "vegetarian"
+      ],
+      "rating": 4.3,
+      "reviews": 18
+    },
+    {
+      "id": "belgium-019",
+      "name": "Croquettes de Crevettes (Shrimp Croquettes)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Grey shrimp",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Make thick béchamel, fold in shrimp, shape, bread, fry until golden."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 8,
+        "carbs": 18,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 220
+      },
+      "tags": [
+        "belgian",
+        "shrimp",
+        "croquette"
+      ],
+      "rating": 4.4,
+      "reviews": 14
+    },
+    {
+      "id": "belgium-020",
+      "name": "Salade Liégeoise",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "salad"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Green beans",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potatoes",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Bacon",
+          "amount": "4 strips",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Vinegar",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Boil beans and potatoes, toss with bacon, onion, and vinegar."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 8,
+        "carbs": 24,
+        "fat": 10,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "salad",
+        "liège"
+      ],
+      "rating": 4.2,
+      "reviews": 12
+    },
+    {
+      "id": "belgium-021",
+      "name": "Tarte au Riz (Rice Tart)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Cook rice in milk, mix with eggs and sugar, fill crust, bake until set."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 6,
+        "carbs": 38,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 16,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "tart",
+        "dessert"
+      ],
+      "rating": 4.5,
+      "reviews": 16
+    },
+    {
+      "id": "belgium-022",
+      "name": "Lapin à la Gueuze (Rabbit in Gueuze Beer)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Rabbit",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Gueuze beer",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Prunes",
+          "amount": "1 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown rabbit, sauté onions, add beer and prunes, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 370,
+        "protein": 32,
+        "carbs": 18,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 10,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "rabbit",
+        "stew"
+      ],
+      "rating": 4.2,
+      "reviews": 15
+    },
+    {
+      "id": "belgium-023",
+      "name": "Chicon au Gratin (Endive and Ham Gratin)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Belgian endive",
+          "amount": "8",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ham",
+          "amount": "8 slices",
+          "category": "protein"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Wrap endive in ham, place in dish, cover with cheese sauce, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 20,
+        "carbs": 10,
+        "fat": 24,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 780
+      },
+      "tags": [
+        "belgian",
+        "endive",
+        "gratin"
+      ],
+      "rating": 4.5,
+      "reviews": 20
+    },
+    {
+      "id": "belgium-024",
+      "name": "Balletjes in Tomatensaus (Meatballs in Tomato Sauce)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ground beef and pork",
+          "amount": "1.5 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Mix meat, onion, breadcrumbs, and egg, form balls, simmer in tomato sauce."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 18,
+        "fat": 18,
+        "fiber": 2,
+        "sugar": 8,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "meatball",
+        "tomato"
+      ],
+      "rating": 4.4,
+      "reviews": 18
+    },
+    {
+      "id": "belgium-025",
+      "name": "Pêches au Thon (Peaches with Tuna)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Canned peaches",
+          "amount": "4 halves",
+          "category": "fruit"
+        },
+        {
+          "name": "Canned tuna",
+          "amount": "1 can",
+          "category": "protein"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "1 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Fill peach halves with tuna-mayo mixture, drizzle with lemon juice."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 8,
+        "carbs": 10,
+        "fat": 5,
+        "fiber": 1,
+        "sugar": 8,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "peach",
+        "tuna"
+      ],
+      "rating": 4.0,
+      "reviews": 10
+    },
+    {
+      "id": "belgium-026",
+      "name": "Mattenkoek (Almond Cheese Cake)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Almond paste",
+          "amount": "1 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Ricotta cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Mix almond paste, cheese, eggs, and sugar, fill crust, bake until set."
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 7,
+        "carbs": 32,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 18,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "cake",
+        "almond"
+      ],
+      "rating": 4.3,
+      "reviews": 14
+    },
+    {
+      "id": "belgium-027",
+      "name": "Potjevleesch",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 180,
+      "servings": 8,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Pork",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Rabbit",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Veal",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Vinegar",
+          "amount": "1/2 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Layer meats and onion, cover with vinegar and water, slow-cook until set in jelly."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 28,
+        "carbs": 4,
+        "fat": 20,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "meat",
+        "terrine"
+      ],
+      "rating": 4.2,
+      "reviews": 12
+    },
+    {
+      "id": "belgium-028",
+      "name": "Crème Brûlée à la Belge",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Cream",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Egg yolks",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Vanilla bean",
+          "amount": "1",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix cream, yolks, sugar, and vanilla, bake in ramekins, caramelize sugar on top."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 5,
+        "carbs": 28,
+        "fat": 22,
+        "fiber": 0,
+        "sugar": 24,
+        "sodium": 60
+      },
+      "tags": [
+        "belgian",
+        "dessert",
+        "cream"
+      ],
+      "rating": 4.6,
+      "reviews": 18
+    },
+    {
+      "id": "belgium-029",
+      "name": "Stoemp",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrots",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Leek",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Boil vegetables, mash with butter and milk, season to taste."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 32,
+        "fat": 6,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 80
+      },
+      "tags": [
+        "belgian",
+        "mash",
+        "vegetarian"
+      ],
+      "rating": 4.4,
+      "reviews": 15
+    },
+    {
+      "id": "belgium-030",
+      "name": "Witloofsoep (Belgian Endive Soup)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Belgian endive",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potatoes",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Sauté endive and onion, add potatoes, simmer with milk, blend until smooth."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 3,
+        "carbs": 20,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 60
+      },
+      "tags": [
+        "belgian",
+        "soup",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "belgium-031",
+      "name": "Pain à la Grecque (Brussels Spiced Bread)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "breakfast",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Brown sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Yeast",
+          "amount": "2 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Make yeast dough, mix in sugar and cinnamon, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 5,
+        "carbs": 36,
+        "fat": 6,
+        "fiber": 2,
+        "sugar": 12,
+        "sodium": 80
+      },
+      "tags": [
+        "belgian",
+        "bread",
+        "spice"
+      ],
+      "rating": 4.3,
+      "reviews": 13
+    },
+    {
+      "id": "belgium-032",
+      "name": "Ganda Ham with Melon",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Ganda ham",
+          "amount": "8 slices",
+          "category": "protein"
+        },
+        {
+          "name": "Cantaloupe melon",
+          "amount": "1",
+          "category": "fruit"
+        }
+      ],
+      "instructions": [
+        "Slice melon, wrap with ham, serve chilled."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 8,
+        "carbs": 10,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 8,
+        "sodium": 480
+      },
+      "tags": [
+        "belgian",
+        "ham",
+        "melon"
+      ],
+      "rating": 4.1,
+      "reviews": 9
+    },
+    {
+      "id": "belgium-033",
+      "name": "Paling in 't Rood (Eel in Red Sauce)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Eel",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato puree",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Red wine",
+          "amount": "1/2 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Cook eel with onion, tomato, and wine until tender."
+      ],
+      "nutrition": {
+        "calories": 240,
+        "protein": 18,
+        "carbs": 6,
+        "fat": 14,
+        "fiber": 1,
+        "sugar": 4,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "eel",
+        "sauce"
+      ],
+      "rating": 4.0,
+      "reviews": 7
+    },
+    {
+      "id": "belgium-034",
+      "name": "Garnalen Tomatensoep (Shrimp Tomato Soup)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "soup"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Grey shrimp",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Tomatoes",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Vegetable broth",
+          "amount": "4 cups",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Simmer tomatoes, onion, and broth, add shrimp, cook briefly."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 8,
+        "carbs": 10,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "shrimp",
+        "soup"
+      ],
+      "rating": 4.2,
+      "reviews": 11
+    },
+    {
+      "id": "belgium-035",
+      "name": "Koninginnehapje (Queen's Bite)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken breast",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mushrooms",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Puff pastry shells",
+          "amount": "6",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook chicken and mushrooms, make creamy sauce, fill pastry shells."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 18,
+        "carbs": 24,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "chicken",
+        "pastry"
+      ],
+      "rating": 4.4,
+      "reviews": 19
+    },
+    {
+      "id": "belgium-036",
+      "name": "Boterkoek (Butter Cake)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, bake until golden and set."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 4,
+        "carbs": 38,
+        "fat": 18,
+        "fiber": 1,
+        "sugar": 20,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "cake",
+        "butter"
+      ],
+      "rating": 4.5,
+      "reviews": 14
+    },
+    {
+      "id": "belgium-037",
+      "name": "Filet de Sole à l'Ostendaise",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Sole fillets",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Grey shrimp",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mushrooms",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Poach sole, top with shrimp and mushroom cream sauce."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 20,
+        "carbs": 6,
+        "fat": 12,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 220
+      },
+      "tags": [
+        "belgian",
+        "fish",
+        "shrimp"
+      ],
+      "rating": 4.3,
+      "reviews": 10
+    },
+    {
+      "id": "belgium-038",
+      "name": "Karnemelkstampers (Buttermilk Mash)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Buttermilk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Chives",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Boil potatoes, mash with buttermilk and butter, stir in chives."
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 4,
+        "carbs": 30,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 80
+      },
+      "tags": [
+        "belgian",
+        "mash",
+        "vegetarian"
+      ],
+      "rating": 4.2,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-039",
+      "name": "Pekelharing (Pickled Herring)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Pickled herring",
+          "amount": "8 fillets",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Vinegar",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Slice herring and onion, drizzle with vinegar, serve chilled."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 10,
+        "carbs": 4,
+        "fat": 6,
+        "fiber": 0,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "herring",
+        "pickled"
+      ],
+      "rating": 4.0,
+      "reviews": 6
+    },
+    {
+      "id": "belgium-040",
+      "name": "Gevulde Tomaten met Garnalen (Stuffed Tomatoes with Shrimp)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Tomatoes",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Grey shrimp",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Hollow tomatoes, fill with shrimp-mayo mixture, garnish with parsley."
+      ],
+      "nutrition": {
+        "calories": 160,
+        "protein": 10,
+        "carbs": 8,
+        "fat": 10,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "shrimp",
+        "appetizer"
+      ],
+      "rating": 4.3,
+      "reviews": 12
+    },
+    {
+      "id": "belgium-041",
+      "name": "Rijstpap (Rice Pudding)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "4 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Simmer rice in milk with sugar and cinnamon until creamy."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 36,
+        "fat": 2,
+        "fiber": 1,
+        "sugar": 16,
+        "sodium": 60
+      },
+      "tags": [
+        "belgian",
+        "rice",
+        "dessert"
+      ],
+      "rating": 4.4,
+      "reviews": 13
+    },
+    {
+      "id": "belgium-042",
+      "name": "Geraardsbergse Mattentaart",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 45,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Puff pastry",
+          "amount": "1 sheet",
+          "category": "grain"
+        },
+        {
+          "name": "Almond paste",
+          "amount": "1 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Ricotta cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Mix almond paste, cheese, eggs, and sugar, fill pastry, bake until set."
+      ],
+      "nutrition": {
+        "calories": 290,
+        "protein": 7,
+        "carbs": 34,
+        "fat": 15,
+        "fiber": 2,
+        "sugar": 18,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "tart",
+        "almond"
+      ],
+      "rating": 4.3,
+      "reviews": 10
+    },
+    {
+      "id": "belgium-043",
+      "name": "Limburgse Vlaai (Limburg Pie)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 50,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Cherries",
+          "amount": "2 cups",
+          "category": "fruit"
+        },
+        {
+          "name": "Custard",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Fill crust with cherries and custard, bake until set."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 8,
+        "fiber": 2,
+        "sugar": 20,
+        "sodium": 100
+      },
+      "tags": [
+        "belgian",
+        "pie",
+        "cherry"
+      ],
+      "rating": 4.4,
+      "reviews": 11
+    },
+    {
+      "id": "belgium-044",
+      "name": "Gentse Waterzooi (Ghent Stew)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Leek",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "2 stalks",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Simmer chicken and vegetables, finish with cream."
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 28,
+        "carbs": 18,
+        "fat": 22,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 540
+      },
+      "tags": [
+        "belgian",
+        "stew",
+        "classic"
+      ],
+      "rating": 4.5,
+      "reviews": 13
+    },
+    {
+      "id": "belgium-045",
+      "name": "Bicky Burger",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 10,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Beef patty",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Buns",
+          "amount": "4",
+          "category": "grain"
+        },
+        {
+          "name": "Bicky sauce",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pickles",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Grill patties, assemble with buns, sauce, onion, and pickles."
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 20,
+        "carbs": 38,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 620
+      },
+      "tags": [
+        "belgian",
+        "burger",
+        "snack"
+      ],
+      "rating": 4.2,
+      "reviews": 15
+    },
+    {
+      "id": "belgium-046",
+      "name": "Paling in 't Groen met Frieten (Eel in Green Sauce with Fries)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Eel",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Mixed fresh herbs",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "French fries",
+          "amount": "4 cups",
+          "category": "vegetable"
+        }
+      ],
+      "instructions": [
+        "Cook eel with herbs, onion, and butter, finish with lemon juice. Serve with fries."
+      ],
+      "nutrition": {
+        "calories": 540,
+        "protein": 28,
+        "carbs": 48,
+        "fat": 22,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 890
+      },
+      "tags": [
+        "belgian",
+        "eel",
+        "fries"
+      ],
+      "rating": 4.3,
+      "reviews": 9
+    },
+    {
+      "id": "belgium-047",
+      "name": "Witte Pens (White Sausage)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "White sausage",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Apple",
+          "amount": "1",
+          "category": "fruit"
+        }
+      ],
+      "instructions": [
+        "Brown sausage, sauté onion and apple in butter, serve together."
+      ],
+      "nutrition": {
+        "calories": 310,
+        "protein": 14,
+        "carbs": 12,
+        "fat": 22,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 540
+      },
+      "tags": [
+        "belgian",
+        "sausage",
+        "classic"
+      ],
+      "rating": 4.2,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-048",
+      "name": "Kippenwaterzooi (Chicken Waterzooi)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Chicken",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Leek",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "2 stalks",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Simmer chicken and vegetables, finish with cream."
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 28,
+        "carbs": 18,
+        "fat": 22,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 540
+      },
+      "tags": [
+        "belgian",
+        "stew",
+        "classic"
+      ],
+      "rating": 4.5,
+      "reviews": 10
+    },
+    {
+      "id": "belgium-049",
+      "name": "Belgische Frieten (Belgian Fries)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Oil",
+          "amount": "for frying",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cut potatoes, fry twice until golden and crisp, season with salt."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 5,
+        "carbs": 60,
+        "fat": 10,
+        "fiber": 5,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "fries",
+        "snack"
+      ],
+      "rating": 4.7,
+      "reviews": 22
+    },
+    {
+      "id": "belgium-050",
+      "name": "Appelmoes (Belgian Applesauce)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "side",
+        "snack",
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Apples",
+          "amount": "6",
+          "category": "fruit"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/4 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "1 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Peel and chop apples, simmer with sugar, cinnamon, and lemon juice until soft, mash to desired consistency."
+      ],
+      "nutrition": {
+        "calories": 110,
+        "protein": 0,
+        "carbs": 28,
+        "fat": 0,
+        "fiber": 3,
+        "sugar": 24,
+        "sodium": 2
+      },
+      "tags": [
+        "belgian",
+        "applesauce",
+        "side"
+      ],
+      "rating": 4.6,
+      "reviews": 14
+    },
+    {
+      "id": "belgium-051",
+      "name": "Grote Garnalen met Lookboter (Large Shrimp with Garlic Butter)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 10,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Large shrimp",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Sauté shrimp in garlic butter, sprinkle with parsley."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 18,
+        "carbs": 2,
+        "fat": 14,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "shrimp",
+        "appetizer"
+      ],
+      "rating": 4.4,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-052",
+      "name": "Koninginnenhapje met Vis (Seafood Vol-au-Vent)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Mixed seafood",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mushrooms",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Puff pastry shells",
+          "amount": "6",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Cook seafood and mushrooms, make creamy sauce, fill pastry shells."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 18,
+        "carbs": 24,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "seafood",
+        "pastry"
+      ],
+      "rating": 4.3,
+      "reviews": 7
+    },
+    {
+      "id": "belgium-053",
+      "name": "Luikse Sirooptaart (Liège Syrup Tart)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 40,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Liège syrup",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Mix syrup, eggs, and butter, fill crust, bake until set."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 4,
+        "carbs": 38,
+        "fat": 8,
+        "fiber": 1,
+        "sugar": 28,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "tart",
+        "syrup"
+      ],
+      "rating": 4.2,
+      "reviews": 6
+    },
+    {
+      "id": "belgium-054",
+      "name": "Gentse Stoverij (Ghent Beef Stew)",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 150,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Beef chuck",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Brown beer",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Bread",
+          "amount": "2 slices",
+          "category": "grain"
+        },
+        {
+          "name": "Mustard",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown beef, sauté onions, add beer, bread with mustard, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 36,
+        "carbs": 18,
+        "fat": 28,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 620
+      },
+      "tags": [
+        "belgian",
+        "beef",
+        "stew"
+      ],
+      "rating": 4.5,
+      "reviews": 10
+    },
+    {
+      "id": "belgium-055",
+      "name": "Brussels Sprouts Gratin",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Brussels sprouts",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Blanch sprouts, arrange in dish, cover with cheese sauce, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 10,
+        "carbs": 14,
+        "fat": 14,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "sprouts",
+        "gratin"
+      ],
+      "rating": 4.3,
+      "reviews": 9
+    },
+    {
+      "id": "belgium-056",
+      "name": "Belgian Hot Chocolate",
+      "cuisine": "Belgian",
+      "mealType": [
+        "drink",
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 10,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Dark chocolate",
+          "amount": "4 oz",
+          "category": "sweetener"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tbsp",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Heat milk, melt chocolate and sugar in, whisk until smooth."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 7,
+        "carbs": 38,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 30,
+        "sodium": 90
+      },
+      "tags": [
+        "belgian",
+        "drink",
+        "chocolate"
+      ],
+      "rating": 4.8,
+      "reviews": 18
+    },
+    {
+      "id": "belgium-057",
+      "name": "Belgian Endive Salad",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "salad",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Belgian endive",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Apple",
+          "amount": "1",
+          "category": "fruit"
+        },
+        {
+          "name": "Walnuts",
+          "amount": "1/2 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "1/4 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Slice endive and apple, toss with walnuts and mayonnaise."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 3,
+        "carbs": 14,
+        "fat": 12,
+        "fiber": 3,
+        "sugar": 8,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "salad",
+        "endive"
+      ],
+      "rating": 4.2,
+      "reviews": 7
+    },
+    {
+      "id": "belgium-058",
+      "name": "Belgian Chocolate Mousse",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 0,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Dark chocolate",
+          "amount": "6 oz",
+          "category": "sweetener"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/4 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Melt chocolate, fold in whipped eggs and cream, chill until set."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 6,
+        "carbs": 28,
+        "fat": 22,
+        "fiber": 2,
+        "sugar": 24,
+        "sodium": 60
+      },
+      "tags": [
+        "belgian",
+        "dessert",
+        "chocolate"
+      ],
+      "rating": 4.7,
+      "reviews": 16
+    },
+    {
+      "id": "belgium-059",
+      "name": "Belgian Beer Bread",
+      "cuisine": "Belgian",
+      "mealType": [
+        "breakfast",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 45,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Flour",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Beer",
+          "amount": "12 oz",
+          "category": "other"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tbsp",
+          "category": "sweetener"
+        },
+        {
+          "name": "Baking powder",
+          "amount": "1 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, bake until golden and set."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 5,
+        "carbs": 36,
+        "fat": 2,
+        "fiber": 2,
+        "sugar": 6,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "bread",
+        "beer"
+      ],
+      "rating": 4.4,
+      "reviews": 12
+    },
+    {
+      "id": "belgium-060",
+      "name": "Belgian Pear Tart",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 50,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Pears",
+          "amount": "3",
+          "category": "fruit"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Slice pears, arrange in crust, pour over egg-cream mixture, bake until set."
+      ],
+      "nutrition": {
+        "calories": 240,
+        "protein": 4,
+        "carbs": 38,
+        "fat": 8,
+        "fiber": 3,
+        "sugar": 22,
+        "sodium": 80
+      },
+      "tags": [
+        "belgian",
+        "tart",
+        "pear"
+      ],
+      "rating": 4.5,
+      "reviews": 11
+    },
+    {
+      "id": "belgium-061",
+      "name": "Belgian Chicory Gratin",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Belgian endive",
+          "amount": "6",
+          "category": "vegetable"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Blanch endive, arrange in dish, cover with cheese sauce, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 10,
+        "carbs": 14,
+        "fat": 14,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "endive",
+        "gratin"
+      ],
+      "rating": 4.3,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-062",
+      "name": "Belgian Leek Tart",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "snack",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 45,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Leeks",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Sauté leeks, mix with eggs, cream, and cheese, fill crust, bake until set."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 7,
+        "carbs": 22,
+        "fat": 16,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "tart",
+        "leek"
+      ],
+      "rating": 4.4,
+      "reviews": 9
+    },
+    {
+      "id": "belgium-063",
+      "name": "Belgian Ham and Cheese Croquettes",
+      "cuisine": "Belgian",
+      "mealType": [
+        "appetizer",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 30,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Ham",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Make thick béchamel, fold in ham and cheese, shape, bread, fry until golden."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 10,
+        "carbs": 18,
+        "fat": 10,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "croquette",
+        "ham"
+      ],
+      "rating": 4.5,
+      "reviews": 10
+    },
+    {
+      "id": "belgium-064",
+      "name": "Belgian Apple Cake",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Apples",
+          "amount": "3",
+          "category": "fruit"
+        },
+        {
+          "name": "Flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Butter",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, fold in apples, bake until golden and set."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 4,
+        "carbs": 38,
+        "fat": 8,
+        "fiber": 2,
+        "sugar": 22,
+        "sodium": 80
+      },
+      "tags": [
+        "belgian",
+        "cake",
+        "apple"
+      ],
+      "rating": 4.4,
+      "reviews": 11
+    },
+    {
+      "id": "belgium-065",
+      "name": "Belgian Rabbit with Prunes",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Rabbit",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Prunes",
+          "amount": "1 cup",
+          "category": "fruit"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Brown beer",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown rabbit, sauté onions, add beer and prunes, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 370,
+        "protein": 32,
+        "carbs": 18,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 10,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "rabbit",
+        "stew"
+      ],
+      "rating": 4.2,
+      "reviews": 12
+    },
+    {
+      "id": "belgium-066",
+      "name": "Belgian Chocolate Truffles",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 0,
+      "servings": 24,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Dark chocolate",
+          "amount": "8 oz",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cocoa powder",
+          "amount": "1/4 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Melt chocolate with cream and butter, chill, roll into balls, coat with cocoa powder."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 1,
+        "carbs": 8,
+        "fat": 6,
+        "fiber": 1,
+        "sugar": 6,
+        "sodium": 10
+      },
+      "tags": [
+        "belgian",
+        "chocolate",
+        "truffle"
+      ],
+      "rating": 4.8,
+      "reviews": 18
+    },
+    {
+      "id": "belgium-067",
+      "name": "Belgian Mussel Soup",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "soup"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Mussels",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Leek",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "1 stalk",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Simmer mussels and vegetables, finish with cream."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 18,
+        "carbs": 10,
+        "fat": 10,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "mussel",
+        "soup"
+      ],
+      "rating": 4.5,
+      "reviews": 13
+    },
+    {
+      "id": "belgium-068",
+      "name": "Belgian Potato Gratin",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 50,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": "2 lbs",
+          "category": "vegetable"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Layer potatoes, cheese, and cream, bake until golden and tender."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 6,
+        "carbs": 28,
+        "fat": 14,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "potato",
+        "gratin"
+      ],
+      "rating": 4.4,
+      "reviews": 12
+    },
+    {
+      "id": "belgium-069",
+      "name": "Belgian Rye Bread",
+      "cuisine": "Belgian",
+      "mealType": [
+        "breakfast",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Rye flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "All-purpose flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Yeast",
+          "amount": "2 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Water",
+          "amount": "1 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix ingredients, knead, let rise, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 5,
+        "carbs": 36,
+        "fat": 2,
+        "fiber": 4,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "belgian",
+        "bread",
+        "rye"
+      ],
+      "rating": 4.3,
+      "reviews": 10
+    },
+    {
+      "id": "belgium-070",
+      "name": "Belgian Carrot Salad",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "salad",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Carrots",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Grate carrots, toss with lemon juice, olive oil, and parsley."
+      ],
+      "nutrition": {
+        "calories": 90,
+        "protein": 1,
+        "carbs": 12,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 40
+      },
+      "tags": [
+        "belgian",
+        "salad",
+        "carrot"
+      ],
+      "rating": 4.2,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-071",
+      "name": "Belgian Shrimp Omelette",
+      "cuisine": "Belgian",
+      "mealType": [
+        "breakfast",
+        "lunch"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 10,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Grey shrimp",
+          "amount": "1/2 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Chives",
+          "amount": "1 tbsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Beat eggs, cook in butter, add shrimp and chives, fold and serve."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 18,
+        "carbs": 2,
+        "fat": 16,
+        "fiber": 0,
+        "sugar": 1,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "shrimp",
+        "omelette"
+      ],
+      "rating": 4.3,
+      "reviews": 7
+    },
+    {
+      "id": "belgium-072",
+      "name": "Belgian Chicory Salad",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "salad",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 0,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Belgian endive",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Apple",
+          "amount": "1",
+          "category": "fruit"
+        },
+        {
+          "name": "Walnuts",
+          "amount": "1/2 cup",
+          "category": "nut"
+        },
+        {
+          "name": "Mayonnaise",
+          "amount": "1/4 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Slice endive and apple, toss with walnuts and mayonnaise."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 3,
+        "carbs": 14,
+        "fat": 12,
+        "fiber": 3,
+        "sugar": 8,
+        "sodium": 120
+      },
+      "tags": [
+        "belgian",
+        "salad",
+        "endive"
+      ],
+      "rating": 4.2,
+      "reviews": 6
+    },
+    {
+      "id": "belgium-073",
+      "name": "Belgian Veal Stew",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Veal",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "White wine",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown veal, sauté vegetables, add wine, simmer until tender."
+      ],
+      "nutrition": {
+        "calories": 340,
+        "protein": 28,
+        "carbs": 8,
+        "fat": 18,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "veal",
+        "stew"
+      ],
+      "rating": 4.1,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-074",
+      "name": "Belgian Fish Waterzooi",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "White fish fillets",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Leek",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Celery",
+          "amount": "2 stalks",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Simmer fish and vegetables, finish with cream."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 26,
+        "carbs": 14,
+        "fat": 16,
+        "fiber": 3,
+        "sugar": 5,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "fish",
+        "waterzooi"
+      ],
+      "rating": 4.4,
+      "reviews": 9
+    },
+    {
+      "id": "belgium-075",
+      "name": "Belgian Leek and Potato Soup",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "soup",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Leek",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potatoes",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Sauté leek, add potatoes and milk, simmer, blend until smooth."
+      ],
+      "nutrition": {
+        "calories": 140,
+        "protein": 3,
+        "carbs": 22,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 80
+      },
+      "tags": [
+        "belgian",
+        "soup",
+        "leek"
+      ],
+      "rating": 4.3,
+      "reviews": 7
+    },
+    {
+      "id": "belgium-076",
+      "name": "Belgian Pork Chops with Beer Sauce",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pork chops",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Brown beer",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown pork chops, sauté onion, add beer, simmer until sauce thickens."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 28,
+        "carbs": 6,
+        "fat": 18,
+        "fiber": 1,
+        "sugar": 2,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "pork",
+        "beer"
+      ],
+      "rating": 4.2,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-077",
+      "name": "Belgian Cauliflower Gratin",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "vegetarian"
+      ],
+      "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Cauliflower",
+          "amount": "1 head",
+          "category": "vegetable"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "3 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Blanch cauliflower, arrange in dish, cover with cheese sauce, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 10,
+        "carbs": 14,
+        "fat": 14,
+        "fiber": 4,
+        "sugar": 6,
+        "sodium": 420
+      },
+      "tags": [
+        "belgian",
+        "cauliflower",
+        "gratin"
+      ],
+      "rating": 4.3,
+      "reviews": 7
+    },
+    {
+      "id": "belgium-078",
+      "name": "Belgian Beef and Beer Pie",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Beef chuck",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Brown beer",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Brown beef, sauté onions, add beer, fill crust, bake until golden."
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 28,
+        "carbs": 28,
+        "fat": 22,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 520
+      },
+      "tags": [
+        "belgian",
+        "beef",
+        "pie"
+      ],
+      "rating": 4.4,
+      "reviews": 9
+    },
+    {
+      "id": "belgium-079",
+      "name": "Belgian Endive and Ham Quiche",
+      "cuisine": "Belgian",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 25,
+      "cookTime": 45,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Pie crust",
+          "amount": "1",
+          "category": "grain"
+        },
+        {
+          "name": "Belgian endive",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ham",
+          "amount": "1 cup",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Gruyère cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Sauté endive, mix with ham, eggs, cream, and cheese, fill crust, bake until set."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 9,
+        "carbs": 22,
+        "fat": 16,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 320
+      },
+      "tags": [
+        "belgian",
+        "quiche",
+        "endive"
+      ],
+      "rating": 4.4,
+      "reviews": 8
+    },
+    {
+      "id": "belgium-080",
+      "name": "Belgian Chocolate Profiteroles",
+      "cuisine": "Belgian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 40,
+      "servings": 12,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Choux pastry",
+          "amount": "1 batch",
+          "category": "grain"
+        },
+        {
+          "name": "Dark chocolate",
+          "amount": "6 oz",
+          "category": "sweetener"
+        },
+        {
+          "name": "Cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
+      ],
+      "instructions": [
+        "Bake choux pastry, fill with whipped cream, top with melted chocolate."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 3,
+        "carbs": 18,
+        "fat": 10,
+        "fiber": 1,
+        "sugar": 10,
+        "sodium": 60
+      },
+      "tags": [
+        "belgian",
+        "profiterole",
+        "chocolate"
+      ],
+      "rating": 4.7,
+      "reviews": 13
     }
   ]
 }
