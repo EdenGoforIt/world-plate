@@ -1,0 +1,45 @@
+{
+  "country": "Myanmar",
+  "flag": "🇲🇲",
+  "recipes": [
+    {
+      "id": "myanmar-001",
+      "name": "Mohinga",
+      "cuisine": "Burmese",
+      "mealType": ["breakfast", "lunch"],
+      "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Rice noodles", "amount": "1 lb", "category": "grain" },
+        { "name": "Fish broth", "amount": "6 cups", "category": "protein" },
+        { "name": "Chickpea flour", "amount": "3 tbsp", "category": "other" },
+        { "name": "Lemongrass", "amount": "2 stalks", "category": "other" },
+        { "name": "Hard-boiled eggs", "amount": "4", "category": "protein" },
+        { "name": "Fish sauce", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Prepare fish broth with lemongrass",
+        "Thicken with chickpea flour",
+        "Cook rice noodles separately",
+        "Place noodles in bowls",
+        "Pour hot broth over noodles",
+        "Garnish with hard-boiled eggs"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 18,
+        "carbs": 58,
+        "fat": 8,
+        "fiber": 3,
+        "sugar": 4,
+        "sodium": 920
+      },
+      "tags": ["burmese", "noodle-soup", "breakfast"],
+      "rating": 4.4,
+      "reviews": 167
+    }
+  ]
+}
