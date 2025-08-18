@@ -1658,26 +1658,56 @@
       ],
       "rating": 4.9,
       "reviews": 130
-    }
-    ,
+    },
     {
       "id": "brazil-027",
       "name": "Moqueca Capixaba",
       "cuisine": "Brazilian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
       "prepTime": 25,
       "cookTime": 40,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "White fish fillets", "amount": "2 lbs", "category": "protein"},
-        {"name": "Lime juice", "amount": "2 tbsp", "category": "other"},
-        {"name": "Onion", "amount": "1 large", "category": "vegetable"},
-        {"name": "Tomatoes", "amount": "2", "category": "vegetable"},
-        {"name": "Green bell pepper", "amount": "1", "category": "vegetable"},
-        {"name": "Olive oil", "amount": "2 tbsp", "category": "other"},
-        {"name": "Cilantro", "amount": "1/4 cup", "category": "other"}
+        {
+          "name": "White fish fillets",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Lime juice",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Onion",
+          "amount": "1 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomatoes",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green bell pepper",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Marinate fish in lime juice and salt",
@@ -1686,8 +1716,20 @@
         "Simmer gently until fish is cooked through",
         "Garnish with cilantro and serve with rice"
       ],
-      "nutrition": {"calories": 320, "protein": 28, "carbs": 8, "fat": 18, "fiber": 2, "sugar": 4, "sodium": 410},
-      "tags": ["brazilian", "fish", "capixaba"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 28,
+        "carbs": 8,
+        "fat": 18,
+        "fiber": 2,
+        "sugar": 4,
+        "sodium": 410
+      },
+      "tags": [
+        "brazilian",
+        "fish",
+        "capixaba"
+      ],
       "rating": 4.7,
       "reviews": 60
     },
@@ -1695,28 +1737,71 @@
       "id": "brazil-028",
       "name": "Bolo de Fubá",
       "cuisine": "Brazilian",
-      "mealType": ["dessert", "snack"],
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
       "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 40,
       "servings": 12,
       "difficulty": "easy",
       "ingredients": [
-        {"name": "Cornmeal", "amount": "2 cups", "category": "grain"},
-        {"name": "Flour", "amount": "1 cup", "category": "grain"},
-        {"name": "Sugar", "amount": "1 cup", "category": "other"},
-        {"name": "Eggs", "amount": "3", "category": "protein"},
-        {"name": "Milk", "amount": "1 cup", "category": "dairy"},
-        {"name": "Butter", "amount": "1/2 cup", "category": "dairy"},
-        {"name": "Baking powder", "amount": "1 tbsp", "category": "other"}
+        {
+          "name": "Cornmeal",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Baking powder",
+          "amount": "1 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Mix all ingredients, pour into greased pan",
         "Bake at 350°F (175°C) for 35-40 minutes",
         "Cool and slice"
       ],
-      "nutrition": {"calories": 180, "protein": 3, "carbs": 32, "fat": 5, "fiber": 1, "sugar": 14, "sodium": 90},
-      "tags": ["brazilian", "cake", "cornmeal"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 3,
+        "carbs": 32,
+        "fat": 5,
+        "fiber": 1,
+        "sugar": 14,
+        "sodium": 90
+      },
+      "tags": [
+        "brazilian",
+        "cake",
+        "cornmeal"
+      ],
       "rating": 4.6,
       "reviews": 80
     },
@@ -1724,28 +1809,71 @@
       "id": "brazil-029",
       "name": "Feijão Tropeiro",
       "cuisine": "Brazilian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 40,
       "servings": 8,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Beans (pinto or black)", "amount": "2 cups, cooked", "category": "other"},
-        {"name": "Bacon", "amount": "1/2 cup, chopped", "category": "protein"},
-        {"name": "Sausage", "amount": "1/2 cup, sliced", "category": "protein"},
-        {"name": "Eggs", "amount": "3", "category": "protein"},
-        {"name": "Cassava flour", "amount": "1 cup", "category": "grain"},
-        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
-        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"}
+        {
+          "name": "Beans (pinto or black)",
+          "amount": "2 cups, cooked",
+          "category": "other"
+        },
+        {
+          "name": "Bacon",
+          "amount": "1/2 cup, chopped",
+          "category": "protein"
+        },
+        {
+          "name": "Sausage",
+          "amount": "1/2 cup, sliced",
+          "category": "protein"
+        },
+        {
+          "name": "Eggs",
+          "amount": "3",
+          "category": "protein"
+        },
+        {
+          "name": "Cassava flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves, minced",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Fry bacon, sausage, onion, and garlic",
         "Add beans, stir in eggs, scramble",
         "Mix in cassava flour, cook until crumbly"
       ],
-      "nutrition": {"calories": 260, "protein": 10, "carbs": 28, "fat": 10, "fiber": 6, "sugar": 2, "sodium": 320},
-      "tags": ["brazilian", "beans", "cassava"],
+      "nutrition": {
+        "calories": 260,
+        "protein": 10,
+        "carbs": 28,
+        "fat": 10,
+        "fiber": 6,
+        "sugar": 2,
+        "sodium": 320
+      },
+      "tags": [
+        "brazilian",
+        "beans",
+        "cassava"
+      ],
       "rating": 4.7,
       "reviews": 75
     },
@@ -1753,26 +1881,61 @@
       "id": "brazil-030",
       "name": "Curau de Milho",
       "cuisine": "Brazilian",
-      "mealType": ["dessert", "snack"],
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
       "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 30,
       "servings": 8,
       "difficulty": "easy",
       "ingredients": [
-        {"name": "Corn kernels", "amount": "3 cups, fresh", "category": "grain"},
-        {"name": "Milk", "amount": "2 cups", "category": "dairy"},
-        {"name": "Sugar", "amount": "1 cup", "category": "other"},
-        {"name": "Butter", "amount": "2 tbsp", "category": "dairy"},
-        {"name": "Cinnamon", "amount": "1 tsp", "category": "spice"}
+        {
+          "name": "Corn kernels",
+          "amount": "3 cups, fresh",
+          "category": "grain"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Blend corn and milk, strain",
         "Cook with sugar and butter until thick",
         "Pour into bowls, sprinkle with cinnamon"
       ],
-      "nutrition": {"calories": 160, "protein": 3, "carbs": 32, "fat": 3, "fiber": 2, "sugar": 18, "sodium": 40},
-      "tags": ["brazilian", "corn", "dessert"],
+      "nutrition": {
+        "calories": 160,
+        "protein": 3,
+        "carbs": 32,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 18,
+        "sodium": 40
+      },
+      "tags": [
+        "brazilian",
+        "corn",
+        "dessert"
+      ],
       "rating": 4.5,
       "reviews": 60
     },
@@ -1780,27 +1943,66 @@
       "id": "brazil-031",
       "name": "Tutu de Feijão",
       "cuisine": "Brazilian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 30,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Beans (black or pinto)", "amount": "2 cups, cooked", "category": "other"},
-        {"name": "Bacon", "amount": "1/2 cup, chopped", "category": "protein"},
-        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
-        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"},
-        {"name": "Cassava flour", "amount": "1 cup", "category": "grain"},
-        {"name": "Salt", "amount": "1/2 tsp", "category": "spice"}
+        {
+          "name": "Beans (black or pinto)",
+          "amount": "2 cups, cooked",
+          "category": "other"
+        },
+        {
+          "name": "Bacon",
+          "amount": "1/2 cup, chopped",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves, minced",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cassava flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Fry bacon, onion, and garlic",
         "Add beans, mash slightly",
         "Stir in cassava flour and salt, cook until thick"
       ],
-      "nutrition": {"calories": 210, "protein": 7, "carbs": 28, "fat": 7, "fiber": 6, "sugar": 2, "sodium": 180},
-      "tags": ["brazilian", "beans", "cassava"],
+      "nutrition": {
+        "calories": 210,
+        "protein": 7,
+        "carbs": 28,
+        "fat": 7,
+        "fiber": 6,
+        "sugar": 2,
+        "sodium": 180
+      },
+      "tags": [
+        "brazilian",
+        "beans",
+        "cassava"
+      ],
       "rating": 4.6,
       "reviews": 55
     },
@@ -1808,25 +2010,59 @@
       "id": "brazil-032",
       "name": "Biscoito de Polvilho",
       "cuisine": "Brazilian",
-      "mealType": ["snack"],
+      "mealType": [
+        "snack"
+      ],
       "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
       "prepTime": 10,
       "cookTime": 25,
       "servings": 30,
       "difficulty": "easy",
       "ingredients": [
-        {"name": "Tapioca starch", "amount": "2 cups", "category": "grain"},
-        {"name": "Eggs", "amount": "2", "category": "protein"},
-        {"name": "Oil", "amount": "1/2 cup", "category": "other"},
-        {"name": "Milk", "amount": "1 cup", "category": "dairy"},
-        {"name": "Salt", "amount": "1/2 tsp", "category": "spice"}
+        {
+          "name": "Tapioca starch",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Oil",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Mix all ingredients, pipe onto baking sheet",
         "Bake at 350°F (175°C) for 20-25 minutes until crisp"
       ],
-      "nutrition": {"calories": 60, "protein": 1, "carbs": 10, "fat": 2, "fiber": 0, "sugar": 0, "sodium": 60},
-      "tags": ["brazilian", "snack", "tapioca"],
+      "nutrition": {
+        "calories": 60,
+        "protein": 1,
+        "carbs": 10,
+        "fat": 2,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 60
+      },
+      "tags": [
+        "brazilian",
+        "snack",
+        "tapioca"
+      ],
       "rating": 4.5,
       "reviews": 50
     },
@@ -1834,28 +2070,71 @@
       "id": "brazil-033",
       "name": "Camarão na Moranga",
       "cuisine": "Brazilian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 60,
       "servings": 8,
       "difficulty": "hard",
       "ingredients": [
-        {"name": "Pumpkin", "amount": "1 large", "category": "vegetable"},
-        {"name": "Shrimp", "amount": "2 lbs, peeled", "category": "protein"},
-        {"name": "Cream cheese", "amount": "1 cup", "category": "dairy"},
-        {"name": "Tomato", "amount": "2, chopped", "category": "vegetable"},
-        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
-        {"name": "Coconut milk", "amount": "1 cup", "category": "dairy"},
-        {"name": "Olive oil", "amount": "2 tbsp", "category": "other"}
+        {
+          "name": "Pumpkin",
+          "amount": "1 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Shrimp",
+          "amount": "2 lbs, peeled",
+          "category": "protein"
+        },
+        {
+          "name": "Cream cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Coconut milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Bake pumpkin until soft, scoop out some flesh",
         "Sauté onion and tomato, add shrimp, cook briefly",
         "Mix with cream cheese and coconut milk, fill pumpkin, bake again"
       ],
-      "nutrition": {"calories": 260, "protein": 18, "carbs": 18, "fat": 12, "fiber": 3, "sugar": 6, "sodium": 320},
-      "tags": ["brazilian", "shrimp", "pumpkin"],
+      "nutrition": {
+        "calories": 260,
+        "protein": 18,
+        "carbs": 18,
+        "fat": 12,
+        "fiber": 3,
+        "sugar": 6,
+        "sodium": 320
+      },
+      "tags": [
+        "brazilian",
+        "shrimp",
+        "pumpkin"
+      ],
       "rating": 4.8,
       "reviews": 70
     },
@@ -1863,28 +2142,71 @@
       "id": "brazil-034",
       "name": "Galinhada",
       "cuisine": "Brazilian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 50,
       "servings": 8,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Chicken pieces", "amount": "2 lbs", "category": "protein"},
-        {"name": "Rice", "amount": "2 cups", "category": "grain"},
-        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
-        {"name": "Tomato", "amount": "2, chopped", "category": "vegetable"},
-        {"name": "Bell pepper", "amount": "1, chopped", "category": "vegetable"},
-        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"},
-        {"name": "Saffron", "amount": "1/2 tsp", "category": "spice"}
+        {
+          "name": "Chicken pieces",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomato",
+          "amount": "2, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Bell pepper",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves, minced",
+          "category": "vegetable"
+        },
+        {
+          "name": "Saffron",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Brown chicken, add onion, garlic, tomato, and pepper",
         "Add rice and saffron, cover with water",
         "Simmer until rice and chicken are cooked"
       ],
-      "nutrition": {"calories": 320, "protein": 18, "carbs": 36, "fat": 10, "fiber": 2, "sugar": 3, "sodium": 220},
-      "tags": ["brazilian", "chicken", "rice"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 36,
+        "fat": 10,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 220
+      },
+      "tags": [
+        "brazilian",
+        "chicken",
+        "rice"
+      ],
       "rating": 4.7,
       "reviews": 80
     },
@@ -1892,23 +2214,50 @@
       "id": "brazil-035",
       "name": "Paçoca de Amendoim",
       "cuisine": "Brazilian",
-      "mealType": ["dessert", "snack"],
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
       "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
       "prepTime": 10,
       "cookTime": 0,
       "servings": 20,
       "difficulty": "easy",
       "ingredients": [
-        {"name": "Roasted peanuts", "amount": "2 cups", "category": "nut"},
-        {"name": "Sugar", "amount": "1 cup", "category": "other"},
-        {"name": "Salt", "amount": "1/4 tsp", "category": "spice"}
+        {
+          "name": "Roasted peanuts",
+          "amount": "2 cups",
+          "category": "nut"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/4 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Grind peanuts, mix with sugar and salt",
         "Press into molds, serve as candy"
       ],
-      "nutrition": {"calories": 90, "protein": 3, "carbs": 8, "fat": 6, "fiber": 1, "sugar": 6, "sodium": 30},
-      "tags": ["brazilian", "peanut", "candy"],
+      "nutrition": {
+        "calories": 90,
+        "protein": 3,
+        "carbs": 8,
+        "fat": 6,
+        "fiber": 1,
+        "sugar": 6,
+        "sodium": 30
+      },
+      "tags": [
+        "brazilian",
+        "peanut",
+        "candy"
+      ],
       "rating": 4.6,
       "reviews": 60
     },
@@ -1916,27 +2265,66 @@
       "id": "brazil-036",
       "name": "Canjiquinha",
       "cuisine": "Brazilian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 60,
       "servings": 8,
       "difficulty": "medium",
       "ingredients": [
-        {"name": "Cracked corn", "amount": "2 cups", "category": "grain"},
-        {"name": "Pork ribs", "amount": "1 lb", "category": "protein"},
-        {"name": "Bacon", "amount": "1/2 cup, chopped", "category": "protein"},
-        {"name": "Onion", "amount": "1, chopped", "category": "vegetable"},
-        {"name": "Garlic", "amount": "2 cloves, minced", "category": "vegetable"},
-        {"name": "Bay leaf", "amount": "1", "category": "spice"}
+        {
+          "name": "Cracked corn",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Pork ribs",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Bacon",
+          "amount": "1/2 cup, chopped",
+          "category": "protein"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, chopped",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves, minced",
+          "category": "vegetable"
+        },
+        {
+          "name": "Bay leaf",
+          "amount": "1",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Brown pork ribs and bacon, add onion and garlic",
         "Add cracked corn, bay leaf, and water",
         "Simmer until corn and meat are tender"
       ],
-      "nutrition": {"calories": 280, "protein": 10, "carbs": 28, "fat": 14, "fiber": 2, "sugar": 1, "sodium": 180},
-      "tags": ["brazilian", "corn", "pork"],
+      "nutrition": {
+        "calories": 280,
+        "protein": 10,
+        "carbs": 28,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 1,
+        "sodium": 180
+      },
+      "tags": [
+        "brazilian",
+        "corn",
+        "pork"
+      ],
       "rating": 4.5,
       "reviews": 50
     }
