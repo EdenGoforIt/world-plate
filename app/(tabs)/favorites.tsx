@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { 
   View, 
   Text, 
@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
+import { useFocusEffect } from '@react-navigation/native';
 import { useFavorites } from '../../hooks/useFavorites';
 import { Recipe } from '../../types/Recipe';
 import { formatCookTime, getDifficultyColor, getCountries } from '../../utils/recipeUtils';
@@ -22,7 +23,14 @@ interface FavoriteSection {
 }
 
 export default function FavoritesScreen() {
-  const { favoritesByCountry, allFavorites, loading, getFavoritesByCountry } = useFavorites();
+  const { favoritesByCountry, allFavorites, loading, getFavoritesByCountry, refreshFavorites } = useFavorites();
+
+  // Refresh favorites data every time screen comes into focus
+  useFocusEffect(
+    useCallback(() => {
+      refreshFavorites();
+    }, [refreshFavorites])
+  );
 
   if (loading) {
     return (

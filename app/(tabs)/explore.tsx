@@ -15,73 +15,52 @@ import { router } from 'expo-router';
 
 import { RecipeCard } from '@/components/RecipeCard';
 import { Colors } from '@/constants/Colors';
-import { getCountries, getCountryData, getRecipeByIdFromCountry } from '@/utils/recipeUtils';
+import { getRecipeByIdFromCountry } from '@/utils/recipeUtils';
+import { getAllRecipesFromCache, getCategoriesFromCache, preloadRecipeCache } from '@/utils/recipeCache';
 import { Recipe } from '@/types/Recipe';
 import { useFavorites } from '@/hooks/useFavorites';
+import Loader from '@/components/ui/Loader';
 
 export default function ExploreScreen() {
   const [searchQuery, setSearchQuery] = useState('');
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
   const { toggleFavorite, isFavorite } = useFavorites();
   
-  // Load all recipes from all countries on component mount
+  // Load all recipes from cache on component mount
   useEffect(() => {
-    const loadAllRecipes = () => {
-      const countries = getCountries();
-      const allCountryRecipes: Recipe[] = [];
-      
-      countries.forEach(countryInfo => {
-        const countryData = getCountryData(countryInfo.file);
-        if (countryData && countryData.recipes) {
-          allCountryRecipes.push(...countryData.recipes);
+    const loadAllRecipes = async () => {
+      try {
+        setLoading(true);
+        
+        // Check if data is already cached
+        const cachedRecipes = getAllRecipesFromCache();
+        if (cachedRecipes.length > 0) {
+          setAllRecipes(cachedRecipes);
+          setRecipes(cachedRecipes);
+          setLoading(false);
+          return;
         }
-      });
-      
-      setAllRecipes(allCountryRecipes);
-      setRecipes(allCountryRecipes);
+        
+        // If no cache, preload data
+        const allCountryRecipes = await preloadRecipeCache();
+        setAllRecipes(allCountryRecipes);
+        setRecipes(allCountryRecipes);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error loading recipes:', error);
+        setLoading(false);
+      }
     };
     
     loadAllRecipes();
   }, []);
 
-  // Generate categories from all loaded recipes
+  // Generate categories from cached data
   const getUniqueCategories = () => {
-    const cuisineMap = new Map();
-    
-    allRecipes.forEach(recipe => {
-      const cuisine = recipe.cuisine;
-      if (cuisineMap.has(cuisine)) {
-        cuisineMap.set(cuisine, cuisineMap.get(cuisine) + 1);
-      } else {
-        cuisineMap.set(cuisine, 1);
-      }
-    });
-
-    return Array.from(cuisineMap.entries()).map(([cuisine, count], index) => ({
-      id: `cuisine-${index}`,
-      name: cuisine,
-      recipeCount: count,
-      icon: getCuisineIcon(cuisine)
-    }));
-  };
-
-  // Get icon for cuisine type
-  const getCuisineIcon = (cuisine: string): string => {
-    const iconMap: { [key: string]: string } = {
-      'Italian': 'pizza-outline',
-      'Chinese': 'restaurant-outline',
-      'Mexican': 'fast-food-outline',
-      'Indian': 'flame-outline',
-      'French': 'wine-outline',
-      'Japanese': 'fish-outline',
-      'Thai': 'leaf-outline',
-      'Greek': 'sunny-outline',
-      'American': 'fast-food-outline',
-      'Korean': 'bowl-outline',
-    };
-    return iconMap[cuisine] || 'restaurant-outline';
+    return getCategoriesFromCache();
   };
 
   const handleSearch = (query: string) => {
@@ -166,6 +145,10 @@ export default function ExploreScreen() {
       </View>
     );
   };
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <SafeAreaView style={styles.container}>
