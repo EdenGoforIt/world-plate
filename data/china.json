@@ -40,6 +40,90 @@
       "tags": ["spicy", "chinese", "stir-fry"],
       "rating": 4.6,
       "reviews": 187
+    },
+    {
+      "id": "china-002",
+      "name": "Mapo Tofu",
+      "cuisine": "Chinese",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Silken tofu", "amount": "1 lb", "category": "protein" },
+        { "name": "Ground pork", "amount": "4 oz", "category": "protein" },
+        { "name": "Doubanjiang", "amount": "2 tbsp", "category": "other" },
+        { "name": "Soy sauce", "amount": "2 tbsp", "category": "other" },
+        { "name": "Sichuan peppercorns", "amount": "1 tsp", "category": "spice" },
+        { "name": "Green onions", "amount": "3", "category": "vegetable" },
+        { "name": "Garlic", "amount": "3 cloves", "category": "vegetable" },
+        { "name": "Ginger", "amount": "1 inch", "category": "vegetable" }
+      ],
+      "instructions": [
+        "Cut tofu into small cubes",
+        "Heat oil and cook ground pork until browned",
+        "Add doubanjiang, garlic, and ginger",
+        "Add soy sauce and chicken stock",
+        "Gently add tofu cubes",
+        "Simmer for 5 minutes",
+        "Garnish with Sichuan peppercorns and green onions"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 16,
+        "carbs": 8,
+        "fat": 14,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 920
+      },
+      "tags": ["spicy", "chinese", "sichuan", "tofu"],
+      "rating": 4.4,
+      "reviews": 203
+    },
+    {
+      "id": "china-003",
+      "name": "Sweet and Sour Pork",
+      "cuisine": "Chinese",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1559847844-d90be0a4c1ad?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Pork tenderloin", "amount": "1 lb", "category": "protein" },
+        { "name": "Bell peppers", "amount": "2", "category": "vegetable" },
+        { "name": "Pineapple chunks", "amount": "1 cup", "category": "other" },
+        { "name": "Rice vinegar", "amount": "3 tbsp", "category": "other" },
+        { "name": "Sugar", "amount": "4 tbsp", "category": "other" },
+        { "name": "Cornstarch", "amount": "1/2 cup", "category": "other" },
+        { "name": "Egg", "amount": "1", "category": "protein" },
+        { "name": "Ketchup", "amount": "3 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Cut pork into bite-sized pieces",
+        "Marinate with egg and cornstarch",
+        "Deep fry pork until golden and crispy",
+        "Stir-fry bell peppers and pineapple",
+        "Mix vinegar, sugar, and ketchup for sauce",
+        "Combine all ingredients with sauce",
+        "Serve immediately over rice"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 26,
+        "carbs": 42,
+        "fat": 12,
+        "fiber": 2,
+        "sugar": 34,
+        "sodium": 480
+      },
+      "tags": ["sweet", "chinese", "pork", "crispy"],
+      "rating": 4.3,
+      "reviews": 167
     }
   ]
 }
