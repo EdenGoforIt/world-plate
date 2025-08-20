@@ -40,6 +40,88 @@
       "tags": ["colombian", "hearty", "traditional"],
       "rating": 4.6,
       "reviews": 234
+    },
+    {
+      "id": "colombia-002",
+      "name": "Arepas",
+      "cuisine": "Colombian",
+      "mealType": ["breakfast", "lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1564759298141-3c0361dc2d3e?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Arepa flour", "amount": "2 cups", "category": "grain" },
+        { "name": "Warm water", "amount": "2.5 cups", "category": "other" },
+        { "name": "Salt", "amount": "1 tsp", "category": "spice" },
+        { "name": "Cheese", "amount": "1 cup", "category": "dairy" },
+        { "name": "Butter", "amount": "2 tbsp", "category": "dairy" },
+        { "name": "Oil", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Mix arepa flour with salt",
+        "Gradually add warm water while mixing",
+        "Knead into smooth dough",
+        "Form into thick patties",
+        "Cook on griddle until golden on both sides",
+        "Split open and fill with cheese",
+        "Serve hot with butter"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 6,
+        "carbs": 28,
+        "fat": 5,
+        "fiber": 2,
+        "sugar": 1,
+        "sodium": 320
+      },
+      "tags": ["colombian", "corn", "gluten-free", "versatile"],
+      "rating": 4.5,
+      "reviews": 312
+    },
+    {
+      "id": "colombia-003",
+      "name": "Sancocho",
+      "cuisine": "Colombian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 90,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Chicken pieces", "amount": "2 lbs", "category": "protein" },
+        { "name": "Beef short ribs", "amount": "1 lb", "category": "protein" },
+        { "name": "Plantains", "amount": "2", "category": "vegetable" },
+        { "name": "Yuca", "amount": "1 lb", "category": "vegetable" },
+        { "name": "Corn on the cob", "amount": "2 ears", "category": "vegetable" },
+        { "name": "Cilantro", "amount": "1/2 cup", "category": "vegetable" },
+        { "name": "Garlic", "amount": "4 cloves", "category": "vegetable" },
+        { "name": "Cumin", "amount": "1 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Brown chicken and beef in large pot",
+        "Add water to cover and bring to boil",
+        "Add garlic, cumin, and salt",
+        "Simmer for 45 minutes",
+        "Add plantains, yuca, and corn",
+        "Cook until vegetables are tender",
+        "Garnish with fresh cilantro"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 38,
+        "carbs": 42,
+        "fat": 16,
+        "fiber": 6,
+        "sugar": 12,
+        "sodium": 720
+      },
+      "tags": ["colombian", "hearty", "soup", "one-pot"],
+      "rating": 4.7,
+      "reviews": 189
     }
   ]
 }
