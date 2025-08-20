@@ -40,6 +40,89 @@
       "tags": ["chilean", "pastry", "handheld"],
       "rating": 4.4,
       "reviews": 173
+    },
+    {
+      "id": "chile-002",
+      "name": "Cazuela de Cordero",
+      "cuisine": "Chilean",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 90,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Lamb shoulder", "amount": "2 lbs", "category": "protein" },
+        { "name": "Pumpkin", "amount": "2 cups", "category": "vegetable" },
+        { "name": "Green beans", "amount": "1 cup", "category": "vegetable" },
+        { "name": "Corn on the cob", "amount": "2 ears", "category": "vegetable" },
+        { "name": "Potatoes", "amount": "4 medium", "category": "vegetable" },
+        { "name": "Rice", "amount": "1/2 cup", "category": "grain" },
+        { "name": "Paprika", "amount": "1 tsp", "category": "spice" },
+        { "name": "Cilantro", "amount": "1/4 cup", "category": "vegetable" }
+      ],
+      "instructions": [
+        "Brown lamb pieces in large pot",
+        "Add water to cover and simmer 1 hour",
+        "Add pumpkin, potatoes, and corn",
+        "Add green beans and rice",
+        "Season with paprika, salt, and pepper",
+        "Simmer until vegetables are tender",
+        "Garnish with fresh cilantro"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 32,
+        "carbs": 35,
+        "fat": 18,
+        "fiber": 6,
+        "sugar": 8,
+        "sodium": 680
+      },
+      "tags": ["chilean", "stew", "comfort-food"],
+      "rating": 4.5,
+      "reviews": 124
+    },
+    {
+      "id": "chile-003",
+      "name": "Sopaipillas",
+      "cuisine": "Chilean",
+      "mealType": ["snack", "dessert"],
+      "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
+      "prepTime": 45,
+      "cookTime": 15,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Pumpkin puree", "amount": "1 cup", "category": "vegetable" },
+        { "name": "All-purpose flour", "amount": "2 cups", "category": "grain" },
+        { "name": "Baking powder", "amount": "1 tsp", "category": "other" },
+        { "name": "Salt", "amount": "1/2 tsp", "category": "spice" },
+        { "name": "Butter", "amount": "2 tbsp", "category": "dairy" },
+        { "name": "Vegetable oil", "amount": "2 cups", "category": "other" },
+        { "name": "Honey", "amount": "1/2 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Mix pumpkin puree with flour, baking powder, and salt",
+        "Add melted butter and knead into soft dough",
+        "Let dough rest for 30 minutes",
+        "Roll out thin and cut into circles",
+        "Heat oil to 350°F",
+        "Fry sopaipillas until golden and puffed",
+        "Serve warm with honey"
+      ],
+      "nutrition": {
+        "calories": 240,
+        "protein": 4,
+        "carbs": 32,
+        "fat": 12,
+        "fiber": 2,
+        "sugar": 16,
+        "sodium": 180
+      },
+      "tags": ["chilean", "fried", "sweet", "pumpkin"],
+      "rating": 4.6,
+      "reviews": 198
     }
   ]
 }
