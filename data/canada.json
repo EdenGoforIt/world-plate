@@ -39,6 +39,763 @@
       "tags": ["canadian", "comfort-food", "quick"],
       "rating": 4.2,
       "reviews": 118
+    },
+    {
+      "id": "canada-002",
+      "name": "Tourtière",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop",
+      "prepTime": 45,
+      "cookTime": 45,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Ground pork", "amount": "1 lb", "category": "protein" },
+        { "name": "Ground beef", "amount": "1/2 lb", "category": "protein" },
+        { "name": "Onions", "amount": "2 medium", "category": "vegetable" },
+        { "name": "Pie crust", "amount": "2 rounds", "category": "grain" },
+        { "name": "Sage", "amount": "1 tsp", "category": "spice" },
+        { "name": "Cloves", "amount": "1/4 tsp", "category": "spice" },
+        { "name": "Salt", "amount": "1 tsp", "category": "spice" },
+        { "name": "Black pepper", "amount": "1/2 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Cook ground pork and beef with onions",
+        "Season with sage, cloves, salt, and pepper",
+        "Let meat mixture cool completely",
+        "Roll out bottom pie crust and place in pie dish",
+        "Fill with meat mixture",
+        "Cover with top crust and seal edges",
+        "Bake at 425°F for 15 mins, then 350°F for 30 mins"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 22,
+        "carbs": 28,
+        "fat": 26,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 680
+      },
+      "tags": ["canadian", "meat-pie", "traditional"],
+      "rating": 4.3,
+      "reviews": 89
+    },
+    {
+      "id": "canada-003",
+      "name": "Butter Tarts",
+      "cuisine": "Canadian",
+      "mealType": ["dessert", "snack"],
+      "image": "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 20,
+      "servings": 12,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Pastry shells", "amount": "12", "category": "grain" },
+        { "name": "Brown sugar", "amount": "1 cup", "category": "other" },
+        { "name": "Butter", "amount": "1/4 cup", "category": "dairy" },
+        { "name": "Eggs", "amount": "2", "category": "protein" },
+        { "name": "Vanilla extract", "amount": "1 tsp", "category": "other" },
+        { "name": "Raisins", "amount": "1/2 cup", "category": "other" },
+        { "name": "Corn syrup", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Preheat oven to 375°F",
+        "Place pastry shells in muffin tin",
+        "Mix brown sugar, melted butter, eggs, and vanilla",
+        "Add corn syrup and mix well",
+        "Divide raisins among tart shells",
+        "Pour filling over raisins",
+        "Bake for 15-20 minutes until set"
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 3,
+        "carbs": 32,
+        "fat": 6,
+        "fiber": 1,
+        "sugar": 24,
+        "sodium": 95
+      },
+      "tags": ["canadian", "dessert", "sweet"],
+      "rating": 4.5,
+      "reviews": 156
+    },
+    {
+      "id": "canada-004",
+      "name": "Maple Salmon",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Salmon fillets", "amount": "4", "category": "protein" },
+        { "name": "Maple syrup", "amount": "1/4 cup", "category": "other" },
+        { "name": "Soy sauce", "amount": "2 tbsp", "category": "other" },
+        { "name": "Garlic", "amount": "2 cloves", "category": "vegetable" },
+        { "name": "Ginger", "amount": "1 tsp", "category": "spice" },
+        { "name": "Lemon juice", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Mix maple syrup, soy sauce, garlic, and ginger",
+        "Marinate salmon for 30 minutes",
+        "Preheat oven to 400°F",
+        "Bake salmon for 15-20 minutes",
+        "Drizzle with lemon juice before serving"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 35,
+        "carbs": 18,
+        "fat": 12,
+        "fiber": 0,
+        "sugar": 16,
+        "sodium": 520
+      },
+      "tags": ["canadian", "seafood", "maple", "healthy"],
+      "rating": 4.6,
+      "reviews": 245
+    },
+    {
+      "id": "canada-005",
+      "name": "Montreal Bagels",
+      "cuisine": "Canadian",
+      "mealType": ["breakfast", "snack"],
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop",
+      "prepTime": 180,
+      "cookTime": 25,
+      "servings": 12,
+      "difficulty": "hard",
+      "ingredients": [
+        { "name": "Bread flour", "amount": "4 cups", "category": "grain" },
+        { "name": "Honey", "amount": "2 tbsp", "category": "other" },
+        { "name": "Active dry yeast", "amount": "1 packet", "category": "other" },
+        { "name": "Warm water", "amount": "1 cup", "category": "other" },
+        { "name": "Sesame seeds", "amount": "1/4 cup", "category": "other" },
+        { "name": "Poppy seeds", "amount": "2 tbsp", "category": "other" },
+        { "name": "Salt", "amount": "1 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Dissolve yeast in warm water with honey",
+        "Mix flour and salt, add yeast mixture",
+        "Knead for 10 minutes until smooth",
+        "Let rise for 1 hour",
+        "Shape into bagels and boil briefly",
+        "Top with seeds and bake at 425°F for 20 minutes"
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 8,
+        "carbs": 42,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 180
+      },
+      "tags": ["canadian", "bread", "montreal", "breakfast"],
+      "rating": 4.7,
+      "reviews": 189
+    },
+    {
+      "id": "canada-006",
+      "name": "Nanaimo Bars",
+      "cuisine": "Canadian",
+      "mealType": ["dessert"],
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop",
+      "prepTime": 45,
+      "cookTime": 0,
+      "servings": 16,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Graham crackers", "amount": "1.5 cups", "category": "grain" },
+        { "name": "Coconut", "amount": "1 cup", "category": "other" },
+        { "name": "Walnuts", "amount": "1/2 cup", "category": "other" },
+        { "name": "Butter", "amount": "1/2 cup", "category": "dairy" },
+        { "name": "Cocoa powder", "amount": "1/4 cup", "category": "other" },
+        { "name": "Vanilla custard powder", "amount": "3 tbsp", "category": "other" },
+        { "name": "Dark chocolate", "amount": "4 oz", "category": "other" }
+      ],
+      "instructions": [
+        "Mix cracker crumbs, coconut, nuts, and cocoa",
+        "Press into pan for base layer",
+        "Make custard butter cream filling",
+        "Spread over base and chill",
+        "Melt chocolate and spread on top",
+        "Refrigerate until set, then cut"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 4,
+        "carbs": 28,
+        "fat": 18,
+        "fiber": 3,
+        "sugar": 22,
+        "sodium": 95
+      },
+      "tags": ["canadian", "no-bake", "dessert", "layered"],
+      "rating": 4.8,
+      "reviews": 312
+    },
+    {
+      "id": "canada-007",
+      "name": "Halifax Donair",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
+        { "name": "Breadcrumbs", "amount": "1/2 cup", "category": "grain" },
+        { "name": "Italian seasoning", "amount": "2 tsp", "category": "spice" },
+        { "name": "Pita bread", "amount": "4", "category": "grain" },
+        { "name": "Tomatoes", "amount": "2", "category": "vegetable" },
+        { "name": "Onions", "amount": "1", "category": "vegetable" },
+        { "name": "Condensed milk", "amount": "1/2 cup", "category": "dairy" },
+        { "name": "White vinegar", "amount": "1/4 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Mix ground beef with breadcrumbs and seasonings",
+        "Form into loaf and bake at 350°F for 45 minutes",
+        "Make sweet sauce with condensed milk and vinegar",
+        "Slice meat thinly",
+        "Warm pita and fill with meat, tomatoes, onions",
+        "Drizzle with sweet sauce"
+      ],
+      "nutrition": {
+        "calories": 520,
+        "protein": 28,
+        "carbs": 45,
+        "fat": 26,
+        "fiber": 3,
+        "sugar": 18,
+        "sodium": 680
+      },
+      "tags": ["canadian", "halifax", "wrap", "comfort-food"],
+      "rating": 4.4,
+      "reviews": 156
+    },
+    {
+      "id": "canada-008",
+      "name": "Bannock Bread",
+      "cuisine": "Canadian",
+      "mealType": ["breakfast", "snack"],
+      "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "All-purpose flour", "amount": "3 cups", "category": "grain" },
+        { "name": "Baking powder", "amount": "1 tbsp", "category": "other" },
+        { "name": "Salt", "amount": "1 tsp", "category": "spice" },
+        { "name": "Sugar", "amount": "2 tbsp", "category": "other" },
+        { "name": "Butter", "amount": "1/4 cup", "category": "dairy" },
+        { "name": "Milk", "amount": "1 cup", "category": "dairy" }
+      ],
+      "instructions": [
+        "Mix dry ingredients in large bowl",
+        "Cut in cold butter until mixture resembles crumbs",
+        "Add milk gradually to form soft dough",
+        "Knead lightly on floured surface",
+        "Shape into round loaf",
+        "Bake at 375°F for 25-30 minutes"
+      ],
+      "nutrition": {
+        "calories": 190,
+        "protein": 5,
+        "carbs": 35,
+        "fat": 4,
+        "fiber": 1,
+        "sugar": 4,
+        "sodium": 380
+      },
+      "tags": ["canadian", "indigenous", "bread", "traditional"],
+      "rating": 4.2,
+      "reviews": 98
+    },
+    {
+      "id": "canada-009",
+      "name": "Beaver Tails",
+      "cuisine": "Canadian",
+      "mealType": ["dessert", "snack"],
+      "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
+      "prepTime": 120,
+      "cookTime": 15,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "All-purpose flour", "amount": "2 cups", "category": "grain" },
+        { "name": "Warm water", "amount": "3/4 cup", "category": "other" },
+        { "name": "Active dry yeast", "amount": "1 tsp", "category": "other" },
+        { "name": "Sugar", "amount": "2 tbsp", "category": "other" },
+        { "name": "Salt", "amount": "1/2 tsp", "category": "spice" },
+        { "name": "Vegetable oil", "amount": "2 cups", "category": "other" },
+        { "name": "Cinnamon sugar", "amount": "1/2 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Dissolve yeast in warm water with sugar",
+        "Mix flour and salt, add yeast mixture",
+        "Knead until smooth, let rise 1 hour",
+        "Roll into oval beaver tail shapes",
+        "Deep fry in 375°F oil until golden",
+        "Sprinkle with cinnamon sugar while hot"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 5,
+        "carbs": 42,
+        "fat": 15,
+        "fiber": 1,
+        "sugar": 16,
+        "sodium": 150
+      },
+      "tags": ["canadian", "fried", "pastry", "ottawa"],
+      "rating": 4.5,
+      "reviews": 278
+    },
+    {
+      "id": "canada-010",
+      "name": "Maple Baked Beans",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner", "side"],
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "prepTime": 480,
+      "cookTime": 240,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Navy beans", "amount": "2 cups", "category": "other" },
+        { "name": "Maple syrup", "amount": "1/2 cup", "category": "other" },
+        { "name": "Bacon", "amount": "6 strips", "category": "protein" },
+        { "name": "Onions", "amount": "1 large", "category": "vegetable" },
+        { "name": "Tomato paste", "amount": "2 tbsp", "category": "other" },
+        { "name": "Mustard powder", "amount": "1 tsp", "category": "spice" },
+        { "name": "Apple cider vinegar", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Soak beans overnight",
+        "Boil beans until tender, drain",
+        "Cook bacon until crispy, reserve fat",
+        "Sauté onions in bacon fat",
+        "Mix beans with maple syrup, tomato paste, mustard",
+        "Bake covered at 300°F for 3-4 hours"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 12,
+        "carbs": 48,
+        "fat": 6,
+        "fiber": 10,
+        "sugar": 20,
+        "sodium": 420
+      },
+      "tags": ["canadian", "beans", "maple", "comfort-food"],
+      "rating": 4.3,
+      "reviews": 167
+    },
+    {
+      "id": "canada-011",
+      "name": "Cipaille",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 60,
+      "cookTime": 180,
+      "servings": 10,
+      "difficulty": "hard",
+      "ingredients": [
+        { "name": "Chicken pieces", "amount": "2 lbs", "category": "protein" },
+        { "name": "Pork shoulder", "amount": "1 lb", "category": "protein" },
+        { "name": "Beef stew meat", "amount": "1 lb", "category": "protein" },
+        { "name": "Potatoes", "amount": "4 large", "category": "vegetable" },
+        { "name": "Onions", "amount": "2 large", "category": "vegetable" },
+        { "name": "Pie pastry", "amount": "4 rounds", "category": "grain" },
+        { "name": "Savory", "amount": "2 tsp", "category": "spice" },
+        { "name": "Bay leaves", "amount": "3", "category": "spice" }
+      ],
+      "instructions": [
+        "Layer meats and vegetables in deep casserole",
+        "Season each layer with savory and bay leaves",
+        "Add water to barely cover",
+        "Top with pastry, sealing edges",
+        "Bake at 375°F for 3 hours",
+        "Rest 15 minutes before serving"
+      ],
+      "nutrition": {
+        "calories": 580,
+        "protein": 42,
+        "carbs": 35,
+        "fat": 28,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 720
+      },
+      "tags": ["canadian", "quebec", "meat-pie", "traditional"],
+      "rating": 4.6,
+      "reviews": 89
+    },
+    {
+      "id": "canada-012",
+      "name": "Saskatoon Berry Pie",
+      "cuisine": "Canadian",
+      "mealType": ["dessert"],
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop",
+      "prepTime": 45,
+      "cookTime": 50,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Saskatoon berries", "amount": "4 cups", "category": "other" },
+        { "name": "Sugar", "amount": "3/4 cup", "category": "other" },
+        { "name": "Cornstarch", "amount": "3 tbsp", "category": "other" },
+        { "name": "Lemon juice", "amount": "1 tbsp", "category": "other" },
+        { "name": "Pie crust", "amount": "2 rounds", "category": "grain" },
+        { "name": "Butter", "amount": "2 tbsp", "category": "dairy" },
+        { "name": "Cinnamon", "amount": "1/2 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Mix berries with sugar, cornstarch, and lemon",
+        "Roll out bottom crust and place in pie dish",
+        "Fill with berry mixture",
+        "Dot with butter and sprinkle cinnamon",
+        "Cover with top crust and seal edges",
+        "Bake at 425°F for 15 mins, then 350°F for 35 mins"
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 3,
+        "carbs": 52,
+        "fat": 12,
+        "fiber": 6,
+        "sugar": 28,
+        "sodium": 180
+      },
+      "tags": ["canadian", "berry", "pie", "prairie"],
+      "rating": 4.7,
+      "reviews": 145
+    },
+    {
+      "id": "canada-013",
+      "name": "Split Pea Soup",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 120,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Split peas", "amount": "2 cups", "category": "other" },
+        { "name": "Ham bone", "amount": "1", "category": "protein" },
+        { "name": "Carrots", "amount": "3", "category": "vegetable" },
+        { "name": "Celery", "amount": "3 stalks", "category": "vegetable" },
+        { "name": "Onions", "amount": "1 large", "category": "vegetable" },
+        { "name": "Bay leaves", "amount": "2", "category": "spice" },
+        { "name": "Water", "amount": "8 cups", "category": "other" }
+      ],
+      "instructions": [
+        "Add all ingredients to large pot",
+        "Bring to boil, then simmer covered",
+        "Cook for 1.5-2 hours until peas break down",
+        "Remove ham bone and shred any meat",
+        "Return meat to pot",
+        "Season with salt and pepper to taste"
+      ],
+      "nutrition": {
+        "calories": 250,
+        "protein": 18,
+        "carbs": 38,
+        "fat": 4,
+        "fiber": 14,
+        "sugar": 8,
+        "sodium": 680
+      },
+      "tags": ["canadian", "soup", "comfort-food", "hearty"],
+      "rating": 4.4,
+      "reviews": 234
+    },
+    {
+      "id": "canada-014",
+      "name": "Jiggs Dinner",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 180,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Salt beef", "amount": "3 lbs", "category": "protein" },
+        { "name": "Cabbage", "amount": "1 head", "category": "vegetable" },
+        { "name": "Potatoes", "amount": "8", "category": "vegetable" },
+        { "name": "Carrots", "amount": "6", "category": "vegetable" },
+        { "name": "Turnip", "amount": "1 large", "category": "vegetable" },
+        { "name": "Yellow peas", "amount": "1 cup", "category": "other" },
+        { "name": "Onions", "amount": "2", "category": "vegetable" }
+      ],
+      "instructions": [
+        "Soak salt beef overnight to remove excess salt",
+        "Boil beef in large pot for 2 hours",
+        "Add yellow peas and cook 30 minutes",
+        "Add root vegetables and cook 30 minutes",
+        "Add cabbage last 15 minutes",
+        "Serve with pickled beets and mustard"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 32,
+        "carbs": 45,
+        "fat": 12,
+        "fiber": 8,
+        "sugar": 12,
+        "sodium": 1200
+      },
+      "tags": ["canadian", "newfoundland", "boiled-dinner", "traditional"],
+      "rating": 4.2,
+      "reviews": 112
+    },
+    {
+      "id": "canada-015",
+      "name": "Fiddleheads",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner", "side"],
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Fresh fiddleheads", "amount": "1 lb", "category": "vegetable" },
+        { "name": "Butter", "amount": "3 tbsp", "category": "dairy" },
+        { "name": "Lemon juice", "amount": "2 tbsp", "category": "other" },
+        { "name": "Garlic", "amount": "2 cloves", "category": "vegetable" },
+        { "name": "Salt", "amount": "1/2 tsp", "category": "spice" },
+        { "name": "Black pepper", "amount": "1/4 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Clean fiddleheads and remove brown scales",
+        "Boil in salted water for 15 minutes",
+        "Drain well",
+        "Sauté garlic in butter until fragrant",
+        "Add drained fiddleheads and sauté 3 minutes",
+        "Season with lemon juice, salt, and pepper"
+      ],
+      "nutrition": {
+        "calories": 95,
+        "protein": 4,
+        "carbs": 8,
+        "fat": 6,
+        "fiber": 4,
+        "sugar": 2,
+        "sodium": 280
+      },
+      "tags": ["canadian", "maritimes", "seasonal", "vegetable"],
+      "rating": 4.1,
+      "reviews": 78
+    },
+    {
+      "id": "canada-016",
+      "name": "Maple Walnut Ice Cream",
+      "cuisine": "Canadian",
+      "mealType": ["dessert"],
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 240,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        { "name": "Heavy cream", "amount": "2 cups", "category": "dairy" },
+        { "name": "Whole milk", "amount": "1 cup", "category": "dairy" },
+        { "name": "Maple syrup", "amount": "3/4 cup", "category": "other" },
+        { "name": "Egg yolks", "amount": "6", "category": "protein" },
+        { "name": "Vanilla extract", "amount": "1 tsp", "category": "other" },
+        { "name": "Walnuts", "amount": "1 cup", "category": "other" },
+        { "name": "Salt", "amount": "1/4 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Heat cream and milk in saucepan",
+        "Whisk egg yolks with maple syrup",
+        "Temper egg mixture with hot cream",
+        "Cook custard until it coats spoon",
+        "Strain and chill completely",
+        "Churn in ice cream maker, fold in walnuts"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 7,
+        "carbs": 28,
+        "fat": 28,
+        "fiber": 1,
+        "sugar": 26,
+        "sodium": 120
+      },
+      "tags": ["canadian", "ice-cream", "maple", "dessert"],
+      "rating": 4.8,
+      "reviews": 298
+    },
+    {
+      "id": "canada-017",
+      "name": "Rappie Pie",
+      "cuisine": "Canadian",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop",
+      "prepTime": 60,
+      "cookTime": 120,
+      "servings": 12,
+      "difficulty": "hard",
+      "ingredients": [
+        { "name": "Potatoes", "amount": "10 lbs", "category": "vegetable" },
+        { "name": "Chicken", "amount": "1 whole", "category": "protein" },
+        { "name": "Pork shoulder", "amount": "2 lbs", "category": "protein" },
+        { "name": "Onions", "amount": "3 large", "category": "vegetable" },
+        { "name": "Chicken broth", "amount": "4 cups", "category": "other" },
+        { "name": "Salt pork", "amount": "1/4 lb", "category": "protein" },
+        { "name": "Summer savory", "amount": "2 tsp", "category": "spice" }
+      ],
+      "instructions": [
+        "Grate potatoes and squeeze out liquid",
+        "Cook chicken and pork until tender",
+        "Shred meats and reserve broth",
+        "Fry salt pork and onions",
+        "Mix grated potatoes with hot broth",
+        "Layer with meat and bake 2 hours at 350°F"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 28,
+        "carbs": 42,
+        "fat": 22,
+        "fiber": 4,
+        "sugar": 4,
+        "sodium": 820
+      },
+      "tags": ["canadian", "acadian", "potato", "traditional"],
+      "rating": 4.3,
+      "reviews": 67
+    },
+    {
+      "id": "canada-018",
+      "name": "Blueberry Grunt",
+      "cuisine": "Canadian",
+      "mealType": ["dessert"],
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Fresh blueberries", "amount": "4 cups", "category": "other" },
+        { "name": "Sugar", "amount": "1/2 cup", "category": "other" },
+        { "name": "Water", "amount": "1/2 cup", "category": "other" },
+        { "name": "All-purpose flour", "amount": "1 cup", "category": "grain" },
+        { "name": "Baking powder", "amount": "2 tsp", "category": "other" },
+        { "name": "Milk", "amount": "1/2 cup", "category": "dairy" },
+        { "name": "Butter", "amount": "2 tbsp", "category": "dairy" }
+      ],
+      "instructions": [
+        "Simmer blueberries with 1/4 cup sugar and water",
+        "Mix flour, remaining sugar, and baking powder",
+        "Add milk and melted butter to dry ingredients",
+        "Drop spoonfuls of dough over simmering berries",
+        "Cover and steam for 15 minutes",
+        "Serve warm with cream"
+      ],
+      "nutrition": {
+        "calories": 210,
+        "protein": 3,
+        "carbs": 42,
+        "fat": 4,
+        "fiber": 3,
+        "sugar": 26,
+        "sodium": 180
+      },
+      "tags": ["canadian", "maritimes", "steamed", "blueberry"],
+      "rating": 4.5,
+      "reviews": 156
+    },
+    {
+      "id": "canada-019",
+      "name": "Tire sur la Neige",
+      "cuisine": "Canadian",
+      "mealType": ["dessert", "snack"],
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 10,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Maple syrup", "amount": "2 cups", "category": "other" },
+        { "name": "Fresh snow", "amount": "4 cups", "category": "other" },
+        { "name": "Wooden popsicle sticks", "amount": "6", "category": "other" }
+      ],
+      "instructions": [
+        "Boil maple syrup to soft ball stage (235°F)",
+        "Pack fresh clean snow in shallow pan",
+        "Pour hot syrup in lines over snow",
+        "Syrup will harden into taffy consistency",
+        "Roll taffy around popsicle sticks",
+        "Eat immediately while warm"
+      ],
+      "nutrition": {
+        "calories": 140,
+        "protein": 0,
+        "carbs": 36,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 34,
+        "sodium": 5
+      },
+      "tags": ["canadian", "quebec", "maple", "winter"],
+      "rating": 4.6,
+      "reviews": 89
+    },
+    {
+      "id": "canada-020",
+      "name": "Caesar Cocktail",
+      "cuisine": "Canadian",
+      "mealType": ["drink"],
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 0,
+      "servings": 1,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Vodka", "amount": "1.5 oz", "category": "other" },
+        { "name": "Clamato juice", "amount": "4 oz", "category": "other" },
+        { "name": "Worcestershire sauce", "amount": "2 dashes", "category": "other" },
+        { "name": "Hot sauce", "amount": "2 dashes", "category": "other" },
+        { "name": "Celery salt", "amount": "1 tsp", "category": "spice" },
+        { "name": "Lime juice", "amount": "1/4 oz", "category": "other" },
+        { "name": "Celery stalk", "amount": "1", "category": "vegetable" }
+      ],
+      "instructions": [
+        "Rim glass with celery salt",
+        "Fill glass with ice",
+        "Add vodka and lime juice",
+        "Top with Clamato juice",
+        "Add Worcestershire and hot sauce",
+        "Garnish with celery stalk"
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 1,
+        "carbs": 6,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 5,
+        "sodium": 680
+      },
+      "tags": ["canadian", "cocktail", "savory", "brunch"],
+      "rating": 4.4,
+      "reviews": 267
     }
   ]
 }
