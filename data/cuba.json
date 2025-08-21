@@ -40,6 +40,90 @@
       "tags": ["cuban", "shredded-beef", "comfort-food"],
       "rating": 4.6,
       "reviews": 189
+    },
+    {
+      "id": "cuba-002",
+      "name": "Moros y Cristianos",
+      "cuisine": "Cuban",
+      "mealType": ["lunch", "dinner", "side"],
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 25,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        { "name": "Black beans", "amount": "2 cups", "category": "other" },
+        { "name": "White rice", "amount": "1 cup", "category": "grain" },
+        { "name": "Onions", "amount": "1 medium", "category": "vegetable" },
+        { "name": "Bell pepper", "amount": "1", "category": "vegetable" },
+        { "name": "Garlic", "amount": "3 cloves", "category": "vegetable" },
+        { "name": "Cumin", "amount": "1 tsp", "category": "spice" },
+        { "name": "Bay leaves", "amount": "2", "category": "spice" },
+        { "name": "Olive oil", "amount": "2 tbsp", "category": "other" }
+      ],
+      "instructions": [
+        "Sauté onions, bell pepper, and garlic in olive oil",
+        "Add rice and stir for 2 minutes",
+        "Add black beans with their liquid",
+        "Add cumin, bay leaves, and salt",
+        "Bring to boil, then simmer covered",
+        "Cook for 18-20 minutes until rice is tender",
+        "Let stand 5 minutes before serving"
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein": 12,
+        "carbs": 52,
+        "fat": 4,
+        "fiber": 8,
+        "sugar": 4,
+        "sodium": 480
+      },
+      "tags": ["cuban", "rice", "beans", "vegetarian"],
+      "rating": 4.4,
+      "reviews": 267
+    },
+    {
+      "id": "cuba-003",
+      "name": "Lechón Asado",
+      "cuisine": "Cuban",
+      "mealType": ["lunch", "dinner"],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 60,
+      "cookTime": 240,
+      "servings": 10,
+      "difficulty": "hard",
+      "ingredients": [
+        { "name": "Pork shoulder", "amount": "5 lbs", "category": "protein" },
+        { "name": "Sour orange juice", "amount": "1 cup", "category": "other" },
+        { "name": "Garlic", "amount": "8 cloves", "category": "vegetable" },
+        { "name": "Oregano", "amount": "2 tbsp", "category": "spice" },
+        { "name": "Cumin", "amount": "1 tbsp", "category": "spice" },
+        { "name": "Salt", "amount": "2 tbsp", "category": "spice" },
+        { "name": "Black pepper", "amount": "1 tbsp", "category": "spice" },
+        { "name": "Olive oil", "amount": "1/4 cup", "category": "other" }
+      ],
+      "instructions": [
+        "Make marinade with orange juice, garlic, and spices",
+        "Score pork skin in crosshatch pattern",
+        "Marinate pork overnight in refrigerator",
+        "Bring to room temperature before cooking",
+        "Roast at 325°F for 3-4 hours",
+        "Baste every 30 minutes with marinade",
+        "Rest for 20 minutes before carving"
+      ],
+      "nutrition": {
+        "calories": 520,
+        "protein": 45,
+        "carbs": 3,
+        "fat": 36,
+        "fiber": 0,
+        "sugar": 2,
+        "sodium": 890
+      },
+      "tags": ["cuban", "roast-pork", "citrus", "festive"],
+      "rating": 4.8,
+      "reviews": 156
     }
   ]
 }
