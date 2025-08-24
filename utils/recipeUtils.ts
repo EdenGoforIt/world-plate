@@ -1,167 +1,163 @@
 import { Recipe, Country } from '../types/Recipe';
 import countriesIndex from '../data/index.json';
 
-// Static imports for all country data files
-import afghanistanData from '../data/afghanistan.json';
-import algeriaData from '../data/algeria.json';
-import argentinaData from '../data/argentina.json';
-import australiaData from '../data/australia.json';
-import austriaData from '../data/austria.json';
-import bangladeshData from '../data/bangladesh.json';
-import belgiumData from '../data/belgium.json';
-import brazilData from '../data/brazil.json';
-import canadaData from '../data/canada.json';
-import chileData from '../data/chile.json';
-import chinaData from '../data/china.json';
-import colombiaData from '../data/colombia.json';
-import cubaData from '../data/cuba.json';
-import czechRepublicData from '../data/czech_republic.json';
-import denmarkData from '../data/denmark.json';
-import ecuadorData from '../data/ecuador.json';
-import egyptData from '../data/egypt.json';
-import ethiopiaData from '../data/ethiopia.json';
-import finlandData from '../data/finland.json';
-import franceData from '../data/france.json';
-import germanyData from '../data/germany.json';
-import greeceData from '../data/greece.json';
-import hungaryData from '../data/hungary.json';
-import indonesiaData from '../data/indonesia.json';
-import indiaData from '../data/india.json';
-import iranData from '../data/iran.json';
-import israelData from '../data/israel.json';
-import italyData from '../data/italy.json';
-import jamaicaData from '../data/jamaica.json';
-import japanData from '../data/japan.json';
-import koreaData from '../data/korea.json';
-import lebanonData from '../data/lebanon.json';
-import malaysiaData from '../data/malaysia.json';
-import mexicoData from '../data/mexico.json';
-import moroccoData from '../data/morocco.json';
-import myanmarData from '../data/myanmar.json';
-import nepalData from '../data/nepal.json';
-import netherlandsData from '../data/netherlands.json';
-import nigeriaData from '../data/nigeria.json';
-import norwayData from '../data/norway.json';
-import peruData from '../data/peru.json';
-import philippinesData from '../data/philippines.json';
-import polandData from '../data/poland.json';
-import portugalData from '../data/portugal.json';
-import romaniaData from '../data/romania.json';
-import russiaData from '../data/russia.json';
-import saudiArabiaData from '../data/saudi_arabia.json';
-import southAfricaData from '../data/south_africa.json';
-import spainData from '../data/spain.json';
-import sriLankaData from '../data/sri_lanka.json';
-import swedenData from '../data/sweden.json';
-import thailandData from '../data/thailand.json';
-import turkeyData from '../data/turkey.json';
-import ukraineData from '../data/ukraine.json';
-import unitedKingdomData from '../data/united_kingdom.json';
-import unitedStatesData from '../data/united_states.json';
-import venezuelaData from '../data/venezuela.json';
-import vietnamData from '../data/vietnam.json';
+// Lazy loading cache for country data
+const countryDataCache: Map<string, Country> = new Map();
 
-// Static mapping of country files
-const countryDataMap: { [fileName: string]: Country } = {
-  'afghanistan.json': afghanistanData as Country,
-  'algeria.json': algeriaData as Country,
-  'argentina.json': argentinaData as Country,
-  'australia.json': australiaData as Country,
-  'austria.json': austriaData as Country,
-  'bangladesh.json': bangladeshData as Country,
-  'belgium.json': belgiumData as Country,
-  'brazil.json': brazilData as Country,
-  'canada.json': canadaData as Country,
-  'chile.json': chileData as Country,
-  'china.json': chinaData as Country,
-  'colombia.json': colombiaData as Country,
-  'cuba.json': cubaData as Country,
-  'czech_republic.json': czechRepublicData as Country,
-  'denmark.json': denmarkData as Country,
-  'ecuador.json': ecuadorData as Country,
-  'egypt.json': egyptData as Country,
-  'ethiopia.json': ethiopiaData as Country,
-  'finland.json': finlandData as Country,
-  'france.json': franceData as Country,
-  'germany.json': germanyData as Country,
-  'greece.json': greeceData as Country,
-  'hungary.json': hungaryData as Country,
-  'indonesia.json': indonesiaData as Country,
-  'india.json': indiaData as Country,
-  'iran.json': iranData as Country,
-  'israel.json': israelData as Country,
-  'italy.json': italyData as Country,
-  'jamaica.json': jamaicaData as Country,
-  'japan.json': japanData as Country,
-  'korea.json': koreaData as Country,
-  'lebanon.json': lebanonData as Country,
-  'malaysia.json': malaysiaData as Country,
-  'mexico.json': mexicoData as Country,
-  'morocco.json': moroccoData as Country,
-  'myanmar.json': myanmarData as Country,
-  'nepal.json': nepalData as Country,
-  'netherlands.json': netherlandsData as Country,
-  'nigeria.json': nigeriaData as Country,
-  'norway.json': norwayData as Country,
-  'peru.json': peruData as Country,
-  'philippines.json': philippinesData as Country,
-  'poland.json': polandData as Country,
-  'portugal.json': portugalData as Country,
-  'romania.json': romaniaData as Country,
-  'russia.json': russiaData as Country,
-  'saudi_arabia.json': saudiArabiaData as Country,
-  'south_africa.json': southAfricaData as Country,
-  'spain.json': spainData as Country,
-  'sri_lanka.json': sriLankaData as Country,
-  'sweden.json': swedenData as Country,
-  'thailand.json': thailandData as Country,
-  'turkey.json': turkeyData as Country,
-  'ukraine.json': ukraineData as Country,
-  'united_kingdom.json': unitedKingdomData as Country,
-  'united_states.json': unitedStatesData as Country,
-  'venezuela.json': venezuelaData as Country,
-  'vietnam.json': vietnamData as Country,
+// Lazy load country data
+const loadCountryData = async (fileName: string): Promise<Country | null> => {
+  try {
+    // Check cache first
+    if (countryDataCache.has(fileName)) {
+      return countryDataCache.get(fileName)!;
+    }
+
+    // Dynamic import based on filename
+    let data: Country | null = null;
+    const fileNameWithoutExt = fileName.replace('.json', '');
+    
+    switch (fileNameWithoutExt) {
+      case 'afghanistan': data = (await import('../data/afghanistan.json')).default as Country; break;
+      case 'algeria': data = (await import('../data/algeria.json')).default as Country; break;
+      case 'argentina': data = (await import('../data/argentina.json')).default as Country; break;
+      case 'australia': data = (await import('../data/australia.json')).default as Country; break;
+      case 'austria': data = (await import('../data/austria.json')).default as Country; break;
+      case 'bangladesh': data = (await import('../data/bangladesh.json')).default as Country; break;
+      case 'belgium': data = (await import('../data/belgium.json')).default as Country; break;
+      case 'brazil': data = (await import('../data/brazil.json')).default as Country; break;
+      case 'canada': data = (await import('../data/canada.json')).default as Country; break;
+      case 'chile': data = (await import('../data/chile.json')).default as Country; break;
+      case 'china': data = (await import('../data/china.json')).default as Country; break;
+      case 'colombia': data = (await import('../data/colombia.json')).default as Country; break;
+      case 'cuba': data = (await import('../data/cuba.json')).default as Country; break;
+      case 'czech_republic': data = (await import('../data/czech_republic.json')).default as Country; break;
+      case 'denmark': data = (await import('../data/denmark.json')).default as Country; break;
+      case 'ecuador': data = (await import('../data/ecuador.json')).default as Country; break;
+      case 'egypt': data = (await import('../data/egypt.json')).default as Country; break;
+      case 'ethiopia': data = (await import('../data/ethiopia.json')).default as Country; break;
+      case 'finland': data = (await import('../data/finland.json')).default as Country; break;
+      case 'france': data = (await import('../data/france.json')).default as Country; break;
+      case 'germany': data = (await import('../data/germany.json')).default as Country; break;
+      case 'greece': data = (await import('../data/greece.json')).default as Country; break;
+      case 'hungary': data = (await import('../data/hungary.json')).default as Country; break;
+      case 'indonesia': data = (await import('../data/indonesia.json')).default as Country; break;
+      case 'india': data = (await import('../data/india.json')).default as Country; break;
+      case 'iran': data = (await import('../data/iran.json')).default as Country; break;
+      case 'israel': data = (await import('../data/israel.json')).default as Country; break;
+      case 'italy': data = (await import('../data/italy.json')).default as Country; break;
+      case 'jamaica': data = (await import('../data/jamaica.json')).default as Country; break;
+      case 'japan': data = (await import('../data/japan.json')).default as Country; break;
+      case 'korea': data = (await import('../data/korea.json')).default as Country; break;
+      case 'lebanon': data = (await import('../data/lebanon.json')).default as Country; break;
+      case 'malaysia': data = (await import('../data/malaysia.json')).default as Country; break;
+      case 'mexico': data = (await import('../data/mexico.json')).default as Country; break;
+      case 'morocco': data = (await import('../data/morocco.json')).default as Country; break;
+      case 'myanmar': data = (await import('../data/myanmar.json')).default as Country; break;
+      case 'nepal': data = (await import('../data/nepal.json')).default as Country; break;
+      case 'netherlands': data = (await import('../data/netherlands.json')).default as Country; break;
+      case 'nigeria': data = (await import('../data/nigeria.json')).default as Country; break;
+      case 'norway': data = (await import('../data/norway.json')).default as Country; break;
+      case 'peru': data = (await import('../data/peru.json')).default as Country; break;
+      case 'philippines': data = (await import('../data/philippines.json')).default as Country; break;
+      case 'poland': data = (await import('../data/poland.json')).default as Country; break;
+      case 'portugal': data = (await import('../data/portugal.json')).default as Country; break;
+      case 'romania': data = (await import('../data/romania.json')).default as Country; break;
+      case 'russia': data = (await import('../data/russia.json')).default as Country; break;
+      case 'saudi_arabia': data = (await import('../data/saudi_arabia.json')).default as Country; break;
+      case 'south_africa': data = (await import('../data/south_africa.json')).default as Country; break;
+      case 'spain': data = (await import('../data/spain.json')).default as Country; break;
+      case 'sri_lanka': data = (await import('../data/sri_lanka.json')).default as Country; break;
+      case 'sweden': data = (await import('../data/sweden.json')).default as Country; break;
+      case 'thailand': data = (await import('../data/thailand.json')).default as Country; break;
+      case 'turkey': data = (await import('../data/turkey.json')).default as Country; break;
+      case 'ukraine': data = (await import('../data/ukraine.json')).default as Country; break;
+      case 'united_kingdom': data = (await import('../data/united_kingdom.json')).default as Country; break;
+      case 'united_states': data = (await import('../data/united_states.json')).default as Country; break;
+      case 'venezuela': data = (await import('../data/venezuela.json')).default as Country; break;
+      case 'vietnam': data = (await import('../data/vietnam.json')).default as Country; break;
+      default: return null;
+    }
+
+    // Cache the loaded data
+    if (data) {
+      countryDataCache.set(fileName, data);
+    }
+    
+    return data;
+  } catch (error) {
+    console.error(`Error loading country data for ${fileName}:`, error);
+    return null;
+  }
 };
 
-export const getRandomRecipes = (count: number = 3): Recipe[] => {
+// Synchronous wrapper for backward compatibility
+export const getCountryData = (countryFileName: string): Country | null => {
+  // Check if already cached
+  if (countryDataCache.has(countryFileName)) {
+    return countryDataCache.get(countryFileName)!;
+  }
+  
+  // For synchronous calls, return null if not cached
+  // The data will be loaded on first async access
+  return null;
+};
+
+// Async version for better performance
+export const getCountryDataAsync = async (countryFileName: string): Promise<Country | null> => {
+  return loadCountryData(countryFileName);
+};
+
+// Pre-load essential countries for better initial performance
+export const preloadEssentialCountries = async () => {
+  const essentialCountries = ['united_states.json', 'italy.json', 'japan.json', 'mexico.json', 'india.json'];
+  await Promise.all(essentialCountries.map(file => loadCountryData(file)));
+};
+
+export const getRandomRecipes = async (count: number = 3): Promise<Recipe[]> => {
   const allRecipes: Recipe[] = [];
-  countriesIndex.countries.forEach(countryInfo => {
-    const countryData = getCountryData(countryInfo.file);
-    if (countryData && countryData.recipes) {
-      allRecipes.push(...countryData.recipes);
-    }
+  
+  // Load all countries in parallel for better performance
+  const countryPromises = countriesIndex.countries.map(async (countryInfo) => {
+    const countryData = await getCountryDataAsync(countryInfo.file);
+    return countryData?.recipes || [];
   });
+  
+  const countryRecipes = await Promise.all(countryPromises);
+  countryRecipes.forEach(recipes => allRecipes.push(...recipes));
+  
   const shuffled = [...allRecipes].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
 
-export const getRecipesByMealType = (mealType: 'breakfast' | 'lunch' | 'dinner'): Recipe[] => {
-  const allRecipes = getRandomRecipes(1000); // Get all recipes
+export const getRecipesByMealType = async (mealType: 'breakfast' | 'lunch' | 'dinner'): Promise<Recipe[]> => {
+  const allRecipes = await getRandomRecipes(1000); // Get all recipes
   return allRecipes.filter(recipe => recipe.mealType.includes(mealType));
 };
 
-export const getRandomRecipeByMealType = (mealType: 'breakfast' | 'lunch' | 'dinner'): Recipe | null => {
-  const mealRecipes = getRecipesByMealType(mealType);
+export const getRandomRecipeByMealType = async (mealType: 'breakfast' | 'lunch' | 'dinner'): Promise<Recipe | null> => {
+  const mealRecipes = await getRecipesByMealType(mealType);
   if (mealRecipes.length === 0) return null;
   const randomIndex = Math.floor(Math.random() * mealRecipes.length);
   return mealRecipes[randomIndex];
 };
 
-export const getDailyRecommendations = () => {
-  return {
-    breakfast: getRandomRecipeByMealType('breakfast'),
-    lunch: getRandomRecipeByMealType('lunch'),
-    dinner: getRandomRecipeByMealType('dinner'),
-  };
+export const getDailyRecommendations = async () => {
+  const [breakfast, lunch, dinner] = await Promise.all([
+    getRandomRecipeByMealType('breakfast'),
+    getRandomRecipeByMealType('lunch'),
+    getRandomRecipeByMealType('dinner')
+  ]);
+  
+  return { breakfast, lunch, dinner };
 };
 
-export const getRecipeById = (id: string): Recipe | null => {
-  const result = getRecipeByIdFromCountry(id);
+export const getRecipeById = async (id: string): Promise<Recipe | null> => {
+  const result = await getRecipeByIdFromCountry(id);
   return result?.recipe || null;
 };
 
-export const searchRecipes = (query: string): Recipe[] => {
-  const allRecipes = getRandomRecipes(1000); // Get all recipes
+export const searchRecipes = async (query: string): Promise<Recipe[]> => {
+  const allRecipes = await getRandomRecipes(1000); // Get all recipes
   const lowerQuery = query.toLowerCase();
   return allRecipes.filter(recipe => 
     recipe.name.toLowerCase().includes(lowerQuery) ||
@@ -170,8 +166,8 @@ export const searchRecipes = (query: string): Recipe[] => {
   );
 };
 
-export const getRecipesByCuisine = (cuisine: string): Recipe[] => {
-  const allRecipes = getRandomRecipes(1000); // Get all recipes
+export const getRecipesByCuisine = async (cuisine: string): Promise<Recipe[]> => {
+  const allRecipes = await getRandomRecipes(1000); // Get all recipes
   return allRecipes.filter(recipe => recipe.cuisine.toLowerCase() === cuisine.toLowerCase());
 };
 
@@ -196,21 +192,12 @@ export const getCountries = () => {
   return countriesIndex.countries;
 };
 
-export const getCountryData = (countryFileName: string): Country | null => {
-  try {
-    return countryDataMap[countryFileName] || null;
-  } catch (error) {
-    console.error(`Error loading country data for ${countryFileName}:`, error);
-    return null;
-  }
-};
-
-export const getRecipesByCountry = (countryName: string): Recipe[] => {
+export const getRecipesByCountry = async (countryName: string): Promise<Recipe[]> => {
   try {
     const country = countriesIndex.countries.find(c => c.name === countryName);
     if (!country) return [];
     
-    const countryData = getCountryData(country.file);
+    const countryData = await getCountryDataAsync(country.file);
     return countryData?.recipes || [];
   } catch (error) {
     console.error(`Error getting recipes for ${countryName}:`, error);
@@ -218,11 +205,11 @@ export const getRecipesByCountry = (countryName: string): Recipe[] => {
   }
 };
 
-export const getRecipeByIdFromCountry = (recipeId: string): { recipe: Recipe; country: string } | null => {
+export const getRecipeByIdFromCountry = async (recipeId: string): Promise<{ recipe: Recipe; country: string } | null> => {
   try {
     // Check all countries for the recipe
     for (const countryInfo of countriesIndex.countries) {
-      const countryData = getCountryData(countryInfo.file);
+      const countryData = await getCountryDataAsync(countryInfo.file);
       if (countryData) {
         const recipe = countryData.recipes.find(r => r.id === recipeId);
         if (recipe) {
