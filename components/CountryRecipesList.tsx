@@ -27,10 +27,10 @@ export const CountryRecipesList: React.FC<CountryRecipesListProps> = ({
     loadRecipes();
   }, [countryName]);
 
-  const loadRecipes = () => {
+  const loadRecipes = async () => {
     try {
       setLoading(true);
-      const countryRecipes = getRecipesByCountry(countryName);
+      const countryRecipes = await getRecipesByCountry(countryName);
       setRecipes(countryRecipes);
     } catch (error) {
       console.error(`Error loading recipes for ${countryName}:`, error);
