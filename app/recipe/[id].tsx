@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -7,6 +7,7 @@ import {
   Image,
   TouchableOpacity,
   StatusBar,
+  ActivityIndicator,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, router } from 'expo-router';
@@ -15,12 +16,35 @@ import { Ionicons } from '@expo/vector-icons';
 import { Colors } from '@/constants/Colors';
 import { getRecipeByIdFromCountry, formatCookTime, getDifficultyColor } from '@/utils/recipeUtils';
 import { useFavorites } from '@/hooks/useFavorites';
+import { Recipe } from '@/types/Recipe';
 
 export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { toggleFavorite, isFavorite } = useFavorites();
+  const [recipeData, setRecipeData] = useState<{ recipe: Recipe; country: string } | null>(null);
+  const [loading, setLoading] = useState(true);
   
-  const recipeData = getRecipeByIdFromCountry(id!);
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      setLoading(true);
+      const data = await getRecipeByIdFromCountry(id!);
+      setRecipeData(data);
+      setLoading(false);
+    };
+    
+    fetchRecipe();
+  }, [id]);
+  
+  if (loading) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color={Colors.primary} />
+          <Text style={styles.loadingText}>Loading recipe...</Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
   
   if (!recipeData) {
     return (
@@ -359,5 +383,16 @@ const styles = StyleSheet.create({
   },
   bottomSpacing: {
     height: 40,
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: Colors.background,
+  },
+  loadingText: {
+    marginTop: 16,
+    fontSize: 16,
+    color: Colors.text,
   },
 });
