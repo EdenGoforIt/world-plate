@@ -15,7 +15,7 @@ import { router } from 'expo-router';
 
 import { RecipeCard } from '@/components/RecipeCard';
 import { Colors } from '@/constants/Colors';
-import { getRecipeByIdFromCountry } from '@/utils/recipeUtils';
+import { getRecipeByIdFromCountrySync } from '@/utils/recipeUtils';
 import { getAllRecipesFromCache, getCategoriesFromCache, preloadRecipeCache } from '@/utils/recipeCache';
 import { Recipe } from '@/types/Recipe';
 import { useFavorites } from '@/hooks/useFavorites';
@@ -130,7 +130,7 @@ export default function ExploreScreen() {
   );
 
   const renderRecipeItem = ({ item }: { item: Recipe }) => {
-    const recipeData = getRecipeByIdFromCountry(item.id);
+    const recipeData = getRecipeByIdFromCountrySync(item.id);
     const countryName = recipeData?.country || '';
     
     return (

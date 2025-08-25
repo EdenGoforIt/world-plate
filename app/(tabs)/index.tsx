@@ -15,7 +15,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { MealRecommendation } from "@/components/MealRecommendation";
 import { Colors } from "@/constants/Colors";
 import { useDailyRecommendations } from "@/hooks/useRecipes";
-import { getRecipeByIdFromCountry } from "@/utils/recipeUtils";
+import { getRecipeByIdFromCountrySync } from "@/utils/recipeUtils";
 
 export default function HomeScreen() {
   const { recommendations, loading, refreshRecommendations } =
@@ -77,7 +77,7 @@ export default function HomeScreen() {
           }}
           countryName={
             recommendations.breakfast
-              ? getRecipeByIdFromCountry(recommendations.breakfast.id)?.country
+              ? getRecipeByIdFromCountrySync(recommendations.breakfast.id)?.country
               : undefined
           }
         />
@@ -93,7 +93,7 @@ export default function HomeScreen() {
           }}
           countryName={
             recommendations.lunch
-              ? getRecipeByIdFromCountry(recommendations.lunch.id)?.country
+              ? getRecipeByIdFromCountrySync(recommendations.lunch.id)?.country
               : undefined
           }
         />
@@ -110,7 +110,7 @@ export default function HomeScreen() {
           }}
           countryName={
             recommendations.dinner
-              ? getRecipeByIdFromCountry(recommendations.dinner.id)?.country
+              ? getRecipeByIdFromCountrySync(recommendations.dinner.id)?.country
               : undefined
           }
         />
