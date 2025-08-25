@@ -26,7 +26,7 @@ export const useFavorites = () => {
       const favoriteRecipes: Recipe[] = [];
       
       for (const recipeId of allFavoriteIds) {
-        const result = getRecipeByIdFromCountry(recipeId);
+        const result = await getRecipeByIdFromCountry(recipeId);
         if (result) {
           favoriteRecipes.push(result.recipe);
         }
@@ -63,7 +63,7 @@ export const useFavorites = () => {
         setAllFavorites(prev => prev.filter(recipe => recipe.id !== recipeId));
       } else {
         await addToCountryFavorites(countryName, recipeId);
-        const result = getRecipeByIdFromCountry(recipeId);
+        const result = await getRecipeByIdFromCountry(recipeId);
         if (result) {
           setFavoritesByCountry(prev => ({
             ...prev,
