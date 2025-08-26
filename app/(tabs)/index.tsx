@@ -6,7 +6,6 @@ import {
   RefreshControl,
   ScrollView,
   StatusBar,
-  StyleSheet,
   Text,
   View,
 } from "react-native";
@@ -26,19 +25,19 @@ export default function HomeScreen() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView className="flex-1 bg-background">
       <StatusBar barStyle="light-content" />
 
       <LinearGradient
         colors={[Colors.primary, Colors.secondary]}
-        style={styles.header}
+        className="px-5 py-6 rounded-b-3xl"
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
       >
-        <View style={styles.headerContent}>
+        <View className="flex-row justify-between items-center">
           <View>
-            <Text style={styles.greeting}>Good Morning!</Text>
-            <Text style={styles.subtitle}>
+            <Text className="text-[28px] font-bold text-white mb-1">Good Morning!</Text>
+            <Text className="text-base text-white opacity-90">
               What would you like to cook today?
             </Text>
           </View>
@@ -47,8 +46,8 @@ export default function HomeScreen() {
       </LinearGradient>
 
       <ScrollView
-        style={styles.content}
-        contentContainerStyle={styles.contentContainer}
+        className="flex-1"
+        contentContainerStyle={{ padding: 20, paddingBottom: 100 }}
         showsVerticalScrollIndicator={false}
         refreshControl={
           <RefreshControl
@@ -58,9 +57,9 @@ export default function HomeScreen() {
           />
         }
       >
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Today's Recommendations</Text>
-          <Text style={styles.sectionSubtitle}>
+        <View className="mb-6">
+          <Text className="text-[22px] font-bold text-text mb-1">Today's Recommendations</Text>
+          <Text className="text-base text-text opacity-70">
             Handpicked recipes for your meals
           </Text>
         </View>
@@ -118,53 +117,3 @@ export default function HomeScreen() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.background,
-  },
-  header: {
-    paddingHorizontal: 20,
-    paddingVertical: 24,
-    borderBottomLeftRadius: 24,
-    borderBottomRightRadius: 24,
-  },
-  headerContent: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  greeting: {
-    fontSize: 28,
-    fontWeight: "700",
-    color: "#fff",
-    marginBottom: 4,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: "#fff",
-    opacity: 0.9,
-  },
-  content: {
-    flex: 1,
-  },
-  contentContainer: {
-    padding: 20,
-    paddingBottom: 100,
-  },
-  section: {
-    marginBottom: 24,
-  },
-  sectionTitle: {
-    fontSize: 22,
-    fontWeight: "700",
-    color: Colors.text,
-    marginBottom: 4,
-  },
-  sectionSubtitle: {
-    fontSize: 16,
-    color: Colors.text,
-    opacity: 0.7,
-  },
-});

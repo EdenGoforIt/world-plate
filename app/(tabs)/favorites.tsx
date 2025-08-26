@@ -2,7 +2,6 @@ import React, { useCallback } from 'react';
 import { 
   View, 
   Text, 
-  StyleSheet, 
   ScrollView, 
   ActivityIndicator, 
   TouchableOpacity,
@@ -34,18 +33,18 @@ export default function FavoritesScreen() {
 
   if (loading) {
     return (
-      <SafeAreaView style={styles.loadingContainer}>
+      <SafeAreaView className="flex-1 items-center justify-center bg-[#FEFEFE]">
         <ActivityIndicator size="large" color="#E74C3C" />
-        <Text style={styles.loadingText}>Loading favorites...</Text>
+        <Text className="mt-2.5 text-base text-[#2C3E50]">Loading favorites...</Text>
       </SafeAreaView>
     );
   }
 
   if (allFavorites.length === 0) {
     return (
-      <SafeAreaView style={styles.emptyContainer}>
-        <Text style={styles.emptyTitle}>No Favorites Yet</Text>
-        <Text style={styles.emptySubtitle}>
+      <SafeAreaView className="flex-1 items-center justify-center bg-[#FEFEFE] p-10">
+        <Text className="text-2xl font-bold text-[#2C3E50] mb-2.5">No Favorites Yet</Text>
+        <Text className="text-base text-[#7F8C8D] text-center leading-6">
           Start exploring recipes and add some to your favorites!
         </Text>
       </SafeAreaView>
@@ -65,45 +64,45 @@ export default function FavoritesScreen() {
   }).filter(section => section.data.length > 0);
 
   const renderRecipeItem = ({ item: recipe }: { item: Recipe }) => (
-    <TouchableOpacity style={styles.recipeCard} onPress={() => router.push(`/recipe/${recipe.id}`)}>
-      <Image source={{ uri: recipe.image }} style={styles.recipeImage} />
-      <View style={styles.recipeInfo}>
-        <Text style={styles.recipeName} numberOfLines={2}>{recipe.name}</Text>
-        <Text style={styles.recipeCuisine}>{recipe.cuisine}</Text>
+    <TouchableOpacity className="flex-row bg-white mx-3.5 my-2 rounded-xl p-3 shadow-sm" style={{ shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4, elevation: 3 }} onPress={() => router.push(`/recipe/${recipe.id}`)}>
+      <Image source={{ uri: recipe.image }} className="w-20 h-20 rounded-lg mr-3" />
+      <View className="flex-1 justify-between">
+        <Text className="text-base font-semibold text-[#2C3E50] leading-5 mb-1" numberOfLines={2}>{recipe.name}</Text>
+        <Text className="text-sm text-[#7F8C8D] mb-2">{recipe.cuisine}</Text>
         
-        <View style={styles.recipeDetails}>
-          <View style={styles.timeContainer}>
-            <Text style={styles.recipeTime}>
+        <View className="flex-row items-center mb-2">
+          <View className="mr-2.5">
+            <Text className="text-xs text-[#7F8C8D]">
               {formatCookTime(recipe.prepTime + recipe.cookTime)}
             </Text>
           </View>
           
-          <View style={[styles.difficultyBadge, { backgroundColor: getDifficultyColor(recipe.difficulty) }]}>
-            <Text style={styles.difficultyText}>{recipe.difficulty}</Text>
+          <View className="px-2 py-0.5 rounded-2xl" style={{ backgroundColor: getDifficultyColor(recipe.difficulty) }}>
+            <Text className="text-xs text-white font-semibold">{recipe.difficulty}</Text>
           </View>
         </View>
 
-        <View style={styles.ratingContainer}>
-          <Text style={styles.rating}>⭐ {recipe.rating}</Text>
-          <Text style={styles.reviews}>({recipe.reviews} reviews)</Text>
+        <View className="flex-row items-center">
+          <Text className="text-xs text-[#2C3E50] mr-1.5">⭐ {recipe.rating}</Text>
+          <Text className="text-xs text-[#7F8C8D]">({recipe.reviews} reviews)</Text>
         </View>
       </View>
     </TouchableOpacity>
   );
 
   const renderSectionHeader = ({ section }: { section: FavoriteSection }) => (
-    <View style={styles.sectionHeader}>
-      <Text style={styles.countryFlag}>{section.flag}</Text>
-      <Text style={styles.countryName}>{section.title}</Text>
-      <Text style={styles.countryCount}>({section.data.length} recipe{section.data.length !== 1 ? 's' : ''})</Text>
+    <View className="flex-row items-center bg-[#F8F9FA] p-3.5 mt-2.5 border-t border-[#E9ECEF]">
+      <Text className="text-2xl mr-3">{section.flag}</Text>
+      <Text className="text-lg font-semibold text-[#2C3E50] flex-1">{section.title}</Text>
+      <Text className="text-sm text-[#7F8C8D]">({section.data.length} recipe{section.data.length !== 1 ? 's' : ''})</Text>
     </View>
   );
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>My Favorites</Text>
-        <Text style={styles.totalCount}>
+    <SafeAreaView className="flex-1 bg-[#FEFEFE]">
+      <View className="p-5 pb-2.5 bg-[#FEFEFE]">
+        <Text className="text-[28px] font-bold text-[#2C3E50] mb-1">My Favorites</Text>
+        <Text className="text-sm text-[#7F8C8D]">
           {allFavorites.length} recipe{allFavorites.length !== 1 ? 's' : ''} from {sections.length} countr{sections.length !== 1 ? 'ies' : 'y'}
         </Text>
       </View>
@@ -113,7 +112,7 @@ export default function FavoritesScreen() {
         keyExtractor={(item) => item.id}
         renderItem={renderRecipeItem}
         renderSectionHeader={renderSectionHeader}
-        contentContainerStyle={styles.listContainer}
+        contentContainerStyle={{ paddingBottom: 20 }}
         showsVerticalScrollIndicator={false}
         stickySectionHeadersEnabled={true}
       />
@@ -128,153 +127,3 @@ const getCountryFlag = (countryName: string) => {
   return { flag: country?.flag || '🌍' };
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FEFEFE',
-  },
-  header: {
-    padding: 20,
-    paddingBottom: 10,
-    backgroundColor: '#FEFEFE',
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#2C3E50',
-    marginBottom: 4,
-  },
-  totalCount: {
-    fontSize: 14,
-    color: '#7F8C8D',
-  },
-  loadingContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FEFEFE',
-  },
-  loadingText: {
-    marginTop: 10,
-    fontSize: 16,
-    color: '#2C3E50',
-  },
-  emptyContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FEFEFE',
-    padding: 40,
-  },
-  emptyTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#2C3E50',
-    marginBottom: 10,
-  },
-  emptySubtitle: {
-    fontSize: 16,
-    color: '#7F8C8D',
-    textAlign: 'center',
-    lineHeight: 24,
-  },
-  listContainer: {
-    paddingBottom: 20,
-  },
-  sectionHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#F8F9FA',
-    padding: 15,
-    marginTop: 10,
-    borderTopWidth: 1,
-    borderTopColor: '#E9ECEF',
-  },
-  countryFlag: {
-    fontSize: 24,
-    marginRight: 12,
-  },
-  countryName: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#2C3E50',
-    flex: 1,
-  },
-  countryCount: {
-    fontSize: 14,
-    color: '#7F8C8D',
-  },
-  recipeCard: {
-    flexDirection: 'row',
-    backgroundColor: '#FFFFFF',
-    marginHorizontal: 15,
-    marginVertical: 8,
-    borderRadius: 12,
-    padding: 12,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
-  },
-  recipeImage: {
-    width: 80,
-    height: 80,
-    borderRadius: 8,
-    marginRight: 12,
-  },
-  recipeInfo: {
-    flex: 1,
-    justifyContent: 'space-between',
-  },
-  recipeName: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#2C3E50',
-    lineHeight: 20,
-    marginBottom: 4,
-  },
-  recipeCuisine: {
-    fontSize: 14,
-    color: '#7F8C8D',
-    marginBottom: 8,
-  },
-  recipeDetails: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 8,
-  },
-  timeContainer: {
-    marginRight: 10,
-  },
-  recipeTime: {
-    fontSize: 12,
-    color: '#7F8C8D',
-  },
-  difficultyBadge: {
-    paddingHorizontal: 8,
-    paddingVertical: 2,
-    borderRadius: 10,
-  },
-  difficultyText: {
-    fontSize: 12,
-    color: 'white',
-    fontWeight: '600',
-  },
-  ratingContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  rating: {
-    fontSize: 12,
-    color: '#2C3E50',
-    marginRight: 6,
-  },
-  reviews: {
-    fontSize: 12,
-    color: '#7F8C8D',
-  },
-});
