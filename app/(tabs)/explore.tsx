@@ -3,7 +3,6 @@ import {
   View, 
   Text, 
   ScrollView, 
-  StyleSheet, 
   TouchableOpacity, 
   TextInput,
   FlatList,
@@ -99,10 +98,9 @@ export default function ExploreScreen() {
 
   const renderCategoryItem = ({ item }: { item: any }) => (
     <TouchableOpacity
-      style={[
-        styles.categoryItem,
-        selectedCategory === item.name && styles.categoryItemSelected
-      ]}
+      className={`items-center justify-center bg-white rounded-2xl py-4 px-5 mr-3 min-w-[100px] shadow-sm ${
+        selectedCategory === item.name ? 'bg-primary' : ''
+      }`}
       onPress={() => handleCategoryPress(item.name)}
     >
       <Ionicons 
@@ -111,18 +109,16 @@ export default function ExploreScreen() {
         color={selectedCategory === item.name ? '#fff' : Colors.primary} 
       />
       <Text 
-        style={[
-          styles.categoryText,
-          selectedCategory === item.name && styles.categoryTextSelected
-        ]}
+        className={`text-sm font-semibold mt-2 text-center ${
+          selectedCategory === item.name ? 'text-white' : 'text-text'
+        }`}
       >
         {item.name}
       </Text>
       <Text 
-        style={[
-          styles.categoryCount,
-          selectedCategory === item.name && styles.categoryCountSelected
-        ]}
+        className={`text-xs mt-0.5 ${
+          selectedCategory === item.name ? 'text-white opacity-80' : 'text-text opacity-60'
+        }`}
       >
         {item.recipeCount}
       </Text>
@@ -134,7 +130,7 @@ export default function ExploreScreen() {
     const countryName = recipeData?.country || '';
     
     return (
-      <View style={styles.recipeItem}>
+      <View className="mb-4">
         <RecipeCard
           recipe={item}
           onPress={() => handleRecipePress(item.id)}
@@ -151,15 +147,15 @@ export default function ExploreScreen() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView className="flex-1 bg-background">
       <StatusBar barStyle="dark-content" />
       
-      <View style={styles.header}>
-        <Text style={styles.title}>Explore Recipes</Text>
-        <View style={styles.searchContainer}>
-          <Ionicons name="search" size={20} color={Colors.text} style={styles.searchIcon} />
+      <View className="px-5 py-4 bg-background">
+        <Text className="text-[28px] font-bold text-text mb-4">Explore Recipes</Text>
+        <View className="flex-row items-center bg-white rounded-2xl px-4 py-3 shadow-sm">
+          <Ionicons name="search" size={20} color={Colors.text} className="mr-3" />
           <TextInput
-            style={styles.searchInput}
+            className="flex-1 text-base text-text"
             placeholder="Search recipes, cuisines..."
             value={searchQuery}
             onChangeText={handleSearch}
@@ -174,20 +170,20 @@ export default function ExploreScreen() {
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Categories</Text>
+        <View className="mb-6">
+          <Text className="text-xl font-semibold text-text mb-4 px-5">Categories</Text>
           <FlatList
             data={getUniqueCategories()}
             renderItem={renderCategoryItem}
             keyExtractor={(item) => item.id}
             horizontal
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.categoriesContainer}
+            contentContainerStyle={{ paddingHorizontal: 20 }}
           />
         </View>
 
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>
+        <View className="mb-6">
+          <Text className="text-xl font-semibold text-text mb-4 px-5">
             {selectedCategory 
               ? `${selectedCategory} Recipes (${recipes.length})`
               : searchQuery 
@@ -200,106 +196,10 @@ export default function ExploreScreen() {
             renderItem={renderRecipeItem}
             keyExtractor={(item) => item.id}
             scrollEnabled={false}
-            contentContainerStyle={styles.recipesContainer}
+            contentContainerStyle={{ paddingHorizontal: 20 }}
           />
         </View>
       </ScrollView>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.background,
-  },
-  header: {
-    paddingHorizontal: 20,
-    paddingVertical: 16,
-    backgroundColor: Colors.background,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: '700',
-    color: Colors.text,
-    marginBottom: 16,
-  },
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    borderRadius: 16,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 2,
-  },
-  searchIcon: {
-    marginRight: 12,
-  },
-  searchInput: {
-    flex: 1,
-    fontSize: 16,
-    color: Colors.text,
-  },
-  section: {
-    marginBottom: 24,
-  },
-  sectionTitle: {
-    fontSize: 20,
-    fontWeight: '600',
-    color: Colors.text,
-    marginBottom: 16,
-    paddingHorizontal: 20,
-  },
-  categoriesContainer: {
-    paddingHorizontal: 20,
-  },
-  categoryItem: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fff',
-    borderRadius: 16,
-    paddingVertical: 16,
-    paddingHorizontal: 20,
-    marginRight: 12,
-    minWidth: 100,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 2,
-  },
-  categoryItemSelected: {
-    backgroundColor: Colors.primary,
-  },
-  categoryText: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: Colors.text,
-    marginTop: 8,
-    textAlign: 'center',
-  },
-  categoryTextSelected: {
-    color: '#fff',
-  },
-  categoryCount: {
-    fontSize: 12,
-    color: Colors.text,
-    opacity: 0.6,
-    marginTop: 2,
-  },
-  categoryCountSelected: {
-    color: '#fff',
-    opacity: 0.8,
-  },
-  recipesContainer: {
-    paddingHorizontal: 20,
-  },
-  recipeItem: {
-    marginBottom: 16,
-  },
-});
