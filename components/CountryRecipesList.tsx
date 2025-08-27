@@ -3,7 +3,6 @@ import {
   View, 
   Text, 
   FlatList, 
-  StyleSheet, 
   ActivityIndicator 
 } from 'react-native';
 import { Recipe } from '../types/Recipe';
@@ -41,17 +40,17 @@ export const CountryRecipesList: React.FC<CountryRecipesListProps> = ({
 
   if (loading) {
     return (
-      <View style={styles.loadingContainer}>
+      <View className="flex-1 items-center justify-center bg-background">
         <ActivityIndicator size="large" color={Colors.primary} />
-        <Text style={styles.loadingText}>Loading {countryName} recipes...</Text>
+        <Text className="mt-2.5 text-base text-text">Loading {countryName} recipes...</Text>
       </View>
     );
   }
 
   if (recipes.length === 0) {
     return (
-      <View style={styles.emptyContainer}>
-        <Text style={styles.emptyText}>No recipes found for {countryName}</Text>
+      <View className="flex-1 items-center justify-center bg-background p-10">
+        <Text className="text-base text-text text-center">No recipes found for {countryName}</Text>
       </View>
     );
   }
@@ -66,55 +65,15 @@ export const CountryRecipesList: React.FC<CountryRecipesListProps> = ({
   );
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Recipes from {countryName}</Text>
+    <View className="flex-1 bg-background p-4">
+      <Text className="text-2xl font-bold text-text mb-4">Recipes from {countryName}</Text>
       <FlatList
         data={recipes}
         renderItem={renderRecipe}
         keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.listContainer}
+        contentContainerStyle={{ paddingBottom: 20 }}
         showsVerticalScrollIndicator={false}
       />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.background,
-    padding: 16,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: Colors.text,
-    marginBottom: 16,
-  },
-  loadingContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: Colors.background,
-  },
-  loadingText: {
-    marginTop: 10,
-    fontSize: 16,
-    color: Colors.text,
-  },
-  emptyContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: Colors.background,
-    padding: 40,
-  },
-  emptyText: {
-    fontSize: 16,
-    color: Colors.text,
-    textAlign: 'center',
-  },
-  listContainer: {
-    paddingBottom: 20,
-  },
-});
