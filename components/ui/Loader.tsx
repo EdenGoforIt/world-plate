@@ -1,24 +1,11 @@
-import { ActivityIndicator, SafeAreaView, Text, StyleSheet } from "react-native";
+import { ActivityIndicator, SafeAreaView, Text } from "react-native";
 
 const Loader = () => (
-  <SafeAreaView style={styles.loaderContainer}>
+  <SafeAreaView className="flex-1 items-center justify-center bg-[#FEFEFE]">
     <ActivityIndicator size="large" color="#E74C3C" />
-    <Text style={styles.loaderText}>Loading...</Text>
+    <Text className="mt-2.5 text-base text-[#2C3E50]">Loading...</Text>
   </SafeAreaView>
 );
 
-const styles = StyleSheet.create({
-  loaderContainer: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#FEFEFE",
-  },
-  loaderText: {
-    marginTop: 10,
-    fontSize: 16,
-    color: "#2C3E50",
-  },
-});
 
 export default Loader;
