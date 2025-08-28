@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image, Dimensions } from 'react-native';
+import { View, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Recipe } from '../types/Recipe';
 import { Colors } from '../constants/Colors';
@@ -49,39 +49,39 @@ export const MealRecommendation: React.FC<MealRecommendationProps> = ({
 
   if (!recipe) {
     return (
-      <View style={styles.container}>
-        <View style={styles.header}>
-          <View style={styles.mealInfo}>
+      <View className="bg-white rounded-2xl p-4 mb-4" style={{ shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 8, elevation: 4 }}>
+        <View className="flex-row justify-between items-center mb-4">
+          <View className="flex-row items-center">
             <Ionicons name={getMealIcon()} size={24} color={Colors.primary} />
-            <View style={styles.mealTextContainer}>
-              <Text style={styles.mealType}>{mealType.toUpperCase()}</Text>
-              <Text style={styles.mealTime}>{getMealTime()}</Text>
+            <View className="ml-3">
+              <Text className="text-base font-bold tracking-wide" style={{ color: Colors.primary }}>{mealType.toUpperCase()}</Text>
+              <Text className="text-sm opacity-70" style={{ color: Colors.text }}>{getMealTime()}</Text>
             </View>
           </View>
-          <TouchableOpacity onPress={onRefresh} style={styles.refreshButton}>
+          <TouchableOpacity onPress={onRefresh} className="p-2 rounded-xl border" style={{ backgroundColor: Colors.background, borderColor: Colors.primary }}>
             <Ionicons name="refresh-outline" size={20} color={Colors.primary} />
           </TouchableOpacity>
         </View>
-        <View style={styles.emptyContent}>
-          <Text style={styles.emptyText}>No recipe found</Text>
+        <View className="items-center justify-center py-8">
+          <Text className="text-base opacity-60" style={{ color: Colors.text }}>No recipe found</Text>
         </View>
       </View>
     );
   }
 
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
-      <View style={styles.header}>
-        <View style={styles.mealInfo}>
+    <TouchableOpacity className="bg-white rounded-2xl p-4 mb-4" style={{ shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 8, elevation: 4 }} onPress={onPress}>
+      <View className="flex-row justify-between items-center mb-4">
+        <View className="flex-row items-center">
           <Ionicons name={getMealIcon()} size={24} color={Colors.primary} />
-          <View style={styles.mealTextContainer}>
-            <Text style={styles.mealType}>{mealType.toUpperCase()}</Text>
-            <Text style={styles.mealTime}>{getMealTime()}</Text>
+          <View className="ml-3">
+            <Text className="text-base font-bold tracking-wide" style={{ color: Colors.primary }}>{mealType.toUpperCase()}</Text>
+            <Text className="text-sm opacity-70" style={{ color: Colors.text }}>{getMealTime()}</Text>
           </View>
         </View>
-        <View style={styles.headerButtons}>
+        <View className="flex-row items-center">
           {recipe && countryName && (
-            <TouchableOpacity onPress={handleFavoritePress} style={styles.favoriteButton}>
+            <TouchableOpacity onPress={handleFavoritePress} className="p-2 rounded-xl border mr-2" style={{ backgroundColor: Colors.background, borderColor: Colors.primary }}>
               <Ionicons
                 name={isFavorite(recipe.id, countryName) ? 'heart' : 'heart-outline'}
                 size={20}
@@ -89,35 +89,35 @@ export const MealRecommendation: React.FC<MealRecommendationProps> = ({
               />
             </TouchableOpacity>
           )}
-          <TouchableOpacity onPress={onRefresh} style={styles.refreshButton}>
+          <TouchableOpacity onPress={onRefresh} className="p-2 rounded-xl border" style={{ backgroundColor: Colors.background, borderColor: Colors.primary }}>
             <Ionicons name="refresh-outline" size={20} color={Colors.primary} />
           </TouchableOpacity>
         </View>
       </View>
       
-      <View style={styles.recipeContent}>
-        <Image source={{ uri: recipe.image }} style={styles.recipeImage} />
-        <View style={styles.recipeInfo}>
-          <Text style={styles.recipeName} numberOfLines={2}>
+      <View className="flex-row">
+        <Image source={{ uri: recipe.image }} className="w-[100px] h-[100px] rounded-xl" style={{ resizeMode: 'cover' }} />
+        <View className="flex-1 ml-4 justify-between">
+          <Text className="text-base font-semibold mb-1" style={{ color: Colors.text }} numberOfLines={2}>
             {recipe.name}
           </Text>
-          <Text style={styles.recipeCuisine}>{recipe.cuisine}</Text>
+          <Text className="text-sm mb-2 capitalize" style={{ color: Colors.secondary }}>{recipe.cuisine}</Text>
           
-          <View style={styles.recipeStats}>
-            <View style={styles.statItem}>
+          <View className="flex-row mb-2">
+            <View className="flex-row items-center mr-4">
               <Ionicons name="time-outline" size={16} color={Colors.text} />
-              <Text style={styles.statText}>
+              <Text className="ml-1 text-sm" style={{ color: Colors.text }}>
                 {formatCookTime(recipe.prepTime + recipe.cookTime)}
               </Text>
             </View>
-            <View style={styles.statItem}>
+            <View className="flex-row items-center">
               <Ionicons name="star" size={16} color={Colors.accent} />
-              <Text style={styles.statText}>{recipe.rating}</Text>
+              <Text className="ml-1 text-sm" style={{ color: Colors.text }}>{recipe.rating}</Text>
             </View>
           </View>
           
-          <View style={styles.nutritionPreview}>
-            <Text style={styles.nutritionText}>
+          <View className="px-2 py-1 rounded-lg self-start" style={{ backgroundColor: Colors.background }}>
+            <Text className="text-xs font-medium" style={{ color: Colors.text }}>
               {recipe.nutrition.calories} cal • {recipe.nutrition.protein}g protein
             </Text>
           </View>
@@ -127,121 +127,3 @@ export const MealRecommendation: React.FC<MealRecommendationProps> = ({
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff',
-    borderRadius: 16,
-    padding: 16,
-    marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 4,
-  },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  mealInfo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  mealTextContainer: {
-    marginLeft: 12,
-  },
-  mealType: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: Colors.primary,
-    letterSpacing: 0.5,
-  },
-  mealTime: {
-    fontSize: 14,
-    color: Colors.text,
-    opacity: 0.7,
-  },
-  headerButtons: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  favoriteButton: {
-    padding: 8,
-    backgroundColor: Colors.background,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: Colors.primary,
-    marginRight: 8,
-  },
-  refreshButton: {
-    padding: 8,
-    backgroundColor: Colors.background,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: Colors.primary,
-  },
-  emptyContent: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 32,
-  },
-  emptyText: {
-    fontSize: 16,
-    color: Colors.text,
-    opacity: 0.6,
-  },
-  recipeContent: {
-    flexDirection: 'row',
-  },
-  recipeImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 12,
-    resizeMode: 'cover',
-  },
-  recipeInfo: {
-    flex: 1,
-    marginLeft: 16,
-    justifyContent: 'space-between',
-  },
-  recipeName: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: Colors.text,
-    marginBottom: 4,
-  },
-  recipeCuisine: {
-    fontSize: 14,
-    color: Colors.secondary,
-    textTransform: 'capitalize',
-    marginBottom: 8,
-  },
-  recipeStats: {
-    flexDirection: 'row',
-    marginBottom: 8,
-  },
-  statItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginRight: 16,
-  },
-  statText: {
-    marginLeft: 4,
-    fontSize: 14,
-    color: Colors.text,
-  },
-  nutritionPreview: {
-    backgroundColor: Colors.background,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
-    alignSelf: 'flex-start',
-  },
-  nutritionText: {
-    fontSize: 12,
-    color: Colors.text,
-    fontWeight: '500',
-  },
-});
