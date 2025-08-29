@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image, Dimensions } from 'react-native';
+import { View, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Recipe } from '../types/Recipe';
 import { Colors } from '../constants/Colors';
@@ -25,47 +25,47 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
   const cardWidth = size === 'small' ? width * 0.4 : size === 'large' ? width * 0.9 : width * 0.7;
   
   return (
-    <TouchableOpacity style={[styles.container, { width: cardWidth }]} onPress={onPress}>
-      <View style={styles.imageContainer}>
-        <Image source={{ uri: recipe.image }} style={styles.image} />
-        <TouchableOpacity style={styles.favoriteButton} onPress={onFavoritePress}>
+    <TouchableOpacity className="bg-white rounded-2xl mb-4" style={{ width: cardWidth, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 8, elevation: 4 }} onPress={onPress}>
+      <View className="relative h-[180px] rounded-t-2xl overflow-hidden">
+        <Image source={{ uri: recipe.image }} className="w-full h-full" style={{ resizeMode: 'cover' }} />
+        <TouchableOpacity className="absolute top-3 right-3 p-2 rounded-full" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }} onPress={onFavoritePress}>
           <Ionicons
             name={isFavorite ? 'heart' : 'heart-outline'}
             size={24}
             color={isFavorite ? '#FF6B6B' : '#fff'}
           />
         </TouchableOpacity>
-        <View style={styles.overlay}>
-          <View style={styles.ratingContainer}>
+        <View className="absolute bottom-0 left-0 right-0 p-3 flex-row justify-between items-end" style={{ background: 'linear-gradient(transparent, rgba(0,0,0,0.6))' }}>
+          <View className="flex-row items-center px-2 py-1 rounded-xl" style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}>
             <Ionicons name="star" size={16} color={Colors.accent} />
-            <Text style={styles.rating}>{recipe.rating}</Text>
+            <Text className="ml-1 text-sm font-semibold" style={{ color: Colors.text }}>{recipe.rating}</Text>
           </View>
         </View>
       </View>
       
-      <View style={styles.content}>
-        <Text style={styles.title} numberOfLines={2}>
+      <View className="p-4">
+        <Text className="text-lg font-bold mb-1" style={{ color: Colors.text }} numberOfLines={2}>
           {recipe.name}
         </Text>
-        <Text style={styles.cuisine}>{recipe.cuisine}</Text>
+        <Text className="text-sm mb-3 capitalize" style={{ color: Colors.secondary }}>{recipe.cuisine}</Text>
         
-        <View style={styles.infoRow}>
-          <View style={styles.timeContainer}>
+        <View className="flex-row justify-between items-center mb-3">
+          <View className="flex-row items-center">
             <Ionicons name="time-outline" size={16} color={Colors.text} />
-            <Text style={styles.timeText}>
+            <Text className="ml-1 text-sm" style={{ color: Colors.text }}>
               {formatCookTime(recipe.prepTime + recipe.cookTime)}
             </Text>
           </View>
           
-          <View style={[styles.difficultyBadge, { backgroundColor: getDifficultyColor(recipe.difficulty) }]}>
-            <Text style={styles.difficultyText}>{recipe.difficulty}</Text>
+          <View className="px-2 py-1 rounded-xl" style={{ backgroundColor: getDifficultyColor(recipe.difficulty) }}>
+            <Text className="text-xs font-semibold text-white capitalize">{recipe.difficulty}</Text>
           </View>
         </View>
         
-        <View style={styles.tagsContainer}>
+        <View className="flex-row flex-wrap">
           {recipe.tags.slice(0, 2).map((tag, index) => (
-            <View key={index} style={styles.tag}>
-              <Text style={styles.tagText}>{tag}</Text>
+            <View key={index} className="px-2 py-1 rounded-lg mr-2 mb-1 border" style={{ backgroundColor: Colors.background, borderColor: Colors.primary }}>
+              <Text className="text-xs font-medium" style={{ color: Colors.primary }}>{tag}</Text>
             </View>
           ))}
         </View>
@@ -74,120 +74,3 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff',
-    borderRadius: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 4,
-    marginBottom: 16,
-  },
-  imageContainer: {
-    position: 'relative',
-    height: 180,
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
-    overflow: 'hidden',
-  },
-  image: {
-    width: '100%',
-    height: '100%',
-    resizeMode: 'cover',
-  },
-  favoriteButton: {
-    position: 'absolute',
-    top: 12,
-    right: 12,
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    borderRadius: 20,
-    padding: 8,
-  },
-  overlay: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: 'linear-gradient(transparent, rgba(0,0,0,0.6))',
-    padding: 12,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-end',
-  },
-  ratingContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.9)',
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 12,
-  },
-  rating: {
-    marginLeft: 4,
-    fontSize: 14,
-    fontWeight: '600',
-    color: Colors.text,
-  },
-  content: {
-    padding: 16,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: '700',
-    color: Colors.text,
-    marginBottom: 4,
-  },
-  cuisine: {
-    fontSize: 14,
-    color: Colors.secondary,
-    marginBottom: 12,
-    textTransform: 'capitalize',
-  },
-  infoRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 12,
-  },
-  timeContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  timeText: {
-    marginLeft: 4,
-    fontSize: 14,
-    color: Colors.text,
-  },
-  difficultyBadge: {
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 12,
-  },
-  difficultyText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: '#fff',
-    textTransform: 'capitalize',
-  },
-  tagsContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  tag: {
-    backgroundColor: Colors.background,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
-    marginRight: 8,
-    marginBottom: 4,
-    borderWidth: 1,
-    borderColor: Colors.primary,
-  },
-  tagText: {
-    fontSize: 12,
-    color: Colors.primary,
-    fontWeight: '500',
-  },
-});
