@@ -223,3 +223,23 @@ export const getRecipeByIdFromCountry = async (recipeId: string): Promise<{ reci
     return null;
   }
 };
+
+// Synchronous version that only works with cached data
+export const getRecipeByIdFromCountrySync = (recipeId: string): { recipe: Recipe; country: string } | null => {
+  try {
+    // Check all countries for the recipe using cached data
+    for (const countryInfo of countriesIndex.countries) {
+      const countryData = getCountryData(countryInfo.file);
+      if (countryData) {
+        const recipe = countryData.recipes.find(r => r.id === recipeId);
+        if (recipe) {
+          return { recipe, country: countryData.country };
+        }
+      }
+    }
+    return null;
+  } catch (error) {
+    console.error(`Error finding recipe ${recipeId} from cache:`, error);
+    return null;
+  }
+};
