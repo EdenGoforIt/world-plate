@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Recipe } from '../types/Recipe';
-import { getDailyRecommendations, getRandomRecipes, getRecipesByMealType } from '../utils/recipeUtils';
+import { getDailyRecommendations, getRandomRecipes, getRecipesByMealType, preloadEssentialCountries } from '../utils/recipeUtils';
 
 export const useRandomRecipes = (count: number = 3) => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchRecipes = () => {
+    const fetchRecipes = async () => {
       setLoading(true);
-      const randomRecipes = getRandomRecipes(count);
+      const randomRecipes = await getRandomRecipes(count);
       setRecipes(randomRecipes);
       setLoading(false);
     };
@@ -17,8 +17,8 @@ export const useRandomRecipes = (count: number = 3) => {
     fetchRecipes();
   }, [count]);
 
-  const refreshRecipes = () => {
-    const randomRecipes = getRandomRecipes(count);
+  const refreshRecipes = async () => {
+    const randomRecipes = await getRandomRecipes(count);
     setRecipes(randomRecipes);
   };
 
@@ -38,9 +38,9 @@ export const useDailyRecommendations = () => {
   const [loading, setLoading] = useState(true);
   const [usedRecipes, setUsedRecipes] = useState<Set<string>>(new Set());
 
-  const getNewRecommendations = (excludeIds: Set<string> = new Set()) => {
-    const getAvoidDuplicate = (mealType: 'breakfast' | 'lunch' | 'dinner'): Recipe | null => {
-      const mealRecipes = getRecipesByMealType(mealType);
+  const getNewRecommendations = async (excludeIds: Set<string> = new Set()) => {
+    const getAvoidDuplicate = async (mealType: 'breakfast' | 'lunch' | 'dinner'): Promise<Recipe | null> => {
+      const mealRecipes = await getRecipesByMealType(mealType);
       if (mealRecipes.length === 0) return null;
       
       // Filter out previously used recipes
@@ -53,17 +53,23 @@ export const useDailyRecommendations = () => {
       return recipesToChooseFrom[randomIndex];
     };
 
-    return {
-      breakfast: getAvoidDuplicate('breakfast'),
-      lunch: getAvoidDuplicate('lunch'),
-      dinner: getAvoidDuplicate('dinner'),
-    };
+    const [breakfast, lunch, dinner] = await Promise.all([
+      getAvoidDuplicate('breakfast'),
+      getAvoidDuplicate('lunch'),
+      getAvoidDuplicate('dinner')
+    ]);
+
+    return { breakfast, lunch, dinner };
   };
 
   useEffect(() => {
-    const fetchRecommendations = () => {
+    const fetchRecommendations = async () => {
       setLoading(true);
-      const dailyRecs = getNewRecommendations();
+      
+      // Preload essential countries first for better performance
+      await preloadEssentialCountries();
+      
+      const dailyRecs = await getNewRecommendations();
       setRecommendations(dailyRecs);
       
       // Track used recipe IDs
@@ -79,8 +85,8 @@ export const useDailyRecommendations = () => {
     fetchRecommendations();
   }, []);
 
-  const refreshRecommendations = () => {
-    const dailyRecs = getNewRecommendations(usedRecipes);
+  const refreshRecommendations = async () => {
+    const dailyRecs = await getNewRecommendations(usedRecipes);
     setRecommendations(dailyRecs);
     
     // Update used recipes
