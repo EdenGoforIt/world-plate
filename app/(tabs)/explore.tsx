@@ -19,6 +19,7 @@ import { getAllRecipesFromCache, getCategoriesFromCache, preloadRecipeCache } fr
 import { Recipe } from '@/types/Recipe';
 import { useFavorites } from '@/hooks/useFavorites';
 import Loader from '@/components/ui/Loader';
+import { SearchFilters, FilterOptions } from '@/components/SearchFilters';
 
 export default function ExploreScreen() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -26,6 +27,8 @@ export default function ExploreScreen() {
   const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showFilters, setShowFilters] = useState(false);
+  const [activeFilters, setActiveFilters] = useState<FilterOptions | null>(null);
   const { toggleFavorite, isFavorite } = useFavorites();
   
   // Load all recipes from cache on component mount
@@ -62,34 +65,100 @@ export default function ExploreScreen() {
     return getCategoriesFromCache();
   };
 
-  const handleSearch = (query: string) => {
-    setSearchQuery(query);
+  const applyFiltersAndSearch = (recipesToFilter: Recipe[], query: string, filters: FilterOptions | null) => {
+    let filtered = [...recipesToFilter];
+    
+    // Apply search query
     if (query.trim()) {
       const lowerQuery = query.toLowerCase();
-      const results = allRecipes.filter(recipe => 
+      filtered = filtered.filter(recipe => 
         recipe.name.toLowerCase().includes(lowerQuery) ||
         recipe.cuisine.toLowerCase().includes(lowerQuery) ||
         recipe.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
       );
-      setRecipes(results);
-    } else {
-      setRecipes(allRecipes);
     }
+    
+    // Apply filters
+    if (filters) {
+      if (filters.difficulty.length > 0) {
+        filtered = filtered.filter(recipe => 
+          filters.difficulty.includes(recipe.difficulty)
+        );
+      }
+      
+      if (filters.mealType.length > 0) {
+        filtered = filtered.filter(recipe => 
+          recipe.mealType.some(type => filters.mealType.includes(type))
+        );
+      }
+      
+      if (filters.prepTime) {
+        filtered = filtered.filter(recipe => {
+          const totalTime = recipe.prepTime + recipe.cookTime;
+          return totalTime >= filters.prepTime!.min && totalTime <= filters.prepTime!.max;
+        });
+      }
+      
+      if (filters.cuisines.length > 0) {
+        filtered = filtered.filter(recipe => 
+          filters.cuisines.includes(recipe.cuisine)
+        );
+      }
+      
+      if (filters.dietary.length > 0) {
+        filtered = filtered.filter(recipe => 
+          filters.dietary.some(diet => recipe.tags.includes(diet))
+        );
+      }
+    }
+    
+    return filtered;
+  };
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    const results = applyFiltersAndSearch(allRecipes, query, activeFilters);
+    setRecipes(results);
     setSelectedCategory(null);
   };
 
   const handleCategoryPress = (categoryName: string) => {
     if (selectedCategory === categoryName) {
       setSelectedCategory(null);
-      setRecipes(allRecipes);
+      const results = applyFiltersAndSearch(allRecipes, searchQuery, activeFilters);
+      setRecipes(results);
     } else {
       setSelectedCategory(categoryName);
       const categoryRecipes = allRecipes.filter(recipe => 
         recipe.cuisine.toLowerCase() === categoryName.toLowerCase()
       );
-      setRecipes(categoryRecipes);
+      const results = applyFiltersAndSearch(categoryRecipes, searchQuery, activeFilters);
+      setRecipes(results);
     }
-    setSearchQuery('');
+  };
+
+  const handleApplyFilters = (filters: FilterOptions) => {
+    setActiveFilters(filters);
+    const baseRecipes = selectedCategory 
+      ? allRecipes.filter(recipe => recipe.cuisine.toLowerCase() === selectedCategory.toLowerCase())
+      : allRecipes;
+    const results = applyFiltersAndSearch(baseRecipes, searchQuery, filters);
+    setRecipes(results);
+  };
+
+  const getAvailableCuisines = () => {
+    const cuisineSet = new Set<string>();
+    allRecipes.forEach(recipe => cuisineSet.add(recipe.cuisine));
+    return Array.from(cuisineSet).sort();
+  };
+
+  const getActiveFilterCount = () => {
+    if (!activeFilters) return 0;
+    return activeFilters.difficulty.length +
+           activeFilters.mealType.length +
+           (activeFilters.prepTime ? 1 : 0) +
+           activeFilters.cuisines.length +
+           activeFilters.dietary.length;
   };
 
   const handleRecipePress = (recipeId: string) => {
@@ -162,11 +231,37 @@ export default function ExploreScreen() {
             placeholderTextColor={Colors.text + '80'}
           />
           {searchQuery ? (
-            <TouchableOpacity onPress={() => handleSearch('')}>
+            <TouchableOpacity onPress={() => handleSearch('')} className="mr-2">
               <Ionicons name="close" size={20} color={Colors.text} />
             </TouchableOpacity>
           ) : null}
+          <TouchableOpacity 
+            onPress={() => setShowFilters(true)}
+            className="flex-row items-center"
+          >
+            <Ionicons name="filter" size={20} color={Colors.primary} />
+            {getActiveFilterCount() > 0 && (
+              <View className="bg-primary rounded-full w-5 h-5 items-center justify-center ml-1">
+                <Text className="text-white text-xs font-bold">{getActiveFilterCount()}</Text>
+              </View>
+            )}
+          </TouchableOpacity>
         </View>
+        {getActiveFilterCount() > 0 && (
+          <TouchableOpacity 
+            className="mt-3 bg-primary/10 px-3 py-2 rounded-lg flex-row items-center self-start"
+            onPress={() => {
+              setActiveFilters(null);
+              const results = applyFiltersAndSearch(allRecipes, searchQuery, null);
+              setRecipes(results);
+            }}
+          >
+            <Text className="text-primary text-sm font-semibold mr-2">
+              {getActiveFilterCount()} filter{getActiveFilterCount() !== 1 ? 's' : ''} applied
+            </Text>
+            <Ionicons name="close-circle" size={16} color={Colors.primary} />
+          </TouchableOpacity>
+        )}
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -200,6 +295,13 @@ export default function ExploreScreen() {
           />
         </View>
       </ScrollView>
+      
+      <SearchFilters
+        visible={showFilters}
+        onClose={() => setShowFilters(false)}
+        onApply={handleApplyFilters}
+        availableCuisines={getAvailableCuisines()}
+      />
     </SafeAreaView>
   );
 }
