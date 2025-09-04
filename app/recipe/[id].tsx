@@ -16,12 +16,16 @@ import { Colors } from '@/constants/Colors';
 import { getRecipeByIdFromCountry, formatCookTime, getDifficultyColor } from '@/utils/recipeUtils';
 import { useFavorites } from '@/hooks/useFavorites';
 import { Recipe } from '@/types/Recipe';
+import { ShoppingListModal } from '@/components/ShoppingListModal';
+import { MealPlanModal } from '@/components/MealPlanModal';
 
 export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { toggleFavorite, isFavorite } = useFavorites();
   const [recipeData, setRecipeData] = useState<{ recipe: Recipe; country: string } | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showShoppingListModal, setShowShoppingListModal] = useState(false);
+  const [showMealPlanModal, setShowMealPlanModal] = useState(false);
   
   useEffect(() => {
     const fetchRecipe = async () => {
@@ -79,13 +83,31 @@ export default function RecipeDetailScreen() {
             <Ionicons name="arrow-back" size={24} color="#fff" />
           </TouchableOpacity>
           
-          <TouchableOpacity onPress={handleFavoritePress} className="w-10 h-10 rounded-full items-center justify-center" style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}>
-            <Ionicons 
-              name={isRecipeFavorite ? "heart" : "heart-outline"} 
-              size={24} 
-              color={isRecipeFavorite ? "#FF6B6B" : "#fff"} 
-            />
-          </TouchableOpacity>
+          <View className="flex-row gap-2">
+            <TouchableOpacity 
+              onPress={() => setShowMealPlanModal(true)} 
+              className="w-10 h-10 rounded-full items-center justify-center" 
+              style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}
+            >
+              <Ionicons name="calendar" size={24} color="#fff" />
+            </TouchableOpacity>
+            
+            <TouchableOpacity 
+              onPress={() => setShowShoppingListModal(true)} 
+              className="w-10 h-10 rounded-full items-center justify-center" 
+              style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}
+            >
+              <Ionicons name="list" size={24} color="#fff" />
+            </TouchableOpacity>
+            
+            <TouchableOpacity onPress={handleFavoritePress} className="w-10 h-10 rounded-full items-center justify-center" style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}>
+              <Ionicons 
+                name={isRecipeFavorite ? "heart" : "heart-outline"} 
+                size={24} 
+                color={isRecipeFavorite ? "#FF6B6B" : "#fff"} 
+              />
+            </TouchableOpacity>
+          </View>
         </View>
         
         {/* Gradient Overlay */}
@@ -173,6 +195,31 @@ export default function RecipeDetailScreen() {
         {/* Bottom Spacing */}
         <View className="h-10" />
       </ScrollView>
+      
+      {/* Floating Action Button */}
+      <TouchableOpacity
+        className="absolute bottom-6 right-6 w-14 h-14 rounded-full items-center justify-center shadow-lg"
+        style={{ backgroundColor: Colors.primary }}
+        onPress={() => setShowShoppingListModal(true)}
+      >
+        <Ionicons name="basket" size={24} color="white" />
+      </TouchableOpacity>
+      
+      {/* Modals */}
+      {recipeData && (
+        <>
+          <ShoppingListModal
+            visible={showShoppingListModal}
+            onClose={() => setShowShoppingListModal(false)}
+            recipe={recipeData.recipe}
+          />
+          <MealPlanModal
+            visible={showMealPlanModal}
+            onClose={() => setShowMealPlanModal(false)}
+            recipe={recipeData.recipe}
+          />
+        </>
+      )}
     </SafeAreaView>
   );
 }
