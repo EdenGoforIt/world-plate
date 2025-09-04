@@ -181,6 +181,22 @@ export default function ProfileScreen() {
         <Text className="text-xl font-bold text-text mb-4 mt-6">App</Text>
 
         <SettingItem
+          icon="calendar"
+          title="Meal Plan"
+          subtitle="Plan your weekly meals"
+          showToggle={false}
+          onPress={() => router.push('/meal-plan')}
+        />
+
+        <SettingItem
+          icon="basket"
+          title="Shopping Lists"
+          subtitle="Manage your grocery lists"
+          showToggle={false}
+          onPress={() => router.push('/shopping-list')}
+        />
+
+        <SettingItem
           icon="trash"
           title="Clear Cache"
           subtitle="Free up storage space"
