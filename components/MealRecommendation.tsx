@@ -54,17 +54,24 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
 
   if (!recipe) {
     return (
-      <View className="bg-white rounded-2xl p-4 mb-4" style={{ shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 8, elevation: 4 }}>
+      <View className="bg-white rounded-2xl p-4 mb-4" style={styles.card}>
         <View className="flex-row justify-between items-center mb-4">
           <View className="flex-row items-center">
-            <Ionicons name={getMealIcon()} size={24} color={Colors.primary} />
+            <Ionicons name={getMealIcon()} size={ICON_SIZE} color={Colors.primary} />
             <View className="ml-3">
               <Text className="text-base font-bold tracking-wide" style={{ color: Colors.primary }}>{mealType.toUpperCase()}</Text>
               <Text className="text-sm opacity-70" style={{ color: Colors.text }}>{getMealTime()}</Text>
             </View>
           </View>
-          <TouchableOpacity onPress={onRefresh} className="p-2 rounded-xl border" style={{ backgroundColor: Colors.background, borderColor: Colors.primary }}>
-            <Ionicons name="refresh-outline" size={20} color={Colors.primary} />
+          <TouchableOpacity
+            onPress={onRefresh}
+            className="p-2 rounded-xl border"
+            style={styles.refreshButton}
+            accessibilityRole="button"
+            accessibilityLabel="Refresh recommendation"
+            hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+          >
+            <Ionicons name="refresh-outline" size={REFRESH_ICON_SIZE} color={Colors.primary} />
           </TouchableOpacity>
         </View>
         <View className="items-center justify-center py-8">
