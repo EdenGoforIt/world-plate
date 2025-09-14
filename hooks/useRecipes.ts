@@ -101,3 +101,20 @@ export const useDailyRecommendations = () => {
 
   return { recommendations, loading, refreshRecommendations };
 };
+
+export const useRecipes = () => {
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const loadRecipes = async () => {
+      setLoading(true);
+      const allRecipes = await getRandomRecipes(20);
+      setRecipes(allRecipes);
+      setLoading(false);
+    };
+    loadRecipes();
+  }, []);
+
+  return { recipes, loading };
+};
