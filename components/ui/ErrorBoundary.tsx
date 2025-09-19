@@ -1,6 +1,7 @@
 import NetInfo from '@react-native-community/netinfo';
 import { Ionicons } from '@expo/vector-icons';
-import React, { Component, createContext, ErrorInfo, ReactNode, useContext } from 'react';
+import * as Clipboard from 'expo-clipboard';
+import React, { Component, createContext, ErrorInfo, ReactNode, useContext, useCallback, useMemo } from 'react';
 import {
   AccessibilityInfo,
   ActivityIndicator,
@@ -45,6 +46,8 @@ interface ErrorReport {
   retryCount: number;
   deviceInfo?: DeviceInfo;
   networkStatus?: boolean;
+  stackTrace?: string;
+  environment?: string;
 }
 
 interface ErrorHistoryItem {
@@ -73,7 +76,16 @@ interface ErrorContextValue {
   error: Error | null;
   retry: () => void;
   clearError: () => void;
+  reportError: () => void;
 }
+
+interface ErrorRecoveryStrategy {
+  type: 'immediate' | 'exponential' | 'linear';
+  maxDelay?: number;
+  baseDelay?: number;
+  maxRetries?: number;
+}
+
 
 const ErrorContext = createContext<ErrorContextValue | null>(null);
 
@@ -82,7 +94,17 @@ export const useErrorBoundary = () => {
   if (!context) {
     throw new Error('useErrorBoundary must be used within ErrorBoundary');
   }
-  return context;
+
+  return useMemo(
+    () => ({
+      hasError: context.hasError,
+      error: context.error,
+      retry: context.retry,
+      clearError: context.clearError,
+      reportError: context.reportError,
+    }),
+    [context.hasError, context.error, context.retry, context.clearError, context.reportError]
+  );
 };
 
 export class ErrorBoundary extends Component<Props, State> {
@@ -95,6 +117,7 @@ export class ErrorBoundary extends Component<Props, State> {
   private errorMetrics: ErrorMetrics;
   private lastErrorTime: number = 0;
   private errorFrequencyThreshold = 5000; // 5 seconds
+  private recoveryStrategy: ErrorRecoveryStrategy = { type: 'exponential', baseDelay: 1000, maxDelay: 30000 };
 
   constructor(props: Props) {
     super(props);
@@ -256,20 +279,52 @@ export class ErrorBoundary extends Component<Props, State> {
       console.groupEnd();
     }
 
-    // TODO: Send to error tracking service (e.g., Sentry, Bugsnag)
-    // Example:
-    // if (typeof window !== 'undefined' && window.Sentry) {
-    //   window.Sentry.captureException(error, {
-    //     contexts: {
-    //       react: {
-    //         componentStack: errorInfo.componentStack,
-    //       },
-    //       device: errorReport.deviceInfo,
-    //       network: { status: errorReport.networkStatus },
-    //     },
-    //     extra: errorReport,
-    //   });
-    // }
+    // Integration points for error tracking services
+    this.sendToErrorTrackingService(errorReport);
+  };
+
+  private sendToErrorTrackingService = (errorReport: ErrorReport) => {
+    // Sentry Integration
+    if (typeof window !== 'undefined' && (window as any).Sentry) {
+      (window as any).Sentry.captureException(errorReport.error, {
+        contexts: {
+          react: {
+            componentStack: errorReport.errorInfo.componentStack,
+          },
+          device: errorReport.deviceInfo,
+          network: { status: errorReport.networkStatus },
+        },
+        extra: errorReport,
+        tags: {
+          errorType: this.getErrorType(errorReport.error),
+          retryCount: errorReport.retryCount.toString(),
+        },
+      });
+    }
+
+    // Bugsnag Integration
+    if (typeof window !== 'undefined' && (window as any).Bugsnag) {
+      (window as any).Bugsnag.notify(errorReport.error, {
+        metadata: {
+          react: errorReport.errorInfo,
+          device: errorReport.deviceInfo,
+          network: { status: errorReport.networkStatus },
+          retry: { count: errorReport.retryCount },
+        },
+      });
+    }
+
+    // Custom Analytics Integration
+    if (typeof window !== 'undefined' && (window as any).analytics) {
+      (window as any).analytics.track('Error Boundary Triggered', {
+        errorName: errorReport.error.name,
+        errorMessage: errorReport.error.message,
+        errorType: this.getErrorType(errorReport.error),
+        retryCount: errorReport.retryCount,
+        networkStatus: errorReport.networkStatus,
+        timestamp: errorReport.timestamp.toISOString(),
+      });
+    }
   };
 
   private updateErrorMetrics = (error: Error) => {
@@ -325,17 +380,38 @@ export class ErrorBoundary extends Component<Props, State> {
   };
 
   private scheduleAutoRetry = () => {
-    const delay = this.props.autoRetryDelay ?? 3000;
+    const delay = this.calculateRetryDelay();
 
     this.setState({ isAutoRetrying: true });
 
     this.autoRetryTimer = setTimeout(() => {
       if (this.state.hasError && this.state.retryCount < this.maxRetries) {
-        console.log('Attempting automatic error recovery...');
+        console.log(`Attempting automatic error recovery after ${delay}ms...`);
         this.handleReset();
       }
       this.setState({ isAutoRetrying: false });
     }, delay);
+  };
+
+  private calculateRetryDelay = (): number => {
+    const { type, baseDelay = 1000, maxDelay = 30000 } = this.recoveryStrategy;
+    const { retryCount } = this.state;
+
+    let delay: number;
+    switch (type) {
+      case 'exponential':
+        delay = Math.min(baseDelay * Math.pow(2, retryCount), maxDelay);
+        break;
+      case 'linear':
+        delay = Math.min(baseDelay * (retryCount + 1), maxDelay);
+        break;
+      case 'immediate':
+      default:
+        delay = this.props.autoRetryDelay ?? baseDelay;
+        break;
+    }
+
+    return delay;
   };
 
   private handleAutoRecovery = () => {
@@ -346,15 +422,25 @@ export class ErrorBoundary extends Component<Props, State> {
   };
 
   private getErrorType = (error: Error): string => {
-    if (error.name === 'ChunkLoadError' || error.message.includes('Loading chunk')) {
+    const errorTypeMap: Record<string, string> = {
+      'ChunkLoadError': 'chunk_load',
+      'NetworkError': 'network',
+      'TypeError': 'type',
+      'ReferenceError': 'reference',
+      'SyntaxError': 'syntax',
+    };
+
+    if (errorTypeMap[error.name]) {
+      return errorTypeMap[error.name];
+    }
+
+    if (error.message.includes('Loading chunk')) {
       return 'chunk_load';
     }
-    if (error.name === 'NetworkError' || error.message.includes('fetch')) {
+    if (error.message.includes('fetch') || error.message.includes('network')) {
       return 'network';
     }
-    if (error.name === 'TypeError') {
-      return 'type';
-    }
+
     return 'generic';
   };
 
@@ -418,26 +504,53 @@ export class ErrorBoundary extends Component<Props, State> {
     });
   };
 
-  handleReportIssue = () => {
+  handleReportIssue = async () => {
     const errorReport = {
       error: this.state.error?.toString(),
+      errorStack: this.state.error?.stack,
       timestamp: this.state.errorTimestamp,
       retryCount: this.state.retryCount,
       platform: Platform.OS,
+      platformVersion: Platform.Version,
+      networkStatus: this.state.isOnline,
+      errorType: this.getErrorType(this.state.error!),
       errorHistory: this.state.errorHistory.map(e => ({
         error: e.error.toString(),
         timestamp: e.timestamp,
         recovered: e.recovered,
+        retryCount: e.retryCount,
       })),
+      componentStack: this.state.errorInfo?.componentStack,
+      metrics: this.props.enableMetrics ? this.errorMetrics : undefined,
     };
 
-    // TODO: Implement actual issue reporting
-    console.log('Report issue clicked with data:', errorReport);
+    const errorDetails = JSON.stringify(errorReport, null, 2);
 
-    // Copy error details to clipboard if available
+    try {
+      await Clipboard.setStringAsync(errorDetails);
+      console.log('Error details copied to clipboard');
+      AccessibilityInfo.announceForAccessibility('Error details copied to clipboard');
+
+      // Send to error tracking service
+      this.sendToErrorTrackingService({
+        error: this.state.error!,
+        errorInfo: this.state.errorInfo!,
+        timestamp: new Date(),
+        retryCount: this.state.retryCount,
+        deviceInfo: {
+          platform: Platform.OS,
+          version: Platform.Version.toString(),
+        },
+        networkStatus: this.state.isOnline,
+        stackTrace: this.state.error?.stack,
+        environment: __DEV__ ? 'development' : 'production',
+      });
+    } catch (clipboardError) {
+      console.error('Failed to copy error details:', clipboardError);
+    }
+
     if (__DEV__) {
-      const errorDetails = JSON.stringify(errorReport, null, 2);
-      console.log('Error details for reporting:', errorDetails);
+      console.log('Error report generated:', errorDetails);
     }
   };
 
@@ -446,6 +559,7 @@ export class ErrorBoundary extends Component<Props, State> {
     error: this.state.error,
     retry: this.handleReset,
     clearError: this.clearError,
+    reportError: this.handleReportIssue,
   });
 
   render() {
