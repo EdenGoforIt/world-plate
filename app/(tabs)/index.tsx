@@ -1,7 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Animated,
   Dimensions,
@@ -13,6 +13,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  ListRenderItem,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -20,6 +21,7 @@ import { MealRecommendation } from "@/components/MealRecommendation";
 import { RecipeCard } from "@/components/RecipeCard";
 import { LoadingScreen, RecipeCardSkeleton } from "@/components/ui/LoadingScreen";
 import { Colors } from "@/constants/Colors";
+import { Layout, IconSizes, AnimationDuration } from "@/constants/Layout";
 import { useAuth } from "@/contexts/AuthContext";
 import { useDailyRecommendations, useRecipes } from "@/hooks/useRecipes";
 import { Recipe } from "@/types/Recipe";
@@ -51,9 +53,9 @@ export default function HomeScreen() {
     else setGreeting('Good Evening');
   }, []);
 
-  const handleRecipePress = (recipeId: string) => {
+  const handleRecipePress = useCallback((recipeId: string) => {
     router.push(`/recipe/${recipeId}`);
-  };
+  }, []);
 
   const headerScale = scrollY.interpolate({
     inputRange: [0, 100],
@@ -67,7 +69,7 @@ export default function HomeScreen() {
     extrapolate: 'clamp',
   });
 
-  const trendingRecipes = recipes.slice(0, 5);
+  const trendingRecipes = useMemo(() => recipes.slice(0, 5), [recipes]);
 
   if (!user) {
     router.replace('/auth/login');
@@ -117,8 +119,13 @@ export default function HomeScreen() {
                   <Text className="text-xl font-bold text-white">{user.name}!</Text>
                 </View>
               </View>
-              <TouchableOpacity className="bg-white/20 rounded-full p-2">
-                <Ionicons name="notifications-outline" size={24} color="#fff" />
+              <TouchableOpacity
+                className="bg-white/20 rounded-full p-2"
+                accessibilityRole="button"
+                accessibilityLabel="Notifications"
+                hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+              >
+                <Ionicons name="notifications-outline" size={IconSizes.lg} color="#fff" />
               </TouchableOpacity>
             </View>
 
@@ -126,7 +133,7 @@ export default function HomeScreen() {
               <Text className="text-white text-sm mb-1">Today's Cooking Streak</Text>
               <View className="flex-row items-center justify-between">
                 <Text className="text-3xl font-bold text-white">{user.stats.streak} Days</Text>
-                <Ionicons name="flame" size={32} color="#FFD700" />
+                <Ionicons name="flame" size={IconSizes.xxl} color="#FFD700" />
               </View>
             </View>
           </LinearGradient>
@@ -145,19 +152,26 @@ export default function HomeScreen() {
             showsHorizontalScrollIndicator={false}
             data={categories}
             keyExtractor={(item) => item.id}
+            removeClippedSubviews={true}
+            maxToRenderPerBatch={10}
+            windowSize={10}
+            initialNumToRender={6}
             renderItem={({ item }) => (
               <TouchableOpacity
                 onPress={() => setSelectedCategory(item.id)}
                 className={`mr-4 items-center ${selectedCategory === item.id ? 'opacity-100' : 'opacity-60'}`}
+                accessibilityRole="button"
+                accessibilityLabel={`${item.name} category`}
+                accessibilityState={{ selected: selectedCategory === item.id }}
               >
                 <LinearGradient
                   colors={selectedCategory === item.id ? [item.color, item.color + '99'] : ['#F3F4F6', '#E5E7EB']}
                   className="w-16 h-16 rounded-2xl items-center justify-center mb-2"
                 >
-                  <Ionicons 
-                    name={item.icon} 
-                    size={28} 
-                    color={selectedCategory === item.id ? '#fff' : '#6B7280'} 
+                  <Ionicons
+                    name={item.icon}
+                    size={IconSizes.xl}
+                    color={selectedCategory === item.id ? '#fff' : '#6B7280'}
                   />
                 </LinearGradient>
                 <Text className={`text-xs ${selectedCategory === item.id ? 'font-semibold text-text' : 'text-gray-500'}`}>
@@ -234,8 +248,11 @@ export default function HomeScreen() {
         <View className="px-5 mt-8 mb-24">
           <View className="flex-row items-center justify-between mb-4">
             <Text className="text-xl font-bold text-text">Trending Now</Text>
-            <TouchableOpacity>
-              <Ionicons name="trending-up" size={24} color={Colors.primary} />
+            <TouchableOpacity
+              accessibilityRole="button"
+              accessibilityLabel="View trending recipes"
+            >
+              <Ionicons name="trending-up" size={IconSizes.lg} color={Colors.primary} />
             </TouchableOpacity>
           </View>
 
@@ -244,6 +261,10 @@ export default function HomeScreen() {
             showsHorizontalScrollIndicator={false}
             data={trendingRecipes}
             keyExtractor={(item) => item.id}
+            removeClippedSubviews={true}
+            maxToRenderPerBatch={5}
+            windowSize={5}
+            initialNumToRender={3}
             renderItem={({ item }) => (
               <View style={{ width: SCREEN_WIDTH * 0.7, marginRight: 16 }}>
                 <RecipeCard
@@ -260,6 +281,8 @@ export default function HomeScreen() {
       <TouchableOpacity
         className="absolute bottom-24 right-5 bg-primary rounded-full p-4 shadow-lg"
         onPress={() => router.push('/shopping-list')}
+        accessibilityRole="button"
+        accessibilityLabel="Shopping list"
         style={{
           shadowColor: Colors.primary,
           shadowOffset: { width: 0, height: 4 },
@@ -268,7 +291,7 @@ export default function HomeScreen() {
           elevation: 8,
         }}
       >
-        <Ionicons name="cart" size={24} color="white" />
+        <Ionicons name="cart" size={IconSizes.lg} color="white" />
       </TouchableOpacity>
     </SafeAreaView>
   );
