@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
+import React, { memo, useCallback } from 'react';
+import { View, Text, TouchableOpacity, Image, Dimensions, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Recipe } from '../types/Recipe';
 import { Colors } from '../constants/Colors';
@@ -14,9 +14,14 @@ interface MealRecommendationProps {
   countryName?: string; // For favorites functionality
 }
 
-const { width } = Dimensions.get('window');
+const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
-export const MealRecommendation: React.FC<MealRecommendationProps> = ({
+const IMAGE_SIZE = 100;
+const ICON_SIZE = 24;
+const SMALL_ICON_SIZE = 16;
+const REFRESH_ICON_SIZE = 20;
+
+const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
   mealType,
   recipe,
   onPress,
@@ -25,27 +30,27 @@ export const MealRecommendation: React.FC<MealRecommendationProps> = ({
 }) => {
   const { toggleFavorite, isFavorite } = useFavorites();
   
-  const handleFavoritePress = async () => {
+  const handleFavoritePress = useCallback(async () => {
     if (recipe && countryName) {
       await toggleFavorite(recipe.id, countryName);
     }
-  };
+  }, [recipe, countryName, toggleFavorite]);
   
-  const getMealIcon = () => {
+  const getMealIcon = useCallback(() => {
     switch (mealType) {
       case 'breakfast': return 'cafe-outline';
       case 'lunch': return 'restaurant-outline';
       case 'dinner': return 'wine-outline';
     }
-  };
+  }, [mealType]);
 
-  const getMealTime = () => {
+  const getMealTime = useCallback(() => {
     switch (mealType) {
       case 'breakfast': return 'Morning';
       case 'lunch': return 'Afternoon';
       case 'dinner': return 'Evening';
     }
-  };
+  }, [mealType]);
 
   if (!recipe) {
     return (
@@ -126,4 +131,30 @@ export const MealRecommendation: React.FC<MealRecommendationProps> = ({
     </TouchableOpacity>
   );
 };
+
+const styles = StyleSheet.create({
+  card: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 4,
+  },
+  refreshButton: {
+    backgroundColor: Colors.background,
+    borderColor: Colors.primary,
+  },
+  favoriteButton: {
+    backgroundColor: Colors.background,
+    borderColor: Colors.primary,
+  },
+  image: {
+    resizeMode: 'cover',
+  },
+  nutritionBadge: {
+    backgroundColor: Colors.background,
+  },
+});
+
+export const MealRecommendation = memo(MealRecommendationComponent);
 
