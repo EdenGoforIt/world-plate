@@ -26,7 +26,6 @@ import { MealPlanModal } from '@/components/MealPlanModal';
 import { ShoppingListModal } from '@/components/ShoppingListModal';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { Colors } from '@/constants/Colors';
-import { useAuth } from '@/contexts/AuthContext';
 import { useFavorites } from '@/hooks/useFavorites';
 import { useReviews } from '@/hooks/useReviews';
 import { Recipe } from '@/types/Recipe';
@@ -53,7 +52,12 @@ const mockNutrition: NutritionInfo = {
 
 export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { user } = useAuth();
+  // Mock user data since we removed authentication
+  const user = {
+    id: '1',
+    name: 'Guest User',
+    avatar: 'https://ui-avatars.com/api/?name=Guest+User&background=FF6B35&color=fff'
+  };
   const { toggleFavorite, isFavorite } = useFavorites();
   const { reviews, addReview, loading: reviewsLoading } = useReviews(id!);
   const [recipeData, setRecipeData] = useState<{ recipe: Recipe; country: string } | null>(null);

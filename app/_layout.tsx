@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 import Toast from 'react-native-toast-message';
 
-import { AuthProvider } from '@/contexts/AuthContext';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { preloadRecipeCache } from '@/utils/recipeCache';
 
@@ -31,19 +30,13 @@ export default function RootLayout() {
   }
 
   return (
-    <AuthProvider>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="auth/login" options={{ headerShown: false }} />
-          <Stack.Screen name="auth/signup" options={{ headerShown: false }} />
-          <Stack.Screen name="auth/forgot-password" options={{ headerShown: false }} />
-          <Stack.Screen name="auth/onboarding" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>
         <StatusBar style="auto" />
         <Toast />
-      </ThemeProvider>
-    </AuthProvider>
+    </ThemeProvider>
   );
 }

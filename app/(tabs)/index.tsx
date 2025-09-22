@@ -22,7 +22,6 @@ import { RecipeCard } from "@/components/RecipeCard";
 import { LoadingScreen, RecipeCardSkeleton } from "@/components/ui/LoadingScreen";
 import { Colors } from "@/constants/Colors";
 import { Layout, IconSizes, AnimationDuration } from "@/constants/Layout";
-import { useAuth } from "@/contexts/AuthContext";
 import { useDailyRecommendations, useRecipes } from "@/hooks/useRecipes";
 import { Recipe } from "@/types/Recipe";
 import { getRecipeByIdFromCountrySync } from "@/utils/recipeUtils";
@@ -39,7 +38,15 @@ const categories = [
 ];
 
 export default function HomeScreen() {
-  const { user } = useAuth();
+  // Mock user data since we removed authentication
+  const user = {
+    id: '1',
+    name: 'Guest User',
+    avatar: 'https://ui-avatars.com/api/?name=Guest+User&background=FF6B35&color=fff',
+    stats: {
+      streak: 7
+    }
+  };
   const { recommendations, loading, refreshRecommendations } = useDailyRecommendations();
   const { recipes, loading: recipesLoading } = useRecipes();
   const [selectedCategory, setSelectedCategory] = useState('1');
@@ -71,10 +78,6 @@ export default function HomeScreen() {
 
   const trendingRecipes = useMemo(() => recipes.slice(0, 5), [recipes]);
 
-  if (!user) {
-    router.replace('/auth/login');
-    return null;
-  }
 
   return (
     <SafeAreaView className="flex-1 bg-background">
