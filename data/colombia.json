@@ -6,19 +6,46 @@
       "id": "colombia-001",
       "name": "Bandeja Paisa",
       "cuisine": "Colombian",
-      "mealType": ["lunch", "dinner"],
-      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1635449636235-27b33e6c9bdc?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 45,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
-        { "name": "Red beans", "amount": "2 cups", "category": "other" },
-        { "name": "White rice", "amount": "2 cups", "category": "grain" },
-        { "name": "Fried plantains", "amount": "2", "category": "vegetable" },
-        { "name": "Chorizo sausage", "amount": "4 pieces", "category": "protein" },
-        { "name": "Fried eggs", "amount": "4", "category": "protein" }
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Red beans",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "White rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Fried plantains",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Chorizo sausage",
+          "amount": "4 pieces",
+          "category": "protein"
+        },
+        {
+          "name": "Fried eggs",
+          "amount": "4",
+          "category": "protein"
+        }
       ],
       "instructions": [
         "Cook beans with spices until tender",
@@ -37,27 +64,86 @@
         "sugar": 18,
         "sodium": 980
       },
-      "tags": ["colombian", "hearty", "traditional"],
+      "tags": [
+        "colombian",
+        "hearty",
+        "traditional"
+      ],
       "rating": 4.6,
       "reviews": 234
+    },
+    {
+      "id": "colombia-1758569719700-yppn1j3ru",
+      "name": "Ajiaco",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Ajiaco from Colombia"
     },
     {
       "id": "colombia-002",
       "name": "Arepas",
       "cuisine": "Colombian",
-      "mealType": ["breakfast", "lunch", "dinner"],
-      "image": "https://images.unsplash.com/photo-1564759298141-3c0361dc2d3e?w=400&h=300&fit=crop",
+      "mealType": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 20,
       "servings": 8,
       "difficulty": "easy",
       "ingredients": [
-        { "name": "Arepa flour", "amount": "2 cups", "category": "grain" },
-        { "name": "Warm water", "amount": "2.5 cups", "category": "other" },
-        { "name": "Salt", "amount": "1 tsp", "category": "spice" },
-        { "name": "Cheese", "amount": "1 cup", "category": "dairy" },
-        { "name": "Butter", "amount": "2 tbsp", "category": "dairy" },
-        { "name": "Oil", "amount": "2 tbsp", "category": "other" }
+        {
+          "name": "Arepa flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Warm water",
+          "amount": "2.5 cups",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Oil",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Mix arepa flour with salt",
@@ -77,7 +163,12 @@
         "sugar": 1,
         "sodium": 320
       },
-      "tags": ["colombian", "corn", "gluten-free", "versatile"],
+      "tags": [
+        "colombian",
+        "corn",
+        "gluten-free",
+        "versatile"
+      ],
       "rating": 4.5,
       "reviews": 312
     },
@@ -85,21 +176,56 @@
       "id": "colombia-003",
       "name": "Sancocho",
       "cuisine": "Colombian",
-      "mealType": ["lunch", "dinner"],
-      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 90,
       "servings": 8,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Chicken pieces", "amount": "2 lbs", "category": "protein" },
-        { "name": "Beef short ribs", "amount": "1 lb", "category": "protein" },
-        { "name": "Plantains", "amount": "2", "category": "vegetable" },
-        { "name": "Yuca", "amount": "1 lb", "category": "vegetable" },
-        { "name": "Corn on the cob", "amount": "2 ears", "category": "vegetable" },
-        { "name": "Cilantro", "amount": "1/2 cup", "category": "vegetable" },
-        { "name": "Garlic", "amount": "4 cloves", "category": "vegetable" },
-        { "name": "Cumin", "amount": "1 tsp", "category": "spice" }
+        {
+          "name": "Chicken pieces",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Beef short ribs",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Plantains",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Yuca",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Corn on the cob",
+          "amount": "2 ears",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "4 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Brown chicken and beef in large pot",
@@ -119,9 +245,311 @@
         "sugar": 12,
         "sodium": 720
       },
-      "tags": ["colombian", "hearty", "soup", "one-pot"],
+      "tags": [
+        "colombian",
+        "hearty",
+        "soup",
+        "one-pot"
+      ],
       "rating": 4.7,
       "reviews": 189
+    },
+    {
+      "id": "colombia-1758569719700-j2gmb0vao",
+      "name": "Empanadas",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1596449189439-e420d43e0052?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Empanadas from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-gkitrajp7",
+      "name": "Lechona",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Lechona from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-1rplq6y9b",
+      "name": "Tamales",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Tamales from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-as69natyd",
+      "name": "Pandebono",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1598142982901-df6cec10ae35?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Pandebono from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-d5g9hbizp",
+      "name": "Changua",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Changua from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-5wgmt0vjv",
+      "name": "Patacones",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1604262725913-1c415cd27564?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Patacones from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-taat11b1q",
+      "name": "Mondongo",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Mondongo from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-yo417norn",
+      "name": "Cazuela de Mariscos",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1633358784480-850b44fc7754?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Cazuela de Mariscos from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-3a2ctglnd",
+      "name": "Obleas",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Obleas from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-s526nh97x",
+      "name": "Cholado",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Cholado from Colombia"
+    },
+    {
+      "id": "colombia-1758569719700-aqsownms6",
+      "name": "Aguapanela",
+      "cuisine": "Colombia",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1597131628347-c769fc3defb4?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Aguapanela from Colombia"
     }
   ]
 }

@@ -10,7 +10,7 @@
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 45,
       "servings": 6,
@@ -73,307 +73,85 @@
       "reviews": 124
     },
     {
-      "id": "algeria-002",
-      "name": "Chakhchoukha",
+      "id": "algeria-009",
+      "name": "Tajine Zitoun (Olive Chicken Stew)",
       "cuisine": "Algerian",
       "mealType": [
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 90,
-      "servings": 6,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Semolina flatbread",
-          "amount": "4",
-          "category": "grain"
-        },
-        {
-          "name": "Lamb",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Tomato",
-          "amount": "3",
-          "category": "vegetable"
-        },
-        {
-          "name": "Chickpeas",
-          "amount": "1 cup",
-          "category": "legume"
-        },
-        {
-          "name": "Onion",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Garlic",
-          "amount": "3 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Prepare flatbread, tear into pieces.",
-        "Brown lamb with onion, garlic, and spices.",
-        "Add tomato, chickpeas, simmer until lamb is tender.",
-        "Mix stew with bread pieces and serve."
-      ],
-      "nutrition": {
-        "calories": 610,
-        "protein": 34,
-        "carbs": 68,
-        "fat": 22,
-        "fiber": 9,
-        "sugar": 7,
-        "sodium": 720
-      },
-      "tags": [
-        "algerian",
-        "stew",
-        "flatbread"
-      ],
-      "rating": 4.5,
-      "reviews": 87
-    },
-    {
-      "id": "algeria-003",
-      "name": "Mhadjeb (Stuffed Semolina Crepes)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Tomato",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Chili pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "2 tbsp",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Prepare semolina dough, roll thin.",
-        "Cook filling of tomato, onion, peppers, and salt.",
-        "Stuff dough, fold, and cook on griddle with olive oil."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 7,
-        "carbs": 62,
-        "fat": 7,
-        "fiber": 5,
-        "sugar": 6,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "crepe",
-        "vegetarian"
-      ],
-      "rating": 4.6,
-      "reviews": 54
-    },
-    {
-      "id": "algeria-004",
-      "name": "Rechta (Homemade Noodles with Chicken)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 60,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Homemade noodles",
-          "amount": "1 lb",
-          "category": "grain"
-        },
-        {
-          "name": "Chicken",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Chickpeas",
-          "amount": "1 cup",
-          "category": "legume"
-        },
-        {
-          "name": "Turnip",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Cinnamon",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Prepare noodles from scratch.",
-        "Brown chicken with onion, cinnamon, and salt.",
-        "Add chickpeas, turnip, simmer until chicken is tender.",
-        "Serve stew over noodles."
-      ],
-      "nutrition": {
-        "calories": 540,
-        "protein": 32,
-        "carbs": 68,
-        "fat": 14,
-        "fiber": 7,
-        "sugar": 5,
-        "sodium": 680
-      },
-      "tags": [
-        "algerian",
-        "noodles",
-        "chicken"
-      ],
-      "rating": 4.4,
-      "reviews": 61
-    },
-    {
-      "id": "algeria-005",
-      "name": "Lham Lahlou (Sweet Lamb with Prunes)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 60,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
         {
-          "name": "Lamb",
+          "name": "Chicken",
           "amount": "2 lbs",
           "category": "protein"
         },
         {
-          "name": "Prunes",
+          "name": "Green olives",
           "amount": "1 cup",
-          "category": "fruit"
-        },
-        {
-          "name": "Apricots",
-          "amount": "1/2 cup",
-          "category": "fruit"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/4 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Cinnamon",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "1 tbsp",
           "category": "other"
         },
         {
-          "name": "Butter",
+          "name": "Carrot",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1",
+          "category": "vegetable"
+        },
+        {
+          "name": "Lemon",
+          "amount": "1",
+          "category": "fruit"
+        },
+        {
+          "name": "Cilantro",
           "amount": "2 tbsp",
-          "category": "dairy"
+          "category": "herb"
+        },
+        {
+          "name": "Paprika",
+          "amount": "1 tsp",
+          "category": "spice"
         },
         {
           "name": "Salt",
           "amount": "1 tsp",
           "category": "spice"
+        },
+        {
+          "name": "Black pepper",
+          "amount": "1/2 tsp",
+          "category": "spice"
         }
       ],
       "instructions": [
-        "Brown lamb in butter, add sugar, cinnamon, and salt.",
-        "Add prunes, apricots, and orange blossom water, simmer until tender and syrupy."
+        "Brown chicken with onion, carrot, and spices.",
+        "Add olives, lemon, and cilantro, simmer until chicken is tender."
       ],
       "nutrition": {
-        "calories": 480,
+        "calories": 340,
         "protein": 28,
-        "carbs": 48,
-        "fat": 18,
-        "fiber": 5,
-        "sugar": 28,
-        "sodium": 320
+        "carbs": 10,
+        "fat": 20,
+        "fiber": 3,
+        "sugar": 3,
+        "sodium": 540
       },
       "tags": [
         "algerian",
-        "lamb",
-        "sweet"
+        "stew",
+        "chicken"
       ],
       "rating": 4.5,
-      "reviews": 39
+      "reviews": 31
     },
     {
       "id": "algeria-006",
@@ -383,7 +161,7 @@
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 60,
       "servings": 6,
@@ -462,237 +240,229 @@
       "reviews": 28
     },
     {
-      "id": "algeria-007",
-      "name": "Maakouda (Potato Fritters)",
-      "cuisine": "Algerian",
+      "id": "algeria-1758569719691-6fnrjb9tj",
+      "name": "Shakshuka",
+      "cuisine": "Algeria",
       "mealType": [
-        "snack",
-        "side"
+        "lunch",
+        "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Potato",
-          "amount": "3 large",
-          "category": "vegetable"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Parsley",
-          "amount": "1/4 cup",
-          "category": "herb"
-        },
-        {
-          "name": "Garlic",
-          "amount": "2 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Boil and mash potatoes, mix with other ingredients.",
-        "Form patties, fry in oil until golden."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 5,
-        "carbs": 32,
-        "fat": 4,
-        "fiber": 3,
-        "sugar": 2,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "fritter",
-        "vegetarian"
-      ],
-      "rating": 4.5,
-      "reviews": 33
-    },
-    {
-      "id": "algeria-008",
-      "name": "Brik (Egg Pastry)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "snack",
-        "lunch"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 10,
+      "image": "https://images.unsplash.com/photo-1590412200988-a436970781fa?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
       "servings": 4,
       "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Warka pastry",
-          "amount": "4 sheets",
-          "category": "grain"
-        },
-        {
-          "name": "Egg",
-          "amount": "4",
-          "category": "other"
-        },
-        {
-          "name": "Tuna",
-          "amount": "1 can",
-          "category": "protein"
-        },
-        {
-          "name": "Parsley",
-          "amount": "2 tbsp",
-          "category": "herb"
-        },
-        {
-          "name": "Capers",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/4 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Place filling on pastry, fold, and seal.",
-        "Fry in oil until crisp and golden."
-      ],
-      "nutrition": {
-        "calories": 220,
-        "protein": 10,
-        "carbs": 18,
-        "fat": 11,
-        "fiber": 1,
-        "sugar": 1,
-        "sodium": 320
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
       },
-      "tags": [
-        "algerian",
-        "pastry",
-        "egg"
-      ],
-      "rating": 4.4,
-      "reviews": 22
+      "tags": [],
+      "description": "Traditional Shakshuka from Algeria"
     },
     {
-      "id": "algeria-009",
-      "name": "Tajine Zitoun (Olive Chicken Stew)",
+      "id": "algeria-017",
+      "name": "Merguez (Spicy Lamb Sausage)",
       "cuisine": "Algerian",
       "mealType": [
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "medium",
+      "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 20,
+      "servings": 8,
+      "difficulty": "hard",
       "ingredients": [
         {
-          "name": "Chicken",
+          "name": "Lamb",
           "amount": "2 lbs",
           "category": "protein"
         },
         {
-          "name": "Green olives",
-          "amount": "1 cup",
-          "category": "other"
-        },
-        {
-          "name": "Carrot",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Lemon",
-          "amount": "1",
-          "category": "fruit"
-        },
-        {
-          "name": "Cilantro",
-          "amount": "2 tbsp",
-          "category": "herb"
-        },
-        {
           "name": "Paprika",
-          "amount": "1 tsp",
+          "amount": "2 tbsp",
           "category": "spice"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Coriander",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Garlic",
+          "amount": "4 cloves",
+          "category": "vegetable"
         },
         {
           "name": "Salt",
-          "amount": "1 tsp",
+          "amount": "1.5 tsp",
           "category": "spice"
         },
         {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
+          "name": "Casing",
+          "amount": "as needed",
+          "category": "other"
         }
       ],
       "instructions": [
-        "Brown chicken with onion, carrot, and spices.",
-        "Add olives, lemon, and cilantro, simmer until chicken is tender."
+        "Mix lamb with spices and garlic.",
+        "Stuff into casings, grill or fry."
       ],
       "nutrition": {
-        "calories": 340,
-        "protein": 28,
-        "carbs": 10,
-        "fat": 20,
-        "fiber": 3,
-        "sugar": 3,
-        "sodium": 540
+        "calories": 320,
+        "protein": 18,
+        "carbs": 2,
+        "fat": 28,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 480
       },
       "tags": [
         "algerian",
-        "stew",
-        "chicken"
+        "sausage",
+        "spicy"
       ],
-      "rating": 4.5,
-      "reviews": 31
+      "rating": 4.7,
+      "reviews": 38
+    },
+    {
+      "id": "algeria-012",
+      "name": "Baghrir (Thousand-Hole Pancakes)",
+      "cuisine": "Algerian",
+      "mealType": [
+        "breakfast",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop",
+      "prepTime": 15,
+      "cookTime": 10,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Semolina",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Flour",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Yeast",
+          "amount": "1 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Sugar",
+          "amount": "2 tbsp",
+          "category": "sweetener"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Water",
+          "amount": "2.5 cups",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients, let batter rise.",
+        "Cook on one side until holes form."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 5,
+        "carbs": 38,
+        "fat": 1,
+        "fiber": 2,
+        "sugar": 3,
+        "sodium": 120
+      },
+      "tags": [
+        "algerian",
+        "pancake",
+        "breakfast"
+      ],
+      "rating": 4.6,
+      "reviews": 41
+    },
+    {
+      "id": "algeria-013",
+      "name": "Makroud (Date-Filled Semolina Cookies)",
+      "cuisine": "Algerian",
+      "mealType": [
+        "dessert",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1562967915-6ba607ff7d05?w=400&h=300&fit=crop",
+      "prepTime": 40,
+      "cookTime": 30,
+      "servings": 20,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Semolina",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Dates",
+          "amount": "1.5 cups",
+          "category": "fruit"
+        },
+        {
+          "name": "Orange blossom water",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        }
+      ],
+      "instructions": [
+        "Mix semolina and butter, form dough.",
+        "Fill with date paste, shape and bake."
+      ],
+      "nutrition": {
+        "calories": 120,
+        "protein": 2,
+        "carbs": 18,
+        "fat": 5,
+        "fiber": 1,
+        "sugar": 8,
+        "sodium": 30
+      },
+      "tags": [
+        "algerian",
+        "cookie",
+        "dessert"
+      ],
+      "rating": 4.7,
+      "reviews": 56
     },
     {
       "id": "algeria-010",
@@ -702,7 +472,7 @@
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 60,
       "servings": 6,
@@ -781,590 +551,22 @@
       "reviews": 27
     },
     {
-      "id": "algeria-011",
-      "name": "Kesra (Semolina Flatbread)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "side",
-        "breakfast"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 20,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "1/4 cup",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Water",
-          "amount": "1 cup",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix semolina, oil, salt, and water to form dough.",
-        "Shape into rounds, cook on griddle until golden."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 6,
-        "carbs": 42,
-        "fat": 4,
-        "fiber": 2,
-        "sugar": 1,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "flatbread",
-        "side"
-      ],
-      "rating": 4.5,
-      "reviews": 35
-    },
-    {
-      "id": "algeria-012",
-      "name": "Baghrir (Thousand-Hole Pancakes)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "breakfast",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 10,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Flour",
-          "amount": "1 cup",
-          "category": "grain"
-        },
-        {
-          "name": "Yeast",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Sugar",
-          "amount": "2 tbsp",
-          "category": "sweetener"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Water",
-          "amount": "2.5 cups",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix all ingredients, let batter rise.",
-        "Cook on one side until holes form."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 5,
-        "carbs": 38,
-        "fat": 1,
-        "fiber": 2,
-        "sugar": 3,
-        "sodium": 120
-      },
-      "tags": [
-        "algerian",
-        "pancake",
-        "breakfast"
-      ],
-      "rating": 4.6,
-      "reviews": 41
-    },
-    {
-      "id": "algeria-013",
-      "name": "Makroud (Date-Filled Semolina Cookies)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 30,
-      "servings": 20,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Butter",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Dates",
-          "amount": "1.5 cups",
-          "category": "fruit"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "2 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        }
-      ],
-      "instructions": [
-        "Mix semolina and butter, form dough.",
-        "Fill with date paste, shape and bake."
-      ],
-      "nutrition": {
-        "calories": 120,
-        "protein": 2,
-        "carbs": 18,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 8,
-        "sodium": 30
-      },
-      "tags": [
-        "algerian",
-        "cookie",
-        "dessert"
-      ],
-      "rating": 4.7,
-      "reviews": 56
-    },
-    {
-      "id": "algeria-014",
-      "name": "Kalb el Louz (Semolina Almond Cake)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 60,
-      "servings": 12,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Almonds",
-          "amount": "1 cup",
-          "category": "nut"
-        },
-        {
-          "name": "Sugar",
-          "amount": "2 cups",
-          "category": "sweetener"
-        },
-        {
-          "name": "Butter",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "2 tbsp",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix semolina, almonds, sugar, and butter.",
-        "Bake, soak with orange blossom syrup."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 5,
-        "carbs": 48,
-        "fat": 12,
-        "fiber": 2,
-        "sugar": 28,
-        "sodium": 40
-      },
-      "tags": [
-        "algerian",
-        "cake",
-        "dessert"
-      ],
-      "rating": 4.8,
-      "reviews": 62
-    },
-    {
-      "id": "algeria-015",
-      "name": "Derssa (Spicy Garlic Sauce)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "side",
-        "condiment"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 0,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Garlic",
-          "amount": "6 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "2 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "1/4 cup",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Crush garlic, mix with spices and oil."
-      ],
-      "nutrition": {
-        "calories": 60,
-        "protein": 1,
-        "carbs": 2,
-        "fat": 6,
-        "fiber": 0,
-        "sugar": 0,
-        "sodium": 120
-      },
-      "tags": [
-        "algerian",
-        "sauce",
-        "spicy"
-      ],
-      "rating": 4.7,
-      "reviews": 29
-    },
-    {
-      "id": "algeria-016",
-      "name": "Tamina (Semolina and Honey Dessert)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 10,
-      "servings": 10,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Butter",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Honey",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        }
-      ],
-      "instructions": [
-        "Toast semolina in butter.",
-        "Mix in honey, serve warm."
-      ],
-      "nutrition": {
-        "calories": 140,
-        "protein": 2,
-        "carbs": 22,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 12,
-        "sodium": 20
-      },
-      "tags": [
-        "algerian",
-        "dessert",
-        "honey"
-      ],
-      "rating": 4.6,
-      "reviews": 24
-    },
-    {
-      "id": "algeria-017",
-      "name": "Merguez (Spicy Lamb Sausage)",
+      "id": "algeria-004",
+      "name": "Rechta (Homemade Noodles with Chicken)",
       "cuisine": "Algerian",
       "mealType": [
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 20,
-      "servings": 8,
+      "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=400&h=300&fit=crop",
+      "prepTime": 60,
+      "cookTime": 60,
+      "servings": 6,
       "difficulty": "hard",
       "ingredients": [
         {
-          "name": "Lamb",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Paprika",
-          "amount": "2 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Coriander",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Garlic",
-          "amount": "4 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Casing",
-          "amount": "as needed",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix lamb with spices and garlic.",
-        "Stuff into casings, grill or fry."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 18,
-        "carbs": 2,
-        "fat": 28,
-        "fiber": 0,
-        "sugar": 0,
-        "sodium": 480
-      },
-      "tags": [
-        "algerian",
-        "sausage",
-        "spicy"
-      ],
-      "rating": 4.7,
-      "reviews": 38
-    },
-    {
-      "id": "algeria-018",
-      "name": "Doubara (Spicy Bean Stew)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 40,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Fava beans",
-          "amount": "2 cups",
-          "category": "legume"
-        },
-        {
-          "name": "Chickpeas",
-          "amount": "1 cup",
-          "category": "legume"
-        },
-        {
-          "name": "Tomato",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Garlic",
-          "amount": "3 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook beans and chickpeas until tender.",
-        "Add tomato, garlic, and spices, simmer."
-      ],
-      "nutrition": {
-        "calories": 260,
-        "protein": 12,
-        "carbs": 44,
-        "fat": 3,
-        "fiber": 8,
-        "sugar": 5,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "stew",
-        "spicy"
-      ],
-      "rating": 4.6,
-      "reviews": 27
-    },
-    {
-      "id": "algeria-019",
-      "name": "Mhajeb (Spicy Stuffed Flatbread)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Tomato",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Chili pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "2 tbsp",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Prepare semolina dough, roll thin.",
-        "Cook filling of tomato, onion, peppers, and salt.",
-        "Stuff dough, fold, and cook on griddle with olive oil."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 7,
-        "carbs": 62,
-        "fat": 7,
-        "fiber": 5,
-        "sugar": 6,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "flatbread",
-        "spicy"
-      ],
-      "rating": 4.6,
-      "reviews": 54
-    },
-    {
-      "id": "algeria-020",
-      "name": "Tlitli (Orzo Chicken Stew)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Orzo pasta",
-          "amount": "2 cups",
+          "name": "Homemade noodles",
+          "amount": "1 lb",
           "category": "grain"
         },
         {
@@ -1373,123 +575,80 @@
           "category": "protein"
         },
         {
-          "name": "Tomato",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
           "name": "Chickpeas",
           "amount": "1 cup",
           "category": "legume"
         },
         {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Brown chicken with onion and spices.",
-        "Add tomato, chickpeas, simmer.",
-        "Serve stew over orzo pasta."
-      ],
-      "nutrition": {
-        "calories": 410,
-        "protein": 28,
-        "carbs": 52,
-        "fat": 10,
-        "fiber": 5,
-        "sugar": 4,
-        "sodium": 420
-      },
-      "tags": [
-        "algerian",
-        "stew",
-        "chicken"
-      ],
-      "rating": 4.5,
-      "reviews": 33
-    },
-    {
-      "id": "algeria-021",
-      "name": "Felfel Mahchi (Stuffed Peppers)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 45,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Bell peppers",
-          "amount": "6",
-          "category": "vegetable"
-        },
-        {
-          "name": "Ground beef",
-          "amount": "1.5 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Rice",
-          "amount": "1 cup",
-          "category": "grain"
-        },
-        {
-          "name": "Tomato",
+          "name": "Turnip",
           "amount": "2",
           "category": "vegetable"
         },
         {
           "name": "Onion",
-          "amount": "1",
+          "amount": "2",
           "category": "vegetable"
         },
         {
-          "name": "Parsley",
-          "amount": "1/4 cup",
-          "category": "herb"
+          "name": "Cinnamon",
+          "amount": "1 tsp",
+          "category": "spice"
         },
         {
           "name": "Salt",
-          "amount": "1 tsp",
+          "amount": "1.5 tsp",
           "category": "spice"
         }
       ],
       "instructions": [
-        "Mix beef, rice, tomato, onion, and parsley.",
-        "Stuff into peppers, bake until tender."
+        "Prepare noodles from scratch.",
+        "Brown chicken with onion, cinnamon, and salt.",
+        "Add chickpeas, turnip, simmer until chicken is tender.",
+        "Serve stew over noodles."
       ],
       "nutrition": {
-        "calories": 320,
-        "protein": 18,
-        "carbs": 28,
+        "calories": 540,
+        "protein": 32,
+        "carbs": 68,
         "fat": 14,
-        "fiber": 4,
-        "sugar": 6,
-        "sodium": 320
+        "fiber": 7,
+        "sugar": 5,
+        "sodium": 680
       },
       "tags": [
         "algerian",
-        "stuffed",
-        "beef"
+        "noodles",
+        "chicken"
       ],
-      "rating": 4.6,
-      "reviews": 29
+      "rating": 4.4,
+      "reviews": 61
+    },
+    {
+      "id": "algeria-1758569719691-shxn6x9ko",
+      "name": "Dolma",
+      "cuisine": "Algeria",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1538128835124-7805d3fd3f43?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Dolma from Algeria"
     },
     {
       "id": "algeria-022",
@@ -1499,7 +658,7 @@
         "snack",
         "lunch"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1600326145308-a297cebacf87?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 20,
       "servings": 8,
@@ -1568,220 +727,104 @@
       "reviews": 32
     },
     {
-      "id": "algeria-023",
-      "name": "Zlabia (Honey-Soaked Fritters)",
+      "id": "algeria-1758569719691-2h1k5eify",
+      "name": "Mechoui",
+      "cuisine": "Algeria",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1529193037184-103f6b0d220c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Mechoui from Algeria"
+    },
+    {
+      "id": "algeria-014",
+      "name": "Kalb el Louz (Semolina Almond Cake)",
       "cuisine": "Algerian",
       "mealType": [
-        "dessert",
-        "snack"
+        "dessert"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 20,
+      "image": "https://images.unsplash.com/photo-1562967915-6ba607ff7d05?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
       "servings": 12,
       "difficulty": "medium",
       "ingredients": [
         {
-          "name": "Flour",
-          "amount": "2 cups",
+          "name": "Semolina",
+          "amount": "3 cups",
           "category": "grain"
         },
         {
-          "name": "Yeast",
-          "amount": "1 tbsp",
-          "category": "other"
+          "name": "Almonds",
+          "amount": "1 cup",
+          "category": "nut"
         },
         {
           "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Water",
-          "amount": "1.5 cups",
-          "category": "other"
-        },
-        {
-          "name": "Honey",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Mix flour, yeast, sugar, and water.",
-        "Fry batter, soak in honey."
-      ],
-      "nutrition": {
-        "calories": 150,
-        "protein": 2,
-        "carbs": 32,
-        "fat": 2,
-        "fiber": 1,
-        "sugar": 18,
-        "sodium": 20
-      },
-      "tags": [
-        "algerian",
-        "fritter",
-        "dessert"
-      ],
-      "rating": 4.7,
-      "reviews": 44
-    },
-    {
-      "id": "algeria-024",
-      "name": "Berkoukes (Pearl Couscous Stew)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 60,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Pearl couscous",
           "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Lamb",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Chickpeas",
-          "amount": "1 cup",
-          "category": "legume"
-        },
-        {
-          "name": "Carrot",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Turnip",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Brown lamb with onion and spices.",
-        "Add vegetables, chickpeas, and couscous, simmer."
-      ],
-      "nutrition": {
-        "calories": 420,
-        "protein": 28,
-        "carbs": 54,
-        "fat": 10,
-        "fiber": 6,
-        "sugar": 5,
-        "sodium": 420
-      },
-      "tags": [
-        "algerian",
-        "stew",
-        "couscous"
-      ],
-      "rating": 4.6,
-      "reviews": 36
-    },
-    {
-      "id": "algeria-025",
-      "name": "Msemen (Layered Flatbread)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "breakfast",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 20,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Semolina",
-          "amount": "1 cup",
-          "category": "grain"
+          "category": "sweetener"
         },
         {
           "name": "Butter",
-          "amount": "1/2 cup",
+          "amount": "1 cup",
           "category": "dairy"
         },
         {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Water",
-          "amount": "1 cup",
+          "name": "Orange blossom water",
+          "amount": "2 tbsp",
           "category": "other"
         }
       ],
       "instructions": [
-        "Mix flour, semolina, butter, salt, and water.",
-        "Fold and cook on griddle until golden."
+        "Mix semolina, almonds, sugar, and butter.",
+        "Bake, soak with orange blossom syrup."
       ],
       "nutrition": {
-        "calories": 210,
+        "calories": 320,
         "protein": 5,
-        "carbs": 38,
-        "fat": 6,
+        "carbs": 48,
+        "fat": 12,
         "fiber": 2,
-        "sugar": 1,
-        "sodium": 120
+        "sugar": 28,
+        "sodium": 40
       },
       "tags": [
         "algerian",
-        "flatbread",
-        "breakfast"
+        "cake",
+        "dessert"
       ],
-      "rating": 4.7,
-      "reviews": 48
+      "rating": 4.8,
+      "reviews": 62
     },
     {
-      "id": "algeria-026",
-      "name": "Chakhchoukha Biskria (Torn Flatbread Stew)",
+      "id": "algeria-002",
+      "name": "Chakhchoukha",
       "cuisine": "Algerian",
       "mealType": [
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 40,
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
+      "prepTime": 30,
       "cookTime": 90,
-      "servings": 8,
+      "servings": 6,
       "difficulty": "hard",
       "ingredients": [
         {
@@ -1854,1084 +897,14 @@
       "reviews": 87
     },
     {
-      "id": "algeria-027",
-      "name": "Tajine Lahlou (Sweet Fruit Stew)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Lamb",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Prunes",
-          "amount": "1 cup",
-          "category": "fruit"
-        },
-        {
-          "name": "Apricots",
-          "amount": "1/2 cup",
-          "category": "fruit"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/4 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Cinnamon",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Butter",
-          "amount": "2 tbsp",
-          "category": "dairy"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Brown lamb in butter, add sugar, cinnamon, and salt.",
-        "Add prunes, apricots, and orange blossom water, simmer until tender and syrupy."
-      ],
-      "nutrition": {
-        "calories": 480,
-        "protein": 28,
-        "carbs": 48,
-        "fat": 18,
-        "fiber": 5,
-        "sugar": 28,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "lamb",
-        "sweet"
-      ],
-      "rating": 4.5,
-      "reviews": 39
-    },
-    {
-      "id": "algeria-028",
-      "name": "Rfiss (Semolina Date Squares)",
+      "id": "algeria-016",
+      "name": "Tamina (Semolina and Honey Dessert)",
       "cuisine": "Algerian",
       "mealType": [
         "dessert",
         "snack"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 10,
-      "servings": 12,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Dates",
-          "amount": "1 cup",
-          "category": "fruit"
-        },
-        {
-          "name": "Butter",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Honey",
-          "amount": "1/4 cup",
-          "category": "sweetener"
-        }
-      ],
-      "instructions": [
-        "Toast semolina in butter.",
-        "Mix in dates and honey, press into pan and cut into squares."
-      ],
-      "nutrition": {
-        "calories": 160,
-        "protein": 2,
-        "carbs": 28,
-        "fat": 5,
-        "fiber": 2,
-        "sugar": 14,
-        "sodium": 30
-      },
-      "tags": [
-        "algerian",
-        "dessert",
-        "date"
-      ],
-      "rating": 4.6,
-      "reviews": 22
-    },
-    {
-      "id": "algeria-029",
-      "name": "Loubia (White Bean Stew)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "White beans",
-          "amount": "2 cups",
-          "category": "legume"
-        },
-        {
-          "name": "Tomato",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Garlic",
-          "amount": "2 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook beans until tender.",
-        "Add tomato, onion, garlic, and spices, simmer."
-      ],
-      "nutrition": {
-        "calories": 220,
-        "protein": 10,
-        "carbs": 38,
-        "fat": 2,
-        "fiber": 7,
-        "sugar": 4,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "stew",
-        "bean"
-      ],
-      "rating": 4.5,
-      "reviews": 25
-    },
-    {
-      "id": "algeria-030",
-      "name": "Karentika (Chickpea Pie)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "snack",
-        "lunch"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 40,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Chickpea flour",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Water",
-          "amount": "2.5 cups",
-          "category": "other"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "1/4 cup",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Mix all ingredients, pour into pan.",
-        "Bake until set and golden."
-      ],
-      "nutrition": {
-        "calories": 160,
-        "protein": 6,
-        "carbs": 18,
-        "fat": 7,
-        "fiber": 3,
-        "sugar": 1,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "pie",
-        "chickpea"
-      ],
-      "rating": 4.6,
-      "reviews": 31
-    },
-    {
-      "id": "algeria-031",
-      "name": "Boureks Annabi (Annaba-Style Bourek)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "snack",
-        "lunch"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 20,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Phyllo pastry",
-          "amount": "8 sheets",
-          "category": "grain"
-        },
-        {
-          "name": "Tuna",
-          "amount": "1 can",
-          "category": "protein"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Parsley",
-          "amount": "1/4 cup",
-          "category": "herb"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Mix tuna, egg, onion, parsley, and spices.",
-        "Wrap in pastry, fry until golden."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 8,
-        "carbs": 18,
-        "fat": 12,
-        "fiber": 1,
-        "sugar": 1,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "pastry",
-        "tuna"
-      ],
-      "rating": 4.5,
-      "reviews": 32
-    },
-    {
-      "id": "algeria-032",
-      "name": "Chorba Beida (White Chicken Soup)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Chicken",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Chickpeas",
-          "amount": "1 cup",
-          "category": "legume"
-        },
-        {
-          "name": "Celery",
-          "amount": "2 stalks",
-          "category": "vegetable"
-        },
-        {
-          "name": "Egg",
-          "amount": "1",
-          "category": "other"
-        },
-        {
-          "name": "Lemon",
-          "amount": "1",
-          "category": "fruit"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook chicken with onion, celery, and spices.",
-        "Add chickpeas, finish with egg and lemon."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 18,
-        "carbs": 10,
-        "fat": 8,
-        "fiber": 2,
-        "sugar": 2,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "soup",
-        "chicken"
-      ],
-      "rating": 4.6,
-      "reviews": 28
-    },
-    {
-      "id": "algeria-033",
-      "name": "Tajine Jelbana (Pea and Artichoke Stew)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Lamb",
-          "amount": "1.5 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Peas",
-          "amount": "2 cups",
-          "category": "vegetable"
-        },
-        {
-          "name": "Artichoke hearts",
-          "amount": "1 cup",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Carrot",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Parsley",
-          "amount": "1/4 cup",
-          "category": "herb"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Brown lamb with onion and spices.",
-        "Add peas, artichoke, carrot, and parsley, simmer."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 22,
-        "carbs": 18,
-        "fat": 16,
-        "fiber": 5,
-        "sugar": 5,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "stew",
-        "pea"
-      ],
-      "rating": 4.5,
-      "reviews": 21
-    },
-    {
-      "id": "algeria-034",
-      "name": "Boulfaf (Grilled Liver Skewers)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "snack",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 15,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Lamb liver",
-          "amount": "1.5 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Caul fat",
-          "amount": "as needed",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cut liver into cubes, season with spices.",
-        "Wrap in caul fat, skewer and grill."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 18,
-        "carbs": 2,
-        "fat": 12,
-        "fiber": 0,
-        "sugar": 0,
-        "sodium": 120
-      },
-      "tags": [
-        "algerian",
-        "grill",
-        "liver"
-      ],
-      "rating": 4.4,
-      "reviews": 19
-    },
-    {
-      "id": "algeria-035",
-      "name": "Griwech (Honey-Coated Pastry)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 20,
-      "servings": 16,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Butter",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Sesame seeds",
-          "amount": "1/4 cup",
-          "category": "seed"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Honey",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Mix flour, butter, egg, sesame, and sugar.",
-        "Shape, fry, and coat with honey."
-      ],
-      "nutrition": {
-        "calories": 140,
-        "protein": 2,
-        "carbs": 22,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 10,
-        "sodium": 30
-      },
-      "tags": [
-        "algerian",
-        "pastry",
-        "dessert"
-      ],
-      "rating": 4.7,
-      "reviews": 37
-    },
-    {
-      "id": "algeria-036",
-      "name": "Mhalbi (Rice Pudding)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 30,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Rice",
-          "amount": "1 cup",
-          "category": "grain"
-        },
-        {
-          "name": "Milk",
-          "amount": "4 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "2 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Cinnamon",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook rice in milk until soft.",
-        "Add sugar, orange blossom water, and cinnamon."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 4,
-        "carbs": 36,
-        "fat": 2,
-        "fiber": 1,
-        "sugar": 16,
-        "sodium": 60
-      },
-      "tags": [
-        "algerian",
-        "pudding",
-        "dessert"
-      ],
-      "rating": 4.6,
-      "reviews": 28
-    },
-    {
-      "id": "algeria-037",
-      "name": "Tcharek (Crescent Cookies)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 20,
-      "servings": 24,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Butter",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Almonds",
-          "amount": "1 cup",
-          "category": "nut"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "2 tbsp",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix flour, butter, sugar, and almonds.",
-        "Shape into crescents, bake, and dip in orange blossom syrup."
-      ],
-      "nutrition": {
-        "calories": 110,
-        "protein": 2,
-        "carbs": 14,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 6,
-        "sodium": 20
-      },
-      "tags": [
-        "algerian",
-        "cookie",
-        "dessert"
-      ],
-      "rating": 4.7,
-      "reviews": 33
-    },
-    {
-      "id": "algeria-038",
-      "name": "Boussou la tmessou (Powdered Sugar Cookies)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 15,
-      "servings": 24,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Butter",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Powdered sugar",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Almonds",
-          "amount": "1 cup",
-          "category": "nut"
-        }
-      ],
-      "instructions": [
-        "Mix flour, butter, sugar, and almonds.",
-        "Shape, bake, and roll in powdered sugar."
-      ],
-      "nutrition": {
-        "calories": 100,
-        "protein": 2,
-        "carbs": 12,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 6,
-        "sodium": 20
-      },
-      "tags": [
-        "algerian",
-        "cookie",
-        "dessert"
-      ],
-      "rating": 4.6,
-      "reviews": 27
-    },
-    {
-      "id": "algeria-039",
-      "name": "Khobz Eddar (Homemade Bread)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "side",
-        "breakfast"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 30,
-      "servings": 10,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "4 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Yeast",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Sugar",
-          "amount": "2 tbsp",
-          "category": "sweetener"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Water",
-          "amount": "2 cups",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix all ingredients, knead dough.",
-        "Let rise, shape, and bake until golden."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 5,
-        "carbs": 38,
-        "fat": 1,
-        "fiber": 2,
-        "sugar": 3,
-        "sodium": 120
-      },
-      "tags": [
-        "algerian",
-        "bread",
-        "side"
-      ],
-      "rating": 4.7,
-      "reviews": 41
-    },
-    {
-      "id": "algeria-040",
-      "name": "Mhadjeb b'Khlii (Flatbread with Preserved Meat)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Khlii (preserved meat)",
-          "amount": "1 cup",
-          "category": "protein"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "2 tbsp",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Prepare semolina dough, roll thin.",
-        "Cook filling of khlii, onion, and pepper.",
-        "Stuff dough, fold, and cook on griddle with olive oil."
-      ],
-      "nutrition": {
-        "calories": 340,
-        "protein": 10,
-        "carbs": 62,
-        "fat": 9,
-        "fiber": 5,
-        "sugar": 6,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "flatbread",
-        "meat"
-      ],
-      "rating": 4.6,
-      "reviews": 22
-    },
-    {
-      "id": "algeria-041",
-      "name": "Tajine Hlou (Sweet Tajine)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Lamb",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Prunes",
-          "amount": "1 cup",
-          "category": "fruit"
-        },
-        {
-          "name": "Apricots",
-          "amount": "1/2 cup",
-          "category": "fruit"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/4 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Cinnamon",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Butter",
-          "amount": "2 tbsp",
-          "category": "dairy"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Brown lamb in butter, add sugar, cinnamon, and salt.",
-        "Add prunes, apricots, and orange blossom water, simmer until tender and syrupy."
-      ],
-      "nutrition": {
-        "calories": 480,
-        "protein": 28,
-        "carbs": 48,
-        "fat": 18,
-        "fiber": 5,
-        "sugar": 28,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "lamb",
-        "sweet"
-      ],
-      "rating": 4.5,
-      "reviews": 39
-    },
-    {
-      "id": "algeria-042",
-      "name": "Khobz Mbesses (Semolina Skillet Bread)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "side",
-        "breakfast"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 20,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Semolina",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "1/4 cup",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Water",
-          "amount": "1 cup",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix semolina, oil, salt, and water to form dough.",
-        "Shape into rounds, cook on skillet until golden."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 6,
-        "carbs": 42,
-        "fat": 4,
-        "fiber": 2,
-        "sugar": 1,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "bread",
-        "side"
-      ],
-      "rating": 4.5,
-      "reviews": 35
-    },
-    {
-      "id": "algeria-043",
-      "name": "Tamina Bzima (Honey and Butter Semolina)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=400&h=300&fit=crop",
       "prepTime": 10,
       "cookTime": 10,
       "servings": 10,
@@ -2973,493 +946,6 @@
       ],
       "rating": 4.6,
       "reviews": 24
-    },
-    {
-      "id": "algeria-044",
-      "name": "Briouat (Sweet Almond Pastry)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 20,
-      "servings": 16,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Phyllo pastry",
-          "amount": "8 sheets",
-          "category": "grain"
-        },
-        {
-          "name": "Almonds",
-          "amount": "1 cup",
-          "category": "nut"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Butter",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Honey",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Mix almonds, sugar, and butter.",
-        "Wrap in pastry, fry, and coat with honey."
-      ],
-      "nutrition": {
-        "calories": 140,
-        "protein": 2,
-        "carbs": 22,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 10,
-        "sodium": 30
-      },
-      "tags": [
-        "algerian",
-        "pastry",
-        "dessert"
-      ],
-      "rating": 4.7,
-      "reviews": 37
-    },
-    {
-      "id": "algeria-045",
-      "name": "Maaqouda Batata (Potato Patties)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "snack",
-        "side"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Potato",
-          "amount": "3 large",
-          "category": "vegetable"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Parsley",
-          "amount": "1/4 cup",
-          "category": "herb"
-        },
-        {
-          "name": "Garlic",
-          "amount": "2 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Cumin",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Boil and mash potatoes, mix with other ingredients.",
-        "Form patties, fry in oil until golden."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 5,
-        "carbs": 32,
-        "fat": 4,
-        "fiber": 3,
-        "sugar": 2,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "fritter",
-        "vegetarian"
-      ],
-      "rating": 4.5,
-      "reviews": 33
-    },
-    {
-      "id": "algeria-046",
-      "name": "Tajine Kefta (Meatball Tagine)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 45,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Ground beef",
-          "amount": "1.5 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Tomato",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Parsley",
-          "amount": "1/4 cup",
-          "category": "herb"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Mix beef, onion, parsley, egg, and spices.",
-        "Form meatballs, cook in tomato sauce."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 18,
-        "carbs": 10,
-        "fat": 20,
-        "fiber": 2,
-        "sugar": 4,
-        "sodium": 320
-      },
-      "tags": [
-        "algerian",
-        "meatball",
-        "beef"
-      ],
-      "rating": 4.6,
-      "reviews": 29
-    },
-    {
-      "id": "algeria-047",
-      "name": "Tajine Zitoune (Chicken and Olive Tagine)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Chicken",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Green olives",
-          "amount": "1 cup",
-          "category": "other"
-        },
-        {
-          "name": "Carrot",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Lemon",
-          "amount": "1",
-          "category": "fruit"
-        },
-        {
-          "name": "Cilantro",
-          "amount": "2 tbsp",
-          "category": "herb"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Brown chicken with onion, carrot, and spices.",
-        "Add olives, lemon, and cilantro, simmer until chicken is tender."
-      ],
-      "nutrition": {
-        "calories": 340,
-        "protein": 28,
-        "carbs": 10,
-        "fat": 20,
-        "fiber": 3,
-        "sugar": 3,
-        "sodium": 540
-      },
-      "tags": [
-        "algerian",
-        "stew",
-        "chicken"
-      ],
-      "rating": 4.5,
-      "reviews": 31
-    },
-    {
-      "id": "algeria-048",
-      "name": "Bourak laadjine (Dough Bourek)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "snack",
-        "lunch"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 20,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Dough",
-          "amount": "8 pieces",
-          "category": "grain"
-        },
-        {
-          "name": "Ground beef",
-          "amount": "1 lb",
-          "category": "protein"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Parsley",
-          "amount": "1/4 cup",
-          "category": "herb"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Cook beef with onion and spices.",
-        "Wrap in dough, fry until golden."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 8,
-        "carbs": 18,
-        "fat": 12,
-        "fiber": 1,
-        "sugar": 1,
-        "sodium": 220
-      },
-      "tags": [
-        "algerian",
-        "pastry",
-        "beef"
-      ],
-      "rating": 4.5,
-      "reviews": 32
-    },
-    {
-      "id": "algeria-049",
-      "name": "Chbah Essafra (Almond and Egg Yolk Sweets)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 20,
-      "servings": 24,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Almonds",
-          "amount": "2 cups",
-          "category": "nut"
-        },
-        {
-          "name": "Egg yolks",
-          "amount": "8",
-          "category": "other"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Orange blossom water",
-          "amount": "2 tbsp",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix almonds, egg yolks, sugar, and orange blossom water.",
-        "Shape and bake until set."
-      ],
-      "nutrition": {
-        "calories": 90,
-        "protein": 2,
-        "carbs": 8,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 6,
-        "sodium": 10
-      },
-      "tags": [
-        "algerian",
-        "sweet",
-        "almond"
-      ],
-      "rating": 4.8,
-      "reviews": 18
-    },
-    {
-      "id": "algeria-050",
-      "name": "Mkhabez (Iced Almond Cookies)",
-      "cuisine": "Algerian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 20,
-      "servings": 24,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Almonds",
-          "amount": "2 cups",
-          "category": "nut"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Egg whites",
-          "amount": "4",
-          "category": "other"
-        },
-        {
-          "name": "Lemon zest",
-          "amount": "1 tbsp",
-          "category": "fruit"
-        },
-        {
-          "name": "Icing sugar",
-          "amount": "1 cup",
-          "category": "sweetener"
-        }
-      ],
-      "instructions": [
-        "Mix almonds, sugar, egg whites, and lemon zest.",
-        "Shape, bake, and ice with icing sugar."
-      ],
-      "nutrition": {
-        "calories": 100,
-        "protein": 2,
-        "carbs": 12,
-        "fat": 5,
-        "fiber": 1,
-        "sugar": 8,
-        "sodium": 10
-      },
-      "tags": [
-        "algerian",
-        "cookie",
-        "almond"
-      ],
-      "rating": 4.7,
-      "reviews": 21
     }
   ]
 }

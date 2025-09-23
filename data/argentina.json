@@ -10,7 +10,7 @@
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 120,
       "servings": 8,
@@ -80,7 +80,7 @@
         "lunch",
         "snack"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1596449189439-e420d43e0052?w=400&h=300&fit=crop",
       "prepTime": 40,
       "cookTime": 25,
       "servings": 12,
@@ -157,7 +157,7 @@
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1619221882157-1e3f5d0e5c80?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 30,
       "servings": 4,
@@ -227,6 +227,339 @@
       "reviews": 89
     },
     {
+      "id": "argentina-012",
+      "name": "Choripán",
+      "cuisine": "Argentinian",
+      "mealType": [
+        "lunch",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1612871689142-89f13f6d6f5a?w=400&h=300&fit=crop",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Chorizo sausages",
+          "amount": "6",
+          "category": "protein"
+        },
+        {
+          "name": "Crusty rolls",
+          "amount": "6",
+          "category": "grain"
+        },
+        {
+          "name": "Chimichurri sauce",
+          "amount": "1 cup",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Grill chorizo sausages, slice lengthwise.",
+        "Serve in rolls with chimichurri sauce."
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 14,
+        "carbs": 28,
+        "fat": 20,
+        "fiber": 2,
+        "sugar": 2,
+        "sodium": 620
+      },
+      "tags": [
+        "argentinian",
+        "sandwich",
+        "grilled"
+      ],
+      "rating": 4.8,
+      "reviews": 59
+    },
+    {
+      "id": "argentina-005",
+      "name": "Provoleta",
+      "cuisine": "Argentinian",
+      "mealType": [
+        "appetizer",
+        "side"
+      ],
+      "image": "https://images.unsplash.com/photo-1626957341926-98752de4f7d9?w=400&h=300&fit=crop",
+      "prepTime": 5,
+      "cookTime": 10,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": [
+        {
+          "name": "Provolone cheese",
+          "amount": "1 wheel (8 oz)",
+          "category": "dairy"
+        },
+        {
+          "name": "Oregano",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Red pepper flakes",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Place cheese on grill or skillet.",
+        "Sprinkle with oregano and red pepper flakes.",
+        "Grill until melted and golden."
+      ],
+      "nutrition": {
+        "calories": 220,
+        "protein": 16,
+        "carbs": 2,
+        "fat": 18,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 480
+      },
+      "tags": [
+        "argentinian",
+        "cheese",
+        "grilled"
+      ],
+      "rating": 4.8,
+      "reviews": 77
+    },
+    {
+      "id": "argentina-013",
+      "name": "Dulce de Leche Flan",
+      "cuisine": "Argentinian",
+      "mealType": [
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1600766421733-d7fec5b0c0c3?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 8,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "amount": "6",
+          "category": "other"
+        },
+        {
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Dulce de leche",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Vanilla extract",
+          "amount": "1 tsp",
+          "category": "other"
+        }
+      ],
+      "instructions": [
+        "Whisk eggs, milk, dulce de leche, sugar, and vanilla.",
+        "Pour into caramel-lined mold, bake in water bath until set."
+      ],
+      "nutrition": {
+        "calories": 260,
+        "protein": 7,
+        "carbs": 38,
+        "fat": 9,
+        "fiber": 0,
+        "sugar": 36,
+        "sodium": 120
+      },
+      "tags": [
+        "argentinian",
+        "dessert",
+        "flan"
+      ],
+      "rating": 4.9,
+      "reviews": 73
+    },
+    {
+      "id": "argentina-1758569719693-g70l553nl",
+      "name": "Alfajores",
+      "cuisine": "Argentina",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1604908815567-c9b24b7c2d16?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Alfajores from Argentina"
+    },
+    {
+      "id": "argentina-007",
+      "name": "Locro",
+      "cuisine": "Argentinian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 120,
+      "servings": 8,
+      "difficulty": "hard",
+      "ingredients": [
+        {
+          "name": "Pork shoulder",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Chorizo",
+          "amount": "1/2 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Corn",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "White beans",
+          "amount": "1 cup",
+          "category": "legume"
+        },
+        {
+          "name": "Pumpkin",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potato",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Paprika",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1.5 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Cook pork and chorizo with beans and corn.",
+        "Add pumpkin, potato, and spices, simmer until thick."
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 22,
+        "carbs": 38,
+        "fat": 16,
+        "fiber": 6,
+        "sugar": 6,
+        "sodium": 540
+      },
+      "tags": [
+        "argentinian",
+        "stew",
+        "pork"
+      ],
+      "rating": 4.8,
+      "reviews": 91
+    },
+    {
+      "id": "argentina-006",
+      "name": "Matambre a la Pizza",
+      "cuisine": "Argentinian",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 40,
+      "servings": 6,
+      "difficulty": "medium",
+      "ingredients": [
+        {
+          "name": "Flank steak",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mozzarella",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Oregano",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Red pepper flakes",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Salt",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
+      ],
+      "instructions": [
+        "Grill steak until almost cooked.",
+        "Top with tomato sauce, mozzarella, oregano, and pepper flakes.",
+        "Grill until cheese melts."
+      ],
+      "nutrition": {
+        "calories": 410,
+        "protein": 36,
+        "carbs": 4,
+        "fat": 28,
+        "fiber": 0,
+        "sugar": 2,
+        "sodium": 620
+      },
+      "tags": [
+        "argentinian",
+        "beef",
+        "pizza"
+      ],
+      "rating": 4.7,
+      "reviews": 68
+    },
+    {
       "id": "argentina-004",
       "name": "Chimichurri",
       "cuisine": "Argentinian",
@@ -234,7 +567,7 @@
         "side",
         "condiment"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1591214385560-d9ee27e5f4f8?w=400&h=300&fit=crop",
       "prepTime": 10,
       "cookTime": 0,
       "servings": 12,
@@ -304,743 +637,6 @@
       "reviews": 134
     },
     {
-      "id": "argentina-005",
-      "name": "Provoleta",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "appetizer",
-        "side"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 5,
-      "cookTime": 10,
-      "servings": 4,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Provolone cheese",
-          "amount": "1 wheel (8 oz)",
-          "category": "dairy"
-        },
-        {
-          "name": "Oregano",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Red pepper flakes",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Place cheese on grill or skillet.",
-        "Sprinkle with oregano and red pepper flakes.",
-        "Grill until melted and golden."
-      ],
-      "nutrition": {
-        "calories": 220,
-        "protein": 16,
-        "carbs": 2,
-        "fat": 18,
-        "fiber": 0,
-        "sugar": 0,
-        "sodium": 480
-      },
-      "tags": [
-        "argentinian",
-        "cheese",
-        "grilled"
-      ],
-      "rating": 4.8,
-      "reviews": 77
-    },
-    {
-      "id": "argentina-006",
-      "name": "Matambre a la Pizza",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 40,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Flank steak",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Tomato sauce",
-          "amount": "1 cup",
-          "category": "vegetable"
-        },
-        {
-          "name": "Mozzarella",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Oregano",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Red pepper flakes",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Grill steak until almost cooked.",
-        "Top with tomato sauce, mozzarella, oregano, and pepper flakes.",
-        "Grill until cheese melts."
-      ],
-      "nutrition": {
-        "calories": 410,
-        "protein": 36,
-        "carbs": 4,
-        "fat": 28,
-        "fiber": 0,
-        "sugar": 2,
-        "sodium": 620
-      },
-      "tags": [
-        "argentinian",
-        "beef",
-        "pizza"
-      ],
-      "rating": 4.7,
-      "reviews": 68
-    },
-    {
-      "id": "argentina-007",
-      "name": "Locro",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 120,
-      "servings": 8,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Pork shoulder",
-          "amount": "1 lb",
-          "category": "protein"
-        },
-        {
-          "name": "Chorizo",
-          "amount": "1/2 lb",
-          "category": "protein"
-        },
-        {
-          "name": "Corn",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "White beans",
-          "amount": "1 cup",
-          "category": "legume"
-        },
-        {
-          "name": "Pumpkin",
-          "amount": "2 cups",
-          "category": "vegetable"
-        },
-        {
-          "name": "Potato",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook pork and chorizo with beans and corn.",
-        "Add pumpkin, potato, and spices, simmer until thick."
-      ],
-      "nutrition": {
-        "calories": 390,
-        "protein": 22,
-        "carbs": 38,
-        "fat": 16,
-        "fiber": 6,
-        "sugar": 6,
-        "sodium": 540
-      },
-      "tags": [
-        "argentinian",
-        "stew",
-        "pork"
-      ],
-      "rating": 4.8,
-      "reviews": 91
-    },
-    {
-      "id": "argentina-008",
-      "name": "Fainá",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "side",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 20,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Chickpea flour",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Water",
-          "amount": "2 cups",
-          "category": "other"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "1/4 cup",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Mix chickpea flour, water, oil, salt, and pepper.",
-        "Bake in a hot oven until set and golden."
-      ],
-      "nutrition": {
-        "calories": 120,
-        "protein": 4,
-        "carbs": 18,
-        "fat": 4,
-        "fiber": 2,
-        "sugar": 1,
-        "sodium": 120
-      },
-      "tags": [
-        "argentinian",
-        "bread",
-        "chickpea"
-      ],
-      "rating": 4.6,
-      "reviews": 54
-    },
-    {
-      "id": "argentina-009",
-      "name": "Tarta Pascualina",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 50,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Pie crusts",
-          "amount": "2",
-          "category": "grain"
-        },
-        {
-          "name": "Spinach",
-          "amount": "1 lb",
-          "category": "vegetable"
-        },
-        {
-          "name": "Ricotta",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Egg",
-          "amount": "4",
-          "category": "other"
-        },
-        {
-          "name": "Parmesan",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook spinach and onion, mix with ricotta, parmesan, and seasonings.",
-        "Fill pie crust, make wells for eggs, cover with second crust.",
-        "Bake until golden."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 12,
-        "carbs": 28,
-        "fat": 18,
-        "fiber": 2,
-        "sugar": 2,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "pie",
-        "spinach"
-      ],
-      "rating": 4.7,
-      "reviews": 63
-    },
-    {
-      "id": "argentina-010",
-      "name": "Morcilla (Blood Sausage)",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Morcilla sausages",
-          "amount": "6",
-          "category": "protein"
-        }
-      ],
-      "instructions": [
-        "Grill morcilla sausages over medium heat until heated through and slightly crisp."
-      ],
-      "nutrition": {
-        "calories": 250,
-        "protein": 12,
-        "carbs": 6,
-        "fat": 20,
-        "fiber": 1,
-        "sugar": 1,
-        "sodium": 480
-      },
-      "tags": [
-        "argentinian",
-        "sausage",
-        "grilled"
-      ],
-      "rating": 4.5,
-      "reviews": 44
-    },
-    {
-      "id": "argentina-011",
-      "name": "Ensalada Rusa",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "side",
-        "salad"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 10,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Potatoes",
-          "amount": "3",
-          "category": "vegetable"
-        },
-        {
-          "name": "Carrots",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Peas",
-          "amount": "1 cup",
-          "category": "vegetable"
-        },
-        {
-          "name": "Mayonnaise",
-          "amount": "1 cup",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Boil potatoes and carrots until tender, dice.",
-        "Mix with peas, mayonnaise, salt, and pepper."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 3,
-        "carbs": 22,
-        "fat": 9,
-        "fiber": 3,
-        "sugar": 3,
-        "sodium": 320
-      },
-      "tags": [
-        "argentinian",
-        "salad",
-        "side"
-      ],
-      "rating": 4.6,
-      "reviews": 38
-    },
-    {
-      "id": "argentina-012",
-      "name": "Choripán",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 15,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Chorizo sausages",
-          "amount": "6",
-          "category": "protein"
-        },
-        {
-          "name": "Crusty rolls",
-          "amount": "6",
-          "category": "grain"
-        },
-        {
-          "name": "Chimichurri sauce",
-          "amount": "1 cup",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Grill chorizo sausages, slice lengthwise.",
-        "Serve in rolls with chimichurri sauce."
-      ],
-      "nutrition": {
-        "calories": 350,
-        "protein": 14,
-        "carbs": 28,
-        "fat": 20,
-        "fiber": 2,
-        "sugar": 2,
-        "sodium": 620
-      },
-      "tags": [
-        "argentinian",
-        "sandwich",
-        "grilled"
-      ],
-      "rating": 4.8,
-      "reviews": 59
-    },
-    {
-      "id": "argentina-013",
-      "name": "Dulce de Leche Flan",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "dessert"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Eggs",
-          "amount": "6",
-          "category": "other"
-        },
-        {
-          "name": "Milk",
-          "amount": "2 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Dulce de leche",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Vanilla extract",
-          "amount": "1 tsp",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Whisk eggs, milk, dulce de leche, sugar, and vanilla.",
-        "Pour into caramel-lined mold, bake in water bath until set."
-      ],
-      "nutrition": {
-        "calories": 260,
-        "protein": 7,
-        "carbs": 38,
-        "fat": 9,
-        "fiber": 0,
-        "sugar": 36,
-        "sodium": 120
-      },
-      "tags": [
-        "argentinian",
-        "dessert",
-        "flan"
-      ],
-      "rating": 4.9,
-      "reviews": 73
-    },
-    {
-      "id": "argentina-014",
-      "name": "Milanesa de Pollo",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 20,
-      "servings": 4,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Chicken breasts",
-          "amount": "4",
-          "category": "protein"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Breadcrumbs",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Dip chicken in egg and breadcrumbs, fry until golden."
-      ],
-      "nutrition": {
-        "calories": 340,
-        "protein": 28,
-        "carbs": 18,
-        "fat": 16,
-        "fiber": 1,
-        "sugar": 1,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "chicken",
-        "fried"
-      ],
-      "rating": 4.7,
-      "reviews": 52
-    },
-    {
-      "id": "argentina-015",
-      "name": "Tortilla de Papas",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 25,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Potatoes",
-          "amount": "3",
-          "category": "vegetable"
-        },
-        {
-          "name": "Eggs",
-          "amount": "4",
-          "category": "other"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Slice potatoes and onion, fry until soft.",
-        "Mix with eggs and salt, cook in skillet until set."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 7,
-        "carbs": 28,
-        "fat": 8,
-        "fiber": 2,
-        "sugar": 2,
-        "sodium": 220
-      },
-      "tags": [
-        "argentinian",
-        "omelette",
-        "potato"
-      ],
-      "rating": 4.6,
-      "reviews": 41
-    },
-    {
-      "id": "argentina-016",
-      "name": "Arroz con Leche",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 40,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Rice",
-          "amount": "1 cup",
-          "category": "grain"
-        },
-        {
-          "name": "Milk",
-          "amount": "4 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Cinnamon stick",
-          "amount": "1",
-          "category": "spice"
-        },
-        {
-          "name": "Lemon zest",
-          "amount": "1 tbsp",
-          "category": "fruit"
-        }
-      ],
-      "instructions": [
-        "Cook rice with milk, sugar, cinnamon, and lemon zest until creamy."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 4,
-        "carbs": 36,
-        "fat": 2,
-        "fiber": 1,
-        "sugar": 16,
-        "sodium": 60
-      },
-      "tags": [
-        "argentinian",
-        "dessert",
-        "rice"
-      ],
-      "rating": 4.8,
-      "reviews": 38
-    },
-    {
       "id": "argentina-017",
       "name": "Medialunas",
       "cuisine": "Argentinian",
@@ -1048,7 +644,7 @@
         "breakfast",
         "snack"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 20,
       "servings": 12,
@@ -1112,295 +708,64 @@
       "reviews": 49
     },
     {
-      "id": "argentina-018",
-      "name": "Puchero",
+      "id": "argentina-013",
+      "name": "Dulce de Leche Flan",
       "cuisine": "Argentinian",
       "mealType": [
-        "lunch",
-        "dinner"
+        "dessert"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 120,
+      "image": "https://images.unsplash.com/photo-1600766421733-d7fec5b0c0c3?w=400&h=300&fit=crop",
+      "prepTime": 20,
+      "cookTime": 60,
       "servings": 8,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Beef shank",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Potatoes",
-          "amount": "3",
-          "category": "vegetable"
-        },
-        {
-          "name": "Carrots",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Pumpkin",
-          "amount": "2 cups",
-          "category": "vegetable"
-        },
-        {
-          "name": "Corn on the cob",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Cabbage",
-          "amount": "1/2 head",
-          "category": "vegetable"
-        },
-        {
-          "name": "Chorizo",
-          "amount": "2",
-          "category": "protein"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Simmer beef and chorizo in water.",
-        "Add vegetables and cook until tender."
-      ],
-      "nutrition": {
-        "calories": 390,
-        "protein": 22,
-        "carbs": 38,
-        "fat": 16,
-        "fiber": 6,
-        "sugar": 6,
-        "sodium": 540
-      },
-      "tags": [
-        "argentinian",
-        "stew",
-        "beef"
-      ],
-      "rating": 4.7,
-      "reviews": 61
-    },
-    {
-      "id": "argentina-019",
-      "name": "Polenta con Tuco",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 40,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Polenta",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Ground beef",
-          "amount": "1 lb",
-          "category": "protein"
-        },
-        {
-          "name": "Tomato sauce",
-          "amount": "2 cups",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Garlic",
-          "amount": "2 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook polenta according to package.",
-        "Brown beef with onion and garlic, add tomato sauce and seasonings.",
-        "Serve sauce over polenta."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 14,
-        "carbs": 38,
-        "fat": 10,
-        "fiber": 3,
-        "sugar": 6,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "polenta",
-        "beef"
-      ],
-      "rating": 4.6,
-      "reviews": 44
-    },
-    {
-      "id": "argentina-020",
-      "name": "Canelones de Verdura",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 40,
-      "servings": 6,
       "difficulty": "medium",
       "ingredients": [
         {
-          "name": "Canelones pasta",
-          "amount": "12",
-          "category": "grain"
-        },
-        {
-          "name": "Spinach",
-          "amount": "1 lb",
-          "category": "vegetable"
-        },
-        {
-          "name": "Ricotta",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Egg",
-          "amount": "1",
+          "name": "Eggs",
+          "amount": "6",
           "category": "other"
         },
         {
-          "name": "Parmesan",
+          "name": "Milk",
+          "amount": "2 cups",
+          "category": "dairy"
+        },
+        {
+          "name": "Dulce de leche",
+          "amount": "1 cup",
+          "category": "sweetener"
+        },
+        {
+          "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "dairy"
+          "category": "sweetener"
         },
         {
-          "name": "Tomato sauce",
-          "amount": "2 cups",
-          "category": "vegetable"
-        },
-        {
-          "name": "Salt",
+          "name": "Vanilla extract",
           "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
+          "category": "other"
         }
       ],
       "instructions": [
-        "Cook spinach, mix with ricotta, egg, and parmesan.",
-        "Fill canelones, cover with tomato sauce, bake until golden."
+        "Whisk eggs, milk, dulce de leche, sugar, and vanilla.",
+        "Pour into caramel-lined mold, bake in water bath until set."
       ],
       "nutrition": {
-        "calories": 340,
-        "protein": 14,
-        "carbs": 48,
-        "fat": 10,
-        "fiber": 4,
-        "sugar": 6,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "pasta",
-        "spinach"
-      ],
-      "rating": 4.7,
-      "reviews": 39
-    },
-    {
-      "id": "argentina-021",
-      "name": "Fugazzeta",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 25,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Pizza dough",
-          "amount": "1 lb",
-          "category": "grain"
-        },
-        {
-          "name": "Mozzarella",
-          "amount": "2 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Onion",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "2 tbsp",
-          "category": "oil"
-        },
-        {
-          "name": "Oregano",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Spread dough in pan, top with mozzarella and onion.",
-        "Drizzle with oil, sprinkle with oregano and salt, bake until golden."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 12,
+        "calories": 260,
+        "protein": 7,
         "carbs": 38,
-        "fat": 14,
-        "fiber": 2,
-        "sugar": 3,
-        "sodium": 420
+        "fat": 9,
+        "fiber": 0,
+        "sugar": 36,
+        "sodium": 120
       },
       "tags": [
         "argentinian",
-        "pizza",
-        "cheese"
+        "dessert",
+        "flan"
       ],
-      "rating": 4.8,
-      "reviews": 55
+      "rating": 4.9,
+      "reviews": 73
     },
     {
       "id": "argentina-022",
@@ -1410,7 +775,7 @@
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=400&h=300&fit=crop",
       "prepTime": 40,
       "cookTime": 60,
       "servings": 8,
@@ -1474,1960 +839,58 @@
       "reviews": 37
     },
     {
-      "id": "argentina-023",
-      "name": "Suprema Maryland",
-      "cuisine": "Argentinian",
+      "id": "argentina-1758569719693-ydwlecw39",
+      "name": "Carbonada",
+      "cuisine": "Argentina",
       "mealType": [
         "lunch",
         "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 25,
-      "cookTime": 30,
-      "servings": 4,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Chicken breasts",
-          "amount": "4",
-          "category": "protein"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Breadcrumbs",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Banana",
-          "amount": "2",
-          "category": "fruit"
-        },
-        {
-          "name": "Peas",
-          "amount": "1 cup",
-          "category": "vegetable"
-        },
-        {
-          "name": "Ham",
-          "amount": "4 slices",
-          "category": "protein"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Bread and fry chicken, serve with fried banana, peas, and ham."
-      ],
-      "nutrition": {
-        "calories": 480,
-        "protein": 28,
-        "carbs": 32,
-        "fat": 24,
-        "fiber": 3,
-        "sugar": 8,
-        "sodium": 520
-      },
-      "tags": [
-        "argentinian",
-        "chicken",
-        "banana"
-      ],
-      "rating": 4.6,
-      "reviews": 29
-    },
-    {
-      "id": "argentina-024",
-      "name": "Revuelto Gramajo",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 15,
-      "servings": 4,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Potatoes",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Eggs",
-          "amount": "4",
-          "category": "other"
-        },
-        {
-          "name": "Ham",
-          "amount": "4 slices",
-          "category": "protein"
-        },
-        {
-          "name": "Peas",
-          "amount": "1/2 cup",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Fry potatoes, sauté onion and ham, add peas, scramble with eggs, season."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 14,
-        "carbs": 22,
-        "fat": 18,
-        "fiber": 3,
-        "sugar": 3,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "eggs",
-        "potato"
-      ],
-      "rating": 4.7,
-      "reviews": 33
-    },
-    {
-      "id": "argentina-025",
-      "name": "Pastel de Papa",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
       "prepTime": 30,
-      "cookTime": 45,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Potatoes",
-          "amount": "4",
-          "category": "vegetable"
-        },
-        {
-          "name": "Ground beef",
-          "amount": "1 lb",
-          "category": "protein"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Green olives",
-          "amount": "1/2 cup",
-          "category": "other"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook beef with onion and spices, layer with mashed potatoes, eggs, and olives, bake until golden."
-      ],
-      "nutrition": {
-        "calories": 410,
-        "protein": 18,
-        "carbs": 38,
-        "fat": 20,
-        "fiber": 4,
-        "sugar": 4,
-        "sodium": 480
-      },
-      "tags": [
-        "argentinian",
-        "beef",
-        "potato"
-      ],
-      "rating": 4.8,
-      "reviews": 41
-    },
-    {
-      "id": "argentina-026",
-      "name": "Vitel Toné",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "holiday"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 90,
-      "servings": 8,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Veal round",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Tuna",
-          "amount": "1 can",
-          "category": "protein"
-        },
-        {
-          "name": "Mayonnaise",
-          "amount": "1 cup",
-          "category": "other"
-        },
-        {
-          "name": "Capers",
-          "amount": "2 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Anchovy fillets",
-          "amount": "2",
-          "category": "protein"
-        },
-        {
-          "name": "Lemon juice",
-          "amount": "2 tbsp",
-          "category": "fruit"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Boil veal, slice thin. Blend tuna, mayonnaise, capers, anchovy, lemon juice, salt, and pepper for sauce. Serve veal with sauce."
-      ],
-      "nutrition": {
-        "calories": 350,
-        "protein": 24,
-        "carbs": 4,
-        "fat": 26,
-        "fiber": 0,
-        "sugar": 1,
-        "sodium": 540
-      },
-      "tags": [
-        "argentinian",
-        "veal",
-        "holiday"
-      ],
-      "rating": 4.7,
-      "reviews": 36
-    },
-    {
-      "id": "argentina-027",
-      "name": "Milanesa de Berenjena",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "vegetarian"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 25,
-      "servings": 4,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Eggplant",
-          "amount": "2 large",
-          "category": "vegetable"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Breadcrumbs",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Slice eggplant, dip in egg and breadcrumbs, fry until golden."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 5,
-        "carbs": 28,
-        "fat": 10,
-        "fiber": 6,
-        "sugar": 5,
-        "sodium": 320
-      },
-      "tags": [
-        "argentinian",
-        "vegetarian",
-        "fried"
-      ],
-      "rating": 4.6,
-      "reviews": 28
-    },
-    {
-      "id": "argentina-028",
-      "name": "Panqueques con Dulce de Leche",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 20,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "1 cup",
-          "category": "grain"
-        },
-        {
-          "name": "Milk",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Egg",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Butter",
-          "amount": "2 tbsp",
-          "category": "dairy"
-        },
-        {
-          "name": "Dulce de leche",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/4 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Mix flour, milk, eggs, and salt. Cook thin pancakes, fill with dulce de leche, roll up."
-      ],
-      "nutrition": {
-        "calories": 220,
-        "protein": 5,
-        "carbs": 36,
-        "fat": 7,
-        "fiber": 1,
-        "sugar": 18,
-        "sodium": 110
-      },
-      "tags": [
-        "argentinian",
-        "dessert",
-        "pancake"
-      ],
-      "rating": 4.8,
-      "reviews": 47
-    },
-    {
-      "id": "argentina-029",
-      "name": "Guiso de Lentejas",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 20,
       "cookTime": 60,
-      "servings": 6,
+      "servings": 4,
       "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Lentils",
-          "amount": "2 cups",
-          "category": "legume"
-        },
-        {
-          "name": "Chorizo",
-          "amount": "2",
-          "category": "protein"
-        },
-        {
-          "name": "Bacon",
-          "amount": "4 slices",
-          "category": "protein"
-        },
-        {
-          "name": "Carrot",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Potato",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Cook lentils with chorizo, bacon, and vegetables until thick and hearty."
-      ],
-      "nutrition": {
-        "calories": 340,
-        "protein": 18,
-        "carbs": 38,
-        "fat": 12,
-        "fiber": 8,
-        "sugar": 4,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "stew",
-        "lentils"
-      ],
-      "rating": 4.7,
-      "reviews": 34
-    },
-    {
-      "id": "argentina-030",
-      "name": "Chocotorta",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "dessert",
-        "holiday"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 0,
-      "servings": 12,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Chocolate cookies",
-          "amount": "2 packages",
-          "category": "grain"
-        },
-        {
-          "name": "Dulce de leche",
-          "amount": "2 cups",
-          "category": "sweetener"
-        },
-        {
-          "name": "Cream cheese",
-          "amount": "2 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Coffee",
-          "amount": "1 cup",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix dulce de leche and cream cheese. Dip cookies in coffee, layer with cream mixture, chill until set."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 5,
-        "carbs": 42,
-        "fat": 15,
-        "fiber": 2,
-        "sugar": 24,
-        "sodium": 180
-      },
-      "tags": [
-        "argentinian",
-        "dessert",
-        "cake"
-      ],
-      "rating": 4.9,
-      "reviews": 62
-    },
-    {
-      "id": "argentina-031",
-      "name": "Ensalada Criolla",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "side",
-        "salad"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 0,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Tomatoes",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "2 tbsp",
-          "category": "oil"
-        },
-        {
-          "name": "Vinegar",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Chop vegetables, toss with oil, vinegar, salt, and pepper."
-      ],
-      "nutrition": {
-        "calories": 90,
-        "protein": 2,
-        "carbs": 10,
-        "fat": 5,
-        "fiber": 2,
-        "sugar": 5,
-        "sodium": 120
-      },
-      "tags": [
-        "argentinian",
-        "salad",
-        "vegetable"
-      ],
-      "rating": 4.5,
-      "reviews": 21
-    },
-    {
-      "id": "argentina-032",
-      "name": "Pionono Salado",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "snack",
-        "party"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 25,
-      "cookTime": 10,
-      "servings": 8,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Pionono sponge cake",
-          "amount": "1",
-          "category": "grain"
-        },
-        {
-          "name": "Ham",
-          "amount": "8 slices",
-          "category": "protein"
-        },
-        {
-          "name": "Cheese",
-          "amount": "8 slices",
-          "category": "dairy"
-        },
-        {
-          "name": "Lettuce",
-          "amount": "4 leaves",
-          "category": "vegetable"
-        },
-        {
-          "name": "Mayonnaise",
-          "amount": "1/2 cup",
-          "category": "other"
-        },
-        {
-          "name": "Red bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        }
-      ],
-      "instructions": [
-        "Spread mayonnaise on pionono, layer with ham, cheese, lettuce, and pepper. Roll up and slice."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 9,
-        "carbs": 18,
-        "fat": 11,
-        "fiber": 1,
-        "sugar": 3,
-        "sodium": 340
-      },
-      "tags": [
-        "argentinian",
-        "party",
-        "sandwich"
-      ],
-      "rating": 4.6,
-      "reviews": 19
-    },
-    {
-      "id": "argentina-033",
-      "name": "Tarta de Jamón y Queso",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 40,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Pie crust",
-          "amount": "1",
-          "category": "grain"
-        },
-        {
-          "name": "Ham",
-          "amount": "8 slices",
-          "category": "protein"
-        },
-        {
-          "name": "Mozzarella",
-          "amount": "2 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Eggs",
-          "amount": "3",
-          "category": "other"
-        },
-        {
-          "name": "Milk",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Layer ham and cheese in crust, whisk eggs with milk and seasonings, pour over, bake until set."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 14,
-        "carbs": 22,
-        "fat": 18,
-        "fiber": 1,
-        "sugar": 3,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "pie",
-        "cheese"
-      ],
-      "rating": 4.7,
-      "reviews": 24
-    },
-    {
-      "id": "argentina-034",
-      "name": "Matambre Relleno",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "holiday"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 90,
-      "servings": 10,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Flank steak",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Carrots",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Spinach",
-          "amount": "1 cup",
-          "category": "vegetable"
-        },
-        {
-          "name": "Eggs",
-          "amount": "3",
-          "category": "other"
-        },
-        {
-          "name": "Red bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Olives",
-          "amount": "1/2 cup",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Layer steak with vegetables and eggs, roll up, tie, simmer until tender, slice to serve."
-      ],
-      "nutrition": {
-        "calories": 410,
-        "protein": 28,
-        "carbs": 8,
-        "fat": 30,
-        "fiber": 2,
-        "sugar": 2,
-        "sodium": 480
-      },
-      "tags": [
-        "argentinian",
-        "beef",
-        "holiday"
-      ],
-      "rating": 4.8,
-      "reviews": 27
-    },
-    {
-      "id": "argentina-035",
-      "name": "Bizcochitos de Grasa",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "breakfast",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 15,
-      "servings": 24,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Pork fat",
-          "amount": "1/2 cup",
-          "category": "fat"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Baking powder",
-          "amount": "1 tsp",
-          "category": "other"
-        },
-        {
-          "name": "Water",
-          "amount": "1/2 cup",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Mix ingredients, roll out, cut circles, bake until golden."
-      ],
-      "nutrition": {
-        "calories": 90,
-        "protein": 2,
-        "carbs": 12,
-        "fat": 4,
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
         "fiber": 0,
         "sugar": 0,
-        "sodium": 80
+        "sodium": 0
       },
-      "tags": [
-        "argentinian",
-        "pastry",
-        "breakfast"
-      ],
-      "rating": 4.5,
-      "reviews": 18
+      "tags": [],
+      "description": "Traditional Carbonada from Argentina"
     },
     {
-      "id": "argentina-036",
-      "name": "Helado Artesanal",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 0,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Milk",
-          "amount": "2 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Cream",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1/2 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Egg yolks",
-          "amount": "4",
-          "category": "other"
-        },
-        {
-          "name": "Vanilla extract",
-          "amount": "1 tsp",
-          "category": "other"
-        }
-      ],
-      "instructions": [
-        "Heat milk and cream, whisk yolks and sugar, combine, cook until thick, chill, churn, and freeze."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 5,
-        "carbs": 24,
-        "fat": 10,
-        "fiber": 0,
-        "sugar": 22,
-        "sodium": 60
-      },
-      "tags": [
-        "argentinian",
-        "dessert",
-        "ice cream"
-      ],
-      "rating": 4.9,
-      "reviews": 31
-    },
-    {
-      "id": "argentina-037",
-      "name": "Tarta de Verdura",
-      "cuisine": "Argentinian",
+      "id": "argentina-1758569719693-tcnpeyu8y",
+      "name": "Parrillada",
+      "cuisine": "Argentina",
       "mealType": [
         "lunch",
-        "dinner",
-        "vegetarian"
+        "dinner"
       ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 25,
-      "cookTime": 40,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Pie crust",
-          "amount": "1",
-          "category": "grain"
-        },
-        {
-          "name": "Chard",
-          "amount": "1 bunch",
-          "category": "vegetable"
-        },
-        {
-          "name": "Spinach",
-          "amount": "1 bunch",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Eggs",
-          "amount": "3",
-          "category": "other"
-        },
-        {
-          "name": "Ricotta",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Parmesan",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Sauté onion, chard, and spinach. Mix with ricotta, parmesan, eggs, and seasonings. Fill crust and bake until set."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 8,
-        "carbs": 18,
-        "fat": 12,
-        "fiber": 2,
-        "sugar": 2,
-        "sodium": 320
-      },
-      "tags": [
-        "argentinian",
-        "pie",
-        "vegetarian"
-      ],
-      "rating": 4.6,
-      "reviews": 22
-    },
-    {
-      "id": "argentina-038",
-      "name": "Tortas Fritas",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "breakfast",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 20,
-      "servings": 12,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Pork fat",
-          "amount": "1/2 cup",
-          "category": "fat"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Baking powder",
-          "amount": "1 tsp",
-          "category": "other"
-        },
-        {
-          "name": "Water",
-          "amount": "1/2 cup",
-          "category": "other"
-        },
-        {
-          "name": "Oil",
-          "amount": "for frying",
-          "category": "oil"
-        }
-      ],
-      "instructions": [
-        "Mix ingredients, roll out, cut circles, fry until golden."
-      ],
-      "nutrition": {
-        "calories": 120,
-        "protein": 2,
-        "carbs": 18,
-        "fat": 5,
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
         "fiber": 0,
         "sugar": 0,
-        "sodium": 90
+        "sodium": 0
       },
-      "tags": [
-        "argentinian",
-        "fried",
-        "pastry"
-      ],
-      "rating": 4.7,
-      "reviews": 25
-    },
-    {
-      "id": "argentina-039",
-      "name": "Empanadas de Humita",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "snack",
-        "vegetarian"
-      ],
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 25,
-      "servings": 12,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Empanada dough",
-          "amount": "12 discs",
-          "category": "grain"
-        },
-        {
-          "name": "Corn",
-          "amount": "2 cups",
-          "category": "vegetable"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Butter",
-          "amount": "2 tbsp",
-          "category": "dairy"
-        },
-        {
-          "name": "Milk",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1 tbsp",
-          "category": "sweetener"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Sauté onion in butter, add corn, milk, sugar, salt, and paprika. Fill dough, seal, and bake until golden."
-      ],
-      "nutrition": {
-        "calories": 180,
-        "protein": 5,
-        "carbs": 28,
-        "fat": 6,
-        "fiber": 2,
-        "sugar": 4,
-        "sodium": 180
-      },
-      "tags": [
-        "argentinian",
-        "empanada",
-        "vegetarian"
-      ],
-      "rating": 4.8,
-      "reviews": 20
-    },
-    {
-      "id": "argentina-040",
-      "name": "Lengua a la Vinagreta",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "appetizer"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 120,
-      "servings": 8,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Beef tongue",
-          "amount": "1",
-          "category": "protein"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Carrot",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Celery",
-          "amount": "1 stalk",
-          "category": "vegetable"
-        },
-        {
-          "name": "Vinegar",
-          "amount": "1 cup",
-          "category": "other"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "1/2 cup",
-          "category": "oil"
-        },
-        {
-          "name": "Salt",
-          "amount": "1.5 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Boil tongue with vegetables, peel and slice. Marinate in vinegar, oil, salt, and pepper. Serve cold."
-      ],
-      "nutrition": {
-        "calories": 260,
-        "protein": 18,
-        "carbs": 4,
-        "fat": 18,
-        "fiber": 1,
-        "sugar": 2,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "beef",
-        "appetizer"
-      ],
-      "rating": 4.5,
-      "reviews": 14
-    },
-    {
-      "id": "argentina-041",
-      "name": "Budín de Pan",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 60,
-      "servings": 10,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Stale bread",
-          "amount": "6 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Milk",
-          "amount": "3 cups",
-          "category": "dairy"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Eggs",
-          "amount": "4",
-          "category": "other"
-        },
-        {
-          "name": "Vanilla extract",
-          "amount": "1 tsp",
-          "category": "other"
-        },
-        {
-          "name": "Raisins",
-          "amount": "1/2 cup",
-          "category": "fruit"
-        }
-      ],
-      "instructions": [
-        "Soak bread in milk, mix with sugar, eggs, vanilla, and raisins. Bake in caramel-lined pan until set."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 6,
-        "carbs": 38,
-        "fat": 4,
-        "fiber": 1,
-        "sugar": 22,
-        "sodium": 120
-      },
-      "tags": [
-        "argentinian",
-        "dessert",
-        "bread pudding"
-      ],
-      "rating": 4.8,
-      "reviews": 23
-    },
-    {
-      "id": "argentina-042",
-      "name": "Mbejú",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "breakfast",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 10,
-      "servings": 4,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Cassava starch",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Cheese",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Butter",
-          "amount": "3 tbsp",
-          "category": "dairy"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Mix all ingredients, cook in skillet until golden on both sides."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 5,
-        "carbs": 32,
-        "fat": 8,
-        "fiber": 1,
-        "sugar": 1,
-        "sodium": 180
-      },
-      "tags": [
-        "argentinian",
-        "cassava",
-        "cheese"
-      ],
-      "rating": 4.5,
-      "reviews": 12
-    },
-    {
-      "id": "argentina-043",
-      "name": "Arrollado de Pollo",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner",
-        "holiday"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 40,
-      "cookTime": 60,
-      "servings": 8,
-      "difficulty": "hard",
-      "ingredients": [
-        {
-          "name": "Chicken breast",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Carrots",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Red bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Eggs",
-          "amount": "3",
-          "category": "other"
-        },
-        {
-          "name": "Ham",
-          "amount": "6 slices",
-          "category": "protein"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Flatten chicken, layer with ham, vegetables, and eggs, roll up, wrap, and bake until set."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 28,
-        "carbs": 6,
-        "fat": 18,
-        "fiber": 1,
-        "sugar": 2,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "chicken",
-        "holiday"
-      ],
-      "rating": 4.6,
-      "reviews": 17
-    },
-    {
-      "id": "argentina-044",
-      "name": "Ñoquis de Papa",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Potatoes",
-          "amount": "2 lbs",
-          "category": "vegetable"
-        },
-        {
-          "name": "Flour",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Egg",
-          "amount": "1",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Boil and mash potatoes, mix with flour, egg, and salt, shape into gnocchi, boil until they float."
-      ],
-      "nutrition": {
-        "calories": 220,
-        "protein": 6,
-        "carbs": 44,
-        "fat": 1,
-        "fiber": 2,
-        "sugar": 1,
-        "sodium": 120
-      },
-      "tags": [
-        "argentinian",
-        "pasta",
-        "potato"
-      ],
-      "rating": 4.8,
-      "reviews": 29
-    },
-    {
-      "id": "argentina-045",
-      "name": "Rosca de Pascua",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "breakfast",
-        "dessert",
-        "holiday"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 30,
-      "servings": 10,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "3 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Milk",
-          "amount": "1 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Butter",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Eggs",
-          "amount": "3",
-          "category": "other"
-        },
-        {
-          "name": "Yeast",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Orange zest",
-          "amount": "1 tbsp",
-          "category": "fruit"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Mix ingredients, knead dough, let rise, shape into ring, bake until golden, decorate with pastry cream."
-      ],
-      "nutrition": {
-        "calories": 260,
-        "protein": 6,
-        "carbs": 44,
-        "fat": 7,
-        "fiber": 1,
-        "sugar": 18,
-        "sodium": 110
-      },
-      "tags": [
-        "argentinian",
-        "bread",
-        "holiday"
-      ],
-      "rating": 4.7,
-      "reviews": 21
-    },
-    {
-      "id": "argentina-046",
-      "name": "Ensalada de Palmitos",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "side",
-        "salad"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 10,
-      "cookTime": 0,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Hearts of palm",
-          "amount": "1 can",
-          "category": "vegetable"
-        },
-        {
-          "name": "Lettuce",
-          "amount": "1 head",
-          "category": "vegetable"
-        },
-        {
-          "name": "Tomatoes",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Mayonnaise",
-          "amount": "1/2 cup",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/4 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Slice hearts of palm and tomatoes, toss with lettuce, mayonnaise, salt, and pepper."
-      ],
-      "nutrition": {
-        "calories": 110,
-        "protein": 2,
-        "carbs": 8,
-        "fat": 8,
-        "fiber": 2,
-        "sugar": 3,
-        "sodium": 140
-      },
-      "tags": [
-        "argentinian",
-        "salad",
-        "vegetable"
-      ],
-      "rating": 4.4,
-      "reviews": 10
-    },
-    {
-      "id": "argentina-047",
-      "name": "Tarta de Atún",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 40,
-      "servings": 8,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Pie crust",
-          "amount": "1",
-          "category": "grain"
-        },
-        {
-          "name": "Canned tuna",
-          "amount": "2 cans",
-          "category": "protein"
-        },
-        {
-          "name": "Onion",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Red bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Eggs",
-          "amount": "2",
-          "category": "other"
-        },
-        {
-          "name": "Olives",
-          "amount": "1/2 cup",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Sauté onion and pepper, mix with tuna, eggs, olives, and seasonings. Fill crust and bake until set."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 12,
-        "carbs": 18,
-        "fat": 10,
-        "fiber": 2,
-        "sugar": 2,
-        "sodium": 320
-      },
-      "tags": [
-        "argentinian",
-        "pie",
-        "tuna"
-      ],
-      "rating": 4.5,
-      "reviews": 13
-    },
-    {
-      "id": "argentina-048",
-      "name": "Ensalada de Remolacha y Huevo",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "side",
-        "salad"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 15,
-      "cookTime": 20,
-      "servings": 6,
-      "difficulty": "easy",
-      "ingredients": [
-        {
-          "name": "Beets",
-          "amount": "3",
-          "category": "vegetable"
-        },
-        {
-          "name": "Eggs",
-          "amount": "3",
-          "category": "other"
-        },
-        {
-          "name": "Olive oil",
-          "amount": "2 tbsp",
-          "category": "oil"
-        },
-        {
-          "name": "Vinegar",
-          "amount": "1 tbsp",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/4 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Boil beets and eggs, slice, toss with oil, vinegar, salt, and pepper."
-      ],
-      "nutrition": {
-        "calories": 90,
-        "protein": 4,
-        "carbs": 10,
-        "fat": 4,
-        "fiber": 2,
-        "sugar": 6,
-        "sodium": 110
-      },
-      "tags": [
-        "argentinian",
-        "salad",
-        "beet"
-      ],
-      "rating": 4.3,
-      "reviews": 8
-    },
-    {
-      "id": "argentina-049",
-      "name": "Pollo al Disco",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "lunch",
-        "dinner"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 30,
-      "cookTime": 60,
-      "servings": 6,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Chicken pieces",
-          "amount": "2 lbs",
-          "category": "protein"
-        },
-        {
-          "name": "Onion",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Red bell pepper",
-          "amount": "1",
-          "category": "vegetable"
-        },
-        {
-          "name": "Tomatoes",
-          "amount": "2",
-          "category": "vegetable"
-        },
-        {
-          "name": "Garlic",
-          "amount": "3 cloves",
-          "category": "vegetable"
-        },
-        {
-          "name": "White wine",
-          "amount": "1 cup",
-          "category": "other"
-        },
-        {
-          "name": "Paprika",
-          "amount": "1 tbsp",
-          "category": "spice"
-        },
-        {
-          "name": "Salt",
-          "amount": "1 tsp",
-          "category": "spice"
-        },
-        {
-          "name": "Black pepper",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Brown chicken, add vegetables and wine, season, simmer until tender."
-      ],
-      "nutrition": {
-        "calories": 320,
-        "protein": 28,
-        "carbs": 8,
-        "fat": 18,
-        "fiber": 2,
-        "sugar": 4,
-        "sodium": 420
-      },
-      "tags": [
-        "argentinian",
-        "chicken",
-        "stew"
-      ],
-      "rating": 4.6,
-      "reviews": 15
-    },
-    {
-      "id": "argentina-050",
-      "name": "Budín Marmolado",
-      "cuisine": "Argentinian",
-      "mealType": [
-        "dessert",
-        "snack"
-      ],
-      "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&h=300&fit=crop",
-      "prepTime": 20,
-      "cookTime": 50,
-      "servings": 10,
-      "difficulty": "medium",
-      "ingredients": [
-        {
-          "name": "Flour",
-          "amount": "2 cups",
-          "category": "grain"
-        },
-        {
-          "name": "Sugar",
-          "amount": "1 cup",
-          "category": "sweetener"
-        },
-        {
-          "name": "Butter",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Eggs",
-          "amount": "3",
-          "category": "other"
-        },
-        {
-          "name": "Milk",
-          "amount": "1/2 cup",
-          "category": "dairy"
-        },
-        {
-          "name": "Cocoa powder",
-          "amount": "1/4 cup",
-          "category": "other"
-        },
-        {
-          "name": "Baking powder",
-          "amount": "1 tsp",
-          "category": "other"
-        },
-        {
-          "name": "Vanilla extract",
-          "amount": "1 tsp",
-          "category": "other"
-        },
-        {
-          "name": "Salt",
-          "amount": "1/2 tsp",
-          "category": "spice"
-        }
-      ],
-      "instructions": [
-        "Mix ingredients, separate part and add cocoa, swirl together, bake until set."
-      ],
-      "nutrition": {
-        "calories": 210,
-        "protein": 4,
-        "carbs": 32,
-        "fat": 8,
-        "fiber": 1,
-        "sugar": 14,
-        "sodium": 120
-      },
-      "tags": [
-        "argentinian",
-        "cake",
-        "dessert"
-      ],
-      "rating": 4.7,
-      "reviews": 11
+      "tags": [],
+      "description": "Traditional Parrillada from Argentina"
     }
   ]
 }

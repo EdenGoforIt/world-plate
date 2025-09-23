@@ -6,19 +6,47 @@
       "id": "chile-001",
       "name": "Empanadas",
       "cuisine": "Chilean",
-      "mealType": ["lunch", "dinner", "snack"],
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      "mealType": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "image": "https://images.unsplash.com/photo-1596449189439-e420d43e0052?w=400&h=300&fit=crop",
       "prepTime": 45,
       "cookTime": 25,
       "servings": 8,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Empanada dough", "amount": "2 lbs", "category": "grain" },
-        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
-        { "name": "Onions", "amount": "3 large", "category": "vegetable" },
-        { "name": "Hard-boiled eggs", "amount": "4", "category": "protein" },
-        { "name": "Black olives", "amount": "1/2 cup", "category": "other" },
-        { "name": "Cumin", "amount": "1 tsp", "category": "spice" }
+        {
+          "name": "Empanada dough",
+          "amount": "2 lbs",
+          "category": "grain"
+        },
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Onions",
+          "amount": "3 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Hard-boiled eggs",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Black olives",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cumin",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Cook beef with onions and spices",
@@ -37,29 +65,95 @@
         "sugar": 3,
         "sodium": 520
       },
-      "tags": ["chilean", "pastry", "handheld"],
+      "tags": [
+        "chilean",
+        "pastry",
+        "handheld"
+      ],
       "rating": 4.4,
       "reviews": 173
+    },
+    {
+      "id": "chile-1758569719700-z8vprfan1",
+      "name": "Pastel de Choclo",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Pastel de Choclo from Chile"
     },
     {
       "id": "chile-002",
       "name": "Cazuela de Cordero",
       "cuisine": "Chilean",
-      "mealType": ["lunch", "dinner"],
-      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 90,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Lamb shoulder", "amount": "2 lbs", "category": "protein" },
-        { "name": "Pumpkin", "amount": "2 cups", "category": "vegetable" },
-        { "name": "Green beans", "amount": "1 cup", "category": "vegetable" },
-        { "name": "Corn on the cob", "amount": "2 ears", "category": "vegetable" },
-        { "name": "Potatoes", "amount": "4 medium", "category": "vegetable" },
-        { "name": "Rice", "amount": "1/2 cup", "category": "grain" },
-        { "name": "Paprika", "amount": "1 tsp", "category": "spice" },
-        { "name": "Cilantro", "amount": "1/4 cup", "category": "vegetable" }
+        {
+          "name": "Lamb shoulder",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Pumpkin",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Green beans",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "Corn on the cob",
+          "amount": "2 ears",
+          "category": "vegetable"
+        },
+        {
+          "name": "Potatoes",
+          "amount": "4 medium",
+          "category": "vegetable"
+        },
+        {
+          "name": "Rice",
+          "amount": "1/2 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Paprika",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1/4 cup",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Brown lamb pieces in large pot",
@@ -79,28 +173,144 @@
         "sugar": 8,
         "sodium": 680
       },
-      "tags": ["chilean", "stew", "comfort-food"],
+      "tags": [
+        "chilean",
+        "stew",
+        "comfort-food"
+      ],
       "rating": 4.5,
       "reviews": 124
+    },
+    {
+      "id": "chile-1758569719700-f0459axe4",
+      "name": "Completo",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1612871689353-cccf581d667b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Completo from Chile"
+    },
+    {
+      "id": "chile-1758569719700-cgb9guzvb",
+      "name": "Chorrillana",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1604262513031-396cf15f93e0?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Chorrillana from Chile"
+    },
+    {
+      "id": "chile-1758569719700-d7miblo3n",
+      "name": "Curanto",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1633358784480-850b44fc7754?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Curanto from Chile"
     },
     {
       "id": "chile-003",
       "name": "Sopaipillas",
       "cuisine": "Chilean",
-      "mealType": ["snack", "dessert"],
-      "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
+      "mealType": [
+        "snack",
+        "dessert"
+      ],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
       "prepTime": 45,
       "cookTime": 15,
       "servings": 8,
       "difficulty": "easy",
       "ingredients": [
-        { "name": "Pumpkin puree", "amount": "1 cup", "category": "vegetable" },
-        { "name": "All-purpose flour", "amount": "2 cups", "category": "grain" },
-        { "name": "Baking powder", "amount": "1 tsp", "category": "other" },
-        { "name": "Salt", "amount": "1/2 tsp", "category": "spice" },
-        { "name": "Butter", "amount": "2 tbsp", "category": "dairy" },
-        { "name": "Vegetable oil", "amount": "2 cups", "category": "other" },
-        { "name": "Honey", "amount": "1/2 cup", "category": "other" }
+        {
+          "name": "Pumpkin puree",
+          "amount": "1 cup",
+          "category": "vegetable"
+        },
+        {
+          "name": "All-purpose flour",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Baking powder",
+          "amount": "1 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Salt",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Vegetable oil",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Honey",
+          "amount": "1/2 cup",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Mix pumpkin puree with flour, baking powder, and salt",
@@ -120,9 +330,230 @@
         "sugar": 16,
         "sodium": 180
       },
-      "tags": ["chilean", "fried", "sweet", "pumpkin"],
+      "tags": [
+        "chilean",
+        "fried",
+        "sweet",
+        "pumpkin"
+      ],
       "rating": 4.6,
       "reviews": 198
+    },
+    {
+      "id": "chile-1758569719700-3aylaw4po",
+      "name": "Alfajor",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1604908815567-c9b24b7c2d16?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Alfajor from Chile"
+    },
+    {
+      "id": "chile-1758569719700-7vpu09s3z",
+      "name": "Porotos Granados",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Porotos Granados from Chile"
+    },
+    {
+      "id": "chile-1758569719700-hmu5tooht",
+      "name": "Charquicán",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603134281085-49c7c3f5c8da?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Charquicán from Chile"
+    },
+    {
+      "id": "chile-1758569719700-s2cdr103p",
+      "name": "Pisco Sour",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Pisco Sour from Chile"
+    },
+    {
+      "id": "chile-1758569719700-1hdg5llpk",
+      "name": "Mote con Huesillo",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1597131628347-c769fc3defb4?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Mote con Huesillo from Chile"
+    },
+    {
+      "id": "chile-1758569719700-6lyasrgob",
+      "name": "Manjar",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Manjar from Chile"
+    },
+    {
+      "id": "chile-1758569719700-d44xtwmue",
+      "name": "Congrio Frito",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Congrio Frito from Chile"
+    },
+    {
+      "id": "chile-1758569719700-3h8bqk2fc",
+      "name": "Caldillo de Congrio",
+      "cuisine": "Chile",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Caldillo de Congrio from Chile"
     }
   ]
 }

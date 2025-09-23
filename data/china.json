@@ -3,22 +3,103 @@
   "flag": "🇨🇳",
   "recipes": [
     {
+      "id": "china-1758569719700-b79toluvo",
+      "name": "Peking Duck",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1588783948922-d2f155b13c89?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Peking Duck from China"
+    },
+    {
+      "id": "china-1758569719700-91fbpa39z",
+      "name": "Xiaolongbao",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Xiaolongbao from China"
+    },
+    {
       "id": "china-001",
       "name": "Kung Pao Chicken",
       "cuisine": "Chinese",
-      "mealType": ["lunch", "dinner"],
-      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 10,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Chicken breast", "amount": "1 lb", "category": "protein" },
-        { "name": "Peanuts", "amount": "1/2 cup", "category": "other" },
-        { "name": "Dried chilies", "amount": "8", "category": "spice" },
-        { "name": "Soy sauce", "amount": "3 tbsp", "category": "other" },
-        { "name": "Rice vinegar", "amount": "2 tbsp", "category": "other" },
-        { "name": "Green onions", "amount": "3", "category": "vegetable" }
+        {
+          "name": "Chicken breast",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Peanuts",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Dried chilies",
+          "amount": "8",
+          "category": "spice"
+        },
+        {
+          "name": "Soy sauce",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Rice vinegar",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Green onions",
+          "amount": "3",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Dice chicken into small cubes",
@@ -37,7 +118,11 @@
         "sugar": 6,
         "sodium": 890
       },
-      "tags": ["spicy", "chinese", "stir-fry"],
+      "tags": [
+        "spicy",
+        "chinese",
+        "stir-fry"
+      ],
       "rating": 4.6,
       "reviews": 187
     },
@@ -45,21 +130,56 @@
       "id": "china-002",
       "name": "Mapo Tofu",
       "cuisine": "Chinese",
-      "mealType": ["lunch", "dinner"],
-      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1617692855027-33b14f061079?w=400&h=300&fit=crop",
       "prepTime": 10,
       "cookTime": 15,
       "servings": 4,
       "difficulty": "easy",
       "ingredients": [
-        { "name": "Silken tofu", "amount": "1 lb", "category": "protein" },
-        { "name": "Ground pork", "amount": "4 oz", "category": "protein" },
-        { "name": "Doubanjiang", "amount": "2 tbsp", "category": "other" },
-        { "name": "Soy sauce", "amount": "2 tbsp", "category": "other" },
-        { "name": "Sichuan peppercorns", "amount": "1 tsp", "category": "spice" },
-        { "name": "Green onions", "amount": "3", "category": "vegetable" },
-        { "name": "Garlic", "amount": "3 cloves", "category": "vegetable" },
-        { "name": "Ginger", "amount": "1 inch", "category": "vegetable" }
+        {
+          "name": "Silken tofu",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Ground pork",
+          "amount": "4 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Doubanjiang",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Soy sauce",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Sichuan peppercorns",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Green onions",
+          "amount": "3",
+          "category": "vegetable"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Ginger",
+          "amount": "1 inch",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Cut tofu into small cubes",
@@ -79,29 +199,123 @@
         "sugar": 3,
         "sodium": 920
       },
-      "tags": ["spicy", "chinese", "sichuan", "tofu"],
+      "tags": [
+        "spicy",
+        "chinese",
+        "sichuan",
+        "tofu"
+      ],
       "rating": 4.4,
       "reviews": 203
+    },
+    {
+      "id": "china-1758569719700-yd6w8fwlf",
+      "name": "Dumplings",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Dumplings from China"
+    },
+    {
+      "id": "china-1758569719700-1qyw6rnv7",
+      "name": "Fried Rice",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Fried Rice from China"
     },
     {
       "id": "china-003",
       "name": "Sweet and Sour Pork",
       "cuisine": "Chinese",
-      "mealType": ["lunch", "dinner"],
-      "image": "https://images.unsplash.com/photo-1559847844-d90be0a4c1ad?w=400&h=300&fit=crop",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1529193037184-103f6b0d220c?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 15,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Pork tenderloin", "amount": "1 lb", "category": "protein" },
-        { "name": "Bell peppers", "amount": "2", "category": "vegetable" },
-        { "name": "Pineapple chunks", "amount": "1 cup", "category": "other" },
-        { "name": "Rice vinegar", "amount": "3 tbsp", "category": "other" },
-        { "name": "Sugar", "amount": "4 tbsp", "category": "other" },
-        { "name": "Cornstarch", "amount": "1/2 cup", "category": "other" },
-        { "name": "Egg", "amount": "1", "category": "protein" },
-        { "name": "Ketchup", "amount": "3 tbsp", "category": "other" }
+        {
+          "name": "Pork tenderloin",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Bell peppers",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Pineapple chunks",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Rice vinegar",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Sugar",
+          "amount": "4 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Cornstarch",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Egg",
+          "amount": "1",
+          "category": "protein"
+        },
+        {
+          "name": "Ketchup",
+          "amount": "3 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Cut pork into bite-sized pieces",
@@ -121,9 +335,230 @@
         "sugar": 34,
         "sodium": 480
       },
-      "tags": ["sweet", "chinese", "pork", "crispy"],
+      "tags": [
+        "sweet",
+        "chinese",
+        "pork",
+        "crispy"
+      ],
       "rating": 4.3,
       "reviews": 167
+    },
+    {
+      "id": "china-1758569719700-ssv31xyzm",
+      "name": "Chow Mein",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Chow Mein from China"
+    },
+    {
+      "id": "china-1758569719700-69h1rk9vj",
+      "name": "Spring Rolls",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Spring Rolls from China"
+    },
+    {
+      "id": "china-1758569719700-cd7q4jp58",
+      "name": "Hot Pot",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1625398407796-82650a8c135f?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Hot Pot from China"
+    },
+    {
+      "id": "china-1758569719700-2id5ru3av",
+      "name": "Wontons",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1612116968884-a431f8ad5833?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Wontons from China"
+    },
+    {
+      "id": "china-1758569719700-0sdfyulkv",
+      "name": "Char Siu",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1529193037184-103f6b0d220c?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Char Siu from China"
+    },
+    {
+      "id": "china-1758569719700-6ovvaez74",
+      "name": "Century Egg",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1600304173308-6d2ce6f85e4d?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Century Egg from China"
+    },
+    {
+      "id": "china-1758569719700-eszvjr7o9",
+      "name": "Zhajiangmian",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Zhajiangmian from China"
+    },
+    {
+      "id": "china-1758569719700-42sq1rk8a",
+      "name": "Dan Dan Noodles",
+      "cuisine": "China",
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
+      "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&h=300&fit=crop",
+      "prepTime": 30,
+      "cookTime": 60,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": [],
+      "instructions": [],
+      "nutritionalInfo": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "tags": [],
+      "description": "Traditional Dan Dan Noodles from China"
     }
   ]
 }
