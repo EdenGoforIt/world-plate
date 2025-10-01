@@ -128,11 +128,13 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
             </View>
           </View>
           
-          <View className="px-2 py-1 rounded-lg self-start" style={{ backgroundColor: Colors.background }}>
-            <Text className="text-xs font-medium" style={{ color: Colors.text }}>
-              {recipe.nutrition.calories} cal • {recipe.nutrition.protein}g protein
-            </Text>
-          </View>
+          {recipe.nutrition && (
+            <View className="px-2 py-1 rounded-lg self-start" style={{ backgroundColor: Colors.background }}>
+              <Text className="text-xs font-medium" style={{ color: Colors.text }}>
+                {recipe.nutrition.calories} cal • {recipe.nutrition.protein}g protein
+              </Text>
+            </View>
+          )}
         </View>
       </View>
     </TouchableOpacity>
