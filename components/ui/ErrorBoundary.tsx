@@ -1,7 +1,14 @@
-import NetInfo from '@react-native-community/netinfo';
-import { Ionicons } from '@expo/vector-icons';
-import * as Clipboard from 'expo-clipboard';
-import React, { Component, createContext, ErrorInfo, ReactNode, useContext, useCallback, useMemo } from 'react';
+import { Ionicons } from "@expo/vector-icons";
+import NetInfo from "@react-native-community/netinfo";
+import * as Clipboard from "expo-clipboard";
+import React, {
+  Component,
+  createContext,
+  ErrorInfo,
+  ReactNode,
+  useContext,
+  useMemo,
+} from "react";
 import {
   AccessibilityInfo,
   ActivityIndicator,
@@ -12,9 +19,8 @@ import {
   TouchableOpacity,
   Vibration,
   View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 interface Props {
   children: ReactNode;
@@ -80,19 +86,18 @@ interface ErrorContextValue {
 }
 
 interface ErrorRecoveryStrategy {
-  type: 'immediate' | 'exponential' | 'linear';
+  type: "immediate" | "exponential" | "linear";
   maxDelay?: number;
   baseDelay?: number;
   maxRetries?: number;
 }
-
 
 const ErrorContext = createContext<ErrorContextValue | null>(null);
 
 export const useErrorBoundary = () => {
   const context = useContext(ErrorContext);
   if (!context) {
-    throw new Error('useErrorBoundary must be used within ErrorBoundary');
+    throw new Error("useErrorBoundary must be used within ErrorBoundary");
   }
 
   return useMemo(
@@ -103,12 +108,18 @@ export const useErrorBoundary = () => {
       clearError: context.clearError,
       reportError: context.reportError,
     }),
-    [context.hasError, context.error, context.retry, context.clearError, context.reportError]
+    [
+      context.hasError,
+      context.error,
+      context.retry,
+      context.clearError,
+      context.reportError,
+    ]
   );
 };
 
 export class ErrorBoundary extends Component<Props, State> {
-  static displayName = 'ErrorBoundary';
+  static displayName = "ErrorBoundary";
   private fadeAnim: Animated.Value;
   private shakeAnim: Animated.Value;
   private readonly maxRetries: number;
@@ -117,7 +128,11 @@ export class ErrorBoundary extends Component<Props, State> {
   private errorMetrics: ErrorMetrics;
   private lastErrorTime: number = 0;
   private errorFrequencyThreshold = 5000; // 5 seconds
-  private recoveryStrategy: ErrorRecoveryStrategy = { type: 'exponential', baseDelay: 1000, maxDelay: 30000 };
+  private recoveryStrategy: ErrorRecoveryStrategy = {
+    type: "exponential",
+    baseDelay: 1000,
+    maxDelay: 30000,
+  };
 
   constructor(props: Props) {
     super(props);
@@ -159,7 +174,7 @@ export class ErrorBoundary extends Component<Props, State> {
     // Announce to screen readers
     if (this.state.hasError) {
       AccessibilityInfo.announceForAccessibility(
-        'An error has occurred. Error recovery options are available.'
+        "An error has occurred. Error recovery options are available."
       );
     }
   }
@@ -181,7 +196,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('ErrorBoundary caught an error:', error, errorInfo);
+    console.error("ErrorBoundary caught an error:", error, errorInfo);
 
     // Update metrics
     this.updateErrorMetrics(error);
@@ -190,7 +205,7 @@ export class ErrorBoundary extends Component<Props, State> {
     const isFrequentError = this.detectErrorPattern(error);
 
     // Vibrate on error if enabled
-    if (this.props.enableVibration && Platform.OS !== 'web') {
+    if (this.props.enableVibration && Platform.OS !== "web") {
       Vibration.vibrate(500);
     }
 
@@ -201,12 +216,15 @@ export class ErrorBoundary extends Component<Props, State> {
     this.props.onError?.(error, errorInfo);
 
     // Update error history
-    const errorHistory = [...this.state.errorHistory, {
-      error,
-      timestamp: new Date(),
-      recovered: false,
-      retryCount: this.state.retryCount,
-    }].slice(-10); // Keep last 10 errors
+    const errorHistory = [
+      ...this.state.errorHistory,
+      {
+        error,
+        timestamp: new Date(),
+        recovered: false,
+        retryCount: this.state.retryCount,
+      },
+    ].slice(-10); // Keep last 10 errors
 
     this.setState({
       error,
@@ -246,7 +264,11 @@ export class ErrorBoundary extends Component<Props, State> {
     ]).start();
 
     // Attempt auto-recovery for transient errors
-    if (this.props.enableAutoRecovery && this.isTransientError(error) && !isFrequentError) {
+    if (
+      this.props.enableAutoRecovery &&
+      this.isTransientError(error) &&
+      !isFrequentError
+    ) {
       this.scheduleAutoRetry();
     }
   }
@@ -266,15 +288,18 @@ export class ErrorBoundary extends Component<Props, State> {
 
     // Log to console in development
     if (__DEV__) {
-      console.group('🚨 Error Report');
-      console.error('Error:', error);
-      console.error('Error Info:', errorInfo);
-      console.error('Retry Count:', this.state.retryCount);
-      console.error('Network Status:', this.state.isOnline ? 'Online' : 'Offline');
-      console.error('Device:', errorReport.deviceInfo);
-      console.error('Timestamp:', errorReport.timestamp);
+      console.group("🚨 Error Report");
+      console.error("Error:", error);
+      console.error("Error Info:", errorInfo);
+      console.error("Retry Count:", this.state.retryCount);
+      console.error(
+        "Network Status:",
+        this.state.isOnline ? "Online" : "Offline"
+      );
+      console.error("Device:", errorReport.deviceInfo);
+      console.error("Timestamp:", errorReport.timestamp);
       if (this.props.enableMetrics) {
-        console.error('Metrics:', this.errorMetrics);
+        console.error("Metrics:", this.errorMetrics);
       }
       console.groupEnd();
     }
@@ -285,7 +310,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
   private sendToErrorTrackingService = (errorReport: ErrorReport) => {
     // Sentry Integration
-    if (typeof window !== 'undefined' && (window as any).Sentry) {
+    if (typeof window !== "undefined" && (window as any).Sentry) {
       (window as any).Sentry.captureException(errorReport.error, {
         contexts: {
           react: {
@@ -303,7 +328,7 @@ export class ErrorBoundary extends Component<Props, State> {
     }
 
     // Bugsnag Integration
-    if (typeof window !== 'undefined' && (window as any).Bugsnag) {
+    if (typeof window !== "undefined" && (window as any).Bugsnag) {
       (window as any).Bugsnag.notify(errorReport.error, {
         metadata: {
           react: errorReport.errorInfo,
@@ -315,8 +340,8 @@ export class ErrorBoundary extends Component<Props, State> {
     }
 
     // Custom Analytics Integration
-    if (typeof window !== 'undefined' && (window as any).analytics) {
-      (window as any).analytics.track('Error Boundary Triggered', {
+    if (typeof window !== "undefined" && (window as any).analytics) {
+      (window as any).analytics.track("Error Boundary Triggered", {
         errorName: errorReport.error.name,
         errorMessage: errorReport.error.message,
         errorType: this.getErrorType(errorReport.error),
@@ -337,7 +362,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
     // Log metrics periodically
     if (this.props.enableMetrics && this.errorMetrics.totalErrors % 5 === 0) {
-      console.log('Error Metrics Update:', this.errorMetrics);
+      console.log("Error Metrics Update:", this.errorMetrics);
     }
   };
 
@@ -348,7 +373,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
     // Check if errors are happening too frequently
     if (timeSinceLastError < this.errorFrequencyThreshold) {
-      console.warn('Frequent errors detected. Disabling auto-recovery.');
+      console.warn("Frequent errors detected. Disabling auto-recovery.");
       return true;
     }
 
@@ -374,8 +399,8 @@ export class ErrorBoundary extends Component<Props, State> {
       /ETIMEDOUT/i,
     ];
 
-    return transientPatterns.some(pattern =>
-      pattern.test(error.name) || pattern.test(error.message)
+    return transientPatterns.some(
+      (pattern) => pattern.test(error.name) || pattern.test(error.message)
     );
   };
 
@@ -399,13 +424,13 @@ export class ErrorBoundary extends Component<Props, State> {
 
     let delay: number;
     switch (type) {
-      case 'exponential':
+      case "exponential":
         delay = Math.min(baseDelay * Math.pow(2, retryCount), maxDelay);
         break;
-      case 'linear':
+      case "linear":
         delay = Math.min(baseDelay * (retryCount + 1), maxDelay);
         break;
-      case 'immediate':
+      case "immediate":
       default:
         delay = this.props.autoRetryDelay ?? baseDelay;
         break;
@@ -416,48 +441,48 @@ export class ErrorBoundary extends Component<Props, State> {
 
   private handleAutoRecovery = () => {
     if (this.state.retryCount < this.maxRetries) {
-      console.log('Network restored. Attempting recovery...');
+      console.log("Network restored. Attempting recovery...");
       setTimeout(() => this.handleReset(), 1000);
     }
   };
 
   private getErrorType = (error: Error): string => {
     const errorTypeMap: Record<string, string> = {
-      'ChunkLoadError': 'chunk_load',
-      'NetworkError': 'network',
-      'TypeError': 'type',
-      'ReferenceError': 'reference',
-      'SyntaxError': 'syntax',
+      ChunkLoadError: "chunk_load",
+      NetworkError: "network",
+      TypeError: "type",
+      ReferenceError: "reference",
+      SyntaxError: "syntax",
     };
 
     if (errorTypeMap[error.name]) {
       return errorTypeMap[error.name];
     }
 
-    if (error.message.includes('Loading chunk')) {
-      return 'chunk_load';
+    if (error.message.includes("Loading chunk")) {
+      return "chunk_load";
     }
-    if (error.message.includes('fetch') || error.message.includes('network')) {
-      return 'network';
+    if (error.message.includes("fetch") || error.message.includes("network")) {
+      return "network";
     }
 
-    return 'generic';
+    return "generic";
   };
 
   private getRecoveryMessage = (): string => {
     const errorType = this.getErrorType(this.state.error!);
 
     switch (errorType) {
-      case 'chunk_load':
-        return 'This might be a temporary loading issue. Please refresh the page.';
-      case 'network':
-        return 'Please check your internet connection and try again.';
-      case 'type':
-        return 'An unexpected error occurred. Our team has been notified.';
+      case "chunk_load":
+        return "This might be a temporary loading issue. Please refresh the page.";
+      case "network":
+        return "Please check your internet connection and try again.";
+      case "type":
+        return "An unexpected error occurred. Our team has been notified.";
       default:
-        return 'We apologize for the inconvenience. An unexpected error occurred while loading this screen.';
+        return "We apologize for the inconvenience. An unexpected error occurred while loading this screen.";
     }
-  }
+  };
 
   handleReset = () => {
     const { retryCount, errorHistory } = this.state;
@@ -466,7 +491,7 @@ export class ErrorBoundary extends Component<Props, State> {
       console.warn(`Maximum retry attempts (${this.maxRetries}) reached`);
       this.errorMetrics.failedRecoveries++;
       AccessibilityInfo.announceForAccessibility(
-        'Maximum retry attempts reached. Please report this issue.'
+        "Maximum retry attempts reached. Please report this issue."
       );
       return;
     }
@@ -492,7 +517,7 @@ export class ErrorBoundary extends Component<Props, State> {
       isAutoRetrying: false,
     });
 
-    AccessibilityInfo.announceForAccessibility('Retrying...');
+    AccessibilityInfo.announceForAccessibility("Retrying...");
   };
 
   private clearError = () => {
@@ -514,7 +539,7 @@ export class ErrorBoundary extends Component<Props, State> {
       platformVersion: Platform.Version,
       networkStatus: this.state.isOnline,
       errorType: this.getErrorType(this.state.error!),
-      errorHistory: this.state.errorHistory.map(e => ({
+      errorHistory: this.state.errorHistory.map((e) => ({
         error: e.error.toString(),
         timestamp: e.timestamp,
         recovered: e.recovered,
@@ -528,8 +553,10 @@ export class ErrorBoundary extends Component<Props, State> {
 
     try {
       await Clipboard.setStringAsync(errorDetails);
-      console.log('Error details copied to clipboard');
-      AccessibilityInfo.announceForAccessibility('Error details copied to clipboard');
+      console.log("Error details copied to clipboard");
+      AccessibilityInfo.announceForAccessibility(
+        "Error details copied to clipboard"
+      );
 
       // Send to error tracking service
       this.sendToErrorTrackingService({
@@ -543,14 +570,14 @@ export class ErrorBoundary extends Component<Props, State> {
         },
         networkStatus: this.state.isOnline,
         stackTrace: this.state.error?.stack,
-        environment: __DEV__ ? 'development' : 'production',
+        environment: __DEV__ ? "development" : "production",
       });
     } catch (clipboardError) {
-      console.error('Failed to copy error details:', clipboardError);
+      console.error("Failed to copy error details:", clipboardError);
     }
 
     if (__DEV__) {
-      console.log('Error report generated:', errorDetails);
+      console.log("Error report generated:", errorDetails);
     }
   };
 
@@ -583,7 +610,7 @@ export class ErrorBoundary extends Component<Props, State> {
               style={{
                 opacity: this.fadeAnim,
                 flex: 1,
-                transform: [{ translateX: this.shakeAnim }]
+                transform: [{ translateX: this.shakeAnim }],
               }}
             >
               {!isOnline && (
@@ -601,134 +628,162 @@ export class ErrorBoundary extends Component<Props, State> {
                 accessibilityRole="alert"
                 accessibilityLabel="Error screen"
               >
-              <View className="flex-1 justify-center items-center py-12">
-                <View className="bg-red-100 rounded-full p-6 mb-6">
-                  <Ionicons
-                    name={errorType === 'network' ? 'wifi-outline' : 'warning-outline'}
-                    size={48}
-                    color="#EF4444"
-                  />
-                </View>
+                <View className="flex-1 justify-center items-center py-12">
+                  <View className="bg-red-100 rounded-full p-6 mb-6">
+                    <Ionicons
+                      name={
+                        errorType === "network"
+                          ? "wifi-outline"
+                          : "warning-outline"
+                      }
+                      size={48}
+                      color="#EF4444"
+                    />
+                  </View>
 
-                <Text className="text-2xl font-bold text-text text-center mb-3">
-                  {errorType === 'network' ? 'Connection Problem' : 'Oops! Something went wrong'}
-                </Text>
+                  <Text className="text-2xl font-bold text-text text-center mb-3">
+                    {errorType === "network"
+                      ? "Connection Problem"
+                      : "Oops! Something went wrong"}
+                  </Text>
 
-                <Text className="text-base text-text opacity-70 text-center mb-8 leading-6">
-                  {this.getRecoveryMessage()}
-                </Text>
+                  <Text className="text-base text-text opacity-70 text-center mb-8 leading-6">
+                    {this.getRecoveryMessage()}
+                  </Text>
 
-                {!isMaxRetriesReached && (
-                  <TouchableOpacity
-                    onPress={this.handleReset}
-                    disabled={isAutoRetrying || !isOnline}
-                    className={`rounded-xl px-6 py-3 mb-3 ${
-                      isAutoRetrying || !isOnline
-                        ? 'bg-gray-400'
-                        : 'bg-primary'
-                    }`}
-                    accessible={true}
-                    accessibilityRole="button"
-                    accessibilityLabel="Retry button"
-                    accessibilityHint="Tap to retry loading the screen"
-                  >
-                    {isAutoRetrying ? (
-                      <View className="flex-row items-center justify-center">
-                        <ActivityIndicator size="small" color="white" />
-                        <Text className="text-white font-semibold text-base ml-2">
-                          Auto-retrying...
-                        </Text>
-                      </View>
-                    ) : (
-                      <Text className="text-white font-semibold text-base">
-                        {!isOnline ? 'Waiting for connection...' :
-                         `Try Again ${this.state.retryCount > 0 ? `(${this.state.retryCount}/${this.maxRetries})` : ''}`}
-                      </Text>
-                    )}
-                  </TouchableOpacity>
-                )}
-
-                {isMaxRetriesReached && (
-                  <View className="items-center">
-                    <Text className="text-sm text-red-600 mb-4">
-                      Maximum retry attempts reached
-                    </Text>
+                  {!isMaxRetriesReached && (
                     <TouchableOpacity
-                      onPress={this.handleReportIssue}
-                      className="border border-primary rounded-xl px-6 py-3"
+                      onPress={this.handleReset}
+                      disabled={isAutoRetrying || !isOnline}
+                      className={`rounded-xl px-6 py-3 mb-3 ${
+                        isAutoRetrying || !isOnline
+                          ? "bg-gray-400"
+                          : "bg-primary"
+                      }`}
                       accessible={true}
                       accessibilityRole="button"
-                      accessibilityLabel="Report issue button"
+                      accessibilityLabel="Retry button"
+                      accessibilityHint="Tap to retry loading the screen"
                     >
-                      <Text className="text-primary font-semibold text-base">Report Issue</Text>
-                    </TouchableOpacity>
-                  </View>
-                )}
-
-                {__DEV__ && this.state.error && (
-                  <View className="bg-gray-100 rounded-xl p-4 w-full mt-6">
-                    <View className="flex-row items-center mb-2">
-                      <Text className="text-xs font-semibold text-gray-600 mr-2">ERROR TYPE:</Text>
-                      <Text className="text-xs font-mono text-red-600">{errorType.toUpperCase()}</Text>
-                    </View>
-
-                    <View className="flex-row items-center mb-2">
-                      <Text className="text-xs font-semibold text-gray-600 mr-2">NETWORK:</Text>
-                      <Text className="text-xs font-mono text-gray-600">
-                        {isOnline ? '✅ Online' : '❌ Offline'}
-                      </Text>
-                    </View>
-
-                    <Text className="text-sm font-mono text-red-600 mb-2">
-                      {this.state.error.toString()}
-                    </Text>
-
-                    {this.state.errorTimestamp && (
-                      <Text className="text-xs text-gray-500 mb-2">
-                        Occurred at: {this.state.errorTimestamp.toLocaleTimeString()}
-                      </Text>
-                    )}
-
-                    {this.state.errorHistory.length > 1 && (
-                      <View className="mb-2">
-                        <Text className="text-xs font-semibold text-gray-600 mb-1">
-                          ERROR HISTORY ({this.state.errorHistory.length}):
-                        </Text>
-                        {this.state.errorHistory.slice(-3).map((item, index) => (
-                          <Text key={index} className="text-xs text-gray-500">
-                            • {item.error.name} at {item.timestamp.toLocaleTimeString()}
-                            {item.recovered ? ' ✅' : ' ❌'}
+                      {isAutoRetrying ? (
+                        <View className="flex-row items-center justify-center">
+                          <ActivityIndicator size="small" color="white" />
+                          <Text className="text-white font-semibold text-base ml-2">
+                            Auto-retrying...
                           </Text>
-                        ))}
-                      </View>
-                    )}
+                        </View>
+                      ) : (
+                        <Text className="text-white font-semibold text-base">
+                          {!isOnline
+                            ? "Waiting for connection..."
+                            : `Try Again ${
+                                this.state.retryCount > 0
+                                  ? `(${this.state.retryCount}/${this.maxRetries})`
+                                  : ""
+                              }`}
+                        </Text>
+                      )}
+                    </TouchableOpacity>
+                  )}
 
-                    {this.props.enableMetrics && (
-                      <View className="mb-2">
-                        <Text className="text-xs font-semibold text-gray-600 mb-1">METRICS:</Text>
-                        <Text className="text-xs text-gray-500">
-                          Total: {this.errorMetrics.totalErrors} |
-                          Recovered: {this.errorMetrics.recoveredErrors} |
-                          Failed: {this.errorMetrics.failedRecoveries}
+                  {isMaxRetriesReached && (
+                    <View className="items-center">
+                      <Text className="text-sm text-red-600 mb-4">
+                        Maximum retry attempts reached
+                      </Text>
+                      <TouchableOpacity
+                        onPress={this.handleReportIssue}
+                        className="border border-primary rounded-xl px-6 py-3"
+                        accessible={true}
+                        accessibilityRole="button"
+                        accessibilityLabel="Report issue button"
+                      >
+                        <Text className="text-primary font-semibold text-base">
+                          Report Issue
+                        </Text>
+                      </TouchableOpacity>
+                    </View>
+                  )}
+
+                  {__DEV__ && this.state.error && (
+                    <View className="bg-gray-100 rounded-xl p-4 w-full mt-6">
+                      <View className="flex-row items-center mb-2">
+                        <Text className="text-xs font-semibold text-gray-600 mr-2">
+                          ERROR TYPE:
+                        </Text>
+                        <Text className="text-xs font-mono text-red-600">
+                          {errorType.toUpperCase()}
                         </Text>
                       </View>
-                    )}
 
-                    {this.state.errorInfo && (
-                      <ScrollView className="max-h-32" nestedScrollEnabled>
+                      <View className="flex-row items-center mb-2">
+                        <Text className="text-xs font-semibold text-gray-600 mr-2">
+                          NETWORK:
+                        </Text>
                         <Text className="text-xs font-mono text-gray-600">
-                          {this.state.errorInfo.componentStack}
+                          {isOnline ? "✅ Online" : "❌ Offline"}
                         </Text>
-                      </ScrollView>
-                    )}
-                  </View>
-                )}
-              </View>
-            </ScrollView>
-          </Animated.View>
-        </SafeAreaView>
-      </ErrorContext.Provider>
-    );
+                      </View>
+
+                      <Text className="text-sm font-mono text-red-600 mb-2">
+                        {this.state.error.toString()}
+                      </Text>
+
+                      {this.state.errorTimestamp && (
+                        <Text className="text-xs text-gray-500 mb-2">
+                          Occurred at:{" "}
+                          {this.state.errorTimestamp.toLocaleTimeString()}
+                        </Text>
+                      )}
+
+                      {this.state.errorHistory.length > 1 && (
+                        <View className="mb-2">
+                          <Text className="text-xs font-semibold text-gray-600 mb-1">
+                            ERROR HISTORY ({this.state.errorHistory.length}):
+                          </Text>
+                          {this.state.errorHistory
+                            .slice(-3)
+                            .map((item, index) => (
+                              <Text
+                                key={index}
+                                className="text-xs text-gray-500"
+                              >
+                                • {item.error.name} at{" "}
+                                {item.timestamp.toLocaleTimeString()}
+                                {item.recovered ? " ✅" : " ❌"}
+                              </Text>
+                            ))}
+                        </View>
+                      )}
+
+                      {this.props.enableMetrics && (
+                        <View className="mb-2">
+                          <Text className="text-xs font-semibold text-gray-600 mb-1">
+                            METRICS:
+                          </Text>
+                          <Text className="text-xs text-gray-500">
+                            Total: {this.errorMetrics.totalErrors} | Recovered:{" "}
+                            {this.errorMetrics.recoveredErrors} | Failed:{" "}
+                            {this.errorMetrics.failedRecoveries}
+                          </Text>
+                        </View>
+                      )}
+
+                      {this.state.errorInfo && (
+                        <ScrollView className="max-h-32" nestedScrollEnabled>
+                          <Text className="text-xs font-mono text-gray-600">
+                            {this.state.errorInfo.componentStack}
+                          </Text>
+                        </ScrollView>
+                      )}
+                    </View>
+                  )}
+                </View>
+              </ScrollView>
+            </Animated.View>
+          </SafeAreaView>
+        </ErrorContext.Provider>
+      );
     }
 
     return (
