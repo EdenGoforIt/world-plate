@@ -1,25 +1,26 @@
-import { LinearGradient } from 'expo-linear-gradient';
-import LottieView from 'lottie-react-native';
-import React from 'react';
-import { ActivityIndicator, Text, View } from 'react-native';
+import { LinearGradient } from "expo-linear-gradient";
+import React from "react";
+import { ActivityIndicator, Text, View } from "react-native";
 
-import { Colors } from '@/constants/Colors';
+import { Colors } from "@/constants/Colors";
 
 interface LoadingScreenProps {
   message?: string;
   fullScreen?: boolean;
 }
 
-export const LoadingScreen: React.FC<LoadingScreenProps> = ({ 
-  message = 'Loading...', 
-  fullScreen = true 
+export const LoadingScreen: React.FC<LoadingScreenProps> = ({
+  message = "Loading...",
+  fullScreen = true,
 }) => {
-  const containerClass = fullScreen ? 'flex-1' : 'py-20';
-  
+  const containerClass = fullScreen ? "flex-1" : "py-20";
+
   return (
-    <View className={`${containerClass} justify-center items-center bg-background`}>
+    <View
+      className={`${containerClass} justify-center items-center bg-background`}
+    >
       <LinearGradient
-        colors={[Colors.primary + '20', Colors.secondary + '20']}
+        colors={[Colors.primary + "20", Colors.secondary + "20"]}
         className="w-32 h-32 rounded-full justify-center items-center mb-4"
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
@@ -40,13 +41,13 @@ interface LoadingSkeletonProps {
 
 export const LoadingSkeleton: React.FC<LoadingSkeletonProps> = ({
   height = 20,
-  width = '100%',
+  width = "100%",
   borderRadius = 8,
   marginBottom = 0,
 }) => {
   return (
     <LinearGradient
-      colors={['#E1E8ED', '#F7F9FA', '#E1E8ED']}
+      colors={["#E1E8ED", "#F7F9FA", "#E1E8ED"]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 0 }}
       style={{
