@@ -4,7 +4,7 @@ import { Review, RecipeRating } from '@/types/Review';
 
 const REVIEWS_KEY = 'user_reviews';
 
-export const useReviews = () => {
+export const useReviews = (recipeId?: string) => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -39,24 +39,11 @@ export const useReviews = () => {
     }
   };
 
-  const addReview = async (
-    recipeId: string,
-    recipeName: string,
-    rating: number,
-    comment: string,
-    images?: string[]
-  ): Promise<Review> => {
+  const addReview = async (review: Review): Promise<Review> => {
     const newReview: Review = {
-      id: Date.now().toString(),
-      recipeId,
-      recipeName,
-      userName: 'You', // In a real app, this would come from user profile
-      rating,
-      comment,
-      images: images || [],
+      ...review,
       createdAt: new Date(),
       updatedAt: new Date(),
-      helpful: 0
     };
 
     const updatedReviews = [...reviews, newReview];
