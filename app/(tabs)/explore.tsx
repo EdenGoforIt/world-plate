@@ -52,7 +52,7 @@ export default function ExploreScreen() {
         setRecipes(allCountryRecipes);
         setLoading(false);
       } catch (error) {
-        console.error('Error loading recipes:', error);
+        // Error loading recipes
         setLoading(false);
       }
     };

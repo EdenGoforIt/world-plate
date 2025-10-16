@@ -47,7 +47,7 @@ export default function HomeScreen() {
   };
   const { recommendations, loading, refreshRecommendations } =
     useDailyRecommendations();
-  const { recipes, loading: recipesLoading } = useRecipes();
+  const { recipes } = useRecipes();
   const [selectedCategory, setSelectedCategory] = useState("1");
   const [greeting, setGreeting] = useState("Good Morning");
   const scrollY = new Animated.Value(0);
@@ -140,7 +140,7 @@ export default function HomeScreen() {
 
             <View className="bg-white/20 rounded-2xl p-4 mt-2">
               <Text className="text-white text-sm mb-1">
-                Today's Cooking Streak
+                Today&apos;s Cooking Streak
               </Text>
               <View className="flex-row items-center justify-between">
                 <Text className="text-3xl font-bold text-white">
@@ -211,7 +211,7 @@ export default function HomeScreen() {
 
         <View className="px-5 mt-8">
           <View className="flex-row items-center justify-between mb-4">
-            <Text className="text-xl font-bold text-text">Today's Picks</Text>
+            <Text className="text-xl font-bold text-text">Today&apos;s Picks</Text>
             <TouchableOpacity onPress={() => router.push("/meal-plan")}>
               <Text className="text-primary font-medium">Meal Plan</Text>
             </TouchableOpacity>

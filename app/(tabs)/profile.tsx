@@ -6,17 +6,18 @@ import {
   TouchableOpacity,
   Switch,
   Alert,
-  Image,
   StatusBar
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { useFavorites } from '@/hooks/useFavorites';
 
 export default function ProfileScreen() {
+  const router = useRouter();
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);
   const [autoRefreshEnabled, setAutoRefreshEnabled] = useState(true);
