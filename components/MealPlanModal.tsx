@@ -177,7 +177,7 @@ export const MealPlanModal: React.FC<MealPlanModalProps> = ({
 
             <Text className="text-lg font-bold text-text mb-4">Select Date & Meal</Text>
             <Text className="text-sm text-text opacity-60 mb-4">
-              Choose when you'd like to cook this recipe. Items with a checkmark already have a meal planned.
+              Choose when you&apos;d like to cook this recipe. Items with a checkmark already have a meal planned.
             </Text>
 
             {renderWeek(weekMealPlan, 'This Week', weekStart)}
