@@ -2,10 +2,13 @@ export interface Review {
   id: string;
   recipeId: string;
   recipeName: string;
+  userId?: string;
   userName: string;
+  userAvatar?: string;
   rating: number; // 1-5 stars
   comment: string;
   images?: string[]; // Optional photos
+  date?: Date;
   createdAt: Date;
   updatedAt: Date;
   helpful: number; // Number of helpful votes
