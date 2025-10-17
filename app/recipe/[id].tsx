@@ -105,7 +105,7 @@ export default function RecipeDetailScreen() {
         title: recipeData.recipe.name,
       });
     } catch (error) {
-      console.error(error);
+      // Error adding review
     }
   };
 
