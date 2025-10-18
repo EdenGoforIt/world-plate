@@ -19,9 +19,9 @@ export default function RootLayout() {
   // Preload recipe cache in background when app starts
   useEffect(() => {
     preloadRecipeCache().then(() => {
-      console.log('Recipe cache preloaded successfully');
-    }).catch((error) => {
-      console.error('Failed to preload recipe cache:', error);
+      // Recipe cache preloaded successfully
+    }).catch(() => {
+      // Failed to preload recipe cache
     });
   }, []);
 
