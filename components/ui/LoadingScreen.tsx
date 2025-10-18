@@ -1,6 +1,6 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
-import { ActivityIndicator, Text, View } from "react-native";
+import { ActivityIndicator, Text, View, DimensionValue } from "react-native";
 
 import { Colors } from "@/constants/Colors";
 
@@ -34,7 +34,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({
 
 interface LoadingSkeletonProps {
   height?: number;
-  width?: number | string;
+  width?: number | DimensionValue;
   borderRadius?: number;
   marginBottom?: number;
 }
