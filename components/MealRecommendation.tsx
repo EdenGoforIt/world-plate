@@ -21,11 +21,7 @@ interface MealRecommendationProps {
   countryName?: string; // For favorites functionality
 }
 
-const { width: SCREEN_WIDTH } = Dimensions.get("window");
-
-const IMAGE_SIZE = 100;
 const ICON_SIZE = 24;
-const SMALL_ICON_SIZE = 16;
 const REFRESH_ICON_SIZE = 20;
 
 const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({

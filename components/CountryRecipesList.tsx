@@ -32,7 +32,7 @@ export const CountryRecipesList: React.FC<CountryRecipesListProps> = ({
       const countryRecipes = await getRecipesByCountry(countryName);
       setRecipes(countryRecipes);
     } catch (error) {
-      console.error(`Error loading recipes for ${countryName}:`, error);
+      // Error loading recipes
     } finally {
       setLoading(false);
     }
