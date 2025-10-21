@@ -24,7 +24,7 @@ export const useMealPlan = () => {
         setMealPlan(entries);
       }
     } catch (error) {
-      console.error('Error loading meal plan:', error);
+      // Error loading meal plan
     } finally {
       setLoading(false);
     }
@@ -35,7 +35,7 @@ export const useMealPlan = () => {
       await AsyncStorage.setItem(MEAL_PLAN_KEY, JSON.stringify(entries));
       setMealPlan(entries);
     } catch (error) {
-      console.error('Error saving meal plan:', error);
+      // Error saving meal plan
     }
   };
 
