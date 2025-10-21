@@ -34,8 +34,8 @@ export const useFavorites = () => {
       
       setAllFavorites(favoriteRecipes);
     } catch (error) {
-      console.error('Error loading favorites:', error);
-    } finally {
+      // Error loading favorites
+    } finally{
       setLoading(false);
     }
   }, []);
@@ -78,7 +78,7 @@ export const useFavorites = () => {
         }
       }
     } catch (error) {
-      console.error('Error toggling favorite:', error);
+      // Error toggling favorite
     }
   }, []);
 
