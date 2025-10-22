@@ -24,7 +24,7 @@ export const useReviews = (recipeId?: string) => {
         setReviews(reviewsData);
       }
     } catch (error) {
-      console.error('Error loading reviews:', error);
+      // Error loading reviews
     } finally {
       setLoading(false);
     }
@@ -35,7 +35,7 @@ export const useReviews = (recipeId?: string) => {
       await AsyncStorage.setItem(REVIEWS_KEY, JSON.stringify(reviewsData));
       setReviews(reviewsData);
     } catch (error) {
-      console.error('Error saving reviews:', error);
+      // Error saving reviews
     }
   };
 

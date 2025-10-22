@@ -30,7 +30,7 @@ export const useShoppingList = () => {
         setShoppingLists(lists);
       }
     } catch (error) {
-      console.error('Error loading shopping lists:', error);
+      // Error loading shopping lists
     } finally {
       setLoading(false);
     }
@@ -41,7 +41,7 @@ export const useShoppingList = () => {
       await AsyncStorage.setItem(SHOPPING_LIST_KEY, JSON.stringify(lists));
       setShoppingLists(lists);
     } catch (error) {
-      console.error('Error saving shopping lists:', error);
+      // Error saving shopping lists
     }
   };
 
