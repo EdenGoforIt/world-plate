@@ -22,9 +22,13 @@ describe('RecipeCard', () => {
       protein: 20,
       carbs: 40,
       fat: 10,
+      fiber: 5,
+      sugar: 8,
+      sodium: 200,
     },
     servings: 4,
-    tips: [],
+    reviews: 10,
+    mealType: ['lunch'],
   };
 
   const mockOnPress = jest.fn();

@@ -50,9 +50,9 @@ describe('useGreeting', () => {
 
     act(() => {
       jest.advanceTimersByTime(60000); // Advance by 1 minute
+      rerender({});
     });
 
-    rerender();
     expect(result.current).toBe('Good Afternoon');
   });
 
