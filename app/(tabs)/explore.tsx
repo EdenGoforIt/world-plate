@@ -51,7 +51,7 @@ export default function ExploreScreen() {
         setAllRecipes(allCountryRecipes);
         setRecipes(allCountryRecipes);
         setLoading(false);
-      } catch (error) {
+      } catch {
         // Error loading recipes
         setLoading(false);
       }
