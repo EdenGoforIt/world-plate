@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import type { ComponentProps } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
@@ -25,12 +26,17 @@ import { getRecipeByIdFromCountrySync } from "@/utils/recipeUtils";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
-const categories = [
+const categories: {
+  id: string;
+  name: string;
+  icon: ComponentProps<typeof Ionicons>["name"];
+  color: string;
+}[] = [
   { id: "1", name: "Breakfast", icon: "sunny-outline", color: "#FFD700" },
   { id: "2", name: "Lunch", icon: "partly-sunny-outline", color: "#FF8C42" },
   { id: "3", name: "Dinner", icon: "moon-outline", color: "#6B46C1" },
   { id: "4", name: "Desserts", icon: "ice-cream-outline", color: "#EC4899" },
-  { id: "5", name: "Snacks", icon: "nutrition-outline", color: "#10B981" },
+  { id: "5", name: "Snacks", icon: "fast-food-outline", color: "#10B981" },
   { id: "6", name: "Drinks", icon: "cafe-outline", color: "#8B5CF6" },
 ];
 
