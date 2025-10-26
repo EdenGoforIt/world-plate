@@ -56,7 +56,7 @@ export default function ProfileScreen() {
                 'last_cache_update'
               ]);
               Alert.alert('Success', 'Cache cleared successfully');
-            } catch (error) {
+            } catch {
               Alert.alert('Error', 'Failed to clear cache');
             }
           }
