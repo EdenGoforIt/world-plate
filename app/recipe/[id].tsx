@@ -35,7 +35,7 @@ import {
   getRecipeByIdFromCountry,
 } from "@/utils/recipeUtils";
 
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
+const { height: SCREEN_HEIGHT } = Dimensions.get("window");
 
 interface NutritionInfo {
   calories: number;
@@ -63,7 +63,7 @@ export default function RecipeDetailScreen() {
       "https://ui-avatars.com/api/?name=Guest+User&background=FF6B35&color=fff",
   };
   const { toggleFavorite, isFavorite } = useFavorites();
-  const { reviews, addReview, loading: reviewsLoading } = useReviews(id!);
+  const { reviews, addReview } = useReviews(id!);
   const [recipeData, setRecipeData] = useState<{
     recipe: Recipe;
     country: string;
@@ -94,7 +94,7 @@ export default function RecipeDetailScreen() {
     };
 
     fetchRecipe();
-  }, [id]);
+  }, [id, fadeAnim]);
 
   const handleShare = async () => {
     if (!recipeData) return;
@@ -104,8 +104,8 @@ export default function RecipeDetailScreen() {
         message: `Check out this amazing ${recipeData.recipe.name} recipe from ${recipeData.country}! 🍽️`,
         title: recipeData.recipe.name,
       });
-    } catch (error) {
-      // Error adding review
+    } catch {
+      // Error sharing recipe
     }
   };
 
@@ -119,15 +119,19 @@ export default function RecipeDetailScreen() {
       return;
     }
 
+    const now = new Date();
     const newReview: Review = {
       id: Date.now().toString(),
       recipeId: id!,
+      recipeName: recipeData?.recipe.name || "Unknown Recipe",
       userId: user?.id || "1",
       userName: user?.name || "Anonymous",
       userAvatar: user?.avatar,
       rating,
       comment: reviewText,
-      date: new Date(),
+      date: now,
+      createdAt: now,
+      updatedAt: now,
       helpful: 0,
     };
 
@@ -359,7 +363,7 @@ export default function RecipeDetailScreen() {
                     />
                   ))}
                   <Text className="text-xs text-gray-500 ml-2">
-                    {new Date(review.date).toLocaleDateString()}
+                    {review.date ? new Date(review.date).toLocaleDateString() : new Date(review.createdAt).toLocaleDateString()}
                   </Text>
                 </View>
               </View>
@@ -500,7 +504,6 @@ export default function RecipeDetailScreen() {
                 indicatorStyle={{ backgroundColor: Colors.primary }}
                 activeColor={Colors.primary}
                 inactiveColor={Colors.text}
-                labelStyle={{ fontSize: 14, fontWeight: "600" }}
               />
             )}
           />
