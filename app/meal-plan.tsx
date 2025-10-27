@@ -22,7 +22,6 @@ export default function MealPlanScreen() {
     loading,
     getWeekMealPlan,
     getCurrentWeekStart,
-    getWeekStartForDate,
     removeMealFromDate,
     getUpcomingMeals,
   } = useMealPlan();

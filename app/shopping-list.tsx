@@ -9,7 +9,6 @@ import {
   StatusBar,
   TextInput,
   Modal,
-  Pressable
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
@@ -48,7 +47,7 @@ export default function ShoppingListScreen() {
       await createShoppingList(newListName.trim());
       setNewListName('');
       setShowCreateModal(false);
-    } catch (error) {
+    } catch {
       Alert.alert('Error', 'Failed to create shopping list');
     }
   };
