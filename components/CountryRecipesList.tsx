@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  View, 
-  Text, 
-  FlatList, 
-  ActivityIndicator 
+import React, { useState, useEffect, useCallback } from 'react';
+import {
+  View,
+  Text,
+  FlatList,
+  ActivityIndicator
 } from 'react-native';
 import { Recipe } from '../types/Recipe';
 import { FavoriteRecipeCard } from './FavoriteRecipeCard';
@@ -22,21 +22,21 @@ export const CountryRecipesList: React.FC<CountryRecipesListProps> = ({
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    loadRecipes();
-  }, [countryName]);
-
-  const loadRecipes = async () => {
+  const loadRecipes = useCallback(async () => {
     try {
       setLoading(true);
       const countryRecipes = await getRecipesByCountry(countryName);
       setRecipes(countryRecipes);
-    } catch (error) {
+    } catch {
       // Error loading recipes
     } finally {
       setLoading(false);
     }
-  };
+  }, [countryName]);
+
+  useEffect(() => {
+    loadRecipes();
+  }, [loadRecipes]);
 
   if (loading) {
     return (
