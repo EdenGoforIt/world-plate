@@ -44,7 +44,7 @@ export const MealPlanModal: React.FC<MealPlanModalProps> = ({
       onClose();
       setSelectedDate('');
       setSelectedMealType('');
-    } catch (error) {
+    } catch {
       Alert.alert('Error', 'Failed to add to meal plan');
     }
   };
