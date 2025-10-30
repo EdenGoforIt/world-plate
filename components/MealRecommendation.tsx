@@ -1,7 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import React, { memo, useCallback } from "react";
 import {
-  Dimensions,
   Image,
   StyleSheet,
   Text,
