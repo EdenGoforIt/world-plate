@@ -53,7 +53,7 @@ export const ShoppingListModal: React.FC<ShoppingListModalProps> = ({
       setNewListName("");
       setShowCreateForm(false);
       onClose();
-    } catch (error) {
+    } catch {
       Alert.alert("Error", "Failed to create shopping list");
     }
   };
