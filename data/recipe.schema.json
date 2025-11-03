@@ -1,0 +1,178 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Recipe Country File",
+	"type": "object",
+	"required": [
+		"country",
+		"flag",
+		"recipes"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"country": {
+			"type": "string"
+		},
+		"flag": {
+			"type": "string"
+		},
+		"recipes": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"id",
+					"name",
+					"cuisine",
+					"mealType",
+					"image",
+					"prepTime",
+					"cookTime",
+					"servings",
+					"difficulty",
+					"ingredients",
+					"instructions",
+					"nutrition",
+					"tags",
+					"rating",
+					"reviews"
+				],
+				"additionalProperties": true,
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"cuisine": {
+						"type": "string"
+					},
+					"mealType": {
+						"type": "array",
+						"items": {
+							"type": "string",
+							"enum": [
+								"breakfast",
+								"lunch",
+								"dinner"
+							]
+						}
+					},
+					"image": {
+						"type": "string"
+					},
+					"prepTime": {
+						"type": "number",
+						"minimum": 0
+					},
+					"cookTime": {
+						"type": "number",
+						"minimum": 0
+					},
+					"servings": {
+						"type": "number",
+						"minimum": 1
+					},
+					"difficulty": {
+						"type": "string",
+						"enum": [
+							"easy",
+							"medium",
+							"hard"
+						]
+					},
+					"ingredients": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"required": [
+								"name",
+								"amount",
+								"category"
+							],
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"amount": {
+									"type": "string"
+								},
+								"category": {
+									"type": "string",
+									"enum": [
+										"protein",
+										"vegetable",
+										"grain",
+										"dairy",
+										"spice",
+										"other",
+										"nut"
+									]
+								}
+							}
+						}
+					},
+					"instructions": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					},
+					"nutrition": {
+						"type": "object",
+						"required": [
+							"calories",
+							"protein",
+							"carbs",
+							"fat",
+							"fiber",
+							"sugar",
+							"sodium"
+						],
+						"properties": {
+							"calories": {
+								"type": "number"
+							},
+							"protein": {
+								"type": "number"
+							},
+							"carbs": {
+								"type": "number"
+							},
+							"fat": {
+								"type": "number"
+							},
+							"fiber": {
+								"type": "number"
+							},
+							"sugar": {
+								"type": "number"
+							},
+							"sodium": {
+								"type": "number"
+							}
+						}
+					},
+					"tags": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					},
+					"rating": {
+						"type": "number",
+						"minimum": 0,
+						"maximum": 5
+					},
+					"reviews": {
+						"type": "number",
+						"minimum": 0
+					}
+				}
+			}
+		}
+	}
+}
