@@ -143,6 +143,7 @@
     {
       "id": "afghanistan-1758569719689-102mt3spt",
       "name": "Ashak",
+      "description": "Traditional Ashak from Afghanistan",
       "cuisine": "Afghanistan",
       "mealType": [
         "lunch",
@@ -155,17 +156,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Ashak from Afghanistan"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "afghanistan-003",
@@ -199,7 +201,7 @@
         {
           "name": "Cilantro",
           "amount": "1/4 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -303,6 +305,7 @@
     {
       "id": "afghanistan-1758569719689-i0uba6fr5",
       "name": "Chapli Kebab",
+      "description": "Traditional Chapli Kebab from Afghanistan",
       "cuisine": "Afghanistan",
       "mealType": [
         "lunch",
@@ -315,21 +318,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Chapli Kebab from Afghanistan"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "afghanistan-1758569719689-obrxdparv",
       "name": "Sheer Khurma",
+      "description": "Traditional Sheer Khurma from Afghanistan",
       "cuisine": "Afghanistan",
       "mealType": [
         "lunch",
@@ -342,21 +347,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Sheer Khurma from Afghanistan"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "afghanistan-1758569719689-zfa6vvtca",
       "name": "Firni",
+      "description": "Traditional Firni from Afghanistan",
       "cuisine": "Afghanistan",
       "mealType": [
         "lunch",
@@ -369,17 +376,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Firni from Afghanistan"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "afghanistan-012",
@@ -489,7 +497,7 @@
         {
           "name": "Mint",
           "amount": "2 tbsp",
-          "category": "herb"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -555,7 +563,7 @@
         {
           "name": "Chickpeas",
           "amount": "1 cup",
-          "category": "legume"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -708,6 +716,7 @@
     {
       "id": "afghanistan-1758569719689-i4ixzgbn4",
       "name": "Jelabi",
+      "description": "Traditional Jelabi from Afghanistan",
       "cuisine": "Afghanistan",
       "mealType": [
         "lunch",
@@ -720,21 +729,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Jelabi from Afghanistan"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "afghanistan-1758569719689-4uzk1ymfy",
       "name": "Gosh-e Fil",
+      "description": "Traditional Gosh-e Fil from Afghanistan",
       "cuisine": "Afghanistan",
       "mealType": [
         "lunch",
@@ -747,17 +758,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Gosh-e Fil from Afghanistan"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

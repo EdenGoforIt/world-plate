@@ -36,7 +36,7 @@
 					"rating",
 					"reviews"
 				],
-				"additionalProperties": true,
+				"additionalProperties": false,
 				"properties": {
 					"id": {
 						"type": "string"
@@ -93,6 +93,7 @@
 								"amount",
 								"category"
 							],
+							"additionalProperties": false,
 							"properties": {
 								"name": {
 									"type": "string"
