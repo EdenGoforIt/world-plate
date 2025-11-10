@@ -99,7 +99,7 @@
         {
           "name": "Sugar",
           "amount": "1 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Eggs",
@@ -159,7 +159,7 @@
         {
           "name": "Apples",
           "amount": "4",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Phyllo dough",
@@ -169,12 +169,12 @@
         {
           "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Raisins",
           "amount": "1/2 cup",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Cinnamon",
@@ -314,7 +314,7 @@
         {
           "name": "Sugar",
           "amount": "2 tbsp",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Butter",
@@ -324,7 +324,7 @@
         {
           "name": "Raisins",
           "amount": "1/4 cup",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -355,6 +355,7 @@
     {
       "id": "austria-1758569719695-8g107sfuj",
       "name": "Goulash",
+      "description": "Traditional Goulash from Austria",
       "cuisine": "Austria",
       "mealType": [
         "lunch",
@@ -367,21 +368,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Goulash from Austria"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "austria-1758569719695-ts0x28cj0",
       "name": "Leberkäse",
+      "description": "Traditional Leberkäse from Austria",
       "cuisine": "Austria",
       "mealType": [
         "lunch",
@@ -394,17 +397,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Leberkäse from Austria"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "austria-010",
@@ -443,7 +447,7 @@
         {
           "name": "Apricots",
           "amount": "8",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Breadcrumbs",
@@ -453,7 +457,7 @@
         {
           "name": "Sugar",
           "amount": "1/4 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -484,6 +488,7 @@
     {
       "id": "austria-1758569719695-2m1g9c4l0",
       "name": "Linzer Torte",
+      "description": "Traditional Linzer Torte from Austria",
       "cuisine": "Austria",
       "mealType": [
         "lunch",
@@ -496,17 +501,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Linzer Torte from Austria"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "austria-015",
@@ -675,7 +681,7 @@
         {
           "name": "Sugar",
           "amount": "1/4 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Plum jam",
@@ -750,7 +756,7 @@
         {
           "name": "Apricots",
           "amount": "8",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Breadcrumbs",
@@ -760,7 +766,7 @@
         {
           "name": "Sugar",
           "amount": "1/4 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -810,7 +816,7 @@
         {
           "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Flour",
@@ -820,7 +826,7 @@
         {
           "name": "Vanilla sugar",
           "amount": "1 tbsp",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Butter",
@@ -851,6 +857,7 @@
     {
       "id": "austria-1758569719695-jy3vxsfv8",
       "name": "Bosna",
+      "description": "Traditional Bosna from Austria",
       "cuisine": "Austria",
       "mealType": [
         "lunch",
@@ -863,17 +870,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Bosna from Austria"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

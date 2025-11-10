@@ -201,7 +201,7 @@
         {
           "name": "Oil",
           "amount": "for frying",
-          "category": "oil"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -355,12 +355,12 @@
         {
           "name": "Dulce de leche",
           "amount": "1 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Vanilla extract",
@@ -392,6 +392,7 @@
     {
       "id": "argentina-1758569719693-g70l553nl",
       "name": "Alfajores",
+      "description": "Traditional Alfajores from Argentina",
       "cuisine": "Argentina",
       "mealType": [
         "lunch",
@@ -404,17 +405,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Alfajores from Argentina"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "argentina-007",
@@ -448,7 +450,7 @@
         {
           "name": "White beans",
           "amount": "1 cup",
-          "category": "legume"
+          "category": "other"
         },
         {
           "name": "Pumpkin",
@@ -576,7 +578,7 @@
         {
           "name": "Parsley",
           "amount": "1 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Garlic",
@@ -586,7 +588,7 @@
         {
           "name": "Olive oil",
           "amount": "1/2 cup",
-          "category": "oil"
+          "category": "other"
         },
         {
           "name": "Red wine vinegar",
@@ -663,7 +665,7 @@
         {
           "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Yeast",
@@ -733,12 +735,12 @@
         {
           "name": "Dulce de leche",
           "amount": "1 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Vanilla extract",
@@ -804,7 +806,7 @@
         {
           "name": "Sugar",
           "amount": "1 tbsp",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -841,6 +843,7 @@
     {
       "id": "argentina-1758569719693-ydwlecw39",
       "name": "Carbonada",
+      "description": "Traditional Carbonada from Argentina",
       "cuisine": "Argentina",
       "mealType": [
         "lunch",
@@ -853,21 +856,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Carbonada from Argentina"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "argentina-1758569719693-tcnpeyu8y",
       "name": "Parrillada",
+      "description": "Traditional Parrillada from Argentina",
       "cuisine": "Argentina",
       "mealType": [
         "lunch",
@@ -880,17 +885,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Parrillada from Argentina"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

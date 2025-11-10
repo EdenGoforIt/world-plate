@@ -109,12 +109,12 @@
         {
           "name": "Lemon",
           "amount": "1",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Cilantro",
           "amount": "2 tbsp",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Paprika",
@@ -200,12 +200,12 @@
         {
           "name": "Chickpeas",
           "amount": "1/2 cup",
-          "category": "legume"
+          "category": "other"
         },
         {
           "name": "Cilantro",
           "amount": "1/4 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -242,6 +242,7 @@
     {
       "id": "algeria-1758569719691-6fnrjb9tj",
       "name": "Shakshuka",
+      "description": "Traditional Shakshuka from Algeria",
       "cuisine": "Algeria",
       "mealType": [
         "lunch",
@@ -254,17 +255,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Shakshuka from Algeria"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "algeria-017",
@@ -369,7 +371,7 @@
         {
           "name": "Sugar",
           "amount": "2 tbsp",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -430,7 +432,7 @@
         {
           "name": "Dates",
           "amount": "1.5 cups",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Orange blossom water",
@@ -440,7 +442,7 @@
         {
           "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -491,12 +493,12 @@
         {
           "name": "Chickpeas",
           "amount": "1 cup",
-          "category": "legume"
+          "category": "other"
         },
         {
           "name": "Lentils",
           "amount": "1/2 cup",
-          "category": "legume"
+          "category": "other"
         },
         {
           "name": "Onion",
@@ -511,12 +513,12 @@
         {
           "name": "Cilantro",
           "amount": "1/4 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Parsley",
           "amount": "1/4 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -577,7 +579,7 @@
         {
           "name": "Chickpeas",
           "amount": "1 cup",
-          "category": "legume"
+          "category": "other"
         },
         {
           "name": "Turnip",
@@ -626,6 +628,7 @@
     {
       "id": "algeria-1758569719691-shxn6x9ko",
       "name": "Dolma",
+      "description": "Traditional Dolma from Algeria",
       "cuisine": "Algeria",
       "mealType": [
         "lunch",
@@ -638,17 +641,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Dolma from Algeria"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "algeria-022",
@@ -682,7 +686,7 @@
         {
           "name": "Parsley",
           "amount": "1/4 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Egg",
@@ -702,7 +706,7 @@
         {
           "name": "Oil",
           "amount": "for frying",
-          "category": "oil"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -729,6 +733,7 @@
     {
       "id": "algeria-1758569719691-2h1k5eify",
       "name": "Mechoui",
+      "description": "Traditional Mechoui from Algeria",
       "cuisine": "Algeria",
       "mealType": [
         "lunch",
@@ -741,17 +746,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Mechoui from Algeria"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "algeria-014",
@@ -779,7 +785,7 @@
         {
           "name": "Sugar",
           "amount": "2 cups",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Butter",
@@ -845,7 +851,7 @@
         {
           "name": "Chickpeas",
           "amount": "1 cup",
-          "category": "legume"
+          "category": "other"
         },
         {
           "name": "Onion",
@@ -923,7 +929,7 @@
         {
           "name": "Honey",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         }
       ],
       "instructions": [

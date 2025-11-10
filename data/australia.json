@@ -94,7 +94,7 @@
         {
           "name": "Sugar",
           "amount": "1 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Cornstarch",
@@ -114,7 +114,7 @@
         {
           "name": "Fresh fruit",
           "amount": "2 cups",
-          "category": "fruit"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -190,6 +190,7 @@
     {
       "id": "australia-1758569719694-7d7pvtydx",
       "name": "Tim Tam",
+      "description": "Traditional Tim Tam from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -202,17 +203,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Tim Tam from Australia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "australia-005",
@@ -241,7 +243,7 @@
         {
           "name": "Olive oil",
           "amount": "2 tbsp",
-          "category": "oil"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -251,7 +253,7 @@
         {
           "name": "Lemon",
           "amount": "1",
-          "category": "fruit"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -301,7 +303,7 @@
         {
           "name": "Sugar",
           "amount": "3/4 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Desiccated coconut",
@@ -316,7 +318,7 @@
         {
           "name": "Golden syrup",
           "amount": "2 tbsp",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Baking soda",
@@ -347,6 +349,7 @@
     {
       "id": "australia-1758569719694-h8pt8rcsb",
       "name": "Fairy Bread",
+      "description": "Traditional Fairy Bread from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -359,17 +362,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Fairy Bread from Australia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "australia-007",
@@ -418,7 +422,7 @@
         {
           "name": "Oil",
           "amount": "for frying",
-          "category": "oil"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -454,6 +458,7 @@
     {
       "id": "australia-1758569719694-b34e0abwb",
       "name": "Sausage Roll",
+      "description": "Traditional Sausage Roll from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -466,17 +471,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Sausage Roll from Australia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "australia-004",
@@ -536,6 +542,7 @@
     {
       "id": "australia-1758569719694-0i8faone8",
       "name": "Vegemite Toast",
+      "description": "Traditional Vegemite Toast from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -548,21 +555,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Vegemite Toast from Australia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "australia-1758569719694-fng78jrfo",
       "name": "Fish and Chips",
+      "description": "Traditional Fish and Chips from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -575,21 +584,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Fish and Chips from Australia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "australia-1758569719694-3ut4e7awt",
       "name": "Chiko Roll",
+      "description": "Traditional Chiko Roll from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -602,21 +613,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Chiko Roll from Australia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "australia-1758569719694-m4eyxc55b",
       "name": "Vanilla Slice",
+      "description": "Traditional Vanilla Slice from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -629,21 +642,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Vanilla Slice from Australia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "australia-1758569719694-ofaaieil4",
       "name": "Golden Gaytime",
+      "description": "Traditional Golden Gaytime from Australia",
       "cuisine": "Australia",
       "mealType": [
         "lunch",
@@ -656,17 +671,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Golden Gaytime from Australia"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }
