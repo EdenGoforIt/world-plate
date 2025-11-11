@@ -40,7 +40,7 @@
         {
           "name": "Sugar",
           "amount": "1/4 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Baking powder",
@@ -71,6 +71,7 @@
     {
       "id": "belgium-1758569719698-cerp4e971",
       "name": "Moules-frites",
+      "description": "Traditional Moules-frites from Belgium",
       "cuisine": "Belgium",
       "mealType": [
         "lunch",
@@ -83,17 +84,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Moules-frites from Belgium"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "belgium-049",
@@ -344,6 +346,7 @@
     {
       "id": "belgium-1758569719698-buamejltq",
       "name": "Belgian Chocolate",
+      "description": "Traditional Belgian Chocolate from Belgium",
       "cuisine": "Belgium",
       "mealType": [
         "lunch",
@@ -356,17 +359,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Belgian Chocolate from Belgium"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "belgium-005",
@@ -390,7 +394,7 @@
         {
           "name": "Brown sugar",
           "amount": "1 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Butter",
@@ -431,6 +435,7 @@
     {
       "id": "belgium-1758569719698-5lhskb03u",
       "name": "Croquettes aux crevettes",
+      "description": "Traditional Croquettes aux crevettes from Belgium",
       "cuisine": "Belgium",
       "mealType": [
         "lunch",
@@ -443,17 +448,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Croquettes aux crevettes from Belgium"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "belgium-016",
@@ -493,7 +499,7 @@
         {
           "name": "Pearl sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -609,7 +615,7 @@
         {
           "name": "Apple",
           "amount": "1",
-          "category": "fruit"
+          "category": "other"
         }
       ],
       "instructions": [
@@ -695,6 +701,7 @@
     {
       "id": "belgium-1758569719698-u6izc4pz1",
       "name": "Gentse Mokken",
+      "description": "Traditional Gentse Mokken from Belgium",
       "cuisine": "Belgium",
       "mealType": [
         "lunch",
@@ -707,17 +714,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Gentse Mokken from Belgium"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "belgium-042",
@@ -756,7 +764,7 @@
         {
           "name": "Sugar",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         }
       ],
       "instructions": [

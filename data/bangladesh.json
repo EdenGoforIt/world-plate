@@ -75,6 +75,7 @@
     {
       "id": "bangladesh-1758569719696-r5eszem4p",
       "name": "Hilsa Fish Curry",
+      "description": "Traditional Hilsa Fish Curry from Bangladesh",
       "cuisine": "Bangladesh",
       "mealType": [
         "lunch",
@@ -87,17 +88,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Hilsa Fish Curry from Bangladesh"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "bangladesh-007",
@@ -122,12 +124,12 @@
         {
           "name": "Coconut",
           "amount": "1 cup",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Jaggery",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -299,6 +301,7 @@
     {
       "id": "bangladesh-1758569719696-vplx22fpx",
       "name": "Chotpoti",
+      "description": "Traditional Chotpoti from Bangladesh",
       "cuisine": "Bangladesh",
       "mealType": [
         "lunch",
@@ -311,17 +314,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Chotpoti from Bangladesh"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "bangladesh-008",
@@ -360,7 +364,7 @@
         {
           "name": "Tamarind",
           "amount": "2 tbsp",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Spices",
@@ -410,7 +414,7 @@
         {
           "name": "Sugar",
           "amount": "1 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Yogurt",
@@ -441,6 +445,7 @@
     {
       "id": "bangladesh-1758569719696-pybhftk9a",
       "name": "Roshogolla",
+      "description": "Traditional Roshogolla from Bangladesh",
       "cuisine": "Bangladesh",
       "mealType": [
         "lunch",
@@ -453,21 +458,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Roshogolla from Bangladesh"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "bangladesh-1758569719696-cqqhjsnf3",
       "name": "Halim",
+      "description": "Traditional Halim from Bangladesh",
       "cuisine": "Bangladesh",
       "mealType": [
         "lunch",
@@ -480,17 +487,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Halim from Bangladesh"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "bangladesh-004",
@@ -529,7 +537,7 @@
         {
           "name": "Mustard oil",
           "amount": "2 tbsp",
-          "category": "oil"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -560,6 +568,7 @@
     {
       "id": "bangladesh-1758569719696-64a6y99p3",
       "name": "Beef Tehari",
+      "description": "Traditional Beef Tehari from Bangladesh",
       "cuisine": "Bangladesh",
       "mealType": [
         "lunch",
@@ -572,21 +581,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Beef Tehari from Bangladesh"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "bangladesh-1758569719696-dl63g2qj5",
       "name": "Chomchom",
+      "description": "Traditional Chomchom from Bangladesh",
       "cuisine": "Bangladesh",
       "mealType": [
         "lunch",
@@ -599,17 +610,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Chomchom from Bangladesh"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "bangladesh-007",
@@ -634,12 +646,12 @@
         {
           "name": "Coconut",
           "amount": "1 cup",
-          "category": "fruit"
+          "category": "other"
         },
         {
           "name": "Jaggery",
           "amount": "1/2 cup",
-          "category": "sweetener"
+          "category": "other"
         },
         {
           "name": "Salt",
@@ -670,6 +682,7 @@
     {
       "id": "bangladesh-1758569719696-ff2n72yp1",
       "name": "Morog Polau",
+      "description": "Traditional Morog Polau from Bangladesh",
       "cuisine": "Bangladesh",
       "mealType": [
         "lunch",
@@ -682,17 +695,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Morog Polau from Bangladesh"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }
