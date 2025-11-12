@@ -6,19 +6,46 @@
       "id": "denmark-001",
       "name": "Smørrebrød",
       "cuisine": "Danish",
-      "mealType": ["lunch", "appetizer"],
+      "mealType": [
+        "lunch",
+        "appetizer"
+      ],
       "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 0,
       "servings": 4,
       "difficulty": "easy",
       "ingredients": [
-        { "name": "Dark rye bread", "amount": "4 slices", "category": "grain" },
-        { "name": "Butter", "amount": "4 tbsp", "category": "dairy" },
-        { "name": "Smoked salmon", "amount": "8 oz", "category": "protein" },
-        { "name": "Cream cheese", "amount": "4 oz", "category": "dairy" },
-        { "name": "Capers", "amount": "2 tbsp", "category": "other" },
-        { "name": "Fresh dill", "amount": "2 tbsp", "category": "other" }
+        {
+          "name": "Dark rye bread",
+          "amount": "4 slices",
+          "category": "grain"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Smoked salmon",
+          "amount": "8 oz",
+          "category": "protein"
+        },
+        {
+          "name": "Cream cheese",
+          "amount": "4 oz",
+          "category": "dairy"
+        },
+        {
+          "name": "Capers",
+          "amount": "2 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Fresh dill",
+          "amount": "2 tbsp",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Butter the rye bread slices",
@@ -37,7 +64,11 @@
         "sugar": 3,
         "sodium": 980
       },
-      "tags": ["danish", "open-sandwich", "no-cook"],
+      "tags": [
+        "danish",
+        "open-sandwich",
+        "no-cook"
+      ],
       "rating": 4.3,
       "reviews": 134
     }
