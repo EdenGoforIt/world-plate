@@ -76,6 +76,7 @@
     {
       "id": "chile-1758569719700-z8vprfan1",
       "name": "Pastel de Choclo",
+      "description": "Traditional Pastel de Choclo from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -88,17 +89,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Pastel de Choclo from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-002",
@@ -184,6 +186,7 @@
     {
       "id": "chile-1758569719700-f0459axe4",
       "name": "Completo",
+      "description": "Traditional Completo from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -196,21 +199,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Completo from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-cgb9guzvb",
       "name": "Chorrillana",
+      "description": "Traditional Chorrillana from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -223,21 +228,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Chorrillana from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-d7miblo3n",
       "name": "Curanto",
+      "description": "Traditional Curanto from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -250,17 +257,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Curanto from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-003",
@@ -342,6 +350,7 @@
     {
       "id": "chile-1758569719700-3aylaw4po",
       "name": "Alfajor",
+      "description": "Traditional Alfajor from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -354,21 +363,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Alfajor from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-7vpu09s3z",
       "name": "Porotos Granados",
+      "description": "Traditional Porotos Granados from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -381,21 +392,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Porotos Granados from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-hmu5tooht",
       "name": "Charquicán",
+      "description": "Traditional Charquicán from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -408,21 +421,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Charquicán from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-s2cdr103p",
       "name": "Pisco Sour",
+      "description": "Traditional Pisco Sour from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -435,21 +450,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Pisco Sour from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-1hdg5llpk",
       "name": "Mote con Huesillo",
+      "description": "Traditional Mote con Huesillo from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -462,21 +479,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Mote con Huesillo from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-6lyasrgob",
       "name": "Manjar",
+      "description": "Traditional Manjar from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -489,21 +508,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Manjar from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-d44xtwmue",
       "name": "Congrio Frito",
+      "description": "Traditional Congrio Frito from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -516,21 +537,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Congrio Frito from Chile"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "chile-1758569719700-3h8bqk2fc",
       "name": "Caldillo de Congrio",
+      "description": "Traditional Caldillo de Congrio from Chile",
       "cuisine": "Chile",
       "mealType": [
         "lunch",
@@ -543,17 +566,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Caldillo de Congrio from Chile"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

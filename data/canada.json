@@ -379,6 +379,7 @@
     {
       "id": "canada-1758569719699-rl0wp6qqe",
       "name": "BeaverTails",
+      "description": "Traditional BeaverTails from Canada",
       "cuisine": "Canada",
       "mealType": [
         "lunch",
@@ -391,21 +392,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional BeaverTails from Canada"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "canada-1758569719699-19wqcrfo4",
       "name": "Maple Syrup",
+      "description": "Traditional Maple Syrup from Canada",
       "cuisine": "Canada",
       "mealType": [
         "lunch",
@@ -418,17 +421,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Maple Syrup from Canada"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "canada-020",
@@ -508,6 +512,7 @@
     {
       "id": "canada-1758569719699-qw0dno6vo",
       "name": "Peameal Bacon",
+      "description": "Traditional Peameal Bacon from Canada",
       "cuisine": "Canada",
       "mealType": [
         "lunch",
@@ -520,21 +525,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Peameal Bacon from Canada"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "canada-1758569719699-mn8ivf8lz",
       "name": "Montreal Smoked Meat",
+      "description": "Traditional Montreal Smoked Meat from Canada",
       "cuisine": "Canada",
       "mealType": [
         "lunch",
@@ -547,17 +554,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Montreal Smoked Meat from Canada"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "canada-013",
@@ -865,6 +873,7 @@
     {
       "id": "canada-1758569719699-cgzkycnbc",
       "name": "Sugar Pie",
+      "description": "Traditional Sugar Pie from Canada",
       "cuisine": "Canada",
       "mealType": [
         "lunch",
@@ -877,17 +886,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Sugar Pie from Canada"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

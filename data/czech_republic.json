@@ -239,6 +239,7 @@
     {
       "id": "czech_republic-1758569719701-nh955lgjw",
       "name": "Knedlíky",
+      "description": "Traditional Knedlíky from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -251,21 +252,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Knedlíky from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-p0ih77jcw",
       "name": "Vepřo-knedlo-zelo",
+      "description": "Traditional Vepřo-knedlo-zelo from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -278,21 +281,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Vepřo-knedlo-zelo from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-fabdb4a8h",
       "name": "Smažený sýr",
+      "description": "Traditional Smažený sýr from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -305,21 +310,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Smažený sýr from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-z356egyzp",
       "name": "Kulajda",
+      "description": "Traditional Kulajda from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -332,21 +339,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Kulajda from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-u2xvteb99",
       "name": "Chlebíčky",
+      "description": "Traditional Chlebíčky from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -359,21 +368,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Chlebíčky from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-ccyob86oa",
       "name": "Bramboráky",
+      "description": "Traditional Bramboráky from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -386,21 +397,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Bramboráky from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-b3n5qa8x7",
       "name": "Koláč",
+      "description": "Traditional Koláč from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -413,21 +426,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Koláč from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-jvlqqfwq9",
       "name": "Utopenci",
+      "description": "Traditional Utopenci from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -440,21 +455,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Utopenci from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-zet3gtwgh",
       "name": "Pork Schnitzel",
+      "description": "Traditional Pork Schnitzel from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -467,21 +484,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Pork Schnitzel from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-x1t3wegqa",
       "name": "Moravský vrabec",
+      "description": "Traditional Moravský vrabec from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -494,21 +513,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Moravský vrabec from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-8b0yqaaik",
       "name": "Palačinky",
+      "description": "Traditional Palačinky from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -521,21 +542,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Palačinky from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "czech_republic-1758569719701-yer4r01uu",
       "name": "Becherovka",
+      "description": "Traditional Becherovka from Czech Republic",
       "cuisine": "Czech Republic",
       "mealType": [
         "lunch",
@@ -548,17 +571,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Becherovka from Czech Republic"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

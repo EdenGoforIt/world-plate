@@ -5,6 +5,7 @@
     {
       "id": "china-1758569719700-b79toluvo",
       "name": "Peking Duck",
+      "description": "Traditional Peking Duck from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -17,21 +18,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Peking Duck from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-91fbpa39z",
       "name": "Xiaolongbao",
+      "description": "Traditional Xiaolongbao from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -44,17 +47,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Xiaolongbao from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-001",
@@ -211,6 +215,7 @@
     {
       "id": "china-1758569719700-yd6w8fwlf",
       "name": "Dumplings",
+      "description": "Traditional Dumplings from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -223,21 +228,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Dumplings from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-1qyw6rnv7",
       "name": "Fried Rice",
+      "description": "Traditional Fried Rice from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -250,17 +257,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Fried Rice from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-003",
@@ -347,6 +355,7 @@
     {
       "id": "china-1758569719700-ssv31xyzm",
       "name": "Chow Mein",
+      "description": "Traditional Chow Mein from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -359,21 +368,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Chow Mein from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-69h1rk9vj",
       "name": "Spring Rolls",
+      "description": "Traditional Spring Rolls from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -386,21 +397,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Spring Rolls from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-cd7q4jp58",
       "name": "Hot Pot",
+      "description": "Traditional Hot Pot from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -413,21 +426,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Hot Pot from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-2id5ru3av",
       "name": "Wontons",
+      "description": "Traditional Wontons from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -440,21 +455,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Wontons from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-0sdfyulkv",
       "name": "Char Siu",
+      "description": "Traditional Char Siu from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -467,21 +484,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Char Siu from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-6ovvaez74",
       "name": "Century Egg",
+      "description": "Traditional Century Egg from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -494,21 +513,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Century Egg from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-eszvjr7o9",
       "name": "Zhajiangmian",
+      "description": "Traditional Zhajiangmian from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -521,21 +542,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Zhajiangmian from China"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "china-1758569719700-42sq1rk8a",
       "name": "Dan Dan Noodles",
+      "description": "Traditional Dan Dan Noodles from China",
       "cuisine": "China",
       "mealType": [
         "lunch",
@@ -548,17 +571,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Dan Dan Noodles from China"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

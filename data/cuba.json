@@ -158,6 +158,7 @@
     {
       "id": "cuba-1758569719701-ce12joa26",
       "name": "Cuban Sandwich",
+      "description": "Traditional Cuban Sandwich from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -170,21 +171,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Cuban Sandwich from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-4shodlbtb",
       "name": "Lechon Asado",
+      "description": "Traditional Lechon Asado from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -197,21 +200,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Lechon Asado from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-7xbbi57sb",
       "name": "Picadillo",
+      "description": "Traditional Picadillo from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -224,21 +229,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Picadillo from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-wsh54ix0d",
       "name": "Yuca con Mojo",
+      "description": "Traditional Yuca con Mojo from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -251,21 +258,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Yuca con Mojo from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-hxucs81kr",
       "name": "Tostones",
+      "description": "Traditional Tostones from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -278,21 +287,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Tostones from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-ivx72ou1f",
       "name": "Arroz con Pollo",
+      "description": "Traditional Arroz con Pollo from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -305,21 +316,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Arroz con Pollo from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-6gtsp2rt0",
       "name": "Flan",
+      "description": "Traditional Flan from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -332,21 +345,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Flan from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-q0g01j5bl",
       "name": "Mojito",
+      "description": "Traditional Mojito from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -359,21 +374,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Mojito from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-u16qnhoqy",
       "name": "Vaca Frita",
+      "description": "Traditional Vaca Frita from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -386,21 +403,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Vaca Frita from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-kuxoux89k",
       "name": "Fufu de Platano",
+      "description": "Traditional Fufu de Platano from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -413,21 +432,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Fufu de Platano from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-ts62qet0f",
       "name": "Congri",
+      "description": "Traditional Congri from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -440,21 +461,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Congri from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-ua8t5kky3",
       "name": "Platanos Maduros",
+      "description": "Traditional Platanos Maduros from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -467,21 +490,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Platanos Maduros from Cuba"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "cuba-1758569719701-fqsp6qzij",
       "name": "Tamales Cubanos",
+      "description": "Traditional Tamales Cubanos from Cuba",
       "cuisine": "Cuba",
       "mealType": [
         "lunch",
@@ -494,17 +519,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Tamales Cubanos from Cuba"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

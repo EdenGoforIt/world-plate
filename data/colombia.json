@@ -75,6 +75,7 @@
     {
       "id": "colombia-1758569719700-yppn1j3ru",
       "name": "Ajiaco",
+      "description": "Traditional Ajiaco from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -87,17 +88,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Ajiaco from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-002",
@@ -257,6 +259,7 @@
     {
       "id": "colombia-1758569719700-j2gmb0vao",
       "name": "Empanadas",
+      "description": "Traditional Empanadas from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -269,21 +272,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Empanadas from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-gkitrajp7",
       "name": "Lechona",
+      "description": "Traditional Lechona from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -296,21 +301,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Lechona from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-1rplq6y9b",
       "name": "Tamales",
+      "description": "Traditional Tamales from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -323,21 +330,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Tamales from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-as69natyd",
       "name": "Pandebono",
+      "description": "Traditional Pandebono from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -350,21 +359,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Pandebono from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-d5g9hbizp",
       "name": "Changua",
+      "description": "Traditional Changua from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -377,21 +388,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Changua from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-5wgmt0vjv",
       "name": "Patacones",
+      "description": "Traditional Patacones from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -404,21 +417,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Patacones from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-taat11b1q",
       "name": "Mondongo",
+      "description": "Traditional Mondongo from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -431,21 +446,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Mondongo from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-yo417norn",
       "name": "Cazuela de Mariscos",
+      "description": "Traditional Cazuela de Mariscos from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -458,21 +475,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Cazuela de Mariscos from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-3a2ctglnd",
       "name": "Obleas",
+      "description": "Traditional Obleas from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -485,21 +504,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Obleas from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-s526nh97x",
       "name": "Cholado",
+      "description": "Traditional Cholado from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -512,21 +533,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Cholado from Colombia"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "colombia-1758569719700-aqsownms6",
       "name": "Aguapanela",
+      "description": "Traditional Aguapanela from Colombia",
       "cuisine": "Colombia",
       "mealType": [
         "lunch",
@@ -539,17 +562,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Aguapanela from Colombia"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }
