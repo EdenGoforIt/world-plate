@@ -6,19 +6,46 @@
       "id": "egypt-001",
       "name": "Koshari",
       "cuisine": "Egyptian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1571197119270-3b900f7d0c96?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 30,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Rice", "amount": "1 cup", "category": "grain" },
-        { "name": "Lentils", "amount": "1 cup", "category": "other" },
-        { "name": "Pasta", "amount": "1 cup", "category": "grain" },
-        { "name": "Chickpeas", "amount": "1 cup", "category": "other" },
-        { "name": "Tomato sauce", "amount": "2 cups", "category": "vegetable" },
-        { "name": "Fried onions", "amount": "1 cup", "category": "vegetable" }
+        {
+          "name": "Rice",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Lentils",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Pasta",
+          "amount": "1 cup",
+          "category": "grain"
+        },
+        {
+          "name": "Chickpeas",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Tomato sauce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Fried onions",
+          "amount": "1 cup",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Cook rice, lentils, and pasta separately",
@@ -37,7 +64,11 @@
         "sugar": 8,
         "sodium": 580
       },
-      "tags": ["egyptian", "vegetarian", "comfort-food"],
+      "tags": [
+        "egyptian",
+        "vegetarian",
+        "comfort-food"
+      ],
       "rating": 4.3,
       "reviews": 134
     }

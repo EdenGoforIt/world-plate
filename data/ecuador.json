@@ -6,19 +6,46 @@
       "id": "ecuador-001",
       "name": "Llapingachos",
       "cuisine": "Ecuadorian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1554681291-c2173cd2c8e3?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 20,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Potatoes", "amount": "4 large", "category": "vegetable" },
-        { "name": "White cheese", "amount": "1 cup", "category": "dairy" },
-        { "name": "Green onions", "amount": "4", "category": "vegetable" },
-        { "name": "Achiote oil", "amount": "3 tbsp", "category": "other" },
-        { "name": "Fried eggs", "amount": "4", "category": "protein" },
-        { "name": "Avocado", "amount": "2", "category": "other" }
+        {
+          "name": "Potatoes",
+          "amount": "4 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "White cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Green onions",
+          "amount": "4",
+          "category": "vegetable"
+        },
+        {
+          "name": "Achiote oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Fried eggs",
+          "amount": "4",
+          "category": "protein"
+        },
+        {
+          "name": "Avocado",
+          "amount": "2",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Boil and mash potatoes",
@@ -37,7 +64,11 @@
         "sugar": 4,
         "sodium": 580
       },
-      "tags": ["ecuadorian", "potato-cakes", "vegetarian"],
+      "tags": [
+        "ecuadorian",
+        "potato-cakes",
+        "vegetarian"
+      ],
       "rating": 4.3,
       "reviews": 112
     }
