@@ -6,19 +6,46 @@
       "id": "finland-001",
       "name": "Reindeer Stew",
       "cuisine": "Finnish",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 90,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Venison or beef", "amount": "2 lbs", "category": "protein" },
-        { "name": "Juniper berries", "amount": "1 tbsp", "category": "spice" },
-        { "name": "Root vegetables", "amount": "3 cups", "category": "vegetable" },
-        { "name": "Beef broth", "amount": "4 cups", "category": "other" },
-        { "name": "Lingonberries", "amount": "1/2 cup", "category": "other" },
-        { "name": "Mashed potatoes", "amount": "4 cups", "category": "vegetable" }
+        {
+          "name": "Venison or beef",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Juniper berries",
+          "amount": "1 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Root vegetables",
+          "amount": "3 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Beef broth",
+          "amount": "4 cups",
+          "category": "other"
+        },
+        {
+          "name": "Lingonberries",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Mashed potatoes",
+          "amount": "4 cups",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Brown meat in heavy pot",
@@ -37,7 +64,11 @@
         "sugar": 8,
         "sodium": 680
       },
-      "tags": ["finnish", "game-meat", "traditional"],
+      "tags": [
+        "finnish",
+        "game-meat",
+        "traditional"
+      ],
       "rating": 4.2,
       "reviews": 89
     }

@@ -6,19 +6,45 @@
       "id": "france-001",
       "name": "Beef Bourguignon",
       "cuisine": "French",
-      "mealType": ["dinner"],
+      "mealType": [
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 180,
       "servings": 6,
       "difficulty": "hard",
       "ingredients": [
-        { "name": "Beef chuck", "amount": "3 lbs", "category": "protein" },
-        { "name": "Red wine", "amount": "1 bottle", "category": "other" },
-        { "name": "Pearl onions", "amount": "1 lb", "category": "vegetable" },
-        { "name": "Mushrooms", "amount": "8 oz", "category": "vegetable" },
-        { "name": "Bacon", "amount": "6 strips", "category": "protein" },
-        { "name": "Carrots", "amount": "3 large", "category": "vegetable" }
+        {
+          "name": "Beef chuck",
+          "amount": "3 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Red wine",
+          "amount": "1 bottle",
+          "category": "other"
+        },
+        {
+          "name": "Pearl onions",
+          "amount": "1 lb",
+          "category": "vegetable"
+        },
+        {
+          "name": "Mushrooms",
+          "amount": "8 oz",
+          "category": "vegetable"
+        },
+        {
+          "name": "Bacon",
+          "amount": "6 strips",
+          "category": "protein"
+        },
+        {
+          "name": "Carrots",
+          "amount": "3 large",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Cut beef into 2-inch pieces",
@@ -37,7 +63,11 @@
         "sugar": 8,
         "sodium": 680
       },
-      "tags": ["classic", "french", "comfort-food"],
+      "tags": [
+        "classic",
+        "french",
+        "comfort-food"
+      ],
       "rating": 4.8,
       "reviews": 203
     }
