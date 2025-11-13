@@ -6,19 +6,46 @@
       "id": "lebanon-001",
       "name": "Hummus",
       "cuisine": "Lebanese",
-      "mealType": ["appetizer", "lunch"],
+      "mealType": [
+        "appetizer",
+        "lunch"
+      ],
       "image": "https://images.unsplash.com/photo-1571197119270-3b900f7d0c96?w=400&h=300&fit=crop",
       "prepTime": 10,
       "cookTime": 0,
       "servings": 6,
       "difficulty": "easy",
       "ingredients": [
-        { "name": "Chickpeas", "amount": "2 cups", "category": "other" },
-        { "name": "Tahini", "amount": "1/4 cup", "category": "other" },
-        { "name": "Lemon juice", "amount": "3 tbsp", "category": "other" },
-        { "name": "Garlic", "amount": "3 cloves", "category": "vegetable" },
-        { "name": "Olive oil", "amount": "3 tbsp", "category": "other" },
-        { "name": "Paprika", "amount": "1/2 tsp", "category": "spice" }
+        {
+          "name": "Chickpeas",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Tahini",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Olive oil",
+          "amount": "3 tbsp",
+          "category": "other"
+        },
+        {
+          "name": "Paprika",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Drain and rinse canned chickpeas",
@@ -37,7 +64,12 @@
         "sugar": 3,
         "sodium": 240
       },
-      "tags": ["lebanese", "vegetarian", "healthy", "no-cook"],
+      "tags": [
+        "lebanese",
+        "vegetarian",
+        "healthy",
+        "no-cook"
+      ],
       "rating": 4.4,
       "reviews": 156
     }
