@@ -6,19 +6,46 @@
       "id": "israel-001",
       "name": "Falafel",
       "cuisine": "Israeli",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1571197119270-3b900f7d0c96?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 15,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Dried chickpeas", "amount": "2 cups", "category": "other" },
-        { "name": "Parsley", "amount": "1 bunch", "category": "other" },
-        { "name": "Cilantro", "amount": "1 bunch", "category": "other" },
-        { "name": "Garlic", "amount": "4 cloves", "category": "vegetable" },
-        { "name": "Cumin", "amount": "2 tsp", "category": "spice" },
-        { "name": "Pita bread", "amount": "4", "category": "grain" }
+        {
+          "name": "Dried chickpeas",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Parsley",
+          "amount": "1 bunch",
+          "category": "other"
+        },
+        {
+          "name": "Cilantro",
+          "amount": "1 bunch",
+          "category": "other"
+        },
+        {
+          "name": "Garlic",
+          "amount": "4 cloves",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cumin",
+          "amount": "2 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Pita bread",
+          "amount": "4",
+          "category": "grain"
+        }
       ],
       "instructions": [
         "Soak chickpeas overnight",
@@ -37,7 +64,11 @@
         "sugar": 6,
         "sodium": 480
       },
-      "tags": ["israeli", "vegetarian", "fried"],
+      "tags": [
+        "israeli",
+        "vegetarian",
+        "fried"
+      ],
       "rating": 4.4,
       "reviews": 198
     }

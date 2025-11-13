@@ -6,19 +6,46 @@
       "id": "hungary-001",
       "name": "Goulash",
       "cuisine": "Hungarian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 120,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Beef chuck", "amount": "2 lbs", "category": "protein" },
-        { "name": "Paprika", "amount": "3 tbsp", "category": "spice" },
-        { "name": "Onions", "amount": "3 large", "category": "vegetable" },
-        { "name": "Bell peppers", "amount": "2", "category": "vegetable" },
-        { "name": "Tomatoes", "amount": "2 large", "category": "vegetable" },
-        { "name": "Caraway seeds", "amount": "1 tsp", "category": "spice" }
+        {
+          "name": "Beef chuck",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Paprika",
+          "amount": "3 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Onions",
+          "amount": "3 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Bell peppers",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Tomatoes",
+          "amount": "2 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Caraway seeds",
+          "amount": "1 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Brown beef cubes in oil",
@@ -37,7 +64,11 @@
         "sugar": 8,
         "sodium": 620
       },
-      "tags": ["hungarian", "stew", "paprika"],
+      "tags": [
+        "hungarian",
+        "stew",
+        "paprika"
+      ],
       "rating": 4.5,
       "reviews": 167
     }

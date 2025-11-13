@@ -5,6 +5,7 @@
     {
       "id": "italy-1758569719702-qyh8v47ms",
       "name": "Pizza Margherita",
+      "description": "Traditional Pizza Margherita from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -17,21 +18,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Pizza Margherita from Italy"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "italy-1758569719702-b0bmpy7rq",
       "name": "Pasta Carbonara",
+      "description": "Traditional Pasta Carbonara from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -44,17 +47,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Pasta Carbonara from Italy"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "italy-004",
@@ -352,6 +356,7 @@
     {
       "id": "italy-1758569719702-v3ygialyo",
       "name": "Gelato",
+      "description": "Traditional Gelato from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -364,21 +369,23 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Gelato from Italy"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "italy-1758569719702-g2ywvessw",
       "name": "Caprese Salad",
+      "description": "Traditional Caprese Salad from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -391,17 +398,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Caprese Salad from Italy"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "italy-041",
@@ -468,6 +476,7 @@
     {
       "id": "italy-1758569719702-ojl05s1pe",
       "name": "Minestrone",
+      "description": "Traditional Minestrone from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -480,17 +489,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Minestrone from Italy"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "italy-012",
@@ -568,6 +578,7 @@
     {
       "id": "italy-1758569719702-g0y9hcpsd",
       "name": "Panna Cotta",
+      "description": "Traditional Panna Cotta from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -580,17 +591,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Panna Cotta from Italy"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "italy-016",
@@ -624,7 +636,7 @@
         {
           "name": "Basil",
           "amount": "1/4 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Olive oil",
@@ -668,6 +680,7 @@
     {
       "id": "italy-1758569719702-a36qeelai",
       "name": "Cannoli",
+      "description": "Traditional Cannoli from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -680,17 +693,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Cannoli from Italy"
+      "rating": 0,
+      "reviews": 0
     },
     {
       "id": "italy-007",
@@ -714,7 +728,7 @@
         {
           "name": "Basil pesto",
           "amount": "1/2 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Parmesan",
@@ -787,7 +801,7 @@
         {
           "name": "Basil",
           "amount": "1/4 cup",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Olive oil",
@@ -917,7 +931,7 @@
         {
           "name": "Sage leaves",
           "amount": "8",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "White wine",
@@ -990,7 +1004,7 @@
         {
           "name": "Parsley",
           "amount": "2 tbsp",
-          "category": "herb"
+          "category": "other"
         },
         {
           "name": "Olive oil",
@@ -1028,6 +1042,7 @@
     {
       "id": "italy-1758569719702-ar628apn8",
       "name": "Aperol Spritz",
+      "description": "Traditional Aperol Spritz from Italy",
       "cuisine": "Italy",
       "mealType": [
         "lunch",
@@ -1040,17 +1055,18 @@
       "difficulty": "medium",
       "ingredients": [],
       "instructions": [],
-      "nutritionalInfo": {
+      "nutrition": {
         "calories": 0,
         "protein": 0,
-        "carbohydrates": 0,
+        "carbs": 0,
         "fat": 0,
         "fiber": 0,
         "sugar": 0,
         "sodium": 0
       },
       "tags": [],
-      "description": "Traditional Aperol Spritz from Italy"
+      "rating": 0,
+      "reviews": 0
     }
   ]
 }

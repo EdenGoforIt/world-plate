@@ -6,19 +6,46 @@
       "id": "iran-001",
       "name": "Ghormeh Sabzi",
       "cuisine": "Persian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 90,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Lamb or beef stew meat", "amount": "1 lb", "category": "protein" },
-        { "name": "Mixed herbs (parsley, cilantro, chives)", "amount": "2 cups", "category": "other" },
-        { "name": "Kidney beans", "amount": "1 cup", "category": "other" },
-        { "name": "Dried lime", "amount": "4", "category": "spice" },
-        { "name": "Fenugreek", "amount": "2 tbsp", "category": "spice" },
-        { "name": "Basmati rice", "amount": "2 cups", "category": "grain" }
+        {
+          "name": "Lamb or beef stew meat",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Mixed herbs (parsley, cilantro, chives)",
+          "amount": "2 cups",
+          "category": "other"
+        },
+        {
+          "name": "Kidney beans",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Dried lime",
+          "amount": "4",
+          "category": "spice"
+        },
+        {
+          "name": "Fenugreek",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Basmati rice",
+          "amount": "2 cups",
+          "category": "grain"
+        }
       ],
       "instructions": [
         "Brown meat in oil until golden",
@@ -37,7 +64,11 @@
         "sugar": 4,
         "sodium": 580
       },
-      "tags": ["persian", "stew", "herbs"],
+      "tags": [
+        "persian",
+        "stew",
+        "herbs"
+      ],
       "rating": 4.5,
       "reviews": 143
     }
