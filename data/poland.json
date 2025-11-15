@@ -6,19 +6,46 @@
       "id": "poland-001",
       "name": "Pierogi",
       "cuisine": "Polish",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1554681291-c2173cd2c8e3?w=400&h=300&fit=crop",
       "prepTime": 60,
       "cookTime": 20,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "All-purpose flour", "amount": "3 cups", "category": "grain" },
-        { "name": "Potatoes", "amount": "4 large", "category": "vegetable" },
-        { "name": "Cheddar cheese", "amount": "1 cup", "category": "dairy" },
-        { "name": "Onions", "amount": "2 medium", "category": "vegetable" },
-        { "name": "Butter", "amount": "4 tbsp", "category": "dairy" },
-        { "name": "Sour cream", "amount": "1/2 cup", "category": "dairy" }
+        {
+          "name": "All-purpose flour",
+          "amount": "3 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Potatoes",
+          "amount": "4 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cheddar cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Onions",
+          "amount": "2 medium",
+          "category": "vegetable"
+        },
+        {
+          "name": "Butter",
+          "amount": "4 tbsp",
+          "category": "dairy"
+        },
+        {
+          "name": "Sour cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
       ],
       "instructions": [
         "Make dough with flour, egg, and water",
@@ -37,7 +64,11 @@
         "sugar": 4,
         "sodium": 420
       },
-      "tags": ["polish", "dumplings", "comfort-food"],
+      "tags": [
+        "polish",
+        "dumplings",
+        "comfort-food"
+      ],
       "rating": 4.6,
       "reviews": 167
     }

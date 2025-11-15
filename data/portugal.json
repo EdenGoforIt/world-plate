@@ -6,19 +6,46 @@
       "id": "portugal-001",
       "name": "Pastéis de Nata",
       "cuisine": "Portuguese",
-      "mealType": ["dessert", "breakfast"],
+      "mealType": [
+        "dessert",
+        "breakfast"
+      ],
       "image": "https://images.unsplash.com/photo-1598515213692-d1fce36d4085?w=400&h=300&fit=crop",
       "prepTime": 30,
       "cookTime": 20,
       "servings": 12,
       "difficulty": "hard",
       "ingredients": [
-        { "name": "Puff pastry", "amount": "1 sheet", "category": "grain" },
-        { "name": "Egg yolks", "amount": "6", "category": "protein" },
-        { "name": "Heavy cream", "amount": "1 cup", "category": "dairy" },
-        { "name": "Sugar", "amount": "1/2 cup", "category": "other" },
-        { "name": "Vanilla extract", "amount": "1 tsp", "category": "other" },
-        { "name": "Cinnamon", "amount": "1/2 tsp", "category": "spice" }
+        {
+          "name": "Puff pastry",
+          "amount": "1 sheet",
+          "category": "grain"
+        },
+        {
+          "name": "Egg yolks",
+          "amount": "6",
+          "category": "protein"
+        },
+        {
+          "name": "Heavy cream",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Sugar",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Vanilla extract",
+          "amount": "1 tsp",
+          "category": "other"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "1/2 tsp",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Line muffin tins with puff pastry",
@@ -37,7 +64,11 @@
         "sugar": 12,
         "sodium": 120
       },
-      "tags": ["portuguese", "dessert", "custard"],
+      "tags": [
+        "portuguese",
+        "dessert",
+        "custard"
+      ],
       "rating": 4.8,
       "reviews": 267
     }
