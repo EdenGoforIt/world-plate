@@ -6,19 +6,46 @@
       "id": "nepal-001",
       "name": "Dal Bhat",
       "cuisine": "Nepali",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 30,
       "servings": 4,
       "difficulty": "easy",
       "ingredients": [
-        { "name": "Red lentils", "amount": "1 cup", "category": "other" },
-        { "name": "Basmati rice", "amount": "2 cups", "category": "grain" },
-        { "name": "Turmeric", "amount": "1 tsp", "category": "spice" },
-        { "name": "Cumin seeds", "amount": "1 tsp", "category": "spice" },
-        { "name": "Ginger", "amount": "1 inch", "category": "other" },
-        { "name": "Pickled vegetables", "amount": "1/2 cup", "category": "vegetable" }
+        {
+          "name": "Red lentils",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Basmati rice",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Turmeric",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Cumin seeds",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Ginger",
+          "amount": "1 inch",
+          "category": "other"
+        },
+        {
+          "name": "Pickled vegetables",
+          "amount": "1/2 cup",
+          "category": "vegetable"
+        }
       ],
       "instructions": [
         "Cook lentils with turmeric until soft",
@@ -37,7 +64,11 @@
         "sugar": 4,
         "sodium": 520
       },
-      "tags": ["nepali", "lentils", "rice"],
+      "tags": [
+        "nepali",
+        "lentils",
+        "rice"
+      ],
       "rating": 4.3,
       "reviews": 123
     }
