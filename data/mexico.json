@@ -6,19 +6,46 @@
       "id": "mexico-001",
       "name": "Beef Tacos",
       "cuisine": "Mexican",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 10,
       "servings": 4,
       "difficulty": "easy",
       "ingredients": [
-        { "name": "Ground beef", "amount": "1 lb", "category": "protein" },
-        { "name": "Corn tortillas", "amount": "8", "category": "grain" },
-        { "name": "Onion", "amount": "1 medium", "category": "vegetable" },
-        { "name": "Cheddar cheese", "amount": "1 cup", "category": "dairy" },
-        { "name": "Lettuce", "amount": "2 cups", "category": "vegetable" },
-        { "name": "Taco seasoning", "amount": "1 packet", "category": "spice" }
+        {
+          "name": "Ground beef",
+          "amount": "1 lb",
+          "category": "protein"
+        },
+        {
+          "name": "Corn tortillas",
+          "amount": "8",
+          "category": "grain"
+        },
+        {
+          "name": "Onion",
+          "amount": "1 medium",
+          "category": "vegetable"
+        },
+        {
+          "name": "Cheddar cheese",
+          "amount": "1 cup",
+          "category": "dairy"
+        },
+        {
+          "name": "Lettuce",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Taco seasoning",
+          "amount": "1 packet",
+          "category": "spice"
+        }
       ],
       "instructions": [
         "Brown ground beef in a large skillet",
@@ -37,7 +64,11 @@
         "sugar": 3,
         "sodium": 750
       },
-      "tags": ["quick", "family-friendly", "mexican"],
+      "tags": [
+        "quick",
+        "family-friendly",
+        "mexican"
+      ],
       "rating": 4.4,
       "reviews": 127
     }

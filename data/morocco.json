@@ -6,19 +6,46 @@
       "id": "morocco-001",
       "name": "Tagine",
       "cuisine": "Moroccan",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 90,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Chicken thighs", "amount": "2 lbs", "category": "protein" },
-        { "name": "Dried apricots", "amount": "1 cup", "category": "other" },
-        { "name": "Almonds", "amount": "1/2 cup", "category": "other" },
-        { "name": "Cinnamon", "amount": "1 tsp", "category": "spice" },
-        { "name": "Ginger", "amount": "1 tsp", "category": "spice" },
-        { "name": "Chicken broth", "amount": "2 cups", "category": "other" }
+        {
+          "name": "Chicken thighs",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Dried apricots",
+          "amount": "1 cup",
+          "category": "other"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Ginger",
+          "amount": "1 tsp",
+          "category": "spice"
+        },
+        {
+          "name": "Chicken broth",
+          "amount": "2 cups",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Brown chicken pieces in tagine or dutch oven",
@@ -37,7 +64,11 @@
         "sugar": 18,
         "sodium": 720
       },
-      "tags": ["moroccan", "sweet-savory", "slow-cooked"],
+      "tags": [
+        "moroccan",
+        "sweet-savory",
+        "slow-cooked"
+      ],
       "rating": 4.6,
       "reviews": 134
     }
