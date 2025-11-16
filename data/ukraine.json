@@ -6,19 +6,46 @@
       "id": "ukraine-001",
       "name": "Borscht",
       "cuisine": "Ukrainian",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 60,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Fresh beets", "amount": "4 large", "category": "vegetable" },
-        { "name": "Beef broth", "amount": "6 cups", "category": "other" },
-        { "name": "Cabbage", "amount": "2 cups", "category": "vegetable" },
-        { "name": "Carrots", "amount": "2", "category": "vegetable" },
-        { "name": "Onion", "amount": "1 large", "category": "vegetable" },
-        { "name": "Sour cream", "amount": "1/2 cup", "category": "dairy" }
+        {
+          "name": "Fresh beets",
+          "amount": "4 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Beef broth",
+          "amount": "6 cups",
+          "category": "other"
+        },
+        {
+          "name": "Cabbage",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Carrots",
+          "amount": "2",
+          "category": "vegetable"
+        },
+        {
+          "name": "Onion",
+          "amount": "1 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Sour cream",
+          "amount": "1/2 cup",
+          "category": "dairy"
+        }
       ],
       "instructions": [
         "Roast beets until tender",
@@ -37,7 +64,11 @@
         "sugar": 16,
         "sodium": 680
       },
-      "tags": ["ukrainian", "soup", "vegetarian"],
+      "tags": [
+        "ukrainian",
+        "soup",
+        "vegetarian"
+      ],
       "rating": 4.2,
       "reviews": 145
     }
