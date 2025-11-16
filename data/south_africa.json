@@ -6,19 +6,46 @@
       "id": "south_africa-001",
       "name": "Bobotie",
       "cuisine": "South African",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
       "prepTime": 20,
       "cookTime": 45,
       "servings": 6,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "Ground lamb", "amount": "2 lbs", "category": "protein" },
-        { "name": "Curry powder", "amount": "2 tbsp", "category": "spice" },
-        { "name": "Dried apricots", "amount": "1/2 cup", "category": "other" },
-        { "name": "Almonds", "amount": "1/3 cup", "category": "other" },
-        { "name": "Eggs", "amount": "2", "category": "protein" },
-        { "name": "Milk", "amount": "1 cup", "category": "dairy" }
+        {
+          "name": "Ground lamb",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Curry powder",
+          "amount": "2 tbsp",
+          "category": "spice"
+        },
+        {
+          "name": "Dried apricots",
+          "amount": "1/2 cup",
+          "category": "other"
+        },
+        {
+          "name": "Almonds",
+          "amount": "1/3 cup",
+          "category": "other"
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "protein"
+        },
+        {
+          "name": "Milk",
+          "amount": "1 cup",
+          "category": "dairy"
+        }
       ],
       "instructions": [
         "Brown ground lamb with onions",
@@ -37,7 +64,11 @@
         "sugar": 12,
         "sodium": 580
       },
-      "tags": ["south-african", "baked", "sweet-savory"],
+      "tags": [
+        "south-african",
+        "baked",
+        "sweet-savory"
+      ],
       "rating": 4.3,
       "reviews": 124
     }
