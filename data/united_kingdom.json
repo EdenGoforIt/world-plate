@@ -6,19 +6,46 @@
       "id": "uk-001",
       "name": "Fish and Chips",
       "cuisine": "British",
-      "mealType": ["lunch", "dinner"],
+      "mealType": [
+        "lunch",
+        "dinner"
+      ],
       "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
       "prepTime": 15,
       "cookTime": 20,
       "servings": 4,
       "difficulty": "medium",
       "ingredients": [
-        { "name": "White fish fillets", "amount": "2 lbs", "category": "protein" },
-        { "name": "Russet potatoes", "amount": "4 large", "category": "vegetable" },
-        { "name": "Beer batter mix", "amount": "2 cups", "category": "grain" },
-        { "name": "Malt vinegar", "amount": "1/4 cup", "category": "other" },
-        { "name": "Mushy peas", "amount": "2 cups", "category": "vegetable" },
-        { "name": "Vegetable oil", "amount": "for frying", "category": "other" }
+        {
+          "name": "White fish fillets",
+          "amount": "2 lbs",
+          "category": "protein"
+        },
+        {
+          "name": "Russet potatoes",
+          "amount": "4 large",
+          "category": "vegetable"
+        },
+        {
+          "name": "Beer batter mix",
+          "amount": "2 cups",
+          "category": "grain"
+        },
+        {
+          "name": "Malt vinegar",
+          "amount": "1/4 cup",
+          "category": "other"
+        },
+        {
+          "name": "Mushy peas",
+          "amount": "2 cups",
+          "category": "vegetable"
+        },
+        {
+          "name": "Vegetable oil",
+          "amount": "for frying",
+          "category": "other"
+        }
       ],
       "instructions": [
         "Cut potatoes into thick chips",
@@ -37,7 +64,11 @@
         "sugar": 4,
         "sodium": 680
       },
-      "tags": ["british", "fried", "comfort-food"],
+      "tags": [
+        "british",
+        "fried",
+        "comfort-food"
+      ],
       "rating": 4.4,
       "reviews": 187
     }
