@@ -1,7 +1,7 @@
 export interface Ingredient {
   name: string;
   amount: string;
-  category: 'protein' | 'vegetable' | 'grain' | 'dairy' | 'spice' | 'other';
+  category: "protein" | "vegetable" | "grain" | "dairy" | "spice" | "other";
 }
 
 export interface Nutrition {
@@ -18,12 +18,22 @@ export interface Recipe {
   id: string;
   name: string;
   cuisine: string;
-  mealType: ('breakfast' | 'lunch' | 'dinner')[];
+  mealType: (
+    | "breakfast"
+    | "lunch"
+    | "dinner"
+    | "snack"
+    | "dessert"
+    | "appetizer"
+    | "side"
+    | "soup"
+    | "drink"
+  )[];
   image: string;
   prepTime: number;
   cookTime: number;
   servings: number;
-  difficulty: 'easy' | 'medium' | 'hard';
+  difficulty: "easy" | "medium" | "hard";
   ingredients: Ingredient[];
   instructions: string[];
   nutrition: Nutrition;
