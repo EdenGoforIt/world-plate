@@ -9,7 +9,12 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "validate-data": "node ./scripts/validate-recipes.js",
+    "format-data": "node ./scripts/format-recipes.js",
+    "format-and-validate": "node ./scripts/format-recipes.js && node ./scripts/validate-recipes.js",
+    "analyze-data": "node ./scripts/analyze-data.js",
+    "check-consistency": "node ./scripts/check-consistency.js"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
