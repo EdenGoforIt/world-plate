@@ -1,0 +1,635 @@
+{
+  "overallOk": false,
+  "errors": [
+    {
+      "file": "afghanistan.json",
+      "recipeId": "afghanistan-1758569719689-102mt3spt",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "afghanistan.json",
+      "recipeId": "afghanistan-1758569719689-i0uba6fr5",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "afghanistan.json",
+      "recipeId": "afghanistan-1758569719689-obrxdparv",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "afghanistan.json",
+      "recipeId": "afghanistan-1758569719689-zfa6vvtca",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "afghanistan.json",
+      "recipeId": "afghanistan-1758569719689-i4ixzgbn4",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "afghanistan.json",
+      "recipeId": "afghanistan-1758569719689-4uzk1ymfy",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "algeria.json",
+      "recipeId": "algeria-1758569719691-6fnrjb9tj",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "algeria.json",
+      "recipeId": "algeria-1758569719691-shxn6x9ko",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "algeria.json",
+      "recipeId": "algeria-1758569719691-2h1k5eify",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "argentina.json",
+      "recipeId": "argentina-1758569719693-g70l553nl",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "argentina.json",
+      "recipeId": "argentina-004",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "argentina.json",
+      "recipeId": "argentina-013",
+      "message": "duplicate recipe id in file"
+    },
+    {
+      "file": "argentina.json",
+      "recipeId": "argentina-1758569719693-ydwlecw39",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "argentina.json",
+      "recipeId": "argentina-1758569719693-tcnpeyu8y",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-003",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-7d7pvtydx",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-h8pt8rcsb",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-b34e0abwb",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-004",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-0i8faone8",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-fng78jrfo",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-3ut4e7awt",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-m4eyxc55b",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "australia.json",
+      "recipeId": "australia-1758569719694-ofaaieil4",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "austria.json",
+      "recipeId": "austria-003",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "austria.json",
+      "recipeId": "austria-1758569719695-8g107sfuj",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "austria.json",
+      "recipeId": "austria-1758569719695-ts0x28cj0",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "austria.json",
+      "recipeId": "austria-1758569719695-2m1g9c4l0",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "austria.json",
+      "recipeId": "austria-010",
+      "message": "duplicate recipe id in file"
+    },
+    {
+      "file": "austria.json",
+      "recipeId": "austria-036",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "austria.json",
+      "recipeId": "austria-1758569719695-jy3vxsfv8",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-1758569719696-r5eszem4p",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-002",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-001",
+      "message": "duplicate recipe id in file"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-1758569719696-vplx22fpx",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-008",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-1758569719696-pybhftk9a",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-1758569719696-cqqhjsnf3",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-1758569719696-64a6y99p3",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-1758569719696-dl63g2qj5",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-007",
+      "message": "duplicate recipe id in file"
+    },
+    {
+      "file": "bangladesh.json",
+      "recipeId": "bangladesh-1758569719696-ff2n72yp1",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "belgium.json",
+      "recipeId": "belgium-1758569719698-cerp4e971",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "belgium.json",
+      "recipeId": "belgium-1758569719698-buamejltq",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "belgium.json",
+      "recipeId": "belgium-1758569719698-5lhskb03u",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "belgium.json",
+      "recipeId": "belgium-029",
+      "message": "mealType must be array containing any of: breakfast,lunch,dinner,snack,dessert,appetizer,side,soup,drink"
+    },
+    {
+      "file": "belgium.json",
+      "recipeId": "belgium-1758569719698-u6izc4pz1",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "brazil.json",
+      "recipeId": "brazil-1758569719699-h0ajpos9b",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "brazil.json",
+      "recipeId": "brazil-1758569719699-lw370hrlk",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "brazil.json",
+      "recipeId": "brazil-1758569719699-vnbfkort1",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "brazil.json",
+      "recipeId": "brazil-1758569719699-xs8xqdt9u",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "canada.json",
+      "recipeId": "canada-1758569719699-rl0wp6qqe",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "canada.json",
+      "recipeId": "canada-1758569719699-19wqcrfo4",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "canada.json",
+      "recipeId": "canada-1758569719699-qw0dno6vo",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "canada.json",
+      "recipeId": "canada-1758569719699-mn8ivf8lz",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "canada.json",
+      "recipeId": "canada-1758569719699-cgzkycnbc",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-z8vprfan1",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-f0459axe4",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-cgb9guzvb",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-d7miblo3n",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-3aylaw4po",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-7vpu09s3z",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-hmu5tooht",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-s2cdr103p",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-1hdg5llpk",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-6lyasrgob",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-d44xtwmue",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "chile.json",
+      "recipeId": "chile-1758569719700-3h8bqk2fc",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-b79toluvo",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-91fbpa39z",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-yd6w8fwlf",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-1qyw6rnv7",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-ssv31xyzm",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-69h1rk9vj",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-cd7q4jp58",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-2id5ru3av",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-0sdfyulkv",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-6ovvaez74",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-eszvjr7o9",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "china.json",
+      "recipeId": "china-1758569719700-42sq1rk8a",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-yppn1j3ru",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-j2gmb0vao",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-gkitrajp7",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-1rplq6y9b",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-as69natyd",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-d5g9hbizp",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-5wgmt0vjv",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-taat11b1q",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-yo417norn",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-3a2ctglnd",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-s526nh97x",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "colombia.json",
+      "recipeId": "colombia-1758569719700-aqsownms6",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-ce12joa26",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-4shodlbtb",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-7xbbi57sb",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-wsh54ix0d",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-hxucs81kr",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-ivx72ou1f",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-6gtsp2rt0",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-q0g01j5bl",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-u16qnhoqy",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-kuxoux89k",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-ts62qet0f",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-ua8t5kky3",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "cuba.json",
+      "recipeId": "cuba-1758569719701-fqsp6qzij",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-nh955lgjw",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-p0ih77jcw",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-fabdb4a8h",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-z356egyzp",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-u2xvteb99",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-ccyob86oa",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-b3n5qa8x7",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-jvlqqfwq9",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-zet3gtwgh",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-x1t3wegqa",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-8b0yqaaik",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "czech_republic.json",
+      "recipeId": "czech_republic-1758569719701-yer4r01uu",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-qyh8v47ms",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-b0bmpy7rq",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-v3ygialyo",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-g2ywvessw",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-ojl05s1pe",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-g0y9hcpsd",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-a36qeelai",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "italy.json",
+      "recipeId": "italy-1758569719702-ar628apn8",
+      "message": "ingredients must be a non-empty array"
+    },
+    {
+      "file": "recipes.json",
+      "recipeId": null,
+      "message": "country (string) is required"
+    }
+  ]
+}
