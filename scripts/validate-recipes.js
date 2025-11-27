@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
-const ALLOWED_MEALTYPES = ['breakfast', 'lunch', 'dinner'];
+const DATA_DIR = path.join(process.cwd(), 'data');
+const ALLOWED_MEALTYPES = ['breakfast', 'lunch', 'dinner', 'snack', 'dessert', 'appetizer', 'side', 'soup', 'drink'];
 const ALLOWED_DIFFICULTY = ['easy', 'medium', 'hard'];
 const ALLOWED_ING_CATS = ['protein', 'vegetable', 'grain', 'dairy', 'spice', 'other', 'nut'];
 const ALLOWED_RECIPE_KEYS = [
@@ -12,8 +12,11 @@ const ALLOWED_RECIPE_KEYS = [
 ];
 const ALLOWED_ING_KEYS = ['name', 'amount', 'category'];
 
+const errorLog = [];
 function error(file, recipeId, msg) {
-	console.error(`${file}${recipeId ? ':' + recipeId : ''} -> ${msg}`);
+	const line = `${file}${recipeId ? ':' + recipeId : ''} -> ${msg}`;
+	console.error(line);
+	errorLog.push({ file, recipeId: recipeId || null, message: msg });
 }
 
 function validateNutrition(nut, file, recipeId) {
@@ -122,18 +125,22 @@ function validateFile(filePath) {
 }
 
 function main() {
-	const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
+	const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json') && f !== 'index.json' && f !== 'recipe.schema.json');
 	let overallOk = true;
 	files.forEach(f => {
 		const p = path.join(DATA_DIR, f);
 		const ok = validateFile(p);
 		if (!ok) overallOk = false;
 	});
+	const reportPath = path.join(DATA_DIR, 'validation-report.json');
+	fs.writeFileSync(reportPath, JSON.stringify({ overallOk, errors: errorLog }, null, 2), 'utf8');
 	if (!overallOk) {
 		console.error('\nValidation failed. See errors above.');
+		console.error(`Wrote detailed report to ${reportPath}`);
 		process.exit(2);
 	} else {
 		console.log('All data files passed basic validation.');
+		console.log(`Wrote detailed report to ${reportPath}`);
 		process.exit(0);
 	}
 }
