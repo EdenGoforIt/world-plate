@@ -5,7 +5,8 @@ const path = require('path');
 
 // Simple TypeScript-like interface validation for Node.js
 function loadDataFiles() {
-	const dataDir = path.join(__dirname, '../data');
+	// Use CWD so scripts work when run from package scripts or CI
+	const dataDir = path.join(process.cwd(), 'data');
 	const files = fs.readdirSync(dataDir).filter(file =>
 		file.endsWith('.json') && file !== 'index.json' && file !== 'recipe.schema.json'
 	);
