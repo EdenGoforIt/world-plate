@@ -51,16 +51,55 @@ export interface DifficultyStats {
  * Calculate comprehensive recipe statistics
  */
 export function calculateRecipeStats(recipes: Recipe[]) {
+  const cuisineStats = getCuisineStats(recipes);
+  const timingStats = getTimingStats(recipes);
+  const difficultyStats = getDifficultyStats(recipes);
+  const mealTypeDistribution = getMealTypeDistribution(recipes);
+
+  // Compatibility fields used by existing UI components (AnalyticsDashboard)
+  const compatibility = {
+    totalRecipes: recipes.length,
+    averageCookTime: Math.round(timingStats.avgCookTime),
+    averagePrepTime: Math.round(timingStats.avgPrepTime),
+    uniqueCuisines: cuisineStats.length,
+    // difficultyBreakdown and mealTypeBreakdown as arrays of { label, count }
+    difficultyBreakdown: [
+      {
+        label: "Easy",
+        count: (difficultyStats.easy && difficultyStats.easy.count) || 0,
+      },
+      {
+        label: "Medium",
+        count: (difficultyStats.medium && difficultyStats.medium.count) || 0,
+      },
+      {
+        label: "Hard",
+        count: (difficultyStats.hard && difficultyStats.hard.count) || 0,
+      },
+    ],
+    mealTypeBreakdown: mealTypeDistribution.map((t) => ({
+      label: t.item,
+      count: t.count,
+    })),
+    cuisineBreakdown: cuisineStats.map((c) => ({
+      label: c.cuisine,
+      count: c.recipeCount,
+    })),
+  };
+
   return {
+    // original detailed outputs
     total: recipes.length,
-    cuisineStats: getCuisineStats(recipes),
+    cuisineStats,
     ingredientStats: getIngredientStats(recipes),
     nutritionSummary: getNutritionSummary(recipes),
-    timingStats: getTimingStats(recipes),
-    difficultyStats: getDifficultyStats(recipes),
+    timingStats,
+    difficultyStats,
     ratingStats: getRatingStats(recipes),
     popularTags: getPopularTags(recipes),
-    mealTypeDistribution: getMealTypeDistribution(recipes),
+    mealTypeDistribution,
+    // compatibility
+    ...compatibility,
   };
 }
 
