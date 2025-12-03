@@ -3,3 +3,4 @@
 export const AUTO_FEATURE_EXTRA_PLACEHOLDER = "placeholder";
 export const AUTO_FEATURE_EXTRA_1 = "2025-12-03 09:30:00";
 export const AUTO_FEATURE_EXTRA_2 = "2025-12-03 15:30:00";
+export const AUTO_FEATURE_EXTRA_3 = "2025-12-04 09:30:00";
