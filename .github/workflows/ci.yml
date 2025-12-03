@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run format and validate
+        run: npm run format-and-validate
+
+      - name: Run consistency check
+        run: npm run check-consistency
+
+      - name: Run data analysis (non-blocking)
+        run: npm run analyze-data || true
