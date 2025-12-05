@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run project linter before commit. This intentionally only runs the linter (no tests).
+echo "Running linter (pre-commit)..."
+npm run lint
+RC=$?
+if [ $RC -ne 0 ]; then
+  echo "Lint failed. Commit aborted. Fix linting issues and try again."
+  exit $RC
+fi
+echo "Lint passed. Proceeding with commit."
