@@ -1,12 +1,12 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# Run project linter before commit. This intentionally only runs the linter (no tests).
-echo "Running linter (pre-commit)..."
-npm run lint
+# Run lint-staged on staged files (fast staged-only linting + formatting)
+echo "Running lint-staged (pre-commit)..."
+npx lint-staged
 RC=$?
 if [ $RC -ne 0 ]; then
-  echo "Lint failed. Commit aborted. Fix linting issues and try again."
+  echo "lint-staged failed. Commit aborted. Fix issues and try again."
   exit $RC
 fi
-echo "Lint passed. Proceeding with commit."
+echo "lint-staged passed. Proceeding with commit."
