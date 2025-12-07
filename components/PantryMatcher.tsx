@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from 'react';
-import { FlatList, TextInput, View, Button, Alert } from 'react-native';
+import { Alert, Button, FlatList, TextInput, View } from 'react-native';
 import recipesData from '../data/recipes.json';
 import { matchRecipesByPantry } from '../utils/pantryMatcher';
+import { addItemsToShoppingList } from '../utils/storageUtils';
 import ThemedText from './ThemedText';
 import ThemedView from './ThemedView';
-import { addItemsToShoppingList } from '../utils/storageUtils';
 
 export default function PantryMatcher() {
   const [input, setInput] = useState('');

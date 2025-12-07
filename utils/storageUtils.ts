@@ -155,3 +155,57 @@ export const getAllFavoriteRecipes = async (): Promise<string[]> => {
     return [];
   }
 };
+
+// Shopping list persistence
+const SHOPPING_LIST_KEY = '@shopping_list';
+
+export interface ShoppingListItemPersist {
+  ingredient: string;
+  totalAmount?: string;
+  category?: string;
+  recipes?: string[];
+}
+
+export const getShoppingList = async (): Promise<ShoppingListItemPersist[]> => {
+  try {
+    const raw = await AsyncStorage.getItem(SHOPPING_LIST_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (error) {
+    console.error('Error getting shopping list:', error);
+    return [];
+  }
+};
+
+export const saveShoppingList = async (items: ShoppingListItemPersist[]): Promise<void> => {
+  try {
+    await AsyncStorage.setItem(SHOPPING_LIST_KEY, JSON.stringify(items));
+  } catch (error) {
+    console.error('Error saving shopping list:', error);
+  }
+};
+
+export const addItemsToShoppingList = async (itemsToAdd: ShoppingListItemPersist[]): Promise<void> => {
+  try {
+    const current = await getShoppingList();
+    // Merge by ingredient name (case-insensitive)
+    const map = new Map<string, ShoppingListItemPersist>();
+    current.forEach((it) => map.set(it.ingredient.toLowerCase(), it));
+    itemsToAdd.forEach((it) => {
+      const key = it.ingredient.toLowerCase();
+      const existing = map.get(key);
+      if (existing) {
+        // merge recipes and prefer existing totalAmount if present
+        existing.recipes = Array.from(new Set([...(existing.recipes || []), ...(it.recipes || [])]));
+        if (!existing.totalAmount && it.totalAmount) existing.totalAmount = it.totalAmount;
+        if (!existing.category && it.category) existing.category = it.category;
+      } else {
+        map.set(key, it);
+      }
+    });
+
+    const merged = Array.from(map.values());
+    await saveShoppingList(merged);
+  } catch (error) {
+    console.error('Error adding items to shopping list:', error);
+  }
+};
