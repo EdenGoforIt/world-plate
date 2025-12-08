@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Alert, Button, FlatList, TextInput, View } from 'react-native';
-import { addItemsToShoppingList, getShoppingList, saveShoppingList, toggleShoppingListItemChecked } from '../utils/storageUtils';
+import { addItemsToShoppingList, clearShoppingList, getShoppingList, removeCheckedItemsFromShoppingList, saveShoppingList, toggleShoppingListItemChecked } from '../utils/storageUtils';
 import ThemedText from './ThemedText';
 import ThemedView from './ThemedView';
 
@@ -66,10 +66,30 @@ export default function ShoppingList() {
     setItems(list as PersistItem[]);
   };
 
+  const handleClearChecked = async () => {
+    await removeCheckedItemsFromShoppingList();
+    const list = await getShoppingList();
+    setItems(list as PersistItem[]);
+  };
+
+  const handleClearAll = async () => {
+    Alert.alert('Clear all', 'Are you sure you want to clear the entire shopping list?', [
+      { text: 'Cancel', style: 'cancel' },
+      { text: 'Clear', style: 'destructive', onPress: async () => {
+        await clearShoppingList();
+        setItems([]);
+      } }
+    ]);
+  };
+
   return (
     <ThemedView style={{ padding: 12 }}>
       <ThemedText style={{ fontSize: 18, fontWeight: '600', marginBottom: 12 }}>Shopping List</ThemedText>
       <Button title="Add example item" onPress={handleAddExampleItems} />
+      <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
+        <Button title="Clear checked" onPress={handleClearChecked} />
+        <Button title="Clear all" color="#d00" onPress={handleClearAll} />
+      </View>
       <FlatList
         data={items}
         keyExtractor={(item) => item.ingredient}

@@ -225,3 +225,21 @@ export const toggleShoppingListItemChecked = async (ingredient: string, checked:
     console.error('Error toggling shopping list item checked state:', error);
   }
 };
+
+export const removeCheckedItemsFromShoppingList = async (): Promise<void> => {
+  try {
+    const current = await getShoppingList();
+    const filtered = current.filter((it) => !it.checked);
+    await saveShoppingList(filtered);
+  } catch (error) {
+    console.error('Error removing checked items from shopping list:', error);
+  }
+};
+
+export const clearShoppingList = async (): Promise<void> => {
+  try {
+    await saveShoppingList([]);
+  } catch (error) {
+    console.error('Error clearing shopping list:', error);
+  }
+};
