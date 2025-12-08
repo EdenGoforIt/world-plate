@@ -243,3 +243,24 @@ export const clearShoppingList = async (): Promise<void> => {
     console.error('Error clearing shopping list:', error);
   }
 };
+
+// Pantry persistence
+const PANTRY_KEY = '@pantry_items';
+
+export const getPantryItems = async (): Promise<string[]> => {
+  try {
+    const raw = await AsyncStorage.getItem(PANTRY_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (error) {
+    console.error('Error getting pantry items:', error);
+    return [];
+  }
+};
+
+export const savePantryItems = async (items: string[]): Promise<void> => {
+  try {
+    await AsyncStorage.setItem(PANTRY_KEY, JSON.stringify(items));
+  } catch (error) {
+    console.error('Error saving pantry items:', error);
+  }
+};

@@ -3,6 +3,7 @@ import { Alert, Button, FlatList, TextInput, View } from 'react-native';
 import recipesData from '../data/recipes.json';
 import { matchRecipesByPantry } from '../utils/pantryMatcher';
 import { addItemsToShoppingList } from '../utils/storageUtils';
+import { savePantryItems } from '../utils/storageUtils';
 import { addItemsToShoppingList } from '../utils/storageUtils';
 import ThemedText from './ThemedText';
 import ThemedView from './ThemedView';
@@ -52,6 +53,17 @@ export default function PantryMatcher() {
     }
   };
 
+  const saveAsPantry = async () => {
+    const normalized = pantryItems.map((p) => p.trim()).filter(Boolean);
+    try {
+      await savePantryItems(normalized);
+      Alert.alert('Saved', 'Pantry items saved. You can use them in other parts of the app.');
+    } catch (e) {
+      console.error(e);
+      Alert.alert('Error', 'Could not save pantry.');
+    }
+  };
+
   return (
     <ThemedView style={{ padding: 12 }}>
       <ThemedText style={{ fontSize: 18, fontWeight: '600', marginBottom: 8 }}>Pantry Matcher</ThemedText>
@@ -93,6 +105,9 @@ export default function PantryMatcher() {
             <Button title="Add missing from top 3" onPress={() => addMissingFromMatches(3)} />
             <Button title="Add missing from top 5" onPress={() => addMissingFromMatches(5)} />
             <Button title="Add missing from all" onPress={() => addMissingFromMatches(matches.length)} />
+          </View>
+          <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
+            <Button title="Save as my pantry" onPress={saveAsPantry} />
           </View>
         
         <FlatList

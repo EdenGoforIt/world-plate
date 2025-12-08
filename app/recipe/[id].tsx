@@ -4,17 +4,17 @@ import { LinearGradient } from "expo-linear-gradient";
 import { router, useLocalSearchParams } from "expo-router";
 import React, { useEffect, useRef, useState } from "react";
 import {
-  ActivityIndicator,
-  Animated,
-  Dimensions,
-  Image,
-  ScrollView,
-  Share,
-  StatusBar,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    ActivityIndicator,
+    Animated,
+    Dimensions,
+    Image,
+    ScrollView,
+    Share,
+    StatusBar,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from "react-native";
 import Modal from "react-native-modal";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -30,9 +30,9 @@ import { useReviews } from "@/hooks/useReviews";
 import { Recipe } from "@/types/Recipe";
 import { Review } from "@/types/Review";
 import {
-  formatCookTime,
-  getDifficultyColor,
-  getRecipeByIdFromCountry,
+    formatCookTime,
+    getDifficultyColor,
+    getRecipeByIdFromCountry,
 } from "@/utils/recipeUtils";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
@@ -375,6 +375,42 @@ export default function RecipeDetailScreen() {
     </ScrollView>
   );
 
+  const handleCheckPantry = async () => {
+    const pantry = await getPantryItems();
+    if (!pantry || pantry.length === 0) {
+      Alert.alert('No pantry saved', 'Your pantry is empty. Save a pantry in the Pantry Matcher or add items.');
+      router.push('/pantry');
+      return;
+    }
+
+    const match = matchRecipesByPantry([recipe], pantry)[0];
+    if (!match) {
+      Alert.alert('No match info', 'Could not compute pantry match for this recipe.');
+      return;
+    }
+
+    const missing = match.missingIngredients.slice(0, 10).join(', ');
+    Alert.alert(
+      `${match.matchPercent}% match`,
+      `Missing: ${missing || 'None'}`,
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Add missing to shopping list',
+          onPress: async () => {
+            if (match.missingIngredients.length === 0) {
+              Alert.alert('Nothing to add');
+              return;
+            }
+            const toAdd = match.missingIngredients.map((ing) => ({ ingredient: ing.charAt(0).toUpperCase() + ing.slice(1), totalAmount: '', category: 'other', recipes: [recipe.name] }));
+            await addItemsToShoppingList(toAdd);
+            Alert.alert('Added', `Added ${toAdd.length} items to your shopping list.`);
+          }
+        }
+      ]
+    );
+  };
+
   const routes = [
     { key: "ingredients", title: "Ingredients" },
     { key: "instructions", title: "Instructions" },
@@ -559,6 +595,13 @@ export default function RecipeDetailScreen() {
               size={20}
               color={isRecipeFavorite ? "#FF6B6B" : Colors.text}
             />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={handleCheckPantry}
+            className="w-10 h-10 rounded-full items-center justify-center"
+            style={{ backgroundColor: "rgba(255,255,255,0.9)" }}
+          >
+            <Ionicons name="checkmark-done-circle-outline" size={20} color={Colors.primary} />
           </TouchableOpacity>
         </View>
       </View>
