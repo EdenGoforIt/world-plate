@@ -3,6 +3,7 @@ import { Alert, Button, FlatList, TextInput, View } from 'react-native';
 import recipesData from '../data/recipes.json';
 import { matchRecipesByPantry } from '../utils/pantryMatcher';
 import { addItemsToShoppingList } from '../utils/storageUtils';
+import { addItemsToShoppingList } from '../utils/storageUtils';
 import ThemedText from './ThemedText';
 import ThemedView from './ThemedView';
 
@@ -24,6 +25,32 @@ export default function PantryMatcher() {
       maxMissing: Number(maxMissing || 2),
     }).slice(0, 20);
   }, [pantryItems, maxMissing]);
+
+  const addMissingFromMatches = async (limit = 5) => {
+    if (matches.length === 0) return;
+    const toAdd = matches.slice(0, limit)
+      .flatMap((m) => m.missingIngredients.map((ing) => ({ ingredient: ing.charAt(0).toUpperCase() + ing.slice(1), totalAmount: '', category: 'other', recipes: [m.recipe.name] })))
+      .reduce((acc, cur) => {
+        const existing = acc.find((a) => a.ingredient.toLowerCase() === cur.ingredient.toLowerCase());
+        if (existing) {
+          existing.recipes = Array.from(new Set([...(existing.recipes || []), ...(cur.recipes || [])]));
+        } else acc.push(cur);
+        return acc;
+      }, [] as any[]);
+
+    if (toAdd.length === 0) {
+      Alert.alert('Nothing to add', 'No missing ingredients found in the selected matches');
+      return;
+    }
+
+    try {
+      await addItemsToShoppingList(toAdd);
+      Alert.alert('Added', `Added ${toAdd.length} item(s) to your shopping list.`);
+    } catch (e) {
+      console.error(e);
+      Alert.alert('Error', 'Could not add items to shopping list.');
+    }
+  };
 
   return (
     <ThemedView style={{ padding: 12 }}>
@@ -61,6 +88,13 @@ export default function PantryMatcher() {
       {pantryItems.length === 0 ? (
         <ThemedText>No pantry items entered yet.</ThemedText>
       ) : (
+        <>
+          <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
+            <Button title="Add missing from top 3" onPress={() => addMissingFromMatches(3)} />
+            <Button title="Add missing from top 5" onPress={() => addMissingFromMatches(5)} />
+            <Button title="Add missing from all" onPress={() => addMissingFromMatches(matches.length)} />
+          </View>
+        
         <FlatList
           data={matches}
           keyExtractor={(item) => item.recipe.id}
