@@ -269,6 +269,9 @@ export default function ExploreScreen() {
           <TouchableOpacity onPress={() => router.push('/shopping-list')} className="bg-secondary px-3 py-2 rounded-lg">
             <Text className="text-white">Shopping List</Text>
           </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/my-pantry')} className="bg-green-500 px-3 py-2 rounded-lg">
+            <Text className="text-white">My Pantry</Text>
+          </TouchableOpacity>
         </View>
       </View>
 
