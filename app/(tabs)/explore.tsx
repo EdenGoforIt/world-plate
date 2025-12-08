@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  View, 
-  Text, 
-  ScrollView, 
-  TouchableOpacity, 
-  TextInput,
-  FlatList,
-  StatusBar 
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
+import React, { useEffect, useState } from 'react';
+import {
+    FlatList,
+    ScrollView,
+    StatusBar,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View
+} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { RecipeCard } from '@/components/RecipeCard';
-import { Colors } from '@/constants/Colors';
-import { getRecipeByIdFromCountrySync } from '@/utils/recipeUtils';
-import { getAllRecipesFromCache, getCategoriesFromCache, preloadRecipeCache } from '@/utils/recipeCache';
-import { Recipe } from '@/types/Recipe';
-import { useFavorites } from '@/hooks/useFavorites';
+import { FilterOptions, SearchFilters } from '@/components/SearchFilters';
 import Loader from '@/components/ui/Loader';
-import { SearchFilters, FilterOptions } from '@/components/SearchFilters';
+import { Colors } from '@/constants/Colors';
+import { useFavorites } from '@/hooks/useFavorites';
+import { Recipe } from '@/types/Recipe';
+import { getAllRecipesFromCache, getCategoriesFromCache, preloadRecipeCache } from '@/utils/recipeCache';
+import { getRecipeByIdFromCountrySync } from '@/utils/recipeUtils';
 
 export default function ExploreScreen() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -262,6 +262,14 @@ export default function ExploreScreen() {
             <Ionicons name="close-circle" size={16} color={Colors.primary} />
           </TouchableOpacity>
         )}
+        <View className="flex-row gap-3 mt-2">
+          <TouchableOpacity onPress={() => router.push('/pantry')} className="bg-primary px-3 py-2 rounded-lg">
+            <Text className="text-white">Pantry Matcher</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => router.push('/shopping-list')} className="bg-secondary px-3 py-2 rounded-lg">
+            <Text className="text-white">Shopping List</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>

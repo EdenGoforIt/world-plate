@@ -1,22 +1,31 @@
-import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  ScrollView,
-  TouchableOpacity,
-  FlatList,
-  Alert,
-  StatusBar,
-  TextInput,
-  Modal,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
+import Loader from '@/components/ui/Loader';
 import { Colors } from '@/constants/Colors';
 import { useShoppingList } from '@/hooks/useShoppingList';
-import { ShoppingList, ShoppingListItem } from '@/types/ShoppingList';
-import Loader from '@/components/ui/Loader';
+import { ShoppingListItem } from '@/types/ShoppingList';
+import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
+import { default as React, default as React, useState } from 'react';
+import {
+    Alert,
+    FlatList,
+    Modal,
+    ScrollView,
+    StatusBar,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
+} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import ShoppingList from '../components/ShoppingList';
+
+export default function ShoppingListPage() {
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <ShoppingList />
+    </SafeAreaView>
+  );
+}
 
 export default function ShoppingListScreen() {
   const { 
