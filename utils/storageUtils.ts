@@ -164,6 +164,7 @@ export interface ShoppingListItemPersist {
   totalAmount?: string;
   category?: string;
   recipes?: string[];
+  checked?: boolean;
 }
 
 export const getShoppingList = async (): Promise<ShoppingListItemPersist[]> => {
@@ -207,5 +208,20 @@ export const addItemsToShoppingList = async (itemsToAdd: ShoppingListItemPersist
     await saveShoppingList(merged);
   } catch (error) {
     console.error('Error adding items to shopping list:', error);
+  }
+};
+
+export const toggleShoppingListItemChecked = async (ingredient: string, checked: boolean): Promise<void> => {
+  try {
+    const current = await getShoppingList();
+    const map = new Map(current.map((it) => [it.ingredient.toLowerCase(), it]));
+    const key = ingredient.toLowerCase();
+    const existing = map.get(key);
+    if (existing) {
+      existing.checked = checked;
+      await saveShoppingList(Array.from(map.values()));
+    }
+  } catch (error) {
+    console.error('Error toggling shopping list item checked state:', error);
   }
 };

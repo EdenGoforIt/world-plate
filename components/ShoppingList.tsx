@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Alert, Button, FlatList, TextInput, View } from 'react-native';
-import { addItemsToShoppingList, getShoppingList, saveShoppingList } from '../utils/storageUtils';
+import { addItemsToShoppingList, getShoppingList, saveShoppingList, toggleShoppingListItemChecked } from '../utils/storageUtils';
 import ThemedText from './ThemedText';
 import ThemedView from './ThemedView';
 
@@ -34,6 +34,13 @@ export default function ShoppingList() {
     const removed = copy.splice(index, 1);
     persist(copy);
     Alert.alert('Removed', `${removed[0].ingredient} removed`);
+  };
+
+  const handleToggleChecked = async (index: number) => {
+    const copy = [...items];
+    copy[index].checked = !copy[index].checked;
+    setItems(copy);
+    await toggleShoppingListItemChecked(copy[index].ingredient, !!copy[index].checked);
   };
 
   const startEditing = (index: number) => {
@@ -80,6 +87,7 @@ export default function ShoppingList() {
               <View style={{ flexDirection: 'row', gap: 8, marginTop: 8 }}>
                 <Button title="Edit" onPress={() => startEditing(index)} />
                 <Button title="Delete" color="#d00" onPress={() => handleDelete(index)} />
+                <Button title={item.checked ? 'Uncheck' : 'Check'} onPress={() => handleToggleChecked(index)} />
               </View>
             )}
           </View>
