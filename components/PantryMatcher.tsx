@@ -1,10 +1,9 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { Alert, Button, FlatList, TextInput, View } from 'react-native';
 import recipesData from '../data/recipes.json';
 import { matchRecipesByPantry } from '../utils/pantryMatcher';
-import { addItemsToShoppingList } from '../utils/storageUtils';
-import { savePantryItems } from '../utils/storageUtils';
-import { addItemsToShoppingList } from '../utils/storageUtils';
+import { addItemsToNamedShoppingList, getAllShoppingLists, getActiveShoppingListName } from '../utils/storageUtils';
+import { savePantryItems, getPantryItems } from '../utils/storageUtils';
 import ThemedText from './ThemedText';
 import ThemedView from './ThemedView';
 
@@ -27,6 +26,20 @@ export default function PantryMatcher() {
     }).slice(0, 20);
   }, [pantryItems, maxMissing]);
 
+  const [lists, setLists] = useState<string[]>([]);
+  const [targetList, setTargetList] = useState('Default');
+
+  useEffect(() => {
+    const load = async () => {
+      const all = await getAllShoppingLists();
+      const names = Object.keys(all).sort();
+      setLists(names.length ? names : ['Default']);
+      const active = await getActiveShoppingListName();
+      setTargetList(active);
+    };
+    load();
+  }, []);
+
   const addMissingFromMatches = async (limit = 5) => {
     if (matches.length === 0) return;
     const toAdd = matches.slice(0, limit)
@@ -45,7 +58,7 @@ export default function PantryMatcher() {
     }
 
     try {
-      await addItemsToShoppingList(toAdd);
+      await addItemsToNamedShoppingList(targetList, toAdd);
       Alert.alert('Added', `Added ${toAdd.length} item(s) to your shopping list.`);
     } catch (e) {
       console.error(e);
@@ -61,6 +74,15 @@ export default function PantryMatcher() {
     } catch (e) {
       console.error(e);
       Alert.alert('Error', 'Could not save pantry.');
+    }
+  };
+
+  const loadSavedPantry = async () => {
+    const saved = await getPantryItems();
+    if (saved && saved.length > 0) {
+      setInput(saved.join(', '));
+    } else {
+      Alert.alert('No saved pantry', 'You have no saved pantry items.');
     }
   };
 
@@ -107,6 +129,22 @@ export default function PantryMatcher() {
             <Button title="Add missing from all" onPress={() => addMissingFromMatches(matches.length)} />
           </View>
           <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
+            <FlatList
+              horizontal
+              data={lists}
+              keyExtractor={(it) => it}
+              renderItem={({ item }) => (
+                <View style={{ marginRight: 8 }}>
+                  <Button title={item} color={item === targetList ? '#0a84ff' : undefined} onPress={() => setTargetList(item)} />
+                </View>
+              )}
+            />
+          </View>
+          <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
+            <Button title="Save as my pantry" onPress={saveAsPantry} />
+            <Button title="Load saved pantry" onPress={loadSavedPantry} />
+          </View>
+          <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
             <Button title="Save as my pantry" onPress={saveAsPantry} />
           </View>
         
@@ -137,7 +175,7 @@ export default function PantryMatcher() {
                     }));
 
                     try {
-                      await addItemsToShoppingList(toAdd);
+                      await addItemsToNamedShoppingList(targetList, toAdd);
                       Alert.alert('Added', `Added ${toAdd.length} items to your shopping list.`);
                     } catch (e) {
                       console.error(e);

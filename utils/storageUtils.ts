@@ -156,8 +156,10 @@ export const getAllFavoriteRecipes = async (): Promise<string[]> => {
   }
 };
 
-// Shopping list persistence
-const SHOPPING_LIST_KEY = '@shopping_list';
+// Shopping list persistence (migrated to named lists)
+const SHOPPING_LIST_KEY = '@shopping_list'; // legacy single list key
+const SHOPPING_LISTS_KEY = '@shopping_lists'; // new key: { [listName]: ShoppingListItemPersist[] }
+const ACTIVE_LIST_KEY = '@active_shopping_list';
 
 export interface ShoppingListItemPersist {
   ingredient: string;
@@ -169,6 +171,15 @@ export interface ShoppingListItemPersist {
 
 export const getShoppingList = async (): Promise<ShoppingListItemPersist[]> => {
   try {
+    // Try to load named lists first (new format)
+    const listsRaw = await AsyncStorage.getItem(SHOPPING_LISTS_KEY);
+    if (listsRaw) {
+      const lists = JSON.parse(listsRaw) as Record<string, ShoppingListItemPersist[]>;
+      const activeName = (await AsyncStorage.getItem(ACTIVE_LIST_KEY)) || 'Default';
+      return lists[activeName] || [];
+    }
+
+    // Fall back to legacy single list
     const raw = await AsyncStorage.getItem(SHOPPING_LIST_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch (error) {
@@ -179,6 +190,17 @@ export const getShoppingList = async (): Promise<ShoppingListItemPersist[]> => {
 
 export const saveShoppingList = async (items: ShoppingListItemPersist[]): Promise<void> => {
   try {
+    // Save into current active named list (if lists exist) or legacy key
+    const listsRaw = await AsyncStorage.getItem(SHOPPING_LISTS_KEY);
+    if (listsRaw) {
+      const lists = JSON.parse(listsRaw) as Record<string, ShoppingListItemPersist[]>;
+      const activeName = (await AsyncStorage.getItem(ACTIVE_LIST_KEY)) || 'Default';
+      lists[activeName] = items;
+      await AsyncStorage.setItem(SHOPPING_LISTS_KEY, JSON.stringify(lists));
+      return;
+    }
+
+    // fallback
     await AsyncStorage.setItem(SHOPPING_LIST_KEY, JSON.stringify(items));
   } catch (error) {
     console.error('Error saving shopping list:', error);
@@ -241,6 +263,132 @@ export const clearShoppingList = async (): Promise<void> => {
     await saveShoppingList([]);
   } catch (error) {
     console.error('Error clearing shopping list:', error);
+  }
+};
+
+// --- Named shopping lists helpers ---
+export const getAllShoppingLists = async (): Promise<Record<string, ShoppingListItemPersist[]>> => {
+  try {
+    const raw = await AsyncStorage.getItem(SHOPPING_LISTS_KEY);
+    if (raw) return JSON.parse(raw);
+
+    // If no named lists exist but legacy list exists, migrate to default
+    const legacy = await AsyncStorage.getItem(SHOPPING_LIST_KEY);
+    if (legacy) {
+      const defaultList = JSON.parse(legacy) as ShoppingListItemPersist[];
+      const lists = { Default: defaultList } as Record<string, ShoppingListItemPersist[]>;
+      await AsyncStorage.setItem(SHOPPING_LISTS_KEY, JSON.stringify(lists));
+      return lists;
+    }
+
+    return { Default: [] };
+  } catch (error) {
+    console.error('Error getting all shopping lists:', error);
+    return { Default: [] };
+  }
+};
+
+export const getShoppingListByName = async (name = 'Default'): Promise<ShoppingListItemPersist[]> => {
+  try {
+    const lists = await getAllShoppingLists();
+    return lists[name] || [];
+  } catch (error) {
+    console.error(`Error getting shopping list for ${name}:`, error);
+    return [];
+  }
+};
+
+export const saveShoppingListByName = async (name: string, items: ShoppingListItemPersist[]): Promise<void> => {
+  try {
+    const lists = await getAllShoppingLists();
+    lists[name] = items;
+    await AsyncStorage.setItem(SHOPPING_LISTS_KEY, JSON.stringify(lists));
+  } catch (error) {
+    console.error(`Error saving shopping list for ${name}:`, error);
+  }
+};
+
+export const addItemsToNamedShoppingList = async (name: string, itemsToAdd: ShoppingListItemPersist[]): Promise<void> => {
+  try {
+    const current = await getShoppingListByName(name);
+    const map = new Map<string, ShoppingListItemPersist>();
+    current.forEach((it) => map.set(it.ingredient.toLowerCase(), it));
+    itemsToAdd.forEach((it) => {
+      const key = it.ingredient.toLowerCase();
+      const existing = map.get(key);
+      if (existing) {
+        existing.recipes = Array.from(new Set([...(existing.recipes || []), ...(it.recipes || [])]));
+        if (!existing.totalAmount && it.totalAmount) existing.totalAmount = it.totalAmount;
+        if (!existing.category && it.category) existing.category = it.category;
+      } else {
+        map.set(key, it);
+      }
+    });
+    const merged = Array.from(map.values());
+    await saveShoppingListByName(name, merged);
+  } catch (error) {
+    console.error(`Error adding items to shopping list ${name}:`, error);
+  }
+};
+
+export const createShoppingList = async (name: string): Promise<void> => {
+  try {
+    const lists = await getAllShoppingLists();
+    if (lists[name]) throw new Error('List already exists');
+    lists[name] = [];
+    await AsyncStorage.setItem(SHOPPING_LISTS_KEY, JSON.stringify(lists));
+  } catch (error) {
+    console.error(`Error creating shopping list ${name}:`, error);
+  }
+};
+
+export const deleteShoppingList = async (name: string): Promise<void> => {
+  try {
+    const lists = await getAllShoppingLists();
+    delete lists[name];
+    await AsyncStorage.setItem(SHOPPING_LISTS_KEY, JSON.stringify(lists));
+    // If active list was deleted, set Default active
+    const active = (await AsyncStorage.getItem(ACTIVE_LIST_KEY)) || 'Default';
+    if (active === name) {
+      await AsyncStorage.setItem(ACTIVE_LIST_KEY, 'Default');
+    }
+  } catch (error) {
+    console.error(`Error deleting shopping list ${name}:`, error);
+  }
+};
+
+export const renameShoppingList = async (oldName: string, newName: string): Promise<void> => {
+  try {
+    const lists = await getAllShoppingLists();
+    if (!lists[oldName]) throw new Error('List does not exist');
+    if (lists[newName]) throw new Error('New name already exists');
+    lists[newName] = lists[oldName];
+    delete lists[oldName];
+    await AsyncStorage.setItem(SHOPPING_LISTS_KEY, JSON.stringify(lists));
+    const active = (await AsyncStorage.getItem(ACTIVE_LIST_KEY)) || 'Default';
+    if (active === oldName) {
+      await AsyncStorage.setItem(ACTIVE_LIST_KEY, newName);
+    }
+  } catch (error) {
+    console.error(`Error renaming shopping list ${oldName} -> ${newName}:`, error);
+  }
+};
+
+export const getActiveShoppingListName = async (): Promise<string> => {
+  try {
+    const name = await AsyncStorage.getItem(ACTIVE_LIST_KEY);
+    return name || 'Default';
+  } catch (error) {
+    console.error('Error getting active shopping list name:', error);
+    return 'Default';
+  }
+};
+
+export const setActiveShoppingListName = async (name: string): Promise<void> => {
+  try {
+    await AsyncStorage.setItem(ACTIVE_LIST_KEY, name);
+  } catch (error) {
+    console.error('Error setting active shopping list name:', error);
   }
 };
 

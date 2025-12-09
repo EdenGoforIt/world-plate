@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Alert, Button, FlatList, TextInput, View } from 'react-native';
-import { addItemsToShoppingList, clearShoppingList, getShoppingList, removeCheckedItemsFromShoppingList, saveShoppingList, toggleShoppingListItemChecked } from '../utils/storageUtils';
+import { addItemsToShoppingList, clearShoppingList, createShoppingList, deleteShoppingList, getActiveShoppingListName, getAllShoppingLists, getShoppingList, removeCheckedItemsFromShoppingList, saveShoppingList, setActiveShoppingListName, toggleShoppingListItemChecked } from '../utils/storageUtils';
 import ThemedText from './ThemedText';
 import ThemedView from './ThemedView';
 
@@ -15,9 +15,17 @@ export default function ShoppingList() {
   const [items, setItems] = useState<PersistItem[]>([]);
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [editingAmount, setEditingAmount] = useState('');
+  const [lists, setLists] = useState<string[]>([]);
+  const [activeList, setActiveList] = useState('Default');
+  const [newListName, setNewListName] = useState('');
 
   useEffect(() => {
     const load = async () => {
+      const all = await getAllShoppingLists();
+      const names = Object.keys(all).sort();
+      setLists(names.length > 0 ? names : ['Default']);
+      const name = await getActiveShoppingListName();
+      setActiveList(name);
       const list = await getShoppingList();
       setItems(list as PersistItem[]);
     };
@@ -66,6 +74,42 @@ export default function ShoppingList() {
     setItems(list as PersistItem[]);
   };
 
+  const handleCreateList = async () => {
+    const name = newListName.trim();
+    if (!name) return;
+    await createShoppingList(name);
+    const all = await getAllShoppingLists();
+    const names = Object.keys(all).sort();
+    setLists(names);
+    setNewListName('');
+    await setActiveShoppingListName(name);
+    setActiveList(name);
+    const list = await getShoppingList();
+    setItems(list as PersistItem[]);
+  };
+
+  const handleDeleteList = async (name: string) => {
+    if (name === 'Default') {
+      Alert.alert('Cannot delete default list');
+      return;
+    }
+    await deleteShoppingList(name);
+    const all = await getAllShoppingLists();
+    const names = Object.keys(all).sort();
+    setLists(names);
+    const active = await getActiveShoppingListName();
+    setActiveList(active);
+    const list = await getShoppingList();
+    setItems(list as PersistItem[]);
+  };
+
+  const handleSelectList = async (name: string) => {
+    await setActiveShoppingListName(name);
+    setActiveList(name);
+    const list = await getShoppingList();
+    setItems(list as PersistItem[]);
+  };
+
   const handleClearChecked = async () => {
     await removeCheckedItemsFromShoppingList();
     const list = await getShoppingList();
@@ -86,6 +130,25 @@ export default function ShoppingList() {
     <ThemedView style={{ padding: 12 }}>
       <ThemedText style={{ fontSize: 18, fontWeight: '600', marginBottom: 12 }}>Shopping List</ThemedText>
       <Button title="Add example item" onPress={handleAddExampleItems} />
+      <View style={{ flexDirection: 'row', gap: 8, marginTop: 8, marginBottom: 8, alignItems: 'center' }}>
+        <TextInput value={newListName} onChangeText={setNewListName} placeholder="New list name" style={{ borderWidth: 1, borderColor: '#ccc', padding: 6, borderRadius: 6, minWidth: 140 }} />
+        <Button title="Create list" onPress={handleCreateList} />
+      </View>
+      <FlatList
+        horizontal
+        data={lists}
+        keyExtractor={(it) => it}
+        renderItem={({ item }) => (
+          <View style={{ marginRight: 8 }}>
+            <Button title={item} color={item === activeList ? '#0a84ff' : undefined} onPress={() => handleSelectList(item)} />
+            {item !== 'Default' && (
+              <View style={{ flexDirection: 'row' }}>
+                <Button title="Delete" color="#d00" onPress={() => handleDeleteList(item)} />
+              </View>
+            )}
+          </View>
+        )}
+      />
       <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
         <Button title="Clear checked" onPress={handleClearChecked} />
         <Button title="Clear all" color="#d00" onPress={handleClearAll} />
