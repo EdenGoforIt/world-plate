@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Recipe } from '@/types/Recipe';
 import { ShoppingList, ShoppingListItem } from '@/types/ShoppingList';
-import { Recipe, Ingredient } from '@/types/Recipe';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useEffect, useState } from 'react';
 
 const SHOPPING_LIST_KEY = 'shopping_lists';
 
@@ -100,6 +100,30 @@ export const useShoppingList = () => {
     await saveShoppingLists(updatedLists);
   };
 
+  const addCustomItemsToShoppingList = async (listId: string, customItems: { name: string; amount?: string; category?: string; }[]) => {
+    const targetList = shoppingLists.find(list => list.id === listId);
+    if (!targetList) return;
+
+    const newItems: ShoppingListItem[] = customItems.map(ci => ({
+      id: `${listId}_${ci.name}_${Date.now()}`,
+      name: ci.name,
+      amount: ci.amount || '',
+      category: (ci.category as any) || 'other',
+      recipeId: 'manual',
+      recipeName: 'Manual',
+      checked: false,
+      addedAt: new Date()
+    }));
+
+    const updatedLists = shoppingLists.map(list =>
+      list.id === listId
+        ? { ...list, items: [...list.items, ...newItems], updatedAt: new Date() }
+        : list
+    );
+
+    await saveShoppingLists(updatedLists);
+  };
+
   const toggleItemChecked = async (listId: string, itemId: string) => {
     const updatedLists = shoppingLists.map(list =>
       list.id === listId
@@ -156,6 +180,7 @@ export const useShoppingList = () => {
     createShoppingList,
     deleteShoppingList,
     addRecipeToShoppingList,
+    addCustomItemsToShoppingList,
     toggleItemChecked,
     removeItem,
     clearCheckedItems,
