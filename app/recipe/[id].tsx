@@ -62,7 +62,9 @@ export default function RecipeDetailScreen() {
     avatar:
       "https://ui-avatars.com/api/?name=Guest+User&background=FF6B35&color=fff",
   };
+import { useShoppingList } from '@/hooks/useShoppingList';
   const { toggleFavorite, isFavorite } = useFavorites();
+  const { shoppingLists, createShoppingList, addCustomItemsToShoppingList, refreshShoppingLists } = useShoppingList();
   const { reviews, addReview } = useReviews(id!);
   const [recipeData, setRecipeData] = useState<{
     recipe: Recipe;
@@ -395,18 +397,48 @@ export default function RecipeDetailScreen() {
       `Missing: ${missing || 'None'}`,
       [
         { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Add missing to shopping list',
-          onPress: async () => {
-            if (match.missingIngredients.length === 0) {
-              Alert.alert('Nothing to add');
-              return;
-            }
-            const toAdd = match.missingIngredients.map((ing) => ({ ingredient: ing.charAt(0).toUpperCase() + ing.slice(1), totalAmount: '', category: 'other', recipes: [recipe.name] }));
-            await addItemsToShoppingList(toAdd);
-            Alert.alert('Added', `Added ${toAdd.length} items to your shopping list.`);
-          }
-        }
+              {
+                text: 'Add missing to shopping list',
+                onPress: async () => {
+                  if (match.missingIngredients.length === 0) {
+                    Alert.alert('Nothing to add');
+                    return;
+                  }
+
+                  // If there are no named shopping lists, create one and add to it
+                  if (!shoppingLists || shoppingLists.length === 0) {
+                    const listName = `Missing - ${recipe.name}`;
+                    const newList = await createShoppingList(listName);
+                    await addCustomItemsToShoppingList(newList.id, match.missingIngredients.map((ing) => ({ name: ing, amount: '', category: 'other' })));
+                    await refreshShoppingLists();
+                    Alert.alert('Added', `Created ${listName} and added ${match.missingIngredients.length} items.`);
+                    return;
+                  }
+
+                  // Otherwise, ask to add to first list or create a new one
+                  Alert.alert('Add missing items', `Add missing ingredients to your shopping lists?`, [
+                    {
+                      text: `Add to ${shoppingLists[0].name}`,
+                      onPress: async () => {
+                        await addCustomItemsToShoppingList(shoppingLists[0].id, match.missingIngredients.map((ing) => ({ name: ing, amount: '', category: 'other' })));
+                        await refreshShoppingLists();
+                        Alert.alert('Added', `Added ${match.missingIngredients.length} items to ${shoppingLists[0].name}`);
+                      }
+                    },
+                    {
+                      text: 'Create new list',
+                      onPress: async () => {
+                        const listName = `Missing - ${recipe.name}`;
+                        const newList = await createShoppingList(listName);
+                        await addCustomItemsToShoppingList(newList.id, match.missingIngredients.map((ing) => ({ name: ing, amount: '', category: 'other' })));
+                        await refreshShoppingLists();
+                        Alert.alert('Added', `Created ${listName} and added ${match.missingIngredients.length} items.`);
+                      }
+                    },
+                    { text: 'Cancel', style: 'cancel' }
+                  ]);
+                }
+              }
       ]
     );
   };
