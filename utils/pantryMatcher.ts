@@ -15,6 +15,34 @@ export function matchRecipesByPantry(
 ): PantryMatch[] {
   const pantry = pantryItems.map((p) => p.toLowerCase().trim()).filter(Boolean);
 
+  // synonyms map to expand pantry search and ingredient normalization
+  const synonyms: Record<string, string[]> = {
+    cilantro: ['coriander'],
+    coriander: ['cilantro'],
+    'scallion': ['green onion', 'spring onion'],
+    'green onion': ['scallion', 'spring onion'],
+    'aubergine': ['eggplant'],
+    'eggplant': ['aubergine'],
+    'courgette': ['zucchini'],
+    'zucchini': ['courgette'],
+    'chickpea': ['garbanzo'],
+    'garbanzo': ['chickpea'],
+    'bell pepper': ['capsicum'],
+    'capsicum': ['bell pepper'],
+    'parmesan': ['parmesan cheese', 'parm'],
+  };
+
+  function expandPantryTerms(terms: string[]) {
+    const set = new Set(terms);
+    terms.forEach((t) => {
+      const s = synonyms[t];
+      if (s) s.forEach((x) => set.add(x));
+    });
+    return Array.from(set);
+  }
+
+  const expandedPantry = expandPantryTerms(pantry);
+
   const matches: PantryMatch[] = recipes.map((recipe) => {
     const recipeIngredientNames = recipe.ingredients.map((i) => i.name.toLowerCase());
 
@@ -22,7 +50,7 @@ export function matchRecipesByPantry(
     const missing: string[] = [];
 
     recipeIngredientNames.forEach((ing) => {
-      const found = pantry.find((p) => ing.includes(p) || p.includes(ing));
+      const found = expandedPantry.find((p) => ing.includes(p) || p.includes(ing));
       if (found) matched.push(ing);
       else missing.push(ing);
     });
