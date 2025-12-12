@@ -13,11 +13,13 @@ interface PersistItem {
 
 export default function ShoppingList() {
   const [items, setItems] = useState<PersistItem[]>([]);
+  const [loading, setLoading] = useState(true);
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [editingAmount, setEditingAmount] = useState('');
   const [lists, setLists] = useState<string[]>([]);
   const [activeList, setActiveList] = useState('Default');
   const [newListName, setNewListName] = useState('');
+  const [loadingExport, setLoadingExport] = useState(false);
 
   useEffect(() => {
     const load = async () => {
@@ -28,6 +30,7 @@ export default function ShoppingList() {
       setActiveList(name);
       const list = await getShoppingList();
       setItems(list as PersistItem[]);
+      setLoading(false);
     };
     load();
   }, []);
@@ -126,6 +129,18 @@ export default function ShoppingList() {
     ]);
   };
 
+  const handleExportCSV = async () => {
+    try {
+      setLoadingExport(true);
+      await shareShoppingListCSV(items, activeList || 'shopping-list');
+    } catch (e) {
+      console.error('Export failed', e);
+      Alert.alert('Export failed', 'Could not export CSV');
+    } finally {
+      setLoadingExport(false);
+    }
+  };
+
   return (
     <ThemedView style={{ padding: 12 }}>
       <ThemedText style={{ fontSize: 18, fontWeight: '600', marginBottom: 12 }}>Shopping List</ThemedText>
@@ -150,10 +165,17 @@ export default function ShoppingList() {
         )}
       />
       <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
+        <Button title="Export CSV" onPress={handleExportCSV} disabled={loadingExport || items.length===0} />
+        {loadingExport && <ActivityIndicator />}
         <Button title="Clear checked" onPress={handleClearChecked} />
         <Button title="Clear all" color="#d00" onPress={handleClearAll} />
       </View>
-      <FlatList
+      {loading ? (
+        <ActivityIndicator />
+      ) : items.length === 0 ? (
+        <ThemedText style={{ color: '#666' }}>Your shopping list is empty. Add items from the Pantry or create a list.</ThemedText>
+      ) : (
+        <FlatList
         data={items}
         keyExtractor={(item) => item.ingredient}
         renderItem={({ item, index }) => (
