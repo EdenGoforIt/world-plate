@@ -1,0 +1,18 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Only run validator if data files changed relative to origin/main
+echo "Checking for data changes..."
+if git rev-parse --verify origin/main >/dev/null 2>&1; then
+  CHANGED=$(git diff --name-only origin/main...HEAD | grep '^data/' || true)
+else
+  # If origin/main isn't available (fresh clone without remote), check latest commit only
+  CHANGED=$(git diff --name-only HEAD~1 HEAD | grep '^data/' || true)
+fi
+
+if [ -n "$CHANGED" ]; then
+  echo "Detected changes in data/ — running validator"
+  npm run validate-data || exit 1
+else
+  echo "No data changes detected. Skipping validator."
+fi
