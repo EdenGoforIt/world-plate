@@ -75,6 +75,7 @@ describe('storageUtils - named shopping lists', () => {
   });
 });
 
+
 describe('storageUtils: named shopping lists & migration', () => {
   beforeEach(async () => {
     await AsyncStorage.clear();
