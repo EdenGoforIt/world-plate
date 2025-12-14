@@ -24,3 +24,4 @@ export const AUTO_FEATURE_20 = "2025-12-12 16:00:00";
 export const AUTO_FEATURE_21 = "2025-12-13 10:00:00";
 export const AUTO_FEATURE_22 = "2025-12-13 16:00:00";
 export const AUTO_FEATURE_23 = "2025-12-14 10:00:00";
+export const AUTO_FEATURE_24 = "2025-12-14 16:00:00";
