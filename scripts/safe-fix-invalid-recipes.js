@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+const DEFAULT_DATA_DIR = path.join(process.cwd(), 'data');
 const REPORT_PATH = path.join(DATA_DIR, 'validation-report.json');
 const BACKUP_DIR = path.join(DATA_DIR, '_backup');
 const INVALID_DIR = path.join(DATA_DIR, '_invalid');
@@ -56,12 +56,13 @@ function timestamp() {
 	return new Date().toISOString().replace(/[:.]/g, '-');
 }
 
-function run(options) {
-	if (!fs.existsSync(REPORT_PATH)) {
-		console.error('No validation report found at', REPORT_PATH);
+function run(options, dataDir = DEFAULT_DATA_DIR) {
+	const reportPath = path.join(dataDir, 'validation-report.json');
+	if (!fs.existsSync(reportPath)) {
+		console.error('No validation report found at', reportPath);
 		process.exit(1);
 	}
-	const report = readJSON(REPORT_PATH);
+	const report = readJSON(reportPath);
 	if (!Array.isArray(report.errors) || report.errors.length === 0) {
 		console.log('No errors to process in validation report.');
 		return;
@@ -70,11 +71,13 @@ function run(options) {
 	const grouped = summarizeReport(report);
 	const summary = [];
 
-	ensureDir(BACKUP_DIR);
-	ensureDir(INVALID_DIR);
+	const backupDir = path.join(dataDir, '_backup');
+	const invalidDir = path.join(dataDir, '_invalid');
+	ensureDir(backupDir);
+	ensureDir(invalidDir);
 
 	Object.keys(grouped).forEach((file) => {
-		const filePath = path.join(DATA_DIR, file);
+		const filePath = path.join(dataDir, file);
 		if (!fs.existsSync(filePath)) {
 			summary.push({ file, status: 'missing-file' });
 			return;
@@ -86,7 +89,7 @@ function run(options) {
 		}
 
 		// Backup original file
-		const backupPath = path.join(BACKUP_DIR, `${file}.${timestamp()}.bak.json`);
+		const backupPath = path.join(backupDir, `${file}.${timestamp()}.bak.json`);
 		fs.copyFileSync(filePath, backupPath);
 
 		// Build index for duplicates detection
@@ -152,7 +155,7 @@ function run(options) {
 
 		// Write invalid recipes into _invalid/<file>
 		if (invalidRecipes.length > 0) {
-			const invalidPath = path.join(INVALID_DIR, file);
+			const invalidPath = path.join(invalidDir, file);
 			const invalidPayload = { country: data.country || path.basename(file, '.json'), recipes: invalidRecipes };
 			if (options.apply) {
 				writeJSON(invalidPath, invalidPayload);
@@ -173,6 +176,15 @@ function run(options) {
 	}
 }
 
-const args = process.argv.slice(2);
-const options = { apply: args.includes('--apply') };
-run(options);
+// Exports for unit testing and programmatic use
+module.exports = {
+	run,
+	normalizeMealTypeEntry,
+	summarizeReport,
+};
+
+if (require.main === module) {
+	const args = process.argv.slice(2);
+	const options = { apply: args.includes('--apply') };
+	run(options);
+}

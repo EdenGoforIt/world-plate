@@ -144,5 +144,21 @@ function main() {
 		process.exit(0);
 	}
 }
-
 if (require.main === module) main();
+
+// Exports for unit testing
+module.exports = {
+	validateFile,
+	validateRecipe,
+	validateIngredient,
+	validateNutrition,
+	errorLog,
+	error,
+	ALLOWED_MEALTYPES,
+	ALLOWED_DIFFICULTY,
+	ALLOWED_ING_CATS,
+	ALLOWED_RECIPE_KEYS,
+	main,
+	// helper to reset error log in tests
+	_resetErrorLog: () => { errorLog.length = 0; }
+};
