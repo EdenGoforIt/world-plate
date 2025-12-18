@@ -1,9 +1,11 @@
-import React, { memo } from 'react';
-import { View, Text, TouchableOpacity, Image, Dimensions, StyleSheet } from 'react-native';
+import React, { memo, useState, useRef } from 'react';
+import { View, Text, TouchableOpacity, Image, Dimensions, StyleSheet, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Recipe } from '../types/Recipe';
 import { Colors } from '../constants/Colors';
 import { formatCookTime, getDifficultyColor } from '../utils/recipeUtils';
+import { LinearGradient } from 'expo-linear-gradient';
+import Skeleton from './Skeleton';
 
 interface RecipeCardProps {
   recipe: Recipe;
@@ -32,17 +34,35 @@ const RecipeCardComponent: React.FC<RecipeCardProps> = ({
 }) => {
   const cardWidth = CARD_SIZES[size];
   
+  const scale = useRef(new Animated.Value(1)).current;
+
+  const onPressIn = () => Animated.spring(scale, { toValue: 0.985, useNativeDriver: true, speed: 20 }).start();
+  const onPressOut = () => Animated.spring(scale, { toValue: 1, useNativeDriver: true, speed: 20 }).start();
+
   return (
-    <TouchableOpacity
-      className="bg-white rounded-2xl mb-4"
-      style={[styles.card, { width: cardWidth }]}
-      onPress={onPress}
-      accessibilityRole="button"
-      accessibilityLabel={`Recipe: ${recipe.name}`}
-      accessibilityHint="Tap to view recipe details"
-    >
+    <Animated.View style={[{ transform: [{ scale }], width: cardWidth, marginBottom: 16 }]}>
+      <TouchableOpacity
+        className="bg-white rounded-2xl"
+        style={[styles.card]}
+        onPress={onPress}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        accessibilityRole="button"
+        accessibilityLabel={`Recipe: ${recipe.name}`}
+        accessibilityHint="Tap to view recipe details"
+      >
       <View className="relative h-[180px] rounded-t-2xl overflow-hidden">
-        <Image source={{ uri: recipe.image }} className="w-full h-full" style={{ resizeMode: 'cover' }} />
+        {recipe.image ? (
+          <Image source={{ uri: recipe.image }} className="w-full h-full" style={{ resizeMode: 'cover' }} />
+        ) : (
+          <Skeleton style={{ width: '100%', height: '100%' }} />
+        )}
+        <LinearGradient
+          colors={["rgba(0,0,0,0)", "rgba(0,0,0,0.45)"]}
+          style={StyleSheet.absoluteFill}
+          start={[0.5, 0.0]}
+          end={[0.5, 1.0]}
+        />
         {onFavoritePress && (
           <TouchableOpacity
             className="absolute top-3 right-3 p-2 rounded-full"
