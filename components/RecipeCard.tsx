@@ -36,6 +36,10 @@ const RecipeCardComponent: React.FC<RecipeCardProps> = ({
   
   const scale = useRef(new Animated.Value(1)).current;
 
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
+  const imageOpacity = useRef(new Animated.Value(0)).current;
+
   const onPressIn = () => Animated.spring(scale, { toValue: 0.985, useNativeDriver: true, speed: 20 }).start();
   const onPressOut = () => Animated.spring(scale, { toValue: 1, useNativeDriver: true, speed: 20 }).start();
 
@@ -52,13 +56,31 @@ const RecipeCardComponent: React.FC<RecipeCardProps> = ({
         accessibilityHint="Tap to view recipe details"
       >
       <View className="relative h-[180px] rounded-t-2xl overflow-hidden">
-        {recipe.image ? (
-          <Image source={{ uri: recipe.image }} className="w-full h-full" style={{ resizeMode: 'cover' }} />
+        {recipe.image && !imageError ? (
+          <Animated.Image
+            source={{ uri: recipe.image }}
+            style={[{ width: '100%', height: '100%', opacity: imageOpacity }, { resizeMode: 'cover' }]}
+            onLoad={() => {
+              setImageLoaded(true);
+              Animated.timing(imageOpacity, { toValue: 1, duration: 350, useNativeDriver: true }).start();
+            }}
+            onError={() => setImageError(true)}
+            accessibilityRole="image"
+            accessibilityLabel={`Image for ${recipe.name}`}
+          />
         ) : (
-          <Skeleton style={{ width: '100%', height: '100%' }} />
+          <View style={{ width: '100%', height: '100%', backgroundColor: '#f2f4f7', alignItems: 'center', justifyContent: 'center' }}>
+            <Skeleton style={{ width: '100%', height: '100%', backgroundColor: '#f2f4f7' }} />
+            {imageError && (
+              <View style={{ position: 'absolute', alignItems: 'center' }}>
+                <Ionicons name="image" size={48} color="#9aa1ab" />
+                <Text style={{ color: '#9aa1ab', marginTop: 8 }}>Image not available</Text>
+              </View>
+            )}
+          </View>
         )}
         <LinearGradient
-          colors={["rgba(0,0,0,0)", "rgba(0,0,0,0.45)"]}
+          colors={["rgba(0,0,0,0)", "rgba(0,0,0,0.6)"]}
           style={StyleSheet.absoluteFill}
           start={[0.5, 0.0]}
           end={[0.5, 1.0]}
@@ -135,7 +157,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   ratingBadge: {
-    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 16,
+    minWidth: 46,
+    alignItems: 'center',
+    flexDirection: 'row',
   },
 });
 
