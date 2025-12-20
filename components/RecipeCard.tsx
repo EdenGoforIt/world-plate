@@ -101,6 +101,11 @@ const RecipeCardComponent: React.FC<RecipeCardProps> = ({
           />
           </TouchableOpacity>
         )}
+
+        {/* Cuisine badge */}
+        <View style={styles.cuisineBadge} className="absolute top-3 left-3">
+          <Text style={{ color: '#fff', fontSize: 12, fontWeight: '600' }}>{recipe.cuisine}</Text>
+        </View>
         <View className="absolute bottom-0 left-0 right-0 p-3 flex-row justify-between items-end" style={styles.ratingContainer}>
           <View className="flex-row items-center px-2 py-1 rounded-xl" style={styles.ratingBadge}>
             <Ionicons name="star" size={16} color={Colors.accent} />
@@ -156,6 +161,12 @@ const styles = StyleSheet.create({
   ratingContainer: {
     backgroundColor: 'transparent',
   },
+  cuisineBadge: {
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
+  }
   ratingBadge: {
     backgroundColor: 'rgba(255, 255, 255, 0.95)',
     paddingHorizontal: 8,
