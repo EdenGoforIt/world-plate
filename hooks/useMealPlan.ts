@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { MealPlanEntry, DayMealPlan } from '@/types/MealPlan';
+import { DayMealPlan, MealPlanEntry } from '@/types/MealPlan';
 import { Recipe } from '@/types/Recipe';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useEffect, useState } from 'react';
 
 const MEAL_PLAN_KEY = 'meal_plan';
 
@@ -70,6 +70,36 @@ export const useMealPlan = () => {
     const updatedPlan = mealPlan.filter(
       entry => !(entry.date === date && entry.mealType === mealType)
     );
+    await saveMealPlan(updatedPlan);
+  };
+
+  const moveMeal = async (
+    fromDate: string,
+    fromMealType: 'breakfast' | 'lunch' | 'dinner',
+    toDate: string,
+    toMealType: 'breakfast' | 'lunch' | 'dinner'
+  ) => {
+    // Swap if target exists, otherwise move
+    const updatedPlan = mealPlan.map((entry) => {
+      if (entry.date === fromDate && entry.mealType === fromMealType) {
+        return {
+          ...entry,
+          date: toDate,
+          mealType: toMealType,
+          id: `${toDate}_${toMealType}_${Date.now()}`,
+        };
+      }
+      if (entry.date === toDate && entry.mealType === toMealType) {
+        return {
+          ...entry,
+          date: fromDate,
+          mealType: fromMealType,
+          id: `${fromDate}_${fromMealType}_${Date.now() + 1}`,
+        };
+      }
+      return entry;
+    });
+
     await saveMealPlan(updatedPlan);
   };
 
@@ -148,6 +178,7 @@ export const useMealPlan = () => {
     loading,
     addMealToDate,
     removeMealFromDate,
+    moveMeal,
     getMealForDate,
     getDayMealPlan,
     getWeekMealPlan,
