@@ -1,11 +1,11 @@
 import { Ionicons } from "@expo/vector-icons";
 import React, { memo, useCallback } from "react";
 import {
-  Image,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+    Image,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from "react-native";
 import { Colors } from "../constants/Colors";
 import { useFavorites } from "../hooks/useFavorites";
@@ -31,6 +31,29 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
   countryName,
 }) => {
   const { toggleFavorite, isFavorite } = useFavorites();
+
+  const [matchesPantry, setMatchesPantry] = React.useState(false);
+
+  React.useEffect(() => {
+    let mounted = true;
+    if (!recipe) {
+      setMatchesPantry(false);
+      return;
+    }
+
+    (async () => {
+      try {
+        const { getPantryItems } = await import('../utils/storageUtils');
+        const pantry = (await getPantryItems()).map(p => p.toLowerCase());
+        const match = recipe.ingredients && recipe.ingredients.some(i => pantry.includes(i.name.toLowerCase()));
+        if (mounted) setMatchesPantry(Boolean(match));
+      } catch (e) {
+        if (mounted) setMatchesPantry(false);
+      }
+    })();
+
+    return () => { mounted = false; };
+  }, [recipe]);
 
   const handleFavoritePress = useCallback(async () => {
     if (recipe && countryName) {
@@ -125,12 +148,19 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
         <View className="flex-row items-center">
           <Ionicons name={getMealIcon()} size={24} color={Colors.primary} />
           <View className="ml-3">
-            <Text
-              className="text-base font-bold tracking-wide"
-              style={{ color: Colors.primary }}
-            >
-              {mealType.toUpperCase()}
-            </Text>
+            <View className="flex-row items-center">
+              <Text
+                className="text-base font-bold tracking-wide"
+                style={{ color: Colors.primary }}
+              >
+                {mealType.toUpperCase()}
+              </Text>
+              {(recipe && countryName && isFavorite(recipe.id, countryName)) || matchesPantry ? (
+                <Text className="text-xs font-medium ml-2" style={{ color: Colors.primary }}>
+                  Recommended
+                </Text>
+              ) : null}
+            </View>
             <Text className="text-sm opacity-70" style={{ color: Colors.text }}>
               {getMealTime()}
             </Text>
