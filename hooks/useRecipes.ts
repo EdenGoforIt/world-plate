@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Recipe } from '../types/Recipe';
-import { getDailyRecommendations, getRandomRecipes, getRecipesByMealType, preloadEssentialCountries } from '../utils/recipeUtils';
+import { getRandomRecipes, getRecipesByMealType, preloadEssentialCountries } from '../utils/recipeUtils';
 
 export const useRandomRecipes = (count: number = 3) => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -39,24 +39,50 @@ export const useDailyRecommendations = () => {
   const [usedRecipes, setUsedRecipes] = useState<Set<string>>(new Set());
 
   const getNewRecommendations = async (excludeIds: Set<string> = new Set()) => {
-    const getAvoidDuplicate = async (mealType: 'breakfast' | 'lunch' | 'dinner'): Promise<Recipe | null> => {
+    // Prefer recipes that are either in user's favorites or match pantry items.
+    // Scoring: favorite -> +2, pantry match -> +1. Pick randomly from highest score bucket.
+    const pantryItemsRaw = await import('../utils/storageUtils').then(m => m.getPantryItems()).catch(() => [] as string[]);
+    const pantryItems = pantryItemsRaw.map(p => p.toLowerCase());
+    const favoriteIdsList = await import('../utils/storageUtils').then(m => m.getAllFavoriteRecipes()).catch(() => [] as string[]);
+    const favoriteIds = new Set(favoriteIdsList);
+
+    const chooseByScore = (recipes: Recipe[]): Recipe | null => {
+      if (!recipes || recipes.length === 0) return null;
+
+      const scored: Record<number, Recipe[]> = { 3: [], 2: [], 1: [], 0: [] };
+
+      recipes.forEach((recipe) => {
+        let score = 0;
+        if (favoriteIds.has(recipe.id)) score += 2; // favorites are strong signals
+        if (recipe.ingredients && recipe.ingredients.some(i => pantryItems.includes(i.name.toLowerCase()))) score += 1;
+        // add a small bias for preferred cuisine (if preferences available) in future
+        scored[score].push(recipe);
+      });
+
+      // Prefer highest non-empty score bucket, ignoring excluded ids
+      for (const s of [3, 2, 1, 0]) {
+        const bucket = scored[s].filter(r => !excludeIds.has(r.id));
+        if (bucket.length > 0) {
+          return bucket[Math.floor(Math.random() * bucket.length)];
+        }
+      }
+
+      // If all are excluded, pick any recipe not excluded, otherwise fallback to random
+      const notExcluded = recipes.filter(r => !excludeIds.has(r.id));
+      if (notExcluded.length > 0) return notExcluded[Math.floor(Math.random() * notExcluded.length)];
+      return recipes[Math.floor(Math.random() * recipes.length)];
+    };
+
+    const getForMeal = async (mealType: 'breakfast' | 'lunch' | 'dinner'): Promise<Recipe | null> => {
       const mealRecipes = await getRecipesByMealType(mealType);
       if (mealRecipes.length === 0) return null;
-      
-      // Filter out previously used recipes
-      const availableRecipes = mealRecipes.filter(recipe => !excludeIds.has(recipe.id));
-      
-      // If no unused recipes, reset and use any recipe
-      const recipesToChooseFrom = availableRecipes.length > 0 ? availableRecipes : mealRecipes;
-      
-      const randomIndex = Math.floor(Math.random() * recipesToChooseFrom.length);
-      return recipesToChooseFrom[randomIndex];
+      return chooseByScore(mealRecipes);
     };
 
     const [breakfast, lunch, dinner] = await Promise.all([
-      getAvoidDuplicate('breakfast'),
-      getAvoidDuplicate('lunch'),
-      getAvoidDuplicate('dinner')
+      getForMeal('breakfast'),
+      getForMeal('lunch'),
+      getForMeal('dinner'),
     ]);
 
     return { breakfast, lunch, dinner };
