@@ -43,6 +43,8 @@ const RecipeCardComponent: React.FC<RecipeCardProps> = ({
   const onPressIn = () => Animated.spring(scale, { toValue: 0.985, useNativeDriver: true, speed: 20 }).start();
   const onPressOut = () => Animated.spring(scale, { toValue: 1, useNativeDriver: true, speed: 20 }).start();
 
+  const ratingText = recipe.rating ? Number(recipe.rating).toFixed(1) : 'N/A';
+
   return (
     <Animated.View style={[{ transform: [{ scale }], width: cardWidth, marginBottom: 16 }]}>
       <TouchableOpacity
@@ -54,6 +56,9 @@ const RecipeCardComponent: React.FC<RecipeCardProps> = ({
         accessibilityRole="button"
         accessibilityLabel={`Recipe: ${recipe.name}`}
         accessibilityHint="Tap to view recipe details"
+        accessible={true}
+        accessibilityState={{ disabled: false }}
+        hitSlop={{ top: 6, bottom: 6, left: 6, right: 6 }}
       >
       <View className="relative h-[180px] rounded-t-2xl overflow-hidden">
         {recipe.image && !imageError ? (
@@ -136,8 +141,8 @@ const RecipeCardComponent: React.FC<RecipeCardProps> = ({
         </View>
         
         <View className="flex-row flex-wrap">
-          {recipe.tags.slice(0, 2).map((tag, index) => (
-            <View key={index} className="px-2 py-1 rounded-lg mr-2 mb-1 border" style={{ backgroundColor: Colors.background, borderColor: Colors.primary }}>
+          {recipe.tags.slice(0, 2).map((tag) => (
+            <View key={tag} className="px-2 py-1 rounded-lg mr-2 mb-1 border" style={{ backgroundColor: Colors.background, borderColor: Colors.primary }}>
               <Text className="text-xs font-medium" style={{ color: Colors.primary }}>{tag}</Text>
             </View>
           ))}
@@ -166,7 +171,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 12,
-  }
+  },
   ratingBadge: {
     backgroundColor: 'rgba(255, 255, 255, 0.95)',
     paddingHorizontal: 8,
@@ -178,5 +183,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export const RecipeCard = memo(RecipeCardComponent);
+function areEqual(prevProps: React.ComponentProps<typeof RecipeCardComponent>, nextProps: React.ComponentProps<typeof RecipeCardComponent>) {
+  return prevProps.recipe.id === nextProps.recipe.id && prevProps.isFavorite === nextProps.isFavorite && prevProps.size === nextProps.size;
+}
+
+export const RecipeCard = memo(RecipeCardComponent, areEqual);
 
