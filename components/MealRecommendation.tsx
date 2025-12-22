@@ -11,6 +11,7 @@ import { Colors } from "../constants/Colors";
 import { useFavorites } from "../hooks/useFavorites";
 import { Recipe } from "../types/Recipe";
 import { formatCookTime } from "../utils/recipeUtils";
+import { getPantryItems } from "../utils/storageUtils";
 
 interface MealRecommendationProps {
   mealType: "breakfast" | "lunch" | "dinner";
@@ -43,8 +44,8 @@ const MealRecommendationComponent: React.FC<MealRecommendationProps> = ({
 
     (async () => {
       try {
-        const { getPantryItems } = await import('../utils/storageUtils');
-        const pantry = (await getPantryItems()).map(p => p.toLowerCase());
+        const pantryRaw = await getPantryItems();
+        const pantry = (pantryRaw || []).map(p => p.toLowerCase());
         const match = recipe.ingredients && recipe.ingredients.some(i => pantry.includes(i.name.toLowerCase()));
         if (mounted) setMatchesPantry(Boolean(match));
       } catch (e) {
