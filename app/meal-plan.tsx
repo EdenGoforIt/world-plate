@@ -2,7 +2,8 @@ import Loader from "@/components/ui/Loader";
 import { Colors } from "@/constants/Colors";
 import { useMealPlan } from "@/hooks/useMealPlan";
 import { MealPlanEntry } from "@/types/MealPlan";
-import { formatCookTime } from "@/utils/recipeUtils";
+import { formatCookTime, getRecipeById } from "@/utils/recipeUtils";
+import { addItemsToNamedShoppingList, getActiveShoppingListName } from "@/utils/storageUtils";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import React, { useState } from "react";
@@ -14,6 +15,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Modal,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -24,11 +26,19 @@ export default function MealPlanScreen() {
     getCurrentWeekStart,
     removeMealFromDate,
     getUpcomingMeals,
+    moveMeal,
   } = useMealPlan();
 
   const [currentWeekStart, setCurrentWeekStart] = useState(
     getCurrentWeekStart()
   );
+
+  const [moveModalVisible, setMoveModalVisible] = useState(false);
+  const [movingMeal, setMovingMeal] = useState<{
+    date: string;
+    mealType: 'breakfast' | 'lunch' | 'dinner';
+    entry: MealPlanEntry;
+  } | null>(null);
 
   if (loading) {
     return <Loader />;
@@ -82,6 +92,88 @@ export default function MealPlanScreen() {
     ]);
   };
 
+  const exportWeekShoppingList = async (weekStart: string) => {
+    try {
+      const week = getWeekMealPlan(weekStart);
+      const recipeIds = week.flatMap((d) => [d.breakfast?.recipeId, d.lunch?.recipeId, d.dinner?.recipeId].filter(Boolean as any));
+
+      if (recipeIds.length === 0) {
+        Alert.alert('Nothing to export', 'No meals scheduled for this week.');
+        return;
+      }
+
+      const itemsMap = new Map<string, any>();
+
+      for (const id of recipeIds) {
+        const recipe = await getRecipeById(id as string);
+        if (!recipe) continue;
+        for (const ing of recipe.ingredients) {
+          const key = ing.name.toLowerCase();
+          const existing = itemsMap.get(key);
+          const item = {
+            ingredient: ing.name.charAt(0).toUpperCase() + ing.name.slice(1),
+            totalAmount: '',
+            category: (ing as any).category || 'other',
+            recipes: [recipe.name],
+          };
+          if (existing) {
+            existing.recipes = Array.from(new Set([...(existing.recipes || []), recipe.name]));
+          } else {
+            itemsMap.set(key, item);
+          }
+        }
+      }
+
+      const items = Array.from(itemsMap.values());
+      if (items.length === 0) {
+        Alert.alert('Nothing to export', 'No ingredients found in selected recipes.');
+        return;
+      }
+
+      const activeList = await getActiveShoppingListName();
+      await addItemsToNamedShoppingList(activeList, items);
+      Alert.alert('Exported', `Added ${items.length} item(s) to ${activeList}.`);
+    } catch (e) {
+      console.error(e);
+      Alert.alert('Error', 'Could not export shopping list.');
+    }
+  };
+
+  const handleSlotLongPress = (
+    date: string,
+    mealType: "breakfast" | "lunch" | "dinner",
+    meal: MealPlanEntry
+  ) => {
+    Alert.alert(meal.recipeName, 'Choose action', [
+      { text: 'Cancel', style: 'cancel' },
+      { text: 'Remove', style: 'destructive', onPress: () => removeMealFromDate(date, mealType) },
+      { text: 'Move', onPress: () => { setMovingMeal({ date, mealType, entry: meal }); setMoveModalVisible(true); } }
+    ]);
+  };
+
+  const performMove = async (toDate: string, toMealType: 'breakfast'|'lunch'|'dinner') => {
+    if (!movingMeal) return;
+    try {
+      await moveMeal(movingMeal.date, movingMeal.mealType, toDate, toMealType);
+      setMoveModalVisible(false);
+      setMovingMeal(null);
+      Alert.alert('Moved', 'Meal moved successfully.');
+    } catch (e) {
+      console.error(e);
+      Alert.alert('Error', 'Could not move meal.');
+    }
+  };
+
+  const MealSlot = ({
+    meal,
+    mealType,
+    date,
+  }: {
+    meal?: MealPlanEntry;
+    mealType: "breakfast" | "lunch" | "dinner";
+    date: string;
+  }) => {
+
   const MealSlot = ({
     meal,
     mealType,
@@ -96,7 +188,7 @@ export default function MealPlanScreen() {
         <TouchableOpacity
           className="bg-white rounded-lg p-3 mb-2 shadow-sm"
           onPress={() => router.push(`/recipe/${meal.recipeId}`)}
-          onLongPress={() => handleRemoveMeal(date, mealType, meal.recipeName)}
+          onLongPress={() => handleSlotLongPress(date, mealType, meal)}
         >
           <View className="flex-row">
             <Image
@@ -160,19 +252,14 @@ export default function MealPlanScreen() {
             {formatWeekRange(currentWeekStart)}
           </Text>
 
-          <TouchableOpacity onPress={() => navigateWeek("next")}>
-            <Ionicons name="chevron-forward" size={24} color={Colors.primary} />
-          </TouchableOpacity>
-        </View>
-
-        {/* Calendar Grid */}
-        <View className="px-5">
-          <View className="bg-white rounded-2xl p-4 shadow-sm mb-6">
-            {weekMealPlan.map((dayPlan, index) => {
-              const date = new Date(dayPlan.date);
-              const isToday =
-                dayPlan.date === new Date().toISOString().split("T")[0];
-
+          <View className="flex-row items-center">
+            <TouchableOpacity onPress={() => navigateWeek("next")}> 
+              <Ionicons name="chevron-forward" size={24} color={Colors.primary} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => exportWeekShoppingList(currentWeekStart)} className="ml-3">
+              <Ionicons name="download-outline" size={20} color={Colors.primary} />
+            </TouchableOpacity>
+          </View>
               return (
                 <View key={dayPlan.date}>
                   {/* Day Header */}
@@ -283,6 +370,46 @@ export default function MealPlanScreen() {
             </View>
           </View>
         )}
+
+        <Modal visible={moveModalVisible} transparent animationType="slide" onRequestClose={() => setMoveModalVisible(false)}>
+          <View style={{ flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(0,0,0,0.4)' }}>
+            <View style={{ backgroundColor: '#fff', padding: 16, borderTopLeftRadius: 12, borderTopRightRadius: 12, maxHeight: '60%' }}>
+              <Text style={{ fontSize: 16, fontWeight: '600' }}>Move meal</Text>
+              <Text style={{ color: Colors.secondary, marginBottom: 8 }}>Select destination slot</Text>
+              <ScrollView>
+                {weekMealPlan.map((d) => (
+                  <View key={d.date} style={{ marginBottom: 8 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                      <Text style={{ fontWeight: '600' }}>{new Date(d.date).toLocaleDateString()}</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                      {(['breakfast','lunch','dinner'] as const).map((mt) => {
+                        const disabled = movingMeal && movingMeal.date === d.date && movingMeal.mealType === mt;
+                        return (
+                          <TouchableOpacity
+                            key={mt}
+                            disabled={disabled}
+                            onPress={() => performMove(d.date, mt)}
+                            className="px-2 py-2 rounded-lg mr-2"
+                            style={{ flex: 1, backgroundColor: disabled ? '#f0f0f0' : '#fff', borderWidth: 1, borderColor: '#eee', marginRight: 8 }}
+                          >
+                            <Text style={{ textAlign: 'center', textTransform: 'capitalize' }}>{mt}</Text>
+                            <Text style={{ textAlign: 'center', fontSize: 11, color: '#666' }}>{(d as any)[mt]?.recipeName || 'Empty'}</Text>
+                          </TouchableOpacity>
+                        );
+                      })}
+                    </View>
+                  </View>
+                ))}
+              </ScrollView>
+              <View style={{ flexDirection: 'row', justifyContent: 'flex-end', marginTop: 8 }}>
+                <TouchableOpacity onPress={() => setMoveModalVisible(false)} style={{ marginLeft: 8 }}>
+                  <Text style={{ color: Colors.primary }}>Cancel</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+        </Modal>
 
         <View className="h-10" />
       </ScrollView>
