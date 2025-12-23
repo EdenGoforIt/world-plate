@@ -3,6 +3,7 @@ import { BlurView } from "expo-blur";
 import { LinearGradient } from "expo-linear-gradient";
 import { router, useLocalSearchParams } from "expo-router";
 import React, { useEffect, useRef, useState } from "react";
+import * as Haptics from 'expo-haptics';
 import {
     ActivityIndicator,
     Animated,
@@ -78,6 +79,14 @@ import { useShoppingList } from '@/hooks/useShoppingList';
   const [rating, setRating] = useState(0);
   const [reviewText, setReviewText] = useState("");
 
+  // Guided cooking mode
+  const [guidedMode, setGuidedMode] = useState(false);
+  const [currentStepIdx, setCurrentStepIdx] = useState(0);
+  const [stepDuration, setStepDuration] = useState<number>(60); // seconds per step (default)
+  const [timeLeft, setTimeLeft] = useState<number>(stepDuration);
+  const [timerRunning, setTimerRunning] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
   const scrollY = useRef(new Animated.Value(0)).current;
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
@@ -97,6 +106,57 @@ import { useShoppingList } from '@/hooks/useShoppingList';
 
     fetchRecipe();
   }, [id, fadeAnim]);
+
+  // Reset guided mode when recipe changes
+  useEffect(() => {
+    setGuidedMode(false);
+    setCurrentStepIdx(0);
+    setTimeLeft(stepDuration);
+    setTimerRunning(false);
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+  }, [recipe?.id, stepDuration]);
+
+  // Timer effect for guided mode
+  useEffect(() => {
+    if (!timerRunning) return;
+
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          // step finished
+          Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+
+          if (!recipe) return 0;
+          if (currentStepIdx < recipe.instructions.length - 1) {
+            setCurrentStepIdx((i) => i + 1);
+            return stepDuration;
+          } else {
+            // finished all steps
+            setTimerRunning(false);
+            setGuidedMode(false);
+            return 0;
+          }
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+    };
+  }, [timerRunning, currentStepIdx, stepDuration, recipe]);
+
+  // When we switch steps, reset the timer
+  useEffect(() => {
+    setTimeLeft(stepDuration);
+  }, [currentStepIdx, stepDuration]);
 
   const handleShare = async () => {
     if (!recipeData) return;
@@ -294,12 +354,63 @@ import { useShoppingList } from '@/hooks/useShoppingList';
     </ScrollView>
   );
 
+  const formatTime = (s: number) => {
+    const mins = Math.floor(s / 60)
+      .toString()
+      .padStart(2, '0');
+    const secs = Math.floor(s % 60)
+      .toString()
+      .padStart(2, '0');
+    return `${mins}:${secs}`;
+  };
+
+  const startTimer = () => {
+    if (!guidedMode) setGuidedMode(true);
+    setTimerRunning(true);
+  };
+  const pauseTimer = () => setTimerRunning(false);
+  const resetTimer = () => {
+    setTimerRunning(false);
+    setTimeLeft(stepDuration);
+    setCurrentStepIdx(0);
+  };
+
   const renderInstructions = () => (
     <ScrollView className="px-5 py-4" showsVerticalScrollIndicator={false}>
+      <View className="flex-row items-center justify-between mb-4">
+        <Text className="text-base font-semibold text-text">Instructions</Text>
+        <View className="flex-row items-center">
+          <TouchableOpacity
+            onPress={() => {
+              setGuidedMode((v) => !v);
+              setCurrentStepIdx(0);
+              setTimeLeft(stepDuration);
+              setTimerRunning(false);
+              // Switch to instructions tab for user
+              setTabIndex(1);
+            }}
+            className="px-3 py-1 rounded-xl border"
+            style={{ backgroundColor: guidedMode ? Colors.primary : Colors.background }}
+          >
+            <Text style={{ color: guidedMode ? 'white' : Colors.text }} className="font-medium">{guidedMode ? 'Guided On' : 'Start Guided'}</Text>
+          </TouchableOpacity>
+
+          <View className="ml-3 flex-row items-center">
+            <TouchableOpacity onPress={() => setStepDuration((d) => Math.max(10, d - 15))} className="px-2 py-1 rounded-lg" style={{ backgroundColor: Colors.background }}>
+              <Text className="text-sm">-15s</Text>
+            </TouchableOpacity>
+            <Text className="mx-2 text-sm text-text">{stepDuration}s</Text>
+            <TouchableOpacity onPress={() => setStepDuration((d) => d + 15)} className="px-2 py-1 rounded-lg" style={{ backgroundColor: Colors.background }}>
+              <Text className="text-sm">+15s</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </View>
+
       {recipe.instructions.map((instruction, index) => (
         <Animated.View
           key={index}
-          className="bg-white rounded-xl p-4 mb-4"
+          className={`bg-white rounded-xl p-4 mb-4 ${guidedMode && currentStepIdx === index ? 'border-2 border-primary' : ''}`}
           style={{
             opacity: fadeAnim,
             transform: [
@@ -325,6 +436,46 @@ import { useShoppingList } from '@/hooks/useShoppingList';
           </View>
         </Animated.View>
       ))}
+
+      {guidedMode && (
+        <View className="bg-white rounded-xl p-4 mb-8 fixed-bottom" style={{ position: 'absolute', left: 16, right: 16, bottom: 24 }}>
+          <Text className="text-sm text-gray-500 mb-2">Step {currentStepIdx + 1} / {recipe.instructions.length}</Text>
+          <Text className="text-base text-text mb-3">{recipe.instructions[currentStepIdx]}</Text>
+          <View className="flex-row items-center justify-between">
+            <View className="flex-row items-center">
+              <TouchableOpacity onPress={() => setCurrentStepIdx((i) => Math.max(0, i - 1))} className="px-3 py-2 rounded-lg mr-2" style={{ backgroundColor: Colors.background }}>
+                <Ionicons name="chevron-back" size={20} color={Colors.text} />
+              </TouchableOpacity>
+              {timerRunning ? (
+                <TouchableOpacity onPress={pauseTimer} className="px-4 py-2 rounded-lg" style={{ backgroundColor: Colors.primary }}>
+                  <Text className="text-white font-semibold">Pause</Text>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity onPress={startTimer} className="px-4 py-2 rounded-lg" style={{ backgroundColor: Colors.primary }}>
+                  <Text className="text-white font-semibold">Start</Text>
+                </TouchableOpacity>
+              )}
+              <TouchableOpacity onPress={() => setCurrentStepIdx((i) => Math.min(recipe.instructions.length - 1, i + 1))} className="px-3 py-2 rounded-lg ml-2" style={{ backgroundColor: Colors.background }}>
+                <Ionicons name="chevron-forward" size={20} color={Colors.text} />
+              </TouchableOpacity>
+            </View>
+
+            <View className="items-end">
+              <Text className="text-sm text-gray-500">Time left</Text>
+              <Text className="text-lg font-semibold text-text">{formatTime(timeLeft)}</Text>
+            </View>
+          </View>
+
+          <View className="flex-row items-center justify-between mt-3">
+            <TouchableOpacity onPress={resetTimer} className="px-3 py-2 rounded-lg" style={{ backgroundColor: Colors.background }}>
+              <Text className="text-sm">Reset</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => { setGuidedMode(false); setTimerRunning(false); }} className="px-3 py-2 rounded-lg" style={{ backgroundColor: Colors.background }}>
+              <Text className="text-sm">Stop</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      )}
     </ScrollView>
   );
 
