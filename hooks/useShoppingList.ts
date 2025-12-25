@@ -68,30 +68,72 @@ export const useShoppingList = () => {
     const targetList = shoppingLists.find(list => list.id === listId);
     if (!targetList) return;
 
-    const newItems: ShoppingListItem[] = recipe.ingredients
-      .filter(ingredient => {
-        // Avoid duplicates by checking if ingredient already exists
-        return !targetList.items.some(item => 
-          item.name.toLowerCase() === ingredient.name.toLowerCase() && 
-          item.recipeId === recipe.id
-        );
-      })
-      .map(ingredient => ({
-        id: `${recipe.id}_${ingredient.name}_${Date.now()}`,
-        name: ingredient.name,
-        amount: ingredient.amount,
-        category: ingredient.category,
-        recipeId: recipe.id,
-        recipeName: recipe.name,
-        checked: false,
-        addedAt: new Date()
-      }));
+    // Merge incoming ingredients with existing items by name (case-insensitive)
+    const itemsByName: Record<string, ShoppingListItem> = {};
+
+    // seed with existing items
+    for (const item of targetList.items) {
+      itemsByName[item.name.toLowerCase()] = { ...item };
+    }
+
+    for (const ingredient of recipe.ingredients) {
+      const key = ingredient.name.toLowerCase();
+      const existing = itemsByName[key];
+
+      if (existing) {
+        // Try to add amounts if parseable
+        try {
+          // Lazy import to avoid circulars
+          const { addAmounts } = await import('../utils/ingredientUtils');
+          const merged = addAmounts(existing.amount || '', ingredient.amount || '');
+          if (merged) {
+            existing.amount = merged;
+          } else if (!existing.amount && ingredient.amount) {
+            existing.amount = ingredient.amount;
+          } else if (!ingredient.amount && existing.amount) {
+            // keep existing
+          } else {
+            // If we can't merge numerically, append recipe names to description
+            existing.amount = existing.amount ? `${existing.amount}, ${ingredient.amount}` : ingredient.amount;
+          }
+          // Keep recipe references simple: mark as multi
+          existing.recipeName = existing.recipeName === recipe.name ? existing.recipeName : 'Multiple';
+        } catch (e) {
+          // Fallback: add as separate item
+          const newItem: ShoppingListItem = {
+            id: `${recipe.id}_${ingredient.name}_${Date.now()}`,
+            name: ingredient.name,
+            amount: ingredient.amount,
+            category: ingredient.category,
+            recipeId: recipe.id,
+            recipeName: recipe.name,
+            checked: false,
+            addedAt: new Date()
+          };
+          itemsByName[key + '_' + Date.now()] = newItem;
+        }
+      } else {
+        // Add new
+        itemsByName[key] = {
+          id: `${recipe.id}_${ingredient.name}_${Date.now()}`,
+          name: ingredient.name,
+          amount: ingredient.amount,
+          category: ingredient.category,
+          recipeId: recipe.id,
+          recipeName: recipe.name,
+          checked: false,
+          addedAt: new Date()
+        };
+      }
+    }
+
+    const mergedItems = Object.values(itemsByName);
 
     const updatedLists = shoppingLists.map(list =>
       list.id === listId
         ? {
             ...list,
-            items: [...list.items, ...newItems],
+            items: mergedItems,
             updatedAt: new Date()
           }
         : list
