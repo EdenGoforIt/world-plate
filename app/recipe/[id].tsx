@@ -35,6 +35,8 @@ import {
     getDifficultyColor,
     getRecipeByIdFromCountry,
 } from "@/utils/recipeUtils";
+import { findAllergensInIngredients, getSubstitutionsForIngredient, COMMON_ALLERGENS } from '@/utils/ingredientSubstitutions';
+import { getUserAllergens, saveUserAllergens } from '@/utils/storageUtils';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
 
@@ -78,6 +80,19 @@ import { useShoppingList } from '@/hooks/useShoppingList';
   const [tabIndex, setTabIndex] = useState(0);
   const [rating, setRating] = useState(0);
   const [reviewText, setReviewText] = useState("");
+
+  // Allergens & substitutions
+  const [showAllergenPanel, setShowAllergenPanel] = useState(false);
+  const [userAllergens, setUserAllergens] = useState<string[]>([]);
+  const [detectedAllergens, setDetectedAllergens] = useState<string[]>([]);
+
+  const loadUserAllergens = async () => {
+    const a = await getUserAllergens();
+    setUserAllergens(a || []);
+  };
+
+  useEffect(() => { loadUserAllergens(); }, []);
+
 
   // Guided cooking mode
   const [guidedMode, setGuidedMode] = useState(false);
@@ -315,13 +330,35 @@ import { useShoppingList } from '@/hooks/useShoppingList';
     return formatAmount(scaled, parsed.rest);
   };
 
+  const handleToggleAllergen = async (allergen: string) => {
+    const next = userAllergens.includes(allergen)
+      ? userAllergens.filter(a => a !== allergen)
+      : [...userAllergens, allergen];
+    setUserAllergens(next);
+    await saveUserAllergens(next);
+  };
+
   const renderIngredients = () => (
     <ScrollView className="px-5 py-4" showsVerticalScrollIndicator={false}>
+      <View className="flex-row items-center justify-between mb-3">
+        <Text className="text-base font-semibold text-text">Ingredients</Text>
+        <TouchableOpacity onPress={() => {
+          // detect allergens & toggle panel
+          const found = findAllergensInIngredients(recipe.ingredients, COMMON_ALLERGENS);
+          setDetectedAllergens(found);
+          setShowAllergenPanel(v => !v);
+        }} className="px-3 py-1 rounded-xl border" style={{ backgroundColor: showAllergenPanel ? Colors.primary : Colors.background }}>
+          <Text style={{ color: showAllergenPanel ? 'white' : Colors.text }} className="font-medium">Allergens & Substitutions</Text>
+        </TouchableOpacity>
+      </View>
+
       {recipe.ingredients.map((ingredient, index) => {
         const scaledAmount = scaleIngredientAmount(
           ingredient.amount,
           servings / (recipe.servings || 1)
         );
+
+        const subs = getSubstitutionsForIngredient(ingredient.name);
 
         return (
           <Animated.View
@@ -342,15 +379,50 @@ import { useShoppingList } from '@/hooks/useShoppingList';
             <View className="w-8 h-8 rounded-full bg-primary/10 items-center justify-center mr-3">
               <Text className="text-primary font-bold">{index + 1}</Text>
             </View>
-            <Text className="flex-1 text-base text-text">
-              {scaledAmount}
-            </Text>
+            <View className="flex-1">
+              <Text className="text-base text-text">{scaledAmount}</Text>
+              {subs && subs.length > 0 && (
+                <Text className="text-xs text-primary opacity-80">Sub: {subs[0]}</Text>
+              )}
+            </View>
             <Text className="flex-2 text-base font-medium text-text">
               {ingredient.name}
             </Text>
           </Animated.View>
         );
       })}
+
+      {showAllergenPanel && (
+        <View className="bg-white rounded-xl p-4 mt-3">
+          <Text className="text-sm text-text mb-2">Detected allergens in this recipe: {detectedAllergens.length > 0 ? detectedAllergens.join(', ') : 'None'}</Text>
+
+          <Text className="text-sm text-text mb-2">Your allergens (toggle to avoid):</Text>
+          <View className="flex-row flex-wrap">
+            {COMMON_ALLERGENS.map((a) => (
+              <TouchableOpacity key={a} onPress={() => handleToggleAllergen(a)} className={`px-3 py-2 rounded-lg mr-2 mb-2`} style={{ backgroundColor: userAllergens.includes(a) ? '#FEEBC8' : Colors.background }}>
+                <Text className="text-sm" style={{ color: userAllergens.includes(a) ? '#B45309' : Colors.text }}>{a}</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+
+          {userAllergens.length > 0 && detectedAllergens.some(d => userAllergens.includes(d)) && (
+            <View className="mt-3 p-3 rounded-lg bg-red-50">
+              <Text className="text-sm text-red-700">This recipe contains ingredients you marked to avoid.</Text>
+              <Text className="text-sm text-red-700">Consider substituting: </Text>
+              <View className="mt-2">
+                {recipe.ingredients.map((ing, idx) => {
+                  const subs = getSubstitutionsForIngredient(ing.name);
+                  const matches = subs && subs.length > 0 && userAllergens.some(u => ing.name.toLowerCase().includes(u));
+                  if (!matches) return null;
+                  return (
+                    <Text key={idx} className="text-sm text-text">• {ing.name} → {subs[0]}</Text>
+                  );
+                })}
+              </View>
+            </View>
+          )}
+        </View>
+      )}
     </ScrollView>
   );
 

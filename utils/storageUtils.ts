@@ -412,3 +412,24 @@ export const savePantryItems = async (items: string[]): Promise<void> => {
     console.error('Error saving pantry items:', error);
   }
 };
+
+// User allergy preferences
+const USER_ALLERGENS_KEY = '@user_allergens';
+
+export const getUserAllergens = async (): Promise<string[]> => {
+  try {
+    const raw = await AsyncStorage.getItem(USER_ALLERGENS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (error) {
+    console.error('Error getting user allergens:', error);
+    return [];
+  }
+};
+
+export const saveUserAllergens = async (allergens: string[]): Promise<void> => {
+  try {
+    await AsyncStorage.setItem(USER_ALLERGENS_KEY, JSON.stringify(allergens));
+  } catch (error) {
+    console.error('Error saving user allergens:', error);
+  }
+};
