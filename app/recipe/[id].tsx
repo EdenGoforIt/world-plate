@@ -1,6 +1,8 @@
 import { Ionicons } from "@expo/vector-icons";
 import { BlurView } from "expo-blur";
 import * as Haptics from 'expo-haptics';
+import * as Speech from 'expo-speech';
+import * as Notifications from 'expo-notifications';
 import { LinearGradient } from "expo-linear-gradient";
 import { router, useLocalSearchParams } from "expo-router";
 import React, { useEffect, useRef, useState } from "react";
@@ -102,6 +104,24 @@ import { useShoppingList } from '@/hooks/useShoppingList';
   const [timerRunning, setTimerRunning] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  // TTS & notification options for guided mode
+  const [ttsEnabled, setTtsEnabled] = useState<boolean>(false);
+  const [notifEnabled, setNotifEnabled] = useState<boolean>(false);
+  const ttsRef = useRef(ttsEnabled);
+  const notifRef = useRef(notifEnabled);
+
+  useEffect(() => { ttsRef.current = ttsEnabled; }, [ttsEnabled]);
+  useEffect(() => { notifRef.current = notifEnabled; }, [notifEnabled]);
+
+  const requestNotificationPermission = async () => {
+    try {
+      const { status } = await Notifications.requestPermissionsAsync();
+      return status === 'granted';
+    } catch (e) {
+      return false;
+    }
+  };
+
   const scrollY = useRef(new Animated.Value(0)).current;
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
@@ -146,6 +166,31 @@ import { useShoppingList } from '@/hooks/useShoppingList';
           Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
 
           if (!recipe) return 0;
+
+          // Announce via TTS or notification if enabled
+          const finishedIndex = currentStepIdx; // current step finishing
+
+          const speakAndNotify = async () => {
+            const nextIdx = finishedIndex < recipe.instructions.length - 1 ? finishedIndex + 1 : null;
+            const nextText = nextIdx !== null ? recipe.instructions[nextIdx] : null;
+
+            if (ttsRef.current) {
+              const text = nextText ? `Step ${finishedIndex + 1} complete. Next: ${nextText}` : `Step ${finishedIndex + 1} complete. Recipe finished.`;
+              try { Speech.speak(text); } catch (e) { /* ignore */ }
+            }
+
+            if (notifRef.current) {
+              try {
+                const title = nextText ? `Step ${finishedIndex + 1} complete` : `Recipe complete`;
+                const body = nextText ? `Next: ${nextText}` : `All steps finished.`;
+                await Notifications.scheduleNotificationAsync({ content: { title, body }, trigger: { seconds: 1 } });
+              } catch (e) { /* ignore */ }
+            }
+          };
+
+          // Run announcements but don't block timer
+          void speakAndNotify();
+
           if (currentStepIdx < recipe.instructions.length - 1) {
             setCurrentStepIdx((i) => i + 1);
             return stepDuration;
@@ -475,6 +520,33 @@ import { useShoppingList } from '@/hooks/useShoppingList';
             <TouchableOpacity onPress={() => setStepDuration((d) => d + 15)} className="px-2 py-1 rounded-lg" style={{ backgroundColor: Colors.background }}>
               <Text className="text-sm">+15s</Text>
             </TouchableOpacity>
+
+            <View className="ml-3 flex-row items-center">
+              <TouchableOpacity
+                onPress={() => setTtsEnabled((v) => !v)}
+                className="px-3 py-1 rounded-xl border mr-2"
+                style={{ backgroundColor: ttsEnabled ? Colors.primary : Colors.background }}
+              >
+                <Text className="font-medium" style={{ color: ttsEnabled ? 'white' : Colors.text }}>Voice cue</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                onPress={async () => {
+                  if (!notifEnabled) {
+                    const ok = await requestNotificationPermission();
+                    if (!ok) {
+                      Alert.alert('Permission required', 'Notifications permission was not granted');
+                      return;
+                    }
+                  }
+                  setNotifEnabled((v) => !v);
+                }}
+                className="px-3 py-1 rounded-xl border"
+                style={{ backgroundColor: notifEnabled ? Colors.primary : Colors.background }}
+              >
+                <Text className="font-medium" style={{ color: notifEnabled ? 'white' : Colors.text }}>Notifications</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </View>
