@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Recipe } from '../types/Recipe';
 import { getRandomRecipes, getRecipesByMealType, preloadEssentialCountries } from '../utils/recipeUtils';
+import { getAllFavoriteRecipes, getPantryItems } from '../utils/storageUtils';
 
 export const useRandomRecipes = (count: number = 3) => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -41,9 +42,20 @@ export const useDailyRecommendations = () => {
   const getNewRecommendations = async (excludeIds: Set<string> = new Set()) => {
     // Prefer recipes that are either in user's favorites or match pantry items.
     // Scoring: favorite -> +2, pantry match -> +1. Pick randomly from highest score bucket.
-    const pantryItemsRaw = await import('../utils/storageUtils').then(m => m.getPantryItems()).catch(() => [] as string[]);
+    let pantryItemsRaw: string[] = [];
+    try {
+      pantryItemsRaw = await getPantryItems();
+    } catch (e) {
+      pantryItemsRaw = [];
+    }
     const pantryItems = pantryItemsRaw.map(p => p.toLowerCase());
-    const favoriteIdsList = await import('../utils/storageUtils').then(m => m.getAllFavoriteRecipes()).catch(() => [] as string[]);
+
+    let favoriteIdsList: string[] = [];
+    try {
+      favoriteIdsList = await getAllFavoriteRecipes();
+    } catch (e) {
+      favoriteIdsList = [];
+    }
     const favoriteIds = new Set(favoriteIdsList);
 
     const chooseByScore = (recipes: Recipe[]): Recipe | null => {
