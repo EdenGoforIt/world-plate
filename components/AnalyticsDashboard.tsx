@@ -5,12 +5,13 @@ import { Circle, G, Line, Text as SvgText } from "react-native-svg";
 import { BarChart, PieChart } from "react-native-svg-charts";
 import { ThemedText } from "../components/ThemedText";
 import { ThemedView } from "../components/ThemedView";
+import { logger } from "../config/env";
 import { useFavorites } from "../hooks/useFavorites";
 import { useRecipes } from "../hooks/useRecipes";
 import {
-  calculateRecipeStats,
-  getCuisineStats,
-  getRecommendedRecipes,
+    calculateRecipeStats,
+    getCuisineStats,
+    getRecommendedRecipes,
 } from "../utils/recipeAnalytics";
 
 const { width: screenWidth } = Dimensions.get("window");
@@ -65,7 +66,7 @@ export function AnalyticsDashboard({
       value: item.count,
       svg: {
         fill: colors[index % colors.length],
-        onPress: () => console.log("Pressed", item),
+        onPress: () => logger.debug("Pressed", item),
       },
       key: `pie-${index}`,
       label: item.label,

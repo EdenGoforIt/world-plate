@@ -2,25 +2,26 @@ import { Ionicons } from "@expo/vector-icons";
 import NetInfo from "@react-native-community/netinfo";
 import * as Clipboard from "expo-clipboard";
 import React, {
-  Component,
-  createContext,
-  ErrorInfo,
-  ReactNode,
-  useContext,
-  useMemo,
+    Component,
+    createContext,
+    ErrorInfo,
+    ReactNode,
+    useContext,
+    useMemo,
 } from "react";
 import {
-  AccessibilityInfo,
-  ActivityIndicator,
-  Animated,
-  Platform,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  Vibration,
-  View,
+    AccessibilityInfo,
+    ActivityIndicator,
+    Animated,
+    Platform,
+    ScrollView,
+    Text,
+    TouchableOpacity,
+    Vibration,
+    View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { logger } from "../../config/env";
 
 interface Props {
   children: ReactNode;
@@ -362,7 +363,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
     // Log metrics periodically
     if (this.props.enableMetrics && this.errorMetrics.totalErrors % 5 === 0) {
-      console.log("Error Metrics Update:", this.errorMetrics);
+      logger.debug("Error Metrics Update:", this.errorMetrics);
     }
   };
 
@@ -373,7 +374,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
     // Check if errors are happening too frequently
     if (timeSinceLastError < this.errorFrequencyThreshold) {
-      console.warn("Frequent errors detected. Disabling auto-recovery.");
+      logger.warn("Frequent errors detected. Disabling auto-recovery.");
       return true;
     }
 
@@ -381,8 +382,7 @@ export class ErrorBoundary extends Component<Props, State> {
     const errorKey = `${error.name}:${error.message.substring(0, 50)}`;
     const errorCount = this.errorMetrics.errorPatterns.get(errorKey) || 0;
     if (errorCount > 3) {
-      console.warn(`Repeated error pattern detected: ${errorKey}`);
-      return true;
+      logger.warn(`Repeated error pattern detected: ${errorKey}`);
     }
 
     return false;
@@ -411,7 +411,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
     this.autoRetryTimer = setTimeout(() => {
       if (this.state.hasError && this.state.retryCount < this.maxRetries) {
-        console.log(`Attempting automatic error recovery after ${delay}ms...`);
+        logger.info(`Attempting automatic error recovery after ${delay}ms...`);
         this.handleReset();
       }
       this.setState({ isAutoRetrying: false });
@@ -441,7 +441,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
   private handleAutoRecovery = () => {
     if (this.state.retryCount < this.maxRetries) {
-      console.log("Network restored. Attempting recovery...");
+      logger.info("Network restored. Attempting recovery...");
       setTimeout(() => this.handleReset(), 1000);
     }
   };
@@ -553,7 +553,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
     try {
       await Clipboard.setStringAsync(errorDetails);
-      console.log("Error details copied to clipboard");
+      logger.info("Error details copied to clipboard");
       AccessibilityInfo.announceForAccessibility(
         "Error details copied to clipboard"
       );
@@ -573,11 +573,11 @@ export class ErrorBoundary extends Component<Props, State> {
         environment: __DEV__ ? "development" : "production",
       });
     } catch (clipboardError) {
-      console.error("Failed to copy error details:", clipboardError);
+      logger.error("Failed to copy error details:", clipboardError);
     }
 
     if (__DEV__) {
-      console.log("Error report generated:", errorDetails);
+      logger.debug("Error report generated:", errorDetails);
     }
   };
 

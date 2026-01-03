@@ -1,5 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import NetInfo from "@react-native-community/netinfo";
+import { logger } from "../config/env";
 import { Recipe } from "../types/Recipe";
 
 export interface CacheEntry<T> {
@@ -240,14 +241,14 @@ class OfflineCacheService {
     const queue = await this.getOfflineQueue();
     if (queue.length === 0) return;
 
-    console.log(`Syncing ${queue.length} offline actions...`);
+    logger.debug(`Syncing ${queue.length} offline actions...`);
 
     for (const item of queue) {
       try {
         await this.processOfflineAction(item);
         await this.removeFromOfflineQueue(item.id);
       } catch (error) {
-        console.error("Failed to sync offline action:", error);
+        logger.error("Failed to sync offline action:", error);
         // Keep failed items in queue for retry
       }
     }
@@ -256,7 +257,7 @@ class OfflineCacheService {
   private async processOfflineAction(item: OfflineQueueItem): Promise<void> {
     // This would integrate with your backend API
     // For now, we'll just log the action
-    console.log("Processing offline action:", item.type, item.data);
+    logger.debug("Processing offline action:", item.type, item.data);
 
     switch (item.type) {
       case "favorite":

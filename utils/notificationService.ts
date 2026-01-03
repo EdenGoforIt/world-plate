@@ -1,6 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Notifications from "expo-notifications";
 import { Platform } from "react-native";
+import { logger } from "../config/env";
 
 export interface NotificationSettings {
   mealReminders: boolean;
@@ -260,18 +261,18 @@ class NotificationService {
         // Navigate to recipe
         if (data.recipeId) {
           // This would typically trigger navigation
-          console.log("Navigate to recipe:", data.recipeId);
+          logger.info("Navigate to recipe:", data.recipeId);
         }
         break;
 
       case "recipe_alert":
         // Navigate to explore with filters
-        console.log("Navigate to explore with cuisine:", data.cuisine);
+        logger.info("Navigate to explore with cuisine:", data.cuisine);
         break;
 
       case "weekly_digest":
         // Navigate to profile/analytics
-        console.log("Navigate to analytics");
+        logger.info("Navigate to analytics");
         break;
     }
   }
